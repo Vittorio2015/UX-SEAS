@@ -1,0 +1,56 @@
+
+body {
+font-size: .75rem;
+}
+.card-footer-margin {
+padding: .3em;
+}
+.cards-header {
+background: white;
+margin-left: -1em;
+margin-right: -1em;
+padding-left: 1em;
+}
+.card-header-margin {
+padding: .3em;
+margin-bottom: -1em;
+}
+.card-label_dark {
+margin-bottom: 1em;
+border-left: 4px solid #d6d8d9;
+}
+.card-label_info {
+margin-bottom: 1em;
+border-left: 4px solid #d1ecf1;
+}
+.card-label_primary {
+margin-bottom: 1em;
+border-left: 4px solid #007bff;
+}
+.card-label_secondary {
+margin-bottom: 1em;
+border-left: 4px solid #e2e3e5;
+}
+.card-label_success {
+margin-bottom: 1em;
+border-left: 4px solid #28a745;
+}
+.card-label_warning {
+margin-bottom: 1em;
+border-left: 4px solid #fff3cd;;
+}
+.col-sm-margin {
+background-color: #f5f5f5;
+margin: 1em;
+}
+.fa-padding {
+margin-right: .5em;
+margin-left: .5em;
+}
+h6 {
+font-size: .90rem;
+}
+.list-group-item-margin {
+padding: .3em;
+margin-left: .5em;
+}
