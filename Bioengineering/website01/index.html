@@ -53,8 +53,8 @@
             header.masthead {
                 position: relative;
                 width: 100%;
-                padding-top: 150px;
-                padding-bottom: 100px;
+                padding-top: 80px;
+                padding-bottom: 60px;
                 color: #fff;
                 background-image: url(img/biobanner_op.png);
                 background-position: center center;
@@ -162,13 +162,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
+                        <li class="nav-item" hidden>
                             <a class="nav-link js-scroll-trigger" href="#discover">Discover</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#people">People</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" hidden>
                             <a class="nav-link js-scroll-trigger" href="#getStarted">Get started!</a>
                         </li>
                     </ul>
@@ -179,27 +179,36 @@
         <header class="masthead">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-lg-7 my-auto">
+                    <div class="col-lg-8 my-auto mx-auto">
                         <div class="header-content mx-auto">
-                            <h2 class="mb-5">
-                                Area Chair for Bioengineering
-                                <br>
-                                <a href="https://www.seas.harvard.edu/directory/mitragotri" class="link-light">Samir
-                                    Mitragotri</a>
-                            </h2>
-                            <p>
-                                Prof. Mitragotri has made groundbreaking contributions to the field of biological barriers and
-                                drug
-                                delivery. His research has advanced fundamental understanding of biological barriers and has led
-                                to the
-                                development of new materials as well as technologies for diagnosis and treatment of various
-                                ailments
-                                including diabetes, cancer, cardiovascular diseases, skin conditions and infections, among
-                                others.
+                            <p class="text-justified">
+                                The overarching intellectual goal of bioengineering is to apply quantitative engineering
+                                analysis to
+                                understand the operation of living systems, and design novel systems to satisfy unmet
+                                needs.
+                                Bioengineers
+                                apply the fundamental engineering disciplines (thermodynamics, fluid mechanics);
+                                sciences (physics,
+                                biology,
+                                chemistry); and mathematics (statistics, differential equations) to solve problems. The
+                                bioengineering
+                                area
+                                complements the scientific goals of knowledge discovery embodied in the other life
+                                science areas.
+                            </p>
+                            <p class="  text-justified mt-3">
+                                Bioengineering at SEAS focuses on research in a number of areas including:
+                                <strong>
+                                    <a href="/faculty-research/research" class="link-light">
+                                        cell and tissue engineering, biomaterials, drug delivery, robotics, imaging,
+                                        biomechanics, and
+                                        neuroengineering
+                                    </a>
+                                </strong>
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-5 my-auto">
+                    <div class="col-lg-5 my-auto" hidden>
                         <div style="    max-width: 325px;    margin-right: auto;
             margin-left: auto;">
                             <div style="padding-bottom: 201.76%;     position: relative;
@@ -229,7 +238,7 @@
             </div>
         </header>
 
-        <section class="download bg-primary text-center" id="discover">
+        <section class="download bg-primary text-center" id="discover" hidden>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mx-auto">
@@ -239,7 +248,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" hidden>
             <div class="container">
                 <div class="section-heading">
                     <h2 class="text-center">About Us</h2>
@@ -1014,7 +1023,7 @@
             </div>
         </section><!--/ Participating Faculty-->
 
-        <section class="cta" id="getStarted">
+        <section class="cta" id="getStarted" hidden>
             <div class="cta-content">
                 <div class="container">
                     <h2>Stop waiting.<br>Start building.</h2>
@@ -1025,18 +1034,21 @@
         </section><!--/ Let's Get Started!-->
 
         <div class="container">
-            <p class="text-light">© 2019 President and Fellows of Harvard College.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="http://www.harvard.edu/" class="link-light">Harvard University</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="http://trademark.harvard.edu/pages/trademark-notice" class="link-light">Trademark Notice</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="/privacy-policy" class="link-light">Privacy Policy</a>
-                </li>
-            </ul>
+            <nav class="navbar fixed-bottom navbar-light bg-dark">
+                <a class="text-light">© 2019 President and Fellows of Harvard College.</a>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="http://www.harvard.edu/" class="link-light">Harvard University</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="http://trademark.harvard.edu/pages/trademark-notice" class="link-light">Trademark
+                            Notice</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/privacy-policy" class="link-light">Privacy Policy</a>
+                    </li>
+                </ul>
+            </nav>
         </div><!--/ footer-->
 
         <!-- Bootstrap core JavaScript -->
