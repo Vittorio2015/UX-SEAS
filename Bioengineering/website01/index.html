@@ -1,462 +1,1054 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <link rel="shortcut icon" href="https://www.seas.harvard.edu/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 
-  <title>Bioengineering at Harvard</title>
+        <title>Bioengineering at Harvard</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <!-- Template CSS -->
+        <link href="css/new-age.min.css" rel="stylesheet">
+        <link href="css/new-age.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-</head>
+        <!-- Custom styles for this template -->
+        <link href="css/new-age.min.css" rel="stylesheet">
 
-<body id="page-top">
+    </head>
 
-  <!-- Navigation -->
+    <body id="page-top">
 
-  <style>
+        <!-- Navigation -->
 
-  #mainNav {
-    background-color: #434343;
-}
-   #mainNav.navbar-shrink {
-    border-color: rgba(34,34,34,.1);
-    background-color: #434343;
-    color: #fff;
-}
+        <style>
 
-#mainNav.navbar-shrink .navbar-nav>li>a, #mainNav.navbar-shrink .navbar-nav>li>a:focus {
-    color: #fff;
-    }
+            #mainNav {
+                background-color: #434343;
+            }
 
-    header.masthead {
-    position: relative;
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    color: #fff;
-        background-image: url(img/biobanner_op.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-}
+            #mainNav.navbar-shrink {
+                border-color: rgba(34, 34, 34, .1);
+                background-color: #434343;
+                color: #fff;
+            }
 
-section.download {
-    position: relative;
-    padding: 4em 0;
-}
+            #mainNav.navbar-shrink .navbar-nav > li > a, #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+                color: #fff;
+            }
 
-section.download h2 {
-    font-size: 3em;
-}
+            header.masthead {
+                position: relative;
+                width: 100%;
+                padding-top: 150px;
+                padding-bottom: 100px;
+                color: #fff;
+                background-image: url(img/biobanner_op.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #464646;
+            }
 
-section {
-    padding: 3em 0;
-}
+            section.download {
+                position: relative;
+                padding: 4em 0;
+            }
 
-section.features .section-heading {
-    margin-bottom: 2em;
-}
+            section.download h2 {
+                font-size: 3em;
+            }
 
-hr {
-    max-width: 10em;
-    margin: 2em auto 0;
-    border-width: 1px;
-    border-color: #D16103;
-}
+            section {
+                padding: 3em 0;
+            }
 
-.showcase .showcase-img {
-    min-height: 18rem;
-    /* background-size: cover; */
-    background-size: contain;
-}
+            section.features .section-heading {
+                margin-bottom: 2em;
+            }
 
-   a{
-     color:#D16103 !important;
-     &:hover{ color:#D16103 !important;}
-   }
+            hr {
+                max-width: 10em;
+                margin: 2em auto 0;
+                border-width: 1px;
+                border-color: #D16103;
+            }
 
- section.cta {
-    position: relative;
-    padding: 5em 0;
-    background-image: url(https://www.seas.harvard.edu/sites/default/files/Superfludity_Banner.jpeg);
-    background-position: center;
-    background-size: cover;
-}
+            .showcase .showcase-img {
+                min-height: 18rem;
+                /* background-size: cover; */
+                background-size: contain;
+            }
 
-.link-light {
- color:#FFDB6D !important;
- }
+            a {
+                color: #D16103 !important;
 
-a:hover {
-color:#D16103 !important;}
- }
+            &
+            :hover {
+                color: #D16103 !important;
+            }
 
- .btn {
-    border-radius: 300px;
-    font-family: Lato,Helvetica,Arial,sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+            }
 
-.btn-outline {
-    color: #fff;
-    border: 1px solid;
-    border-color: #FFDB6D;
-}
+            section.cta {
+                position: relative;
+                padding: 5em 0;
+                background-image: url(https://www.seas.harvard.edu/sites/default/files/Superfludity_Banner.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
 
-.btn-xl {
-    font-size: 1em;
-    padding: 15px 45px;
-}
+            .link-light {
+                color: #FFDB6D !important;
+            }
 
-  </style>
+            a:hover {
+                color: #D16103 !important;
+            }
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="https://www.seas.harvard.edu/sites/default/files/seaslogo_temp_spaced.png" alt="Harvard John A. Paulson School of Engineering and Applied Sciences" style="width: 12em;">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#discover">Discover</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#people">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#getStarted">Get started!</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            }
 
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-lg-7 my-auto">
-          <div class="header-content mx-auto">
-            <h2 class="mb-5">
-              Area Chair for Bioengineering
-              <br>
-              <a href="https://www.seas.harvard.edu/directory/mitragotri" class="link-light">Samir Mitragotri</a>
-            </h2>
-            <p>
-              Prof. Mitragotri has made groundbreaking contributions to the field of biological barriers and drug
-              delivery. His research has advanced fundamental understanding of biological barriers and has led to the
-              development of new materials as well as technologies for diagnosis and treatment of various ailments
-              including diabetes, cancer, cardiovascular diseases, skin conditions and infections, among others.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-5 my-auto">
-          <div style="    max-width: 325px;    margin-right: auto;
-    margin-left: auto;">
-            <div style="padding-bottom: 201.76%;     position: relative;
-    width: 100%;    box-sizing: border-box;    display: block;">
-              <div style="position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="https://www.seas.harvard.edu/sites/default/files/images/Directory/mitragotri_200x300.jpg" class="img-fluid rounded" alt="" style="width: 100%;">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+            .btn {
+                border-radius: 300px;
+                font-family: Lato, Helvetica, Arial, sans-serif;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
 
-  <section class="download bg-primary text-center" id="discover">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2 class="section-heading mt-4">Discover what Harvard Bioengineering is about!</h2>
-          </div>
-        </div>
-      </div>
-  </section>
+            .btn-outline {
+                color: #fff;
+                border: 1px solid;
+                border-color: #FFDB6D;
+            }
 
-  <section class="features">
-    <div class="container">
-      <div class="section-heading">
-        <h2 class="text-center">Our goal</h2>
-        <p class="text-muted text-justified">
-          The overarching intellectual goal of bioengineering is to apply quantitative engineering analysis to
-          understand the operation of living systems, and design novel systems to satisfy unmet needs. Bioengineers
-          apply the fundamental engineering disciplines (thermodynamics, fluid mechanics); sciences (physics, biology,
-          chemistry); and mathematics (statistics, differential equations) to solve problems. The bioengineering area
-          complements the scientific goals of knowledge discovery embodied in the other life science areas.
-        </p>
-        <p class="text-muted text-justified mt-3">
-          Bioengineering at SEAS focuses on research in a number of areas including:
-          <strong>
-            <a href="/faculty-research/research">
-              cell and tissue engineering, biomaterials, drug delivery, robotics, imaging, biomechanics, and neuroengineering
-            </a>
-          </strong>
-        </p>
-        <hr>
-      </div>
-    </div>
-  </section>
+            .btn-xl {
+                font-size: 1em;
+                padding: 15px 45px;
+            }
 
-   <section class="download bg-primary text-center" id="people">
-     <div class="container">
-      <div class="section-heading">
-        <h2 class="text-center mt-4">Our leadership</h2>
-        <p class="text-muted text-justified">
-          (Introduction of Bioengineering leadership)
-        </p>
-      </div>
-     </div>
-   </section>
+            .navbar-text {
+                color: white;
+            }
 
-      <section class="showcase">
-        <div class="container-fluid p-0">
-          <div class="row justify-content-md-center no-gutters mx-auto">
-            <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
-              <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/mitragotri_200x300.jpg" alt="Samir Mitragotri" class="rounded float-right showcase-img">
-            </div>
-            <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
-              <h3>
-                <a href="https://www.seas.harvard.edu/directory/jaiz">
-                  Samir Mitragotri
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <img src="img/harvard-logo.png" style="width: 10em;" alt="Harvard logo">
                 </a>
-              </h3>
-              <p class="lead mb-0">
-                <strong class="field-content">
-                  Hiller Professor of Bioengineering and Hansjorg Wyss Professor of Biologically Inspired Engineering
-                </strong>
-              </p>
-              <p class="text-muted mb-0">
-                Office: Pierce Hall 211
-              </p>
-              <p class="text-muted mb-0">
-                Email: <a href="mailto:mitragotri@seas.harvard.edu">mitragotri@seas.harvard.edu</a>
-              </p>
-              <p class="text-muted mb-0">
-                <a href="https://www.seas.harvard.edu/directory/mitragotri">Samir Mitragotri's full profile</a>
-              </p>
+                <h2 class="text-white">
+                    Bioengineering at Harvard
+                </h2>
+                <button class="navbar-toggler navbar-toggler-right text-warning border-warning" type="button"
+                        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars text-warning"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#discover">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#people">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#getStarted">Get started!</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div><!-- /Samir Mitragotri-->
-        </div>
-      </section>
+        </nav>
 
-      <section class="download bg-primary text-center" id="people">
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-lg-7 my-auto">
+                        <div class="header-content mx-auto">
+                            <h2 class="mb-5">
+                                Area Chair for Bioengineering
+                                <br>
+                                <a href="https://www.seas.harvard.edu/directory/mitragotri" class="link-light">Samir
+                                    Mitragotri</a>
+                            </h2>
+                            <p>
+                                Prof. Mitragotri has made groundbreaking contributions to the field of biological barriers and
+                                drug
+                                delivery. His research has advanced fundamental understanding of biological barriers and has led
+                                to the
+                                development of new materials as well as technologies for diagnosis and treatment of various
+                                ailments
+                                including diabetes, cancer, cardiovascular diseases, skin conditions and infections, among
+                                others.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 my-auto">
+                        <div style="    max-width: 325px;    margin-right: auto;
+            margin-left: auto;">
+                            <div style="padding-bottom: 201.76%;     position: relative;
+            width: 100%;    box-sizing: border-box;    display: block;">
+                                <div style="position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;">
+                                    <div class="screen">
+                                        <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                        <img src="https://www.seas.harvard.edu/sites/default/files/images/Directory/mitragotri_200x300.jpg"
+                                             class="img-fluid rounded" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="button">
+                                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="download bg-primary text-center" id="discover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <h2 class="section-heading mt-4">Discover what Harvard Bioengineering is about!</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="text-center">About Us</h2>
+                    <p class="text-muted text-justified">
+                        The overarching intellectual goal of bioengineering is to apply quantitative engineering analysis to
+                        understand the operation of living systems, and design novel systems to satisfy unmet needs.
+                        Bioengineers
+                        apply the fundamental engineering disciplines (thermodynamics, fluid mechanics); sciences (physics,
+                        biology,
+                        chemistry); and mathematics (statistics, differential equations) to solve problems. The bioengineering
+                        area
+                        complements the scientific goals of knowledge discovery embodied in the other life science areas.
+                    </p>
+                    <p class="text-muted text-justified mt-3">
+                        Bioengineering at SEAS focuses on research in a number of areas including:
+                        <strong>
+                            <a href="/faculty-research/research">
+                                cell and tissue engineering, biomaterials, drug delivery, robotics, imaging, biomechanics, and
+                                neuroengineering
+                            </a>
+                        </strong>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </section><!--/ About Us-->
+
+        <section class="download bg-primary text-center" id="people">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="text-center mt-4">Our leadership</h2>
+                    <p class=" text-justified">
+                        (Introduction of Bioengineering leadership)
+                    </p>
+                </div>
+            </div>
+        </section><!--/ Our Leadership banner-->
+
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/mitragotri_200x300.jpg"
+                             alt="Samir Mitragotri" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/jaiz">
+                                Samir Mitragotri
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Hiller Professor of Bioengineering and Hansjorg Wyss Professor of Biologically Inspired
+                                Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce Hall 211
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:mitragotri@seas.harvard.edu">mitragotri@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/mitragotri">Samir Mitragotri's full profile</a>
+                        </p>
+
+                    </div>
+                </div><!-- /Samir Mitragotri-->
+                <hr>
+            </div>
+        </section><!--/ Our Leadership-->
+
+        <section class="download bg-primary text-center" id="">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="text-center mt-4">
+                        Participating Faculty
+                    </h2>
+                    <p class=" text-justified">
+                        (Introduction of Bioengineering team.This is a cross-school inititive so other faculty names and school
+                        names will be coming. We should have a place to feature the fact that this is a partnership.)
+                    </p>
+                </div>
+            </div>
+        </section><!--/ Participating Faculty banner-->
+
+        <section class="showcase">
+            <div class="container-fluid p-0">
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Aizenberg_200x300.jpg"
+                             alt="Joanna Aizenberg" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/jaiz">
+                                Joanna Aizenberg
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Amy Smith Berylson Professor of Materials Science and Professor of Chemistry &amp; Chemical
+                                Biology
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 229
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 495-3558
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:jaiz@seas.harvard.edu">jaiz@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/jaiz">Joanna Aizenberg's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Joanna Aizenberg-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/demba">
+                                Demba Ba
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Assistant Professor of Electrical Engineering and Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Maxwell Dworkin 143
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-1228
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:demba@seas.harvard.edu">demba@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/demba">Demba Ba's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Ba_200x300.jpg"
+                             alt="Demba Ba" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Demba Ba-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Cluzel_200x300.jpg"
+                             alt="Philippe Cluzel" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/cluzel">
+                                Philippe Cluzel
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Professor of Molecular and Cellular Biology and Gordon McKay Professor of Applied Physics
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Northwest Building 435.30
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 384-9447
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:cluzel@mcb.harvard.edu">cluzel@mcb.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/cluzel">Philippe Cluzel's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Philippe Cluzel-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/frankdoyle">
+                                Frank Doyle
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Assistant Professor of Electrical Engineering and Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Maxwell Dworkin 143
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-1228
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:demba@seas.harvard.edu">dean@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/frankdoyle">Frank Doyle's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Doyle_200x300.jpg"
+                             alt="Frank Doyle" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Frank Doyle-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Edwards_200x300.jpg"
+                             alt="David A. Edwards" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/dedwards">
+                                David A. Edwards
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Gordon McKay Professor of the Practice of Idea Translation
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Cruft Hall 301
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 495-1328
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:dedwards@seas.harvard.edu">dedwards@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/dedwards">David A. Edwards's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /David A. Edwards-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/howe">
+                                Robert D. Howe
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Abbott and James Lawrence Professor of Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 323
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-8359
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:howe@seas.harvard.edu">howe@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/howe">Robert D. Howe's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Howe_200x300.jpg"
+                             alt="Robert D. Howe" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Robert D. Howe-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Ingber_200x300.jpg"
+                             alt="Donald Ingber" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/ingber">
+                                Donald Ingber
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Judah Folkman Professor of Vascular Biology and Professor of Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 432-7044
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:ingber@seas.harvard.edu">ingber@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/ingber">Donald Ingber's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Donald Ingber-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/njoshi">
+                                Neel S. Joshi
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Associate Professor of Chemical and Biological Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0" hidden>
+                        </p>
+                        <p class="text-muted mb-0" hidden>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:neel.joshi@wyss.harvard.edu">neel.joshi@wyss.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/njoshi">Neel S. Joshi's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Joshi_200x300.jpg"
+                             alt="Neel S. Joshi" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Neel S. Joshi-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Lewis_200x300.jpg"
+                             alt="Jennifer Lewis" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/jalewis">
+                                Jennifer Lewis
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Hansjorg Wyss Professor of Biologically Inspired Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 221
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-0233
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:jalewis@seas.harvard.edu">jalewis@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/jalewis">Jennifer Lewis's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Jennifer Lewis-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/jialiu">
+                                Jia Liu
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Assistant Professor of Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 326
+                        </p>
+                        <p class="text-muted mb-0" >
+                            Phone: (617) 599-7582
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:jia_liu@seas.harvard.edu">jia_liu@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/jialiu">Jia Liu's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Liu_200x300.jpg"
+                             alt="Jia Liu" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Jia Liu-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Mahadevan_200x300.jpg"
+                             alt="L Mahadevan" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/lm">
+                                L Mahadevan
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Lola England de Valpine Professor of Applied Mathematics, of Organismic and Evolutionary Biology, and of Physics
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 322
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-9599
+                        </p>
+                        <p class="text-muted mb-0"hidden>
+                            Email:
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/lm">L Mahadevan's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /L Mahadevan-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/mazur">
+                                Eric Mazur
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Balkanski Professor of Physics and Applied Physics
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 233
+                        </p>
+                        <p class="text-muted mb-0" >
+                            Phone: (617) 495-8729
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:mazur@seas.harvard.edu">mazur@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/mazur">Eric Mazur's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Mazur_200x300.jpg"
+                             alt="Eric Mazur" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Eric Mazur-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/mitragotri_200x300.jpg"
+                             alt="Samir Mitragotri" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/mitragotri">
+                                Samir Mitragotri
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Hiller Professor of Bioengineering and Hansjorg Wyss Professor of Biologically Inspired Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 211
+                        </p>
+                        <p class="text-muted mb-0" hidden>
+                            Phone:
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:mitragotri@seas.harvard.edu">mitragotri@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/mitragotri">Samir Mitragotri's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Samir Mitragotri-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/mooneyd">
+                                David Mooney
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Robert P. Pinkas Family Professor of Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 319
+                        </p>
+                        <p class="text-muted mb-0" >
+                            Phone: (617) 384-9624
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:mooneyd@seas.harvard.edu">mooneyd@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/mooneyd">David Mooney's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Mooney_200x300.jpg"
+                             alt="David Mooney" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /David Mooney-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/lmoyer_200x300.jpg"
+                             alt="Linsey Moyer" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/lmoyer">
+                                Linsey Moyer
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Assistant Director of Undergraduate Studies in Biomedical Engineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 206C
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-2840
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:lmoyer@seas.harvard.edu">lmoyer@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/lmoyer">Linsey Moyer's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Linsey Moyer-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/dneedle">
+                                Daniel Needleman
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Gordon McKay Professor of Applied Physics and Professor of Molecular and Cellular Biology
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Northwest Building 359.20
+                        </p>
+                        <p class="text-muted mb-0" >
+                            Phone: (617) 384-6730
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:dneedle@seas.harvard.edu">dneedle@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/dneedle">Daniel Needleman's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Needleman_200x300.jpg"
+                             alt="Daniel Needleman" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Daniel Needleman-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Parker_200x300.jpg"
+                             alt="Kevin Kit Parker" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/lmoyer">
+                                Kevin Kit Parker
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Tarr Family Professor of Bioengineering and Applied Physics
+
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 324
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 495-2850
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:kkparker@seas.harvard.edu">kkparker@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/kkparker">Kevin Kit Parker's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Kevin Kit Parker-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/sharad">
+                                Sharad Ramanathan
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Llura and Gordon Gund Professor of Neurosciences and of Molecular and Cellular Biology and Professor of Applied Physics and Stem Cell and Regenerative Biology
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0" hidden>
+                            Office:
+                        </p>
+                        <p class="text-muted mb-0" hidden>
+                            Phone:
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:sharad@cgr.harvard.edu">sharad@cgr.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/sharad">Sharad Ramanathan's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Ramanathan.Sharad_200x300.jpg"
+                             alt="Sharad Ramanathan" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Sharad Ramanathan-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Smith.Maurice_200x300_0.jpg"
+                             alt="Maurice A. Smith" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/mas">
+                                Maurice A. Smith
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Gordon McKay Professor of Bioengineering
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 325
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 495-9287
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:mas@seas.harvard.edu">mas@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/mas">Maurice A. Smith's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /Maurice A. Smith-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/walsh">
+                                Conor J. Walsh
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                John L. Loeb Associate Professor of Engineering and Applied Sciences
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 328
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-7128
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:walsh@seas.harvard.edu">walsh@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/walsh">Conor J. Walsh's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Walsh_200x300.jpg"
+                             alt="Conor J. Walsh" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Conor J. Walsh-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Weitz_200x300.jpg"
+                             alt="David A. Weitz" class="rounded float-right showcase-img">
+                    </div>
+                    <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/weitz">
+                                David A. Weitz
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Mallinckrodt Professor of Physics and Applied Physics
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Pierce 231
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-2842
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:weitz@seas.harvard.edu">weitz@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/weitz">David A. Weitz's full profile</a>
+                        </p>
+                    </div>
+                </div><!-- /David A. Weitz-->
+
+                <div class="row justify-content-md-center no-gutters mx-auto">
+                    <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
+                        <h3>
+                            <a href="https://www.seas.harvard.edu/directory/rjwood">
+                                Robert J. Wood
+                            </a>
+                        </h3>
+                        <p class="lead mb-0">
+                            <strong class="field-content">
+                                Charles River Professor of Engineering and Applied Sciences
+                            </strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Office: Maxwell Dworkin 149
+                        </p>
+                        <p class="text-muted mb-0">
+                            Phone: (617) 496-1341
+                        </p>
+                        <p class="text-muted mb-0">
+                            Email: <a href="mailto:rjwood@seas.harvard.edu">rjwood@seas.harvard.edu</a>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <a href="https://www.seas.harvard.edu/directory/rjwood">Robert J. Wood's full profile</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-2">
+                        <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/Wood_200x300.jpg"
+                             alt="Robert J. Wood" class="rounded float-left showcase-img">
+                    </div>
+                </div><!-- /Robert J. Wood-->
+
+                <hr>
+
+            </div>
+        </section><!--/ Participating Faculty-->
+
+        <section class="cta" id="getStarted">
+            <div class="cta-content">
+                <div class="container">
+                    <h2>Stop waiting.<br>Start building.</h2>
+                    <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger link-light">Let's Get Started!</a>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section><!--/ Let's Get Started!-->
+
         <div class="container">
-          <div class="section-heading">
-            <h2 class="text-center mt-4">Our team</h2>
-              <p class="text-muted text-justified">
-                (Introduction of Bioengineering team.This is a cross-school iniWaWve so other faculty names and school names will be coming. We should have a place to feature the fact that this is a partnership.)
-              </p>
-          </div>
-        </div>
-      </section>
+            <p class="text-light">© 2019 President and Fellows of Harvard College.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="http://www.harvard.edu/" class="link-light">Harvard University</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="http://trademark.harvard.edu/pages/trademark-notice" class="link-light">Trademark Notice</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="/privacy-policy" class="link-light">Privacy Policy</a>
+                </li>
+            </ul>
+        </div><!--/ footer-->
 
-      <section class="showcase">
-        <div class="container-fluid p-0">
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-          <div class="row justify-content-md-center no-gutters mx-auto">
-            <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
-              <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/Aizenberg_200x300.jpg" alt="Joanna Aizenberg" class="rounded float-right showcase-img">
-            </div>
-            <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
-              <h3>
-                <a href="https://www.seas.harvard.edu/directory/jaiz">
-                  Joanna Aizenberg
-                </a>
-              </h3>
-              <p class="lead mb-0">
-                <strong class="field-content">
-                  Amy Smith Berylson Professor of Materials Science and Professor of Chemistry &amp; Chemical Biology
-                </strong>
-              </p>
-              <p class="text-muted mb-0">
-                Office: 229 Pierce Hall
-              </p>
-              <p class="text-muted mb-0">
-                Phone: (617) 495-3558
-              </p>
-              <p class="text-muted mb-0">
-                Email: <a href="mailto:jaiz@seas.harvard.edu">jaiz@seas.harvard.edu</a>
-              </p>
-              <p class="text-muted mb-0">
-                <a href="https://www.seas.harvard.edu/directory/jaiz">Joanna Aizenberg's full profile</a>
-              </p>
-            </div>
-          </div><!-- /Joanna Aizenberg-->
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-          <div class="row justify-content-md-center no-gutters mx-auto">
-            <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
-              <h3>
-                <a href="https://www.seas.harvard.edu/directory/demba">
-                  Demba Ba
-                </a>
-              </h3>
-              <p class="lead mb-0">
-                <strong class="field-content">
-                  Assistant Professor of Electrical Engineering and Bioengineering
-                </strong>
-              </p>
-              <p class="text-muted mb-0">
-                Office: Maxwell Dworkin 143
-              </p>
-              <p class="text-muted mb-0">
-                Phone: (617) 496-1228
-              </p>
-              <p class="text-muted mb-0">
-                Email: <a href="mailto:demba@seas.harvard.edu">demba@seas.harvard.edu</a>
-              </p>
-              <p class="text-muted mb-0">
-                <a href="https://www.seas.harvard.edu/directory/demba">Demba Ba's full profile</a>
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-4 col-xs-2">
-              <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/Ba_200x300.jpg" alt="Demba Ba" class="rounded float-left showcase-img">
-            </div>
-          </div><!-- /Demba Ba-->
+        <!-- Custom scripts for this template -->
+        <script src="js/new-age.min.js"></script>
 
-          <div class="row justify-content-md-center no-gutters mx-auto">
-            <div class="col-lg-4 col-sm-4 col-xs-2 mr-4">
-              <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/Cluzel_200x300.jpg" alt="Philippe Cluzel" class="rounded float-right showcase-img">
-            </div>
-            <div class="col-lg-4 col-sm-7 col-xs-2 order-lg-1 my-auto showcase-text">
-              <h3>
-                <a href="https://www.seas.harvard.edu/directory/cluzel">
-                  Philippe Cluzel
-                </a>
-              </h3>
-              <p class="lead mb-0">
-                <strong class="field-content">
-                  Professor of Molecular and Cellular Biology and Gordon McKay Professor of Applied Physics
-                </strong>
-              </p>
-              <p class="text-muted mb-0">
-                Office: Northwest Building 435.30
-              </p>
-              <p class="text-muted mb-0">
-                Phone: (617) 384-9447
-              </p>
-              <p class="text-muted mb-0">
-                Email: <a href="mailto:cluzel@mcb.harvard.edu">cluzel@mcb.harvard.edu</a>
-              </p>
-              <p class="text-muted mb-0">
-                <a href="https://www.seas.harvard.edu/directory/cluzel">Philippe Cluzel's full profile</a>
-              </p>
-            </div>
-          </div><!-- /Philippe Cluzel-->
-
-          <div class="row justify-content-md-center no-gutters mx-auto">
-            <div class="col-lg-4 col-sm-7 col-xs-2 my-auto mr-4 showcase-text text-right">
-              <h3>
-                <a href="https://www.seas.harvard.edu/directory/frankdoyle">
-                  Frank Doyle
-                </a>
-              </h3>
-              <p class="lead mb-0">
-                <strong class="field-content">
-                  Assistant Professor of Electrical Engineering and Bioengineering
-                </strong>
-              </p>
-              <p class="text-muted mb-0">
-                Office: Maxwell Dworkin 143
-              </p>
-              <p class="text-muted mb-0">
-                Phone: (617) 496-1228
-              </p>
-              <p class="text-muted mb-0">
-                Email: <a href="mailto:demba@seas.harvard.edu">dean@seas.harvard.edu</a>
-              </p>
-              <p class="text-muted mb-0">
-                <a href="https://www.seas.harvard.edu/directory/frankdoyle">Frank Doyle's full profile</a>
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-4 col-xs-2">
-              <img src="https://www.seas.harvard.edu/sites/default/files/styles/directory/public/images/Directory/Ba_200x300.jpg" alt="Frank Doyle" class="rounded float-left showcase-img">
-            </div>
-          </div><!-- /Frank Doyle-->
-
-          <hr>
-
-        </div>
-      </section>
-
-    </div>
-  </section>
-
-  <section class="cta" id="getStarted">
-    <div class="cta-content">
-      <div class="container">
-        <h2>Stop waiting.<br>Start building.</h2>
-        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger link-light">Let's Get Started!</a>
-      </div>
-    </div>
-    <div class="overlay"></div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p class="text-light">© 2019 President and Fellows of Harvard College.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="http://www.harvard.edu/" class="link-light">Harvard University</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="http://trademark.harvard.edu/pages/trademark-notice" class="link-light">Trademark Notice</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="/privacy-policy" class="link-light">Privacy Policy</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
-
-</body>
+    </body>
 
 </html>
