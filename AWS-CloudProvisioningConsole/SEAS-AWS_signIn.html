@@ -1,0 +1,115 @@
+<!--Proposed UI code for https://d2b4z2hciygw50.cloudfront.net/signin.html-->
+<!--There are 11 UI comments in this commit-->
+
+
+
+
+
+<!--UI comment #1 - HTML5 doctype-->
+<!doctype html>
+<!--UI comment #2 - language-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!--UI comment #3 - responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--UI comment #4 - SEAS favicon-->
+        <link rel="icon" type="image/png" href="https://www.seas.harvard.edu/favicon.ico">
+
+<!--UI comment #5 - Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+
+<!--UI comment #6 - Custom styles for this template -->
+        <link href="floating-labels.css" rel="stylesheet">
+
+
+<!--UI comment #7 - adding title-->
+        <title>
+            Sign in - Cloud Resources Console | Harvard John A. Paulson School of Engineering and Applied Sciences
+        </title>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+
+<!--UI comment #8 - Bootstrap responsive layout-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mx-auto mt-4">
+                <form>
+                    <div class="text-center mb-4">
+                        <img class="mb-4" src="https://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/tib/files/2015_seaslogo_rgb_02.png?m=1472141717&itok=zwdYyihR" alt="Logo of Harvard John A. Paulson School of Engineering and Applied Sciences" style="width: 80%;">
+                        <h2>
+                            Cloud Resources Console
+                        </h2>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                               autofocus="" autocomplete="off"
+                               style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <label for="inputEmail">Email address</label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required=""
+                               autocomplete="off"
+                               style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <label for="inputPassword">Password</label>
+                    </div>
+
+<!--UI comment #9 - suggesting a Remember me option, if it is feasible to implement-->
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Sign in" class="btn btn-lg btn-primary btn-block">
+                </form>
+
+                <div class="text-center mt-4">
+                    <form id="registerForm" method="get" action="register.html">
+                        <button type="submit" class="btn btn-lg btn-secondary btn-block">New user registration</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--UI comment #10 - standard Harvard footer-->
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <span class="navbar-text mx-auto">
+                Copyright © 2019 The President and Fellows of Harvard College
+                |
+                <a href="http://accessibility.harvard.edu/">Accessibility</a>
+                |
+                <a href="http://www.harvard.edu/reporting-copyright-infringements">Report Copyright Infringement</a>
+            </span>
+        </nav>
+
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+
+<!--UI comment #11 - adding optional Bootsrap JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+
+    </body>
+</html>
