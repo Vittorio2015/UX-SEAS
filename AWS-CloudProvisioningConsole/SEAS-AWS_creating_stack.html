@@ -88,11 +88,11 @@
                             <h3>User Created Resources</h3>
 
 <!--UI comment #9 - alert message when no available resources-->
-                            <div class="alert alert-success mt-4 mb-n5" role="alert" hidden>
+                            <div class="alert alert-success mt-4 mb-n5" role="alert">
                                 Your stack is created. Please allow a few minutes for it to be ready.
                             </div>
 
-                            <div id="stacksdiv" class="form-group row mt-4">
+                            <div id="stacksdiv" class="form-group row mt-4" hidden>
                                 <div class="row ml-1 mr-1">
                                     <label for="stackList" class="col-sm-3 col-form-label">Stacks List</label>
                                     <div class="col-sm-9">
@@ -103,37 +103,10 @@
                                         </select>
                                     </div>
                                     <div class="col mt-4">
-                                        <table id="stackInfoTable" class="table table-sm table-bordered">
-                                            <div class="progress" style="height: 2em;" hidden>
+                                        <table id="stackInfoTable">
+                                            <div class="progress" style="height: 2em;">
                                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Processing stack creation</div>
                                             </div>
-
-                                            <tr>
-                                                <th>InstanceId</th>
-                                                <td>i-0c8afdc77069714ce</td>
-                                                <td>InstanceId</td>
-                                            </tr>
-                                            <tr>
-                                                <th>PublicIP</th>
-                                                <td>100.24.77.180</td>
-                                                <td>Public IP address</td>
-                                            </tr>
-                                            <tr>
-                                                <th>SourceNW</th>
-                                                <td>0.0.0.0/0</td>
-                                                <td>EC2 accept connection from this network</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Username</th>
-                                                <td>vittorio_bucchieri@harvard.edu</td>
-                                                <td>Login as this user</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Ports</th>
-                                                <td>22</td>
-                                                <td>Ports open to the source Network</td>
-                                            </tr>
-
                                         </table>
                                     </div>
                                 </div>
@@ -145,6 +118,8 @@
                                 </div>
 
                             </div>
+
+                            <br> <br>
 
                             <div id="initenv" hidden>
 
@@ -314,11 +289,19 @@
 
                                 <div class="row mb-5">
                                     <div class="col-12">
-                                        <button id="createStack" class="btn btn-primary float-right">Create Stack</button>
+                                        <button id="createStack" class="btn btn-primary float-right" disabled>Create Stack</button>
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <div id="stackInfoTable">
+                                            <div class="progress" style="height: 2em;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Processing stack creation</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -332,7 +315,7 @@
 <!--UI comment #10 - standard Harvard footer-->
         <nav class="navbar navbar-dark bg-dark fixed-bottom">
 
-            <a href="SEAS-AWS_creating_stack2.html" role="button" class="btn btn-info float-right">
+            <a href="SEAS-AWS_createdEnvironment.html" role="button" class="btn btn-info float-right">
                 <i class="far fa-arrow-alt-circle-left"></i>
                 Previous step
             </a>
@@ -345,10 +328,10 @@
                 <a href="http://www.harvard.edu/reporting-copyright-infringements">Report Copyright Infringement</a>
             </span>
 
-            <button role="button" class="btn btn-info float-right" disabled>
+            <a href="SEAS-AWS_creating_stack2.html" role="button" class="btn btn-info float-right">
                 Next step
                 <i class="far fa-arrow-alt-circle-right"></i>
-            </button>
+            </a>
         </nav>
 
         <script src="js/vendor/jquery-3.1.0.js"></script>

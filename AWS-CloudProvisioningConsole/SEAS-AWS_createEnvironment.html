@@ -55,8 +55,8 @@
     <body>
 
 
-<!--UI comment #8 - Harvard branding, heading and contact link-->
-    <nav class="navbar navbar-light bg-light fixed-top">
+<!--UI comment #8 - Harvard branding, heading, sign out and contact link-->
+        <nav class="navbar navbar-light bg-light fixed-top">
             <a class="navbar-brand">
                 <img src="https://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/tib/files/2015_seaslogo_rgb_02.png?m=1472141717&itok=zwdYyihR" alt="Logo of Harvard John A. Paulson School of Engineering and Applied Sciences" style="height: 3em;" alt="Logo of Harvard John A. Paulson School of Engineering and Applied Sciences">
             </a>
@@ -85,68 +85,23 @@
                     <div class="card-body">
 
                         <div id="showStacksMainDiv" class="showStacksMainDiv">
-                            <h3>User Created Resources</h3>
+                            <h3> User Created Resources</h3>
 
 <!--UI comment #9 - alert message when no available resources-->
-                            <div class="alert alert-success mt-4 mb-n5" role="alert" hidden>
-                                Your stack is created. Please allow a few minutes for it to be ready.
+                            <div class="alert alert-info mt-4 mb-n5" role="alert" hidden>
+                                You have not created any stack of cloud resources yet
                             </div>
 
-                            <div id="stacksdiv" class="form-group row mt-4">
-                                <div class="row ml-1 mr-1">
-                                    <label for="stackList" class="col-sm-3 col-form-label">Stacks List</label>
-                                    <div class="col-sm-9">
-                                        <select id="stackList" class="custom-select">
-                                            <option value="myFirstEC2-2019-03-07-at-20-59-1551992348">
-                                                myFirstEC2-2019-03-07-at-20-59-1551992348
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="col mt-4">
-                                        <table id="stackInfoTable" class="table table-sm table-bordered">
-                                            <div class="progress" style="height: 2em;" hidden>
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Processing stack creation</div>
-                                            </div>
 
-                                            <tr>
-                                                <th>InstanceId</th>
-                                                <td>i-0c8afdc77069714ce</td>
-                                                <td>InstanceId</td>
-                                            </tr>
-                                            <tr>
-                                                <th>PublicIP</th>
-                                                <td>100.24.77.180</td>
-                                                <td>Public IP address</td>
-                                            </tr>
-                                            <tr>
-                                                <th>SourceNW</th>
-                                                <td>0.0.0.0/0</td>
-                                                <td>EC2 accept connection from this network</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Username</th>
-                                                <td>vittorio_bucchieri@harvard.edu</td>
-                                                <td>Login as this user</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Ports</th>
-                                                <td>22</td>
-                                                <td>Ports open to the source Network</td>
-                                            </tr>
-
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="row ml-1 mr-1">
-                                    <div class="col mt-3">
-                                        <button id="stackTerminate" class="btn btn-outline-danger">Delete Stack</button>
-                                    </div>
-                                </div>
-
+                            <div id="stacksdiv" class="stackslist" style="display: none;">
+                                <label for="stackList"> Stacks List </label><br>
+                                <select id="stackList"> </select> <br> <br>
+                                <table id="stackInfoTable"></table>
+                                <br>
+                                <button id="stackTerminate">Delete Stack</button>
                             </div>
 
-                            <div id="initenv" hidden>
+                            <div id="initenv">
 
                                 <div id="helpWithInit" class="alert alert-info" role="alert" >
                                     <h3>New user</h3>
@@ -167,11 +122,15 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col mt-3">
-                                        <button id="deleteVPCStack" class="btn btn-outline-danger">Delete My Environment</button>
+                                    <div class="col mt-3" hidden>
+                                        <button id="deleteVPCStack" class="btn btn-outline-danger">
+                                            Delete My Environment
+                                        </button>
                                     </div>
                                     <div class="col mt-3">
-                                        <button id="createVPCStack" disabled="disabled" class="btn btn-outline-primary float-right">Initiate My Environment</button>
+                                        <button id="createVPCStack" class="btn btn-outline-primary float-right">
+                                            Initiate My Environment
+                                        </button>
                                     </div>
                                 </div>
 
@@ -218,7 +177,7 @@
                                 <div class="form-group row mt-4">
                                     <label for="stackname" class="col-sm-5 col-form-label">Stack Name*</label>
                                     <div class="col-sm-7">
-                                        <input type="text" id="stackname" value="MyFirstEC2"  class="form-control"
+                                        <input type="text" id="stackname" value=""  class="form-control"
                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                                     </div>
                                 </div>
@@ -255,7 +214,7 @@
                                 <div class="form-group row mt-4">
                                     <label for="username" class="col-sm-5 col-form-label">Login User Name*</label>
                                     <div class="col-sm-7">
-                                        <input type="text" id="username" value="faras"  class="form-control"
+                                        <input type="text" id="username" value=""  class="form-control"
                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                                     </div>
                                 </div>
@@ -269,7 +228,7 @@
                                 <div class="form-group row mt-4">
                                     <label for="sshkey" class="col-sm-5 col-form-label">SSH Public Key*</label>
                                     <div class="col-sm-7">
-                                        <input type="text" id="sshkey" value="ssh-rsa AAAAB3nza C1y"  class="form-control"
+                                        <input type="text" id="sshkey" value=""  class="form-control"
                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                                     </div>
                                 </div>
@@ -284,7 +243,7 @@
                                 <div class="form-group row mt-4">
                                     <label for="ports" class="col-sm-5 col-form-label">Server Open Ports*</label>
                                     <div class="col-sm-7">
-                                        <input type="text" id="ports" value="22"  class="form-control"
+                                        <input type="text" id="ports" value=""  class="form-control"
                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                                     </div>
                                 </div>
@@ -299,7 +258,7 @@
                                 <div class="form-group row mt-4">
                                     <label for="srcnw" class="col-sm-5 col-form-label">Source Network*</label>
                                     <div class="col-sm-7">
-                                        <input type="text" id="srcnw" value="0.0.0.0/0"  class="form-control"
+                                        <input type="text" id="srcnw" value=""  class="form-control"
                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                                     </div>
                                 </div>
@@ -313,12 +272,12 @@
 
 
                                 <div class="row mb-5">
-                                    <div class="col-12">
-                                        <button id="createStack" class="btn btn-primary float-right">Create Stack</button>
+                                    <div class="col">
+                                        <button id="createStack" class="btn btn-primary float-right" disabled>Create Stack</button>
                                     </div>
                                 </div>
 
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -326,13 +285,13 @@
             </div>
 
         </div>
-        
+
     </div>
 
 <!--UI comment #10 - standard Harvard footer-->
-        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+        <<nav class="navbar navbar-dark bg-dark fixed-bottom">
 
-            <a href="SEAS-AWS_creating_stack2.html" role="button" class="btn btn-info float-right">
+            <a href="SEAS-AWS_register.html" role="button" class="btn btn-info float-right">
                 <i class="far fa-arrow-alt-circle-left"></i>
                 Previous step
             </a>
@@ -345,10 +304,10 @@
                 <a href="http://www.harvard.edu/reporting-copyright-infringements">Report Copyright Infringement</a>
             </span>
 
-            <button role="button" class="btn btn-info float-right" disabled>
+            <a href="SEAS-AWS_creatingEnvironment_progress.html" role="button" class="btn btn-info float-right">
                 Next step
                 <i class="far fa-arrow-alt-circle-right"></i>
-            </button>
+            </a>
         </nav>
 
         <script src="js/vendor/jquery-3.1.0.js"></script>

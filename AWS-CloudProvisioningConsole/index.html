@@ -164,7 +164,21 @@
             </div>
         </div>
 
+        <div class="col-6 ml-auto alert alert-info mr-4 fixed-bottom alert-dismissible fade show" role="alert" style="margin-bottom: 5em;">
+            <p>Refer to "Previous" and "Next step" buttons to navigate through the interaction flow.</p>
+            <p>These buttons are not part of the Cloud Resources Console interface.</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
         <nav class="navbar navbar-dark bg-dark fixed-bottom">
+
+            <button type="button" class="btn btn-info" disabled>
+                <i class="far fa-arrow-alt-circle-left"></i>
+                Previous step
+            </button>
+
             <span class="navbar-text mx-auto">
                 Copyright © 2019 The President and Fellows of Harvard College
                 |
@@ -172,6 +186,11 @@
                 |
                 <a href="http://www.harvard.edu/reporting-copyright-infringements">Report Copyright Infringement</a>
             </span>
+
+            <a href="SEAS-AWS_signIn.html" role="button" class="btn btn-info float-right">
+                Next step
+                <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
         </nav>
 
         <script src="js/vendor/jquery-3.1.0.js"></script>
