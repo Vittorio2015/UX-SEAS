@@ -28,51 +28,12 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: March 25, 2019
+                Last update: March 26, 2019
                 <br>
                 <a href="#legend">
                     Legend
                 </a>
             </p>
-
-            <!--*** HIde this div before each commit ***-->
-            <div class=" col-3 alert alert-success" role="alert" hidden>
-
-                <!-- Display the countdown timer in an element -->
-                <h3 id="demo"></h3>
-
-                <script>
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("Apr 1, 2019 09:00:00").getTime();
-
-                    // Update the count down every 1 second
-                    var x = setInterval(function () {
-
-                        // Get todays date and time
-                        var now = new Date().getTime();
-
-                        // Find the distance between now and the count down date
-                        var distance = countDownDate - now;
-
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                        // Display the result in the element with id="demo"
-                        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                            + minutes + "m " + seconds + "s ";
-
-                        // If the count down is finished, write some text
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("demo").innerHTML = "EXPIRED";
-                        }
-                    }, 1000);
-                </script>
-
-            </div><!-- / Daily alert - not yet featured-->
 
             <div class="col-sm-6 mx-auto" hidden><!-- Recent edits -->
                 <div class="alert alert-warning" role="alert">
@@ -105,12 +66,6 @@
                     </ul>
                 </div>
             </div><!-- / Recent edits - not yet featured-->
-
-            <div class=" col-6 alert alert-success mx-auto text-center" role="alert">
-                <h2>
-                    Welcome back, Chris!
-                </h2>
-            </div>
 
             <div class="row">
 
