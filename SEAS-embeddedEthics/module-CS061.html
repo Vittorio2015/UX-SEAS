@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | CS 061 | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module.html" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 2em;">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="module.html" class="moreInfo">Course Modules</a>
+            / CS 61: Systems Programming and Machine Organization
+          </div>
+        </div>
+    </div>
+
+    <section id="module">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -5em;">
+            <h2 class="section-heading" style="font-size: 2em;">Repository of Open Source Course Modules</h2>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 4em;">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active moreInfo" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">
+                  Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="goal-tab" data-toggle="tab" href="#goal" role="tab" aria-controls="goal" aria-selected="false">
+                  Goals
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="material-tab" data-toggle="tab" href="#material" role="tab" aria-controls="material" aria-selected="false">
+                  Materials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="implementation-tab" data-toggle="tab" href="#implementation" role="tab" aria-controls="implementation" aria-selected="false">
+                  Implementation
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course:
+                      </strong>
+                      CS 61: Systems Programming and Machine Organization
+                    </p>
+                    <p>
+                      <strong>
+                        Course Level:
+                      </strong>
+                      Upper-level undergraduate
+                    </p>
+                    <p>
+                      <strong>
+                        Course Description:
+                      </strong>
+                      “CS 61 is a first course in computer systems programming, meaning the creation of high-performance
+                      programs that use computer hardware effectively. Although many programs today are written in
+                      high-level programming languages—and many programs simply glue together existing components—the
+                      best programmers are craftspeople who understand their tools. For software builders, this requires
+                      a working knowledge of computer internal organization. It means understanding how machines
+                      interpret instructions, how compilers turn programming languages into instructions, and how
+                      operating systems combine programs and libraries to create running code. And it requires
+                      understanding the factors that affect code performance.
+                    </p>
+                    <p>
+                      CS 61 introduces you the tools you need to build robust, efficient software and the mental tools
+                      you need to understand software systems written by others. We hope you'll discover that systems
+                      software development is fun and worth the effort. We intend the course to be broadly accessible,
+                      though it will be easier for those who have some experience with systems programming in C++ or
+                      other C-like languages.
+                      (<a href="https://cs61.seas.harvard.edu/site/2018/CourseDescription/" target="_blank" class="moreInfo">Course description
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)"
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Topic:
+                      </strong>
+                      ASCII, Unicode, and the Ethics of Natural Language Representation
+                    </p>
+                    <p>
+                      <strong>
+                        Module Author:
+                      </strong>
+                      Cat Wade
+                    </p>
+                    <p>
+                      <strong>
+                        Semesters Taught:
+                      </strong>
+                      Fall 2018
+                    </p>
+                    <p>
+                      <strong>
+                        Tags:
+                      </strong>
+                    </p>
+                    <dl>
+                      <dd>
+                        systems <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        ASCII <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        Unicode  <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        natural language encoding  <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        harm <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        representational harm <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        allocative harm <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        stereotypes <span class="badge badge-warning">phil</span>
+                      </dd>
+                    </dl>
+                    <p>
+                      <strong>
+                        Module Overview:
+                      </strong>
+                      In this module, we consider the ethics of natural language representation in modern software
+                      systems. Software systems play an increasingly central role in how we communicate with one
+                      another, and the computer scientists who design these systems are sometimes faced with difficult
+                      choices about what representational resources they should make available to their users. To what
+                      extent, for instance, should social media platforms support the vast array of languages used
+                      throughout the world? To what extent should the developers of smartphone operating systems provide
+                      their users with emoji reflecting the diverse identities and communicative needs of members of
+                      minority groups?
+                    </p>
+                    <p>
+                      This module is co-taught by the professor for the course and the Embedded EthiCS TA. After an
+                      introduction to the ethical issues considered in the module from the TA, the professor gives a
+                      brief presentation on the technical dimensions of the module’s core case study: the shift from
+                      ASCII to Unicode, and the associated choices developers made about which languages to support. The
+                      TA then leads a discussion of the effects these choices had on members of different linguistic
+                      communities, and why those effects matter from an ethical perspective. Finally, students consider
+                      various strategies the developers of Unicode might adopt in order to better address the needs of
+                      minority communities, consistent with other needs the system is designed to satisfy and relevant
+                      technical constraints.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Connection to Course Technical Material:
+                      </strong>
+                      This module occurs during the course’s first unit on data representation and storage. The
+                      professor’s presentation during the module expands on the technical material already covered in
+                      this unit, considering how it applies to the module’s central case study: the shift from ASCII to
+                      Unicode. This sets the TA up to lead a discussion of how the technical issues discussed by the
+                      professor interact with broader social and ethical concerns.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      We have found that it is important to build modules around real-world case studies that both
+                      connect strongly to technical material discussed in the course and raise ethical issues that
+                      students can readily appreciate. The shift from ASCII to Unicode has both features. Further,
+                      Unicode is the standard for encoding emojis, which provide a particularly intuitive and relatable
+                      way to illustrate the module’s core philosophical concepts (see the sample class activity below).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      &copy; 2018 by Cat Wade,
+                      "ASCII, Unicode, and the Ethics of Natural Language Representation"
+                      is made available under a
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative
+                        Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      For the purpose of attribution, cite as:
+                      Cat Wade and Eddie Kohler,
+                      "ASCII, Unicode, and the Ethics of Natural Language Representation"
+                      for CS 61: Systems Programming and Machine Organization,
+                      Fall 2018,
+                      <a href="https://embeddedethics.seas.harvard.edu/" target="_blank" class="moreInfo">Embedded EthiCS @ Harvard</a>.
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">CC BY 4.0</a>.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Goals:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Familiarize students with the technical aspects of ASCII and Unicode, as well as the social
+                        and technical considerations that drove the shift from ASCII to Unicode.
+                      </li>
+                      <li>
+                        Introduce students to two philosophical concepts that are useful for evaluating formal systems
+                        for representing natural language, allocative harm and representational harm.
+                      </li>
+                      <li>
+                        Give students practice applying these concepts to evaluate choices made by software developers
+                        about what representational resources to provide to their users.
+                      </li>
+                      <li>
+                        Give students practice identifying and evaluating possible strategies for alleviating
+                        representational harms in the design of formal systems for representing natural languages.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Questions:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        How should software developers decide what representational resources to make available to their
+                        users for use in communication?
+                      </li>
+                      <li>
+                        In what ways can the choices developers make about what representational resources to make
+                        available negatively affect the members of different communities, including minority
+                        communities?
+                      </li>
+                      <li>
+                        What is the difference between 'representational' and 'allocative' harm?
+                      </li>
+                      <li>
+                        What are stereotypes, and in what ways can relying on stereotypes harm others?
+                      </li>
+                      <li>
+                        Were the choices made by the developers of ASCII and Unicode the right choices, given the
+                        constrains they were operating under, or were there other choices that would have been better
+                        from an ethical perspective?
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4 mx-auto text-center">
+                    <div class="alert alert-info" role="alert">
+                      Under Construction
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Concepts:
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Harm and intent.
+                      </li>
+                      <li>
+                        Representational harms and allocative harms.
+                      </li>
+                      <li>
+                        Stereotypes.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4 mx-auto text-center">
+                    <div class="alert alert-info" role="alert">
+                      Under Construction
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Class Agenda:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        An introduction to the ethics of character encoding: should emoji be more inclusive?
+                      </li>
+                      <li>
+                        Technical material – ASCII, Unicode, UTF-8.
+                      </li>
+                      <li>
+                        Representational harm vs. allocative harm.
+                      </li>
+                      <li>
+                        Active learning exercise: how could developers make the current set of emoji more inclusive?
+                      </li>
+                      <li>
+                        Representational and allocative harms in the development of ASCII and Unicode.
+                      </li>
+                      <li>
+                        Remaining ethical issues with Unicode, and how best to address them.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Sample Class Activity:
+                      </strong>
+                      After being introduced to the concept of representational harm, students are presented with a
+                      slide containing the current set of ‘yellow’ emoji representing families of different kinds. In
+                      small groups, students discuss what kinds of families are left out from the current set, and
+                      whether those omissions constitute representational harms.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Intro | Training | Work Plan | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <style>
+    /* Responsive data table from https://css-tricks.com/responsive-data-tables/ */
+    /* This query will take effect for any screen smaller than 760px and also iPads specifically. */
+	@media
+	  only screen
+    and (max-width: 760px), (min-device-width: 768px)
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+      background: #eee;
+    }
+
+		td-responsive {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+		}
+
+		td-responsive:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+
+		/* Label the data */
+		td:nth-of-type(1):before { content: "Priority"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(2):before { content: "Issue"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(3):before { content: "Status"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(4):before { content: "Target date"; font-weight: bold; margin-right: 1em; }
+
+		.table2 td:nth-of-type(1):before { content: "Issue"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(2):before { content: "Description"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(3):before { content: "Status"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(4):before { content: "Author"; font-weight: bold; margin-right: 1em; }
+
+		.table3 td:nth-of-type(1):before { content: "Release date"; font-weight: bold; margin-right: 1em; }
+		.table3 td:nth-of-type(2):before { content: "Revised features"; font-weight: bold; margin-right: 1em; }
+		.table3 td:nth-of-type(3):before { content: "New features"; font-weight: bold; margin-right: 1em; }
+	}
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <span class="navbar-text">
+              <h1 style="color: #fff; font-size: 1.2em; margin-top: .3em"><span style="color: #fed136;">Embedded EthiCS</span> <small>@</small> Harvard</h1>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fed136;">Work Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              |
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rawgit.com/Harvard-University-iCommons/UX-Prototypes/master/review/SEAS-embeddedEthics/index.html" target="_blank">
+              Test site
+              <sup><i class="fas fa-external-link-alt fa-sm"></i></sup>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              |
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://embeddedethics.seas.harvard.edu" target="_blank">
+              Embedded EthiCS public site
+              <sup><i class="fas fa-external-link-alt fa-sm"></i></sup>
+              </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!--Definition-->
+    <div class="container" style="margin-top: 7em;">
+      <section role="contentinfo" aria-label="Breadcrumbs">
+          <div class="row">
+            <div class="col">
+              <p>
+                <a href="workplan.html">
+                  Process
+                </a>
+                /
+                <a href="workplan-process_train.html">
+                  Training
+                </a>
+                /
+                HTML introduction
+
+              </p>
+            </div>
+          </div><!--Breadcrumbs-->
+      </section>
+      <div class="col-8 mx-auto">
+
+        <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+
+        <section role="contentinfo" aria-label="HTML introduction">
+          <h2>
+            HTML introduction
+          </h2>
+          <h3>
+            Examples
+          </h3>
+          <ul>
+            <li>
+              Example of an HTML page
+              <div class="alert alert-secondary col-8" role="alert">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                        style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">-</span>&lt;</span>head<span
+                      style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- - </span>&lt;</span>title<span
+                      style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/title<span
+                      style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">- </span>&lt;</span>/head<span
+                        style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- </span>&lt;</span>body<span
+                      style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <br><br>
+                        <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">-</span>&lt;</span>/body<span
+                                style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/html<span
+                      style="color:mediumblue">&gt;</span></span>
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              Example of an HTML document
+              <div class="alert alert-secondary col-8" role="alert">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                        style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- </span>&lt;</span>head<span
+                      style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- - </span>&lt;</span>title<span
+                      style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/title<span
+                      style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">- </span>&lt;</span>/head<span
+                        style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- </span>&lt;</span>body<span
+                      style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- - </span>&lt;</span>h1<span
+                      style="color:mediumblue">&gt;</span></span>This is a Heading<span
+                      style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/h1<span
+                      style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">
+                        <span class="text-muted">- - </span>
+                        &lt;</span>p<span style="color:mediumblue">&gt;</span></span>This
+                is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span
+                      style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">- </span>&lt;</span>/body<span
+                        style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/html<span
+                      style="color:mediumblue">&gt;</span></span>
+              </div>
+              <ul>
+                <li>
+                  Benefits of indentation
+                  <div class="alert alert-secondary col-8" role="alert">
+                    The purpose of code indentation and style is to make the program more readable and
+                    understandable.
+                    <ul>
+                      <li> Easier to read</li>
+                      <li> Easier to understand</li>
+                      <li> Easier to modify</li>
+                      <li> Easier to maintain</li>
+                      <li> Easier to enhance</li>
+                    </ul>
+                  </div>
+                  <ul>
+                    <li>HTML tags normally come <b>in pairs</b> like <code
+                            class="w3-codespan">&lt;p&gt;</code> and <code
+                            class="w3-codespan">&lt;/p&gt;</code></li>
+                    <li>The first tag in a pair is the <b> start tag,</b> the second tag is the <b> end
+                      tag</b></li>
+                    <li>The end tag is written like the start tag, but with a <strong>forward slash</strong>
+                      inserted before the tag name
+                    </li>
+                    <li>
+                      HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.
+                    </li>
+                    <li>
+                      The HTML5 standard does not require lowercase tags, but W3C recommends lowercase in
+                      HTML, and demands lowercase for stricter document types like XHTML.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  HTML tags are element names surrounded by angle brackets
+                  <div class="alert alert-secondary col-8" role="alert">
+                    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">
+                      &lt;html&gt;
+                      <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+                        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page
+                          title&lt;/title&gt;
+                        </div>
+                        &lt;/head&gt;
+                      </div>
+                      <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">
+                        &lt;body&gt;
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                          <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This
+                            is a heading&lt;/h1&gt;
+                          </div>
+                          <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This
+                            is a paragraph.&lt;/p&gt;
+                          </div>
+                          <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This
+                            is another paragraph.&lt;/p&gt;
+                          </div>
+                        </div>
+                        &lt;/body&gt;
+                      </div>
+                      &lt;/html&gt;
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  Page structure
+                  <ul>
+                    <li>
+                      HTML elements can be nested (elements can contain elements).
+                    </li>
+                    <li>
+                      All HTML documents consist of nested HTML elements.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section><!--HTML introduction-->
+
+        <div id="codingOrder" style="margin-bottom: 6em;"></div>
+
+        <section role="contentinfo" aria-label="Coding order">
+          <h3>
+            Coding order
+          </h3>
+          <p>
+            Coding order ensures that every tag is always closed.
+          </p>
+          <div class="alert alert-secondary col-8" role="alert">
+            <ol>
+              <li>&lt;&gt;</li>
+              <li>&lt;<span style="color:brown">tagname</span>&gt;</li>
+              <li>
+                &lt;<span style="color:brown">tagname</span>&gt;
+                &lt;<span style="color:brown">/tagname</span>&gt;
+              </li>
+              <li>
+                &lt;<span style="color:brown">tagname</span>&gt;
+                content...
+                &lt;<span style="color:brown">/tagname</span>&gt;
+              </li>
+            </ol>
+          </div>
+          <p>
+            Coding order also helps to maintain the coding structure.
+          </p>
+          <div class="alert alert-secondary col-8" role="alert">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                    style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span
+                  style="color:mediumblue">&lt;</span>/html<span
+                  style="color:mediumblue">&gt;</span></span>
+          </div>
+          <div class="alert alert-secondary col-8" role="alert">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                    style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span class="text-muted">-</span>&lt;</span>head<span
+                  style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">- </span>&lt;</span>/head<span
+                    style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span class="text-muted">- </span>&lt;</span>body<span
+                  style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">-</span>&lt;</span>/body<span
+                                style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">&lt;</span>/html<span
+                  style="color:mediumblue">&gt;</span></span>
+              </span>
+            </span>
+          </div>
+          <div class="alert alert-secondary col-8" role="alert">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                    style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span class="text-muted">-</span>&lt;</span>head<span
+                  style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span class="text-muted">- - </span>&lt;</span>title<span
+                  style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span
+                  style="color:mediumblue">&lt;</span>/title<span
+                  style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">- </span>&lt;</span>/head<span
+                    style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <span class="text-muted">- </span>&lt;</span>body<span
+                  style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span
+                  style="color:mediumblue">
+                        <br><br>
+                        <span style="color:brown"><span style="color:mediumblue">
+                          <span class="text-muted">-</span>&lt;</span>/body<span
+                                style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span
+                  style="color:mediumblue">&lt;</span>/html<span
+                  style="color:mediumblue">&gt;</span></span>
+              </span>
+            </span>
+          </div>
+        </section><!--Coding order-->
+
+        <div id="siteMap" style="margin-bottom: 6em;"></div>
+
+        <section role="contentinfo" aria-label="Site map">
+                  <h3>
+                    Site map
+                  </h3>
+                  <p>
+                    A site map (or sitemap) is a list of pages of a web site.
+                    <br>
+                    Benefits to users and site administrators.
+                  </p>
+                  <div class="alert alert-secondary col-8" role="alert">
+                    Embedded Ethics site map
+                    <ol>
+                      <li>
+                        Landing page (Home) with temporary news flag
+                        <ol>
+                          <li>
+                            About
+                          </li>
+                          <li>
+                            Team
+                          </li>
+                          <li>
+                            Course modules
+                            <ol>
+                              <li>
+                                Facebook, Fake News, and the Ethics of Censorship
+                              </li>
+                              <li>
+                                ASCII, Unicode, and the Ethics of Natural Language Representation
+                              </li>
+                              <li>
+                                Ethics in Software Verification and Validation
+                              </li>
+                              <li>
+                                Privacy in the Design of Data Systems
+                              </li>
+                              <li>
+                                Discrimination and Machine Learning
+                              </li>
+                              <li>
+                                The Ethics of Hacking Back
+                              </li>
+                            </ol>
+                          </li>
+                          <li>
+                            News
+                          </li>
+                          <li>
+                            Publications
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                </section><!--Site map-->
+
+        <div id="htmlEditors" style="margin-bottom: 6em;"></div>
+
+        <section role="contentinfo" aria-label="HTML editors">
+          <h3>
+            HTML editors
+          </h3>
+          <ul>
+            <li>
+              WYSIWYG HTML editor
+            </li>
+            <li>
+              Textual HTML editor
+              <ol>
+                <li>
+                  Benefits of using a textual HTML editor
+                </li>
+                <li>
+                  <a href="http://www.sublimetext.com/" target="_blank">
+                    Sublime Text
+                  </a>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </section><!--HTML editors-->
+
+        <div id="BasicHtmlAuthoring" style="margin-bottom: 6em;"></div>
+
+        <section role="contentinfo" aria-label="Basic HTML authoring">
+          <h3>
+            Basic HTML authoring
+          </h3>
+          <ul>
+            <li>
+              HTML Headings
+              <div class="alert alert-secondary col-8" role="alert">
+                <p>HTML headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code
+                        class="w3-codespan">&lt;h6&gt;</code> tags.</p>
+                <p><code class="w3-codespan">&lt;h1&gt;</code> defines the most important heading. <code
+                        class="w3-codespan">&lt;h6&gt;</code> defines the least important
+                  heading:&nbsp;</p>
+              </div>
+            </li>
+            <li>
+              HTML Paragraphs
+              <div class="alert alert-secondary col-8" role="alert">
+                <p>HTML paragraphs are defined with the <code class="w3-codespan">&lt;p&gt;</code> tag:</p>
+              </div>
+            </li>
+            <li>
+              HTML Links
+              <div class="alert alert-secondary col-8" role="alert">
+                <p>HTML links are defined with the <code class="w3-codespan">&lt;a&gt;</code> tag:</p>
+              </div>
+            </li>
+            <li>
+              HTML Images
+              <div class="alert alert-secondary col-8" role="alert">
+                <p>HTML images are defined with the <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
+                <p>The source file (<code class="w3-codespan">src</code>), alternative text (<code
+                        class="w3-codespan">alt</code>),
+                  <code class="w3-codespan">width</code>, and <code class="w3-codespan">height</code> are
+                  provided as attributes:</p>
+              </div>
+            </li>
+            <li>
+              HTML Buttons
+              <div class="alert alert-secondary col-8" role="alert">
+                HTML buttons are defined with the <code class="w3-codespan">&lt;button&gt;</code> tag:
+              </div>
+            </li>
+            <li>
+              HTML Lists
+              <div class="alert alert-secondary col-8" role="alert">
+                HTML lists are defined with the <code class="w3-codespan">&lt;ul&gt;</code>
+                (unordered/bullet list) or the <code class="w3-codespan">&lt;ol&gt;</code> (ordered/numbered
+                list) tag, followed by <code class="w3-codespan">&lt;li&gt;</code>
+                tags (list items)
+              </div>
+            </li>
+
+          </ul>
+        </section><!--Basic HTML authoring-->
+
+        <div id="htmlIntroductionExercise" style="margin-bottom: 6em;"></div>
+
+        <section role="contentinfo" aria-label="HTML introduction exercise" class="mb-5">
+          <h3>
+            HTML introduction exercise
+          </h3>
+          <ol>
+            <li>
+              Implement a basic HTML page
+            </li>
+          </ol>
+        </section><!--HTML introduction exercise-->
+
+        <sup class="text-muted">(Source: <a href="https://www.w3schools.com" target="_blank">w3schools</a>)</sup>
+
+    </div>
+
+    <!--Popover script -->
+    <script>
+    // add link to popover text:
+    $("[data-toggle=popover]")
+    .popover({html:true})
+
+    // add link to popover text:
+    $(".popover-link").popover();
+
+    </script>
+
+
+
+
+  </body>
+
+</html>

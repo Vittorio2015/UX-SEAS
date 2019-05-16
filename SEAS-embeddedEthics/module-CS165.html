@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | CS 165: Data Systems | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+      .dont-break-out {
+
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      word-break: break-all;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+
+      /* Adds a hyphen where the word breaks, if supported (No Blink) */
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
+    }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module.html" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 2em;">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="module.html" class="moreInfo">Course Modules</a>
+            / CS 165: Data Systems
+          </div>
+        </div>
+    </div>
+
+    <section id="module">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -5em;">
+            <h2 class="section-heading" style="font-size: 2em;">Repository of Open Source Course Modules</h2>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 4em;">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active moreInfo" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">
+                  Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="goal-tab" data-toggle="tab" href="#goal" role="tab" aria-controls="goal" aria-selected="false">
+                  Goals
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="material-tab" data-toggle="tab" href="#material" role="tab" aria-controls="material" aria-selected="false">
+                  Materials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="implementation-tab" data-toggle="tab" href="#implementation" role="tab" aria-controls="implementation" aria-selected="false">
+                  Implementation
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course:
+                      </strong>
+                      CS 165: Data Systems
+                    </p>
+                    <p>
+                      <strong>
+                        Course Level:
+                      </strong>
+                      Upper-level undergraduate
+                    </p>
+                    <p>
+                      <strong>
+                        Course Description:
+                      </strong>
+                      "This course is a comprehensive introduction to modern data systems. The primary focus is on
+                      trends that are shaping the data management industry right now: column-store and hybrid storage
+                      systems, NoSQL key-value stores, shared nothing architectures, cache conscious algorithms,
+                      hardware/software co-design, main-memory systems, adaptive indexing, stream processing, and
+                      scientific data management. We also study the history of data systems, traditional and seminal
+                      concepts and ideas such as the relational model, row-store database systems, optimization,
+                      indexing, concurrency control, recovery and SQL. In this way, we discuss both how and why data
+                      systems evolved over the years, as well as how these concepts apply today and how data systems
+                      might evolve in the future. We focus on understanding concepts and trends rather than specific
+                      techniques that will soon be outdated - as such the class relies on recent research material and
+                      on a semi-flipped class model with a lot of hands-on interaction in each class."
+                      (<a href="http://daslab.seas.harvard.edu/classes/cs165/" target="_blank" class="moreInfo">Course description
+                    <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Topic:
+                      </strong>
+                      Privacy in the Design of Data Systems
+                    </p>
+                    <p>
+                      <strong>
+                        Module Author:
+                      </strong>
+                      Kate Vredenburgh
+                    </p>
+                    <p>
+                      <strong>
+                        Semesters Taught:
+                      </strong>
+                      Fall 2017, Fall 2018
+                    </p>
+                    <p>
+                      <strong>
+                        Tags:
+                      </strong>
+                    </p>
+                    <dl>
+                      <dd>
+                        privacy <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        data systems <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        systems <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        moral rights <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        instrumental and final value <span class="badge badge-warning">phil</span>
+                      </dd>
+                    </dl>
+                    <p>
+                      <strong>
+                        Module Overview:
+                      </strong>
+                      Privacy is a central moral concern in the design and regulation of technology, but there is
+                      widespread disagreement about why privacy is morally valuable, and whether individuals have a
+                      moral right to privacy. Both companies (such as Apple and Google) and countries (such as the
+                      United States and Germany) take different stances on this issue. These differing stances are
+                      reflected in the different approaches these companies and countries take to the design and
+                      regulation of technology.
+                    </p>
+                    <p>
+                      In this module, we discuss different philosophical accounts of why privacy is valuable, with a
+                      focus on whether these accounts consider privacy to be instrumentally or finally valuable. We then
+                      discuss whether privacy is a moral right, and what implications the existence of a moral right to
+                      privacy would have for how data systems ought to be designed. Finally, we assess Apple and
+                      Google’s privacy policies in order to trace out the implications of adopting competing
+                      understandings of why privacy matters for data system design.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Connection to Course Technical Material:
+                      </strong>
+                      In the module, we consider the relationship between ethical concerns about privacy and two central
+                      course topics: the increasing ability to gather and store machine-generated data, and the growing
+                      understanding that the methods used to store and access those data play a key role in determining
+                      how valuable they are to the individuals and organizations that use them.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      We decided to focus on privacy in this course because it is one of the central ethical issues that
+                      students will need to address if they go on to work on data storage design.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      &copy; 2018 by Kate Vredenburgh,
+                      "Privacy in the Design of Data Systems"
+                      is made available under a
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative
+                        Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      For the purpose of attribution, cite as:
+                      Kate Vredenburgh,
+                      "Privacy in the Design of Data Systems"
+                      for CS 165: Data Systems,
+                      Fall 2017, Fall 2018,
+                      <a href="https://embeddedethics.seas.harvard.edu/" target="_blank" class="moreInfo">Embedded EthiCS @ Harvard</a>.
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">CC BY 4.0</a>.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Goals:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Introduce students to the distinction between moral values and rights, and between instrumental
+                        and final value.
+                      </li>
+                      <li>
+                        Introduce students to different accounts of why privacy is valuable.
+                      </li>
+                      <li>
+                        Give students practice applying these philosophical concepts and accounts by asking them to use
+                        them to analyze an illustrative case study of Apple and Google’s privacy policy.
+                      </li>
+                      <li>
+                        Help students to understand and evaluate the implications of different accounts of the value of
+                        privacy for data system design through further exploration of this case study.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Questions:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        What is privacy?  
+                      </li>
+                      <li>
+                        Why is privacy morally valuable?  
+                      </li>
+                      <li>
+                        Is there a right to privacy?
+                      </li>
+                      <li>
+                        How should data systems be designed to promote privacy?
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Questions 2 and 3 are the key philosophical questions of the module. Clarity on these questions
+                      can help students to understand why companies such as Apple and Google treat privacy as they do,
+                      and give them tools to evaluate whether companies have made ethical design choices about privacy.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Concepts:
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Informational privacy.
+                      </li>
+                      <li>
+                        Moral values.
+                      </li>
+                      <li>
+                        Moral rights.
+                      </li>
+                      <li>
+                        Instrumental value.
+                      </li>
+                      <li>
+                        Final value.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      These fundamental moral concepts are central for thinking through privacy issues raised by data
+                      storage and transfer. While these are basic concepts in ethics, students with less background in
+                      moral theory may not be familiar with them. We have found that teaching these concepts is crucial
+                      for helping students to understand the central ethical issues in this module.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Assigned Material:
+                      </strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        Jeroen van den Hoven et al, "Privacy and Information Technology" (2014).
+                        The Stanford Encyclopedia of Philosophy.
+                        <a href="https://plato.stanford.edu/entries/it-privacy/" target="_blank" class="moreInfo dont-break-out">https://plato.stanford.edu/entries/it-privacy/
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>".
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This reading was excerpted from the Stanford Encyclopedia of Philosophy article “Privacy and
+                      Information Technology.” The Stanford Encyclopedia of philosophy is an excellent resource for
+                      clear and concise overviews of different philosophical topics. This reading provides the main
+                      philosophical content for the module. The reading introduces students to background on how
+                      information technology has impacted privacy. It then discusses accounts of the value of privacy,
+                      introducing the distinction between reductionist accounts of privacy, which take privacy to be
+                      important only insofar as it protects other values, and non-reductionist accounts of privacy,
+                      which take privacy to be valuable for its own sake. In the module, we discuss this distinction in
+                      terms of accounts of privacy that value it instrumentally (reductively) or finally
+                      (non-reductively).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        A Factsheet from the European Commission on the European Union’s "Right to be Forgotten" Ruling.
+                        <a href="https://www.inforights.im/media/1186/cl_eu_commission_factsheet_right_to_be-forgotten.pdf" target="_blank" class="moreInfo dont-break-out">
+                          https://www.inforights.im/media/1186/cl_eu_commission_factsheet_right_to_be-forgotten.pdf
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This EU factsheet explains one type of privacy protection: the EU’s so-called “right to be
+                      forgotten.” It also encourages students to begin thinking about whether privacy rights are
+                      absolute, i.e., should never be violated. (The factsheet explicitly discusses the claim that the
+                      right to be forgotten is not absolute.)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        <i>A Planet Money</i>
+                        episode on credit scores and Equifax.
+                        <a href="https://www.npr.org/sections/money/2017/10/06/556212654/episode-798-bad-credit-bureau" target="_blank" class="moreInfo dont-break-out">
+                          https://www.npr.org/sections/money/2017/10/06/556212654/episode-798-bad-credit-bureau
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This Planet Money episode on credit scores gives additional, more detailed background on privacy
+                      issues raised by data collection and storage. The episode discusses the history of data collection
+                      for credit scoring, and modern day data collection and storing practices for credit scoring.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Class Agenda:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Motivating examples of recent privacy concerns from the news.
+                      </li>
+                      <li>
+                        Introduction to informational privacy.
+                      </li>
+                      <li>
+                        Key concepts: instrumental value and final value.
+                      </li>
+                      <li>
+                        Discussion of three accounts of why privacy is valuable: privacy allows us to get along; privacy
+                        is a good in itself; privacy protects against unfair decision-making.
+                      </li>
+                      <li>
+                        Key concepts: moral rights versus values.
+                      </li>
+                      <li>
+                        Activity: discussion of Apple and Google’s positions on privacy.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      There are a number of accounts of why privacy is valuable in the philosophical literature, so
+                      someone using this module in a particular course context may want to use accounts of privacy that
+                      are tailored to other material from the course. In this module, we discuss Nagel’s 1998 article
+                      “Concealment and Exposure” (the “getting along” account) and Scanlon’s 1975 article “Thompson on
+                      Privacy” (the “good in itself” account).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Sample Class Activity:
+                      </strong>
+                      Shortly you’ll be presented with part of Apple and Google’s statements on privacy. In response to
+                      those statements, please think about the following questions:
+                    </p>
+                    <ol>
+                      <li>
+                        Does the company in question treat privacy as a right or as a value? Explain your answer.
+                      </li>
+                      <li>
+                        What kinds of features would you expect their data storage and transfer systems to have, in
+                        light of the way they treat privacy?
+                      </li>
+                      <li>
+                        Give at least one reason the company could appeal to
+                        <strong>in support of</strong>
+                        their decision to treat privacy in this way (feel free to use hypothetical cases/examples).
+                      </li>
+                      <li>
+                        Finally, think of at least one
+                        <strong>potential counterargument</strong>
+                        an opponent might pose to the company
+                        re: their decision to treat privacy in this manner, and if possible, come up with a
+                        <strong>response on their behalf</strong>.
+                        (Again feel free to use hypothetical cases/examples.)
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This class activity asks students to apply module material on moral rights and values and the
+                      value of privacy to the real-world case of Apple and Google’s official statements about the
+                      importance of privacy. Apple states that privacy is a human right, while Google explains that
+                      privacy is an important value, but that there are other, competing values that are promoted when
+                      individuals provide Google with their data. This activity helps students to appreciate that such
+                      privacy policies have (differing) philosophical foundations, and to think about the merits of
+                      different approaches to privacy.
+                    </p>
+                    <p class="text-muted small">
+                      In conducting the discussion, it is helpful for the Embedded EthiCS TA to emphasize one key point:
+                      viewing privacy as a right implies that it cannot be freely traded off against other values, such
+                      as national security. This point helps to explain nature of the recent dispute between the FBI and
+                      Apple over end-to-end encryption.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Assignment:
+                      </strong>
+                      In the follow-up assignment, students collaboratively analyze a detailed case study that asks them
+                      to think through the implications of the choice whether to treat privacy as a value or a right for
+                      data system design in healthcare. The case study describes a new start-up, Babyscripts, that has
+                      developed a mobile app aimed at increasing the quality of care in pregnancy by helping to identify
+                      potentially serious complications.
+                    </p>
+                    <p>
+                      Students review the case study independently and make two posts to a graded discussion forum. In
+                      the first, students explain why they think that privacy is a right or a value in the domain of
+                      healthcare. In the second, they elaborate on at least one implication of their position on privacy
+                      as a right or value for how Babyscripts should design their app’s data storage and transfer
+                      system.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Lessons Learned:
+                      </strong>
+                      Student response to this module has been overwhelmingly positive both times it was taught (fall
+                      2017 and fall 2018). A few lessons stand out.
+                    </p>
+                    <ul>
+                      <li>
+                        The topic of the module directly connects course technical material to an important contemporary
+                        social issue. In our experience, students respond favorably to module topics of this kind.
+                      </li>
+                      <li>
+                        Students find the concepts of rights and values extremely helpful in thinking about why privacy
+                        is important and how to design privacy protections.
+                      </li>
+                      <li>
+                        The module uses many small-group-based (2-5 student) short active learning exercises to
+                        stimulate student engagement. We have found that such exercises help dramatically in keeping
+                        students engaged throughout the class session.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

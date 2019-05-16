@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Content | Training | Work Plan | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <style>
+    /* Responsive data table from https://css-tricks.com/responsive-data-tables/ */
+    /* This query will take effect for any screen smaller than 760px and also iPads specifically. */
+	@media
+	  only screen
+    and (max-width: 760px), (min-device-width: 768px)
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+      background: #eee;
+    }
+
+		td-responsive {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+		}
+
+		td-responsive:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+
+		/* Label the data */
+		td:nth-of-type(1):before { content: "Priority"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(2):before { content: "Issue"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(3):before { content: "Status"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(4):before { content: "Target date"; font-weight: bold; margin-right: 1em; }
+
+		.table2 td:nth-of-type(1):before { content: "Issue"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(2):before { content: "Description"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(3):before { content: "Status"; font-weight: bold; margin-right: 1em; }
+		.table2 td:nth-of-type(4):before { content: "Author"; font-weight: bold; margin-right: 1em; }
+
+		.table3 td:nth-of-type(1):before { content: "Release date"; font-weight: bold; margin-right: 1em; }
+		.table3 td:nth-of-type(2):before { content: "Revised features"; font-weight: bold; margin-right: 1em; }
+		.table3 td:nth-of-type(3):before { content: "New features"; font-weight: bold; margin-right: 1em; }
+	}
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <span class="navbar-text">
+              <h1 style="color: #fff; font-size: 1.2em; margin-top: .3em"><span style="color: #fed136;">Embedded EthiCS</span> <small>@</small> Harvard</h1>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fed136;">Work Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              |
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rawgit.com/Harvard-University-iCommons/UX-Prototypes/master/review/SEAS-embeddedEthics/index.html" target="_blank">
+              Test site
+              <sup><i class="fas fa-external-link-alt fa-sm"></i></sup>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              |
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://embeddedethics.seas.harvard.edu" target="_blank">
+              Embedded EthiCS public site
+              <sup><i class="fas fa-external-link-alt fa-sm"></i></sup>
+              </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!--Definition-->
+    <div class="container" style="margin-top: 7em;">
+
+      <section role="contentinfo" aria-label="Breadcrumbs">
+
+          <div class="row">
+            <div class="col">
+              <p>
+                <a href="workplan.html">
+                  Process
+                </a>
+                /
+                <a href="workplan-process_train.html">
+                  Training
+                </a>
+                /
+                HTML content
+              </p>
+            </div>
+          </div>
+
+      </section><!--Breadcrumbs-->
+
+      <div class="row">
+        <div class="col">
+          <hr>
+        </div>
+      </div><!--ruler-->
+
+      <div class="row">
+        <div class="col-8 mx-auto">
+
+          <section role="contentinfo" aria-label="Content structure">
+            <h2>
+              HTML content
+            </h2>
+            <h3 id="contentStructure">
+              Content structure
+            </h3>
+            <p>
+              Identifying headings, lists, and tables not only ensures that people have access to that important
+              structural information, but assistive technologies like screen readers can help users easily locate these
+              features and navigate between and within them. By adding structure, you automatically make it easier for
+              screen-reader users to explore and understand your content.
+            </p>
+            <p>
+              Use simple bulleted lists to organize the content in order of importance and relevance to the user.
+            </p>
+            <h4>
+              Example of initial content structure
+            </h4>
+            <div class="alert alert-secondary col-8" role="alert">
+              <ol>
+                <li>Branding</li>
+                <li>Navigation</li>
+                <li>Main content areas</li>
+                <li>Footer</li>
+              </ol>
+            </div>
+            <h4>
+              Example of content with additional detail
+            </h4>
+            <div class="alert alert-secondary col-8" role="alert">
+              <ol>
+                <li>
+                  Branding
+                  <ul>
+                    <li>
+                      Logo
+                    </li>
+                    <li>Department</li>
+                    <li>Specific topic</li>
+                  </ul>
+                </li>
+                <li>
+                  Navigation
+                  <ul>
+                    <li>
+                      Website content areas
+                      <ul>
+                        <li>Content area A</li>
+                        <li>Content area B</li>
+                        <li>Content area C</li>
+                        <li>Content area D</li>
+                      </ul>
+                    </li>
+                    <li>Breadcrumbs</li>
+                  </ul>
+                </li>
+                <li>
+                  Page content areas
+                  <ul>
+                    <li>Content title
+                      <ul>
+                        <li>Content introduction</li>
+                        <li>
+                          Content sections
+                          <ul>
+                            <li>
+                              Content section A
+                              <ul>
+                                <li>Content section A1</li>
+                                <li>Content section A2</li>
+                                <li>Content section A3</li>
+                                <li>Content section A4</li>
+                              </ul>
+                            </li>
+                            <li>Content section B</li>
+                            <li>Content section C</li>
+                          </ul>
+                        </li>
+                        <li>Call to action</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Footer
+                  <ul>
+                    <li>Branding</li>
+                    <li>Copyright, legal, accessibility information links</li>
+                    <li>Contact us link</li>
+                    <li>Feedback link</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <h4>
+              Example of content with HTML structure
+            </h4>
+            <div class="alert alert-secondary col-8" role="alert">
+              <ol>
+                <li>
+                  Branding
+                  <ul>
+                    <li>
+                      Logo <code>&lt;h2&gt;</code>
+                    </li>
+                    <li>Department <code>&lt;h2&gt;</code></li>
+                    <li>Specific topic <code>&lt;h2&gt;</code></li>
+                  </ul>
+                </li>
+                <li>
+                  Navigation
+                  <ul>
+                    <li>
+                      Website content areas
+                      <ul>
+                        <li>Content area A <code>&lt;h2&gt;</code></li>
+                        <li>Content area B <code>&lt;h2&gt;</code></li>
+                        <li>Content area C <code>&lt;h2&gt;</code></li>
+                        <li>Content area D <code>&lt;h2&gt;</code></li>
+                      </ul>
+                    </li>
+                    <li>Breadcrumbs</li>
+                  </ul>
+                </li>
+                <li>
+                  Page content areas
+                  <ul>
+                    <li>Content title <code>&lt;h1&gt;</code>
+                      <ul>
+                        <li>Content introduction <code>&lt;h2&gt;</code></li>
+                        <li>
+                          Content sections
+                          <ul>
+                            <li>
+                              Content section A <code>&lt;h3&gt;</code>
+                              <ul>
+                                <li>Content section A1 <code>&lt;h4&gt;</code></li>
+                                <li>Content section A2 <code>&lt;h4&gt;</code></li>
+                                <li>Content section A3 <code>&lt;h4&gt;</code></li>
+                                <li>Content section A4 <code>&lt;h4&gt;</code></li>
+                              </ul>
+                            </li>
+                            <li>Content section B <code>&lt;h3&gt;</code></li>
+                            <li>Content section C <code>&lt;h3&gt;</code></li>
+                          </ul>
+                        </li>
+                        <li>Call to action <code>&lt;h2&gt;</code></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Footer
+                  <ul>
+                    <li>Branding</li>
+                    <li>Copyright, legal, accessibility information links</li>
+                    <li>Contact us link</li>
+                    <li>Feedback link</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </section><!--Content structure-->
+
+          <section role="contentinfo" aria-label="HTML styles">
+
+            <div id="htmlStyles" style="margin-bottom: 6em;"></div>
+            <h3>
+              HTML styles
+            </h3>
+            <p>
+              Web content is defined by 3 primary elements: HTML for the content and its structure, CSS for visual style
+              and JavaScript for behavior
+            </p>
+            <h4>
+              Cascading Style Sheets
+            </h4>
+            <p>
+              CSS stands for Cascading Style Sheets.
+            </p>
+            <p>
+              CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+            </p>
+             <p>
+               CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+             </p>
+            <p>
+              CSS can be added to HTML elements in 3 ways:
+            </p>
+            <ol>
+              <li>
+                <strong>Inline</strong> - by using the style attribute in HTML elements
+              </li>
+              <li>
+                <strong>Internal</strong> - by using a
+                <code>&lt;style&gt;</code>
+                element in the
+                <code>&lt;head&gt;</code>
+                section
+              </li>
+              <li><strong>External</strong> - by using an external CSS file</li>
+            </ol>
+
+            <h5>
+              Inline CSS
+            </h5>
+            <p>
+              An inline CSS is used to apply a unique style to a single HTML element.
+            </p>
+            <p>
+              An inline CSS uses the style attribute of an HTML element.
+            </p>
+            <p>
+              This example sets the text color of the <code class="w3-codespan">&lt;h1&gt;</code> element to blue:
+            </p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <div class="w3-code notranslate htmlHigh">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span
+                        style="color:red"> style<span style="color:mediumblue">="color:blue;"</span></span><span
+                        style="color:mediumblue">&gt;</span></span>This is a Blue Heading<span style="color:brown"><span
+                      style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+
+            <h5>
+              Internal CSS
+            </h5>
+            <p>
+              An internal CSS is used to define a style for a single HTML page.
+            </p>
+            <p>
+              An internal CSS is defined in the <code class="w3-codespan">&lt;head&gt;</code> section of an HTML page,
+              within a <code class="w3-codespan">&lt;style&gt;</code> element:
+            </p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                      style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 1em;"><span style="color:mediumblue">&lt;</span>head<span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 2em;"><span style="color:mediumblue">&lt;</span>style<span
+                      style="color:mediumblue">&gt;</span></span><span
+                    style="color:brown">
+              <br>
+              <span style=" margin-left: 3em;">body</span> <span style="color:black">{</span><span style="color:red">background-color<span
+                    style="color:mediumblue"><span
+                    style="color:black">:</span> powderblue<span style="color:black">;</span></span></span><span
+                    style="color:black">}</span>
+              <br>
+              <span style="margin-left: 3em;">h1</span>&nbsp;&nbsp; <span style="color:black">{</span><span
+                    style="color:red">color<span style="color:mediumblue"><span style="color:black">:</span> blue<span
+                    style="color:black">;</span></span></span><span style="color:black">}</span>
+              <br>
+              <span style="margin-left: 3em;">p</span>&nbsp;&nbsp;&nbsp; <span
+                    style="color:black">{</span><span style="color:red">color<span style="color:mediumblue"><span
+                    style="color:black">:</span> red<span style="color:black">;</span></span></span><span
+                    style="color:black">}</span>
+              <br>
+            </span>
+              <span style="color:brown; margin-left: 2em;"><span style="color:mediumblue">&lt;</span>/style<span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span style="color:brown; margin-left: 1em;"><span
+                      style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 1em;"><span style="color:mediumblue">&lt;</span>body<span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <br>
+              <span
+                      style="color:brown; margin-left: 2em;"><span style="color:mediumblue">&lt;</span>h1<span
+                      style="color:mediumblue">&gt;</span></span>This is a
+              heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                    style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span style="color:brown; margin-left: 2em;"><span
+                      style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a
+              paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span
+                    style="color:mediumblue">&gt;</span></span>
+              <br>
+              <br>
+              <span style="color:brown; margin-left: 1em;"><span
+                      style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            <h5>
+              External CSS
+            </h5>
+            <p>
+              An external style sheet is used to define the style for many HTML pages.
+            </p>
+            <p>
+              <strong>
+                With an external style sheet, you can change the look of an entire web site, by changing one file!
+              </strong>
+            </p>
+            <p>
+              To use an external style sheet, add a link to it in the <code class="w3-codespan">&lt;head&gt;</code>
+              section of the HTML page:
+            </p>
+
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                      style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 1em;"><span style="color:mediumblue">&lt;</span>head<span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 2em;"><span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span
+                      style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span
+                      style="color:mediumblue">="styles.css"</span></span><span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span style="color:brown; margin-left: 1em;"><span
+                      style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown; margin-left: 1em;"><span style="color:mediumblue">&lt;</span>body<span
+                      style="color:mediumblue">&gt;</span></span>
+              <br>
+              <br>
+              <span
+                      style="color:brown; margin-left: 2em;"><span style="color:mediumblue">&lt;</span>h1<span
+                      style="color:mediumblue">&gt;</span></span>This is a
+              heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                        style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span style="color:brown; margin-left: 2em;"><span
+                      style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a
+              paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span
+                        style="color:mediumblue">&gt;</span></span>
+              <br>
+              <br>
+              <span style="color:brown; margin-left: 1em;"><span
+                      style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+              <br>
+              <span
+                      style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span></span>
+            </div>
+
+            <p>
+              An external style sheet can be written in any text editor. The file must not contain any HTML code, and
+              must be saved with a .css extension.
+            </p>
+            <p>
+              Here is how the "styles.css" looks:
+            </p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown">
+ body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span
+                      style="color:mediumblue"><span style="color:black">:</span> powderblue<span
+                      style="color:black">;</span></span><br></span><span style="color:black">}</span><br>h1 <span
+                      style="color:black">{</span><span style="color:red"><br>&nbsp; color<span
+                      style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br></span><span
+                      style="color:black">}</span><br>p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span
+                      style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span
+                      style="color:black">}</span> </span>
+            </div>
+
+            <h5>
+              CSS Fonts
+            </h5>
+            <p>The CSS <code class="w3-codespan">color</code> property defines the text color to be used.</p>
+
+            <p class="alert-info col-7 ml-4">
+              <a href="https://htmlcolorcodes.com/" target="_blank">
+                <i class="fas fa-info-circle"></i>
+                HTML color codes
+              </a>
+            </p>
+
+            <p>The CSS <code class="w3-codespan">font-family</code> property defines the font to be used.</p>
+
+            <p class="alert-info col-7 ml-4">
+              <a href="https://websitesetup.org/web-safe-fonts-html-css/" target="_blank">
+                <i class="fas fa-info-circle"></i>
+                Web "safe" fonts
+              </a>
+            </p>
+
+            <p>The CSS <code class="w3-codespan">font-size </code> property defines the text size to be used.</p>
+
+            <p class="alert-info col-7 ml-4">
+              <a href="https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent" target="_blank">
+                <i class="fas fa-info-circle"></i>
+                CSS Font-Size: em vs. px vs. pt vs. percent
+              </a>
+            </p>
+
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                      style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span
+                    style="color:brown"><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span
+                    style="color:mediumblue"><span style="color:black">:</span> blue<span
+                    style="color:black">;</span></span><br>&nbsp;&nbsp;font-family<span style="color:mediumblue"><span
+                    style="color:black">:</span> verdana<span style="color:black">;</span></span><br>&nbsp;&nbsp;font-size<span
+                    style="color:mediumblue"><span style="color:black">:</span> 300%<span
+                    style="color:black">;</span></span><br></span><span style="color:black">}</span><br>p&nbsp; <span
+                    style="color:black">{</span><span style="color:red"><br>
+  &nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span
+                      style="color:black">;</span></span><br>&nbsp;
+ font-family<span style="color:mediumblue"><span style="color:black">:</span> courier<span style="color:black">;</span></span><br>&nbsp; font-size<span
+                      style="color:mediumblue"><span style="color:black">:</span> 160%<span style="color:black">;</span></span><br></span><span
+                    style="color:black">}</span><br></span><span style="color:brown"><span
+                    style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span
+                      style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span
+                    style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>p<span
+                    style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span
+                    style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span
+                    style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            <h5>
+              CSS Border
+            </h5>
+            <p>The CSS <code class="w3-codespan">border</code> property defines a border around an HTML element:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown">
+ p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border<span style="color:mediumblue"><span
+                      style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+ </span>
+            </div>
+
+            <h5>
+              CSS Padding
+            </h5>
+            <p>The CSS <code class="w3-codespan">padding</code> property defines a padding (space) between
+              the text and the border:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown">
+ p <span style="color:black">{</span><span style="color:red"><br>&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 30px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+
+            <h5>
+              CSS Margin
+            </h5>
+            <p>The CSS <code class="w3-codespan">margin</code> property defines a margin (space) outside the border:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown">
+ p <span style="color:black">{</span><span style="color:red"><br>&nbsp; border<span style="color:mediumblue"><span style="color:black">:</span> 1px
+solid powderblue<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin<span style="color:mediumblue"><span style="color:black">:</span> 50px<span style="color:black">;</span></span><br>
+ </span><span style="color:black">}</span> </span>
+            </div>
+
+            <h5>
+              The <code>id</code> Attribute
+            </h5>
+            <p><strong>Note:</strong> The id of an element should be unique within a page, so the id selector is used to select one unique element!</p>
+            <p>To define a specific style for one special element, add an <code class="w3-codespan">id</code> attribute
+              to the element:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> id<span style="color:mediumblue">="p01"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>then define a style for the element with the specific id:</p>
+            <div class="alert alert-secondary col-6" role="alert">
+              <span style="color:brown">
+ #p01 <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+
+            <h5>
+              The <code>class</code> Attribute
+            </h5>
+            <p>To define a style for special types of elements, add a <code class="w3-codespan">class</code> attribute to the element:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="error"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>then define a style for the elements with the specific class:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown">
+p.error <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+
+            <h5>
+              External References
+            </h5>
+            <p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+            <p>This example uses a full URL to link to a style sheet:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="https://www.w3schools.com/html/styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>This example links to a style sheet located in the html folder on the current web site:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="/html/styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>This example links to a style sheet located in the same folder as the current page:</p>
+            <div class="alert alert-secondary col-8" role="alert">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="styles.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            <sup class="text-muted">(Source: <a href="https://www.w3schools.com" target="_blank">w3schools</a>)</sup>
+
+          </section><!--HTML styles-->
+
+          <div id="testingEnvironment" style="margin-bottom: 6em;"></div>
+
+          <section role="contentinfo" aria-label="Testing Environment">
+            <h3>
+              Testing Environment
+            </h3>
+            <p>
+              In addition to reviewing and testing user interface code and designs on our computer, online resources
+              allow to upload and review html code on online repositories. This approach also allow access to our code
+              by other users, for reviews and even contribution.
+            </p>
+            <h4>
+              GitHub
+            </h4>
+            <p>
+              <a href="https://github.com/" target="_blank">
+                GitHub
+              </a>
+              is a code hosting platform for collaboration and version control. GitHub lets you (and others) work
+              together on projects.
+            </p>
+            <p>
+              GitHub is not meant to display HTML pages.
+              Many GitHub repositories don't use GitHub Pages to host their HTML files.
+              If you try to open raw version of any HTML, CSS or JS file in a web browser directly from GitHub, all you will
+              see is a source code. GitHub forces them to use the "text/plain" content-type, so they cannot be interpreted.
+            </p>
+            <p>
+              It is possible to view GitHub stored code as HTML pages, as long as your GitHub repository is public and
+              that you don't mind to wait a little while for the recently revised HTML files to finally display.
+            </p>
+            <h4>
+              GitHack
+            </h4>
+            <p>
+              Online services like
+              <a href="https://raw.githack.com/" target="_blank">
+                GitHack
+              </a>
+              can display GitHub stored code as HTML pages.
+              It is not advisable to rely on this approach for hosting websites, since it is not designed to handle
+              frequent access, nor timely display of recently edited HTML files.
+            </p>
+            <p>
+              GitHack, and silimar servivces, art useful for allowing others to review your user interface design and code
+              prior to publishing it in a public or provate domain.
+            </p>
+            <p>
+              Here are
+              <a href="https://alternativeto.net/software/raw-githack-com/" target="_blank">
+                alternatives to GitHack
+              </a>
+            </p>
+          </section><!--Testing Environment-->
+
+          <div id="htmlContentExercise" style="margin-bottom: 6em;"></div>
+
+          <section role="contentinfo" aria-label="HTML content exercise" class="mb-5">
+            <h3>
+              HTML content exercise
+            </h3>
+            <ol>
+              <li>
+                Define the content of a web site using a bullet list
+              </li>
+              <li>
+                Add to the above bullet list HTML tags
+              </li>
+              <li>
+                Using the HTML page implemented on the exercise for
+                <a href="workplan-process_train_intro.html#htmlIntroductionExercise">
+                  HTML introduction</a>,
+                add to it the above content
+              </li>
+              <li>
+                Add basic styles to the above web page.
+              </li>
+            </ol>
+          </section><!--HTML content exercises-->
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--Popover script -->
+    <script>
+    // add link to popover text:
+    $("[data-toggle=popover]")
+    .popover({html:true})
+
+    // add link to popover text:
+    $(".popover-link").popover();
+
+    </script>
+
+  </body>
+
+</html>

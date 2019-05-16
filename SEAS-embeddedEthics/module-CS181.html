@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | CS 181: Machine Learning | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+      .dont-break-out {
+
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      word-break: break-all;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+
+      /* Adds a hyphen where the word breaks, if supported (No Blink) */
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
+    }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module.html" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 2em;">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="module.html" class="moreInfo">Course Modules</a>
+            / CS 181: Machine Learning
+          </div>
+        </div>
+    </div>
+
+    <section id="module">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -5em;">
+            <h2 class="section-heading" style="font-size: 2em;">Repository of Open Source Course Modules</h2>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 4em;">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active moreInfo" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">
+                  Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="goal-tab" data-toggle="tab" href="#goal" role="tab" aria-controls="goal" aria-selected="false">
+                  Goals
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="material-tab" data-toggle="tab" href="#material" role="tab" aria-controls="material" aria-selected="false">
+                  Materials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="implementation-tab" data-toggle="tab" href="#implementation" role="tab" aria-controls="implementation" aria-selected="false">
+                  Implementation
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course:
+                      </strong>
+                      CS 181: Machine Learning
+                    </p>
+                    <p>
+                      <strong>
+                        Course Level:
+                      </strong>
+                      Upper-level undergraduate
+                    </p>
+                    <p>
+                      <strong>
+                        Course Description:
+                      </strong>
+                      "This course provides a broad and rigorous introduction to machine learning, probabilistic
+                      reasoning and decision making in uncertain environments."
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Topic:
+                      </strong>
+                      Discrimination and Machine Learning
+                    </p>
+                    <p>
+                      <strong>
+                        Module Author:
+                      </strong>
+                      Kate Vredenburgh
+                    </p>
+                    <p>
+                      <strong>
+                        Semesters Taught:
+                      </strong>
+                      Spring 2018
+                    </p>
+                    <p>
+                      <strong>
+                        Tags:
+                      </strong>
+                    </p>
+                    <dl>
+                      <dd>
+                        discrimination <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        formalized fairness metrics <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        impossibility results <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        machine learning <span class="badge badge-primary">CS</span>
+                      </dd>
+                    </dl>
+                    <p>
+                      <strong>
+                        Module Overview:
+                      </strong>
+                      In this module, we probe the ways that machine learning models can be discriminatory and examine
+                      different methods for preventing discriminatory outcomes. We begin by introducing two concepts of
+                      discrimination: disparate treatment and disparate impact. We then use those concepts to argue that
+                      there are at least four sets of important tools for reducing discrimination from the use of
+                      machine-learning models in the social sphere: the reduction of bias from data, the definition of
+                      the optimization problem, the choice of features, and the use statistical fairness criteria.
+                      Finally, we discuss an impossibility result regarding three statistical fairness criteria, and
+                      explain why this impossibility result is not surprising, given that the data is generated by
+                      biased institutions.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Connection to Course Technical Material:
+                      </strong>
+                      This topic connects to course content about bias (in the technical sense of the term from the
+                      machine learning literature). As we discuss in the module, technical bias can give rise to
+                      discriminatory bias. The module topic also connects with course content about feature extraction
+                      from data and optimization.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This topic was chosen because it connects material in the course with current research in machine
+                      learning on discrimination and statistical fairness criteria. It also connects with an important,
+                      contemporary social issue, discrimination resulting from the use of machine learning models to
+                      make important decisions about how individuals are treated.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      &copy; 2018 by Kate Vredenburgh,
+                      "Discrimination and Machine Learning"
+                      is made available under a
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative
+                        Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      For the purpose of attribution, cite as:
+                      Kate Vredenburgh,
+                      "Discrimination and Machine Learning"
+                      for CS 181: Machine Learning,
+                      Spring 2018,
+                      <a href="https://embeddedethics.seas.harvard.edu/" target="_blank" class="moreInfo">Embedded EthiCS @ Harvard</a>.
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">CC BY 4.0</a>.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Goals:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Teach students two accounts of discrimination: disparate treatment and disparate impact.
+                      </li>
+                      <li>
+                        Explore the ramifications (including potential limitations) of using a disparate impact
+                        definition to identify discrimination.
+                      </li>
+                      <li>
+                        Introduce students to technical computer science work on discrimination (statistical fairness
+                        criteria) and discuss a relevant impossibility result.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Questions:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        How can the use of machine learning models to make decisions lead to discrimination? How do we
+                        prevent or mitigate this discrimination?
+                      </li>
+                      <li>
+                        Can decisions be discriminatory even if they fail to satisfy the disparate impact definition of
+                        discrimination?
+                      </li>
+                      <li>
+                        Is the conflict among statistical fairness criteria surprising, given the causes of different
+                        base rates in the population? Where is the right place to intervene?
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Question (1) is the over-arching question of the module. The rest of the questions are raised to
+                      help students think through different aspects of the over-arching question.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Concepts:
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Disparate treatment discrimination
+                      </li>
+                      <li>
+                        Disparate impact discrimination
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Discrimination is an incredibly important concept for current work in computer science on machine
+                      learning and fairness. This module aims to show students that it is important to draw on domain
+                      experts such as lawyers to address ethical problems through design.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Assigned Readings:
+                      </strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        Barocas and Selbst, “Big Data’s Disparate Impact”
+                        (2016, excerpts). California Law Review.
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2477899" target="_blank" class="moreInfo dont-break-out">
+                          https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2477899
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Barocas and Selbst discuss (1) how discrimination arises in algorithmic decision-making, and (2)
+                      whether that discrimination is wrongful, according to the disparate impact standard in the law.
+                      They identify two philosophical foundations for anti-discrimination law in the United States, and
+                      argue that these two foundations differ on when and why discrimination is wrongful.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Class Agenda:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Overview.
+                      </li>
+                      <li>
+                        Key concepts: disparate impact and disparate treatment.
+                      </li>
+                      <li>
+                        Why reducing bias in the technical sense does not reduce bias in the normative sense.
+                      </li>
+                      <li>
+                        Why changing how the optimization task is defined is insufficient to prevent discrimination.
+                      </li>
+                      <li>
+                        Discussion activity on a hard case in which certain features that predict job success are also
+                        strongly correlated with protected attributes.
+                      </li>
+                      <li>
+                        Introduction to formal fairness criteria as a strategy for preventing discrimination in machine learning systems.
+                      </li>
+                      <li>
+                        The impossibility result.
+                      </li>
+                      <li>
+                        Implications of the impossibility result, and why it is not surprising.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Sample Class Activity:
+                      </strong>
+                      In small groups, discuss whether the following case (1) is a case of wrongful discrimination,
+                      according to the disparate impact standard, and (2) where you think it is a case of
+                      discrimination. If you answered yes to (2), explain why you think it is a case of discrimination.
+                      If you answered no, explain why you think it is not a case of discrimination.
+                    </p>
+                    <dl>
+                      <dd style="margin-left: 2.5em;">
+                        <i>Hiring at Glap</i>. Glap have hired a new computer science team to design an algorithm to predict
+                        the success of various job applicants to sales positions at Glap. As you go through the data and
+                        design the algorithm, you notice that African-American sales representatives have significantly
+                        fewer average sales than white sales representatives. The algorithm’s output recommends hiring
+                        far fewer African-Americans than white applicants, when the percentage of applications from
+                        people of various races are adjusted for.
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This class activity facilitates student understanding of disparate impact and disparate treatment
+                      accounts of discrimination by asking them to determine whether the Glap case is a case of
+                      discrimination according to either of those standards. The activity also encourages students to
+                      begin to identify potential limitations of the disparate impact standard: many students judge that
+                      the Glap case is a case of wrongful discrimination, but this judgment cannot be explained by
+                      appeal to standard disparate impact accounts of discrimination. Finally, the activity sets up
+                      discussion of the impossibility result considered later in class. Given that discriminatory
+                      behavior by individuals produces some of the data on which the system is trained, is it surprising
+                      that individuals from subordinated groups have a higher probability of being incorrectly
+                      unfavorable classified than those from privileged groups?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Assignment:
+                      </strong>
+                      Recall the Glap class activity. In class, we thought about the problem statically: given
+                      historical data, such as data about sales performance, who should Glap hire right now?
+                    </p>
+                    <p>
+                      In this follow-up assignment, I want you to think about consumer behavior and firm hiring practice
+                      dynamically. Looking at features of the labor market dynamically allows you more, or different,
+                      degrees of freedom in your model. For example, in class, you probably took consumer preference
+                      about the race of their sales representative as given. What would happen if you allowed consumer
+                      preference to vary (say, on the basis of changing racial demographics in the sales force)?
+                    </p>
+                    <dl>
+                      <dd>
+                        Here’s the new case:
+                      </dd>
+                      <dd style="margin-left: 2.5em;">
+                        The United States Secretary of Labor has heard about your team’s success with Glap and comes to
+                        you with a request. The Department of Labor wants to reduce disparate impact discrimination in
+                        hiring. They want you to come up with a model of fair hiring practices in the labor market that
+                        will reduce disparate impact while also producing good outcomes for companies.
+                      </dd>
+                    </dl>
+                    Write two or three paragraphs that explains the following:
+                    <ul>
+                      <li>
+                        What are the relevant socially good outcomes, for both workers and companies?
+                      </li>
+                      <li>
+                        What are some properties of your algorithm that might produce those socially good results?
+                        <ul>
+                          <li>
+                            Think about constraints that you might build in, such the fairness constraints that we
+                            discussed in class, or how you might specify the prediction task that we are asking the
+                            machine to optimize.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        [Optional] Are there tradeoffs that your algorithm has to balance?
+                      </li>
+                      <li>
+                        [Optional] Are there any features of data collection, algorithm implementation, or the social
+                        world that make you wary of using machine learning in this case?
+                      </li>
+                    </ul>
+                    We expect that:
+                    <ul>
+                      <li>
+                        You focus on one or two points of discussion for each question.
+                        <ul>
+                          <li>
+                            For example, for question 2, pick a single fairness criterion.
+                          </li>
+                          <li>
+                            Depth over breadth here!
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        You provide reasons in support of your answers (i.e., explain why you chose your answer).
+                        <ul>
+                          <li>
+                            For example, for the first question, you might choose the socially good outcome of increased
+                            profit for companies, and give reasons why profit is the right social goal.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        You are clear and concise – stick to plain, unadorned language.
+                      </li>
+                      <li>
+                        You do not do any outside research.
+                      </li>
+                      <li>
+                        You demonstrate a thoughtful engagement with the questions.
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Lessons Learned:
+                      </strong>
+                      Student response to this module has been overwhelmingly positive. A few lessons stand out.
+                    </p>
+                    <ul>
+                      <li>
+                        The topic of the module directly connects a social issue familiar to the students from recent
+                        news coverage (discrimination and AI) with specific technical material that is part of current
+                        AI research (formal fairness definitions from fair machine learning and an impossibility
+                        result). As a result, students are able to see immediately how the moral issues raised in the
+                        module were relevant to concrete, socially important applications of machine learning, as well
+                        as how current machine learning researchers are addressing issues of discrimination in current
+                        research.
+                      </li>
+                      <li>
+                        The module uses small-group-based (2-5 student) short active-learning exercises and class
+                        brainstorming to stimulate student engagement. We have found that such exercises help
+                        dramatically in keeping students engaged in such a large class.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | CS 152: Programming Languages | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module.html" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 2em;">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="module.html" class="moreInfo">Course Modules</a>
+            / CS 152: Programming Languages
+          </div>
+        </div>
+    </div>
+
+    <section id="module">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -5em;">
+            <h2 class="section-heading" style="font-size: 2em;">Repository of Open Source Course Modules</h2>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 4em;">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active moreInfo" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">
+                  Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="goal-tab" data-toggle="tab" href="#goal" role="tab" aria-controls="goal" aria-selected="false">
+                  Goals
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="material-tab" data-toggle="tab" href="#material" role="tab" aria-controls="material" aria-selected="false">
+                  Materials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="implementation-tab" data-toggle="tab" href="#implementation" role="tab" aria-controls="implementation" aria-selected="false">
+                  Implementation
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course:
+                      </strong>
+                      CS 152: Programming Languages
+                    </p>
+                    <p>
+                      <strong>
+                        Course Level:
+                      </strong>
+                      Upper-level undergraduate
+                    </p>
+                    <p>
+                      <strong>
+                        Course Description:
+                      </strong>
+                      "This course is an introduction to the theory, design, and implementation of programming
+                      languages. Topics covered in this course include: formal semantics of programming languages
+                      (operational, axiomatic, denotational, and translational), type systems, higher-order functions
+                      and lambda calculus, laziness, continuations, dynamic types, monads, objects, modules,
+                      concurrency, and communication."
+                      (<a href="https://www.seas.harvard.edu/courses/cs152/2019sp/" target="_blank" class="moreInfo">Course description
+                    <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Topic:
+                      </strong>
+                      Ethics in Software Verification and Validation
+                    </p>
+                    <p>
+                      <strong>
+                        Module Author:
+                      </strong>
+                      David Gray Grant
+                    </p>
+                    <p>
+                      <strong>
+                        Semesters Taught:
+                      </strong>
+                      Spring 2018
+                    </p>
+                    <p>
+                      <strong>
+                        Tags:
+                      </strong>
+                    </p>
+                    <dl>
+                      <dd>
+                        software verification and validation <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        machine ethics <span class="badge badge-success">both</span>
+                      </dd>
+                      <dd>
+                        moral rights <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        systems with AI <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        programming languages <span class="badge badge-primary">CS</span>
+                      </dd>
+                    </dl>
+                    <p>
+                      <strong>
+                        Module Overview:
+                      </strong>
+                      Software systems based on artificial intelligence often exhibit surprising emergent behavior that
+                      can have ethically problematic effects on the lives and interests of human beings. Machine ethics
+                      is a nascent interdisciplinary field devoted to ensuring that AI-based systems behave in ethically
+                      acceptable ways by modifying the way they make decisions to take ethical considerations explicitly
+                      into account.
+                    </p>
+                    <p>
+                      In this module, we discuss two emerging strategies in machine ethics. The first makes use of
+                      <i>ethical design specifications</i>. Design specifications are concrete, formally verifiable desiderata
+                      that a software system is designed to satisfy. Design specifications are ordinarily technical or
+                      legal, but they can also be ethical. Ethical design specifications are intended to ensure that a
+                      system does not behave in specific ethically unacceptable ways in (relatively) specific contexts.
+                      The second makes use of
+                      <i>machine moral reasoning</i>. Machine moral reasoning uses advanced artificial
+                      intelligence techniques to simulate the ethical reasoning capacities of human agents, in an effort
+                      to prevent ethically unacceptable system behavior in situations that are not specifically
+                      foreseen. We consider a series of case studies in machine ethics in order to evaluate the promise
+                      and limitations of these two strategies for ensuring ethically acceptable system behavior.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      As we mention in “Lessons Learned” below, the focus on AI-based systems in this module is
+                      optional. In particular, the first strategy described here (using ethical design specifications)
+                      can be applied just as easily to systems that are not AI-based. When we teach this module again in
+                      the spring of 2019, we plan on developing a separate version of the module focusing on software
+                      systems that are not AI-based.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Connection to Course Technical Material:
+                      </strong>
+                      In the lead-up to the module, the course covers automated techniques that can be used to verify
+                      that a software system will behave in accordance with its design specifications. In this module,
+                      we introduce the idea of ethical design specifications, and consider how these might be verified
+                      (either using techniques covered in the course, or other methods).
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      &copy; 2018 by David Gray Grant,
+                      "Ethics in Software Verification and Validation"
+                      is made available under a
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative
+                        Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      For the purpose of attribution, cite as:
+                      David Gray Grant,
+                      "Ethics in Software Verification and Validation"
+                      for CS 152: Programming Languages,
+                      Spring 2018,
+                      <a href="https://embeddedethics.seas.harvard.edu/" target="_blank" class="moreInfo">Embedded EthiCS @ Harvard</a>.
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">CC BY 4.0</a>.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Goals:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Introduce students to a simple framework useful for analyzing case studies from an ethical
+                        perspective (see “Sample Class Activity” below).
+                      </li>
+                      <li>
+                        Give students practice using this framework to analyze a series of case studies in which an
+                        AI-based software system behaved in unexpected and ethically problematic ways.
+                      </li>
+                      <li>
+                        Introduce students to two different strategies for ensuring AI-based systems behave in ethically
+                        acceptable ways: (1) using ethical design specifications and (2) using machine moral reasoning.
+                      </li>
+                      <li>
+                        Give students practice thinking through how these two strategies might be applied to address
+                        specific ethical problems in real-world case studies featuring AI-based software systems.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Questions:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        How, in practice, can the engineers that design AI-based systems prevent them from behaving in
+                        ways that have ethically unjustifiable effects on the rights and interests others?
+                      </li>
+                      <li>
+                        How should ethical considerations be taken into account during the process of software
+                        verification and validation?
+                      </li>
+                      <li>
+                        To what extent can we prevent AI-based systems from behaving in ethically unjustifiable ways by
+                        carefully formulating their design specifications and verifying that those specifications are
+                        satisfied?
+                      </li>
+                      <li>
+                        What other strategies might be used to ensure that AI-based systems do not behave in ethically
+                        unjustifiable ways?
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Concepts:
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Moral obligation.
+                      </li>
+                      <li>
+                        Moral rights.
+                      </li>
+                      <li>
+                        Morally significant stakeholder interests.
+                      </li>
+                      <li>
+                        Ethical design specifications.
+                      </li>
+                      <li>
+                        Machine moral reasoning.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Assigned Readings:
+                      </strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                          Deng, "Machine ethics: the robot's dilemma" (Nature)
+                          <a href="https://www.nature.com/news/machine-ethics-the-robot-s-dilemma-1.17881" target="_blank" class="moreInfo dont-break-out">
+                            https://www.nature.com/news/machine-ethics-the-robot-s-dilemma-1.17881
+                            <sup><i class="fas fa-external-link-alt fa-sm"></i></sup>.
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This short piece from <i>Nature</i> provides an overview of contemporary research in machine ethics,
+                      familiarizing students with various approaches to designing AI-based systems to respond
+                      appropriately to ethical considerations.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        Dennis, et al. (2016), "Formal verification of ethical choices in autonomous systems" (<i>Robotics
+                        and Autonomous Systems</i>), sections 1-3.1 and 6.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This article, written by a team of computer and information scientists, considers how cutting-edge
+                      technologies from the field of artificial intelligence might be used to augment autonomous
+                      software systems with the capacity to apply general ethical principles to novel situations. In the
+                      last part of the module, we consider the potential advantages and disadvantages of this approach
+                      (compared to technically simpler approaches). The article also considers how formal verification
+                      techniques might be used to provide additional assurances that a system will respect ethical
+                      principles, and so connects directly with technical material covered in the course.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Class Agenda:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Case studies in machine ethics.
+                      </li>
+                      <li>
+                        Case study exercise: identifying stakeholder rights and interests that might be affected by a
+                        system’s behavior.
+                      </li>
+                      <li>
+                        Ethics in software verification and validation.
+                      </li>
+                      <li>
+                        Using ethical design specifications to ensure ethically acceptable system behavior.
+                      </li>
+                      <li>
+                        Using machine moral reasoning to ensure ethically acceptable system behavior.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Sample Class Activity:
+                      </strong>
+                      The first half of the class session focuses on a series of short case studies in which an AI-based
+                      software system behaved in unexpected and ethically problematic ways following launch. These case
+                      studies include Microsoft’s Tay Twitterbot (which was manipulated by Twitter users into posting
+                      discriminatory messages), Knightscope’s K-9 security robot (which disrupted the lives of residents
+                      of a camp of homeless individuals in San Francisco), and Google’s targeted advertising tools
+                      (which some companies have used in ways that arguably constitute illegal discrimination).
+                    </p>
+                    <p>
+                      After briefly discussing the case studies, we introduce a simple framework for anticipating
+                      potential ethical issues with a software system: first, identify as many groups of stakeholders
+                      that might be affected as possible; second, consider how the behavior of the system might affect
+                      the rights and interests of the individuals in those stakeholder groups. (Here the Embedded EthiCS
+                      TA gives examples of putative rights, such as the right to privacy or the right not to be
+                      discriminated against.) Students then apply this framework to the case studies considered in the
+                      module in small groups of 5-6 students. Later in the class session, students consider how the
+                      potential problems they identify might be addressed at different phases of the software
+                      engineering process, including software verification and validation.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      The simple framework described here is adapted from Will Kymlicka’s excellent 1993 article “Moral
+                      Philosophy and Public Policy: the Case of NRTs.” According to Kymlicka, non-experts are liable to
+                      make significant mistakes – and overlook important considerations – when they attempt to evaluate
+                      technologies using complex tools from moral theory. By contrast, he argues, non-experts tend to be
+                      more successful when they focus on anticipating concrete, obviously important ways in which a
+                      technology might affect the lives of particular groups of people. Whether or not Kymlicka is right
+                      about this, it seems clear that the ability to anticipate how the behavior of a software system
+                      might affect our rights and interests is an important skill for computer scientists to have.
+                      Activities like this one provide students with an opportunity to practice this essential skill.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Assignment:
+                      </strong>
+                      In the follow-up assignment, students collaboratively analyze a more detailed case study. The case
+                      study features an AI-based software agent being developed at the Center for Artificial
+                      Intelligence in Society at USC to assist with the planning of a public health social work
+                      intervention targeting homeless youth in Los Angeles. Students review the case study independently
+                      and make two posts to a graded discussion forum. In the first, they identify a group of
+                      stakeholders in the case study, and give an example of how a right or interest of that stakeholder
+                      might be affected by the behavior of the agent. In the second, they suggest a possible strategy
+                      for addressing a potential ethical problem identified by another student, or comment on another
+                      student’s proposed strategy.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Lessons Learned:
+                      </strong>
+                      Student response to the module was positive when it was taught in the spring of 2018. In follow-up
+                      surveys, 86% of students reported that they found the module interesting, and 78% said that
+                      participating helped them think more clearly about the ethical issues we discussed. A few things
+                      we learned from the experience:
+                    </p>
+                    <ul>
+                      <li>
+                        Student responses to the assignment were, on the whole, excellent: students identified a wide
+                        range of potential ethical issues with the system described in the case study, and a wide
+                        variety of potential solutions. We suspect that the assignment was successful for at least two
+                        reasons. First, the graded discussion forum format worked even better than we expected at
+                        stimulating a robust discussion among students: students appeared to welcome the opportunity to
+                        engage with each other’s ideas. Second, the assignment required students to apply skills and
+                        concepts they had already practiced applying during the class session activities.
+                      </li>
+                      <li>
+                        While the module was on the whole a success, we plan on making at least two modifications to the
+                        content before it is taught again in spring of 2019. First, this version focuses almost
+                        exclusively on AI-based systems. The philosophical ideas covered in the module, however, are
+                        readily applicable to software systems that are not AI-based. While we stressed this to the
+                        students in class, we now think that it would be better to appeal to a broader range of examples
+                        and case studies. Second, in teaching the module in spring of 2018, we found that there was not
+                        sufficient time to adequately discuss both strategies mentioned above (ethical design
+                        specifications and machine moral reasoning). When we re-teach the module, we plan on cutting the
+                        material on machine moral reasoning in order to deepen our discussion of the ethical design
+                        specifications strategy.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

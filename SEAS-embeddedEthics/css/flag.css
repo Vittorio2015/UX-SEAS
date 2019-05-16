@@ -1,0 +1,66 @@
+
+.box {
+  width: 18em;
+  height: 10em;
+  z-index: 2000;
+}
+
+#one {
+  position: fixed;
+  top: 30em;
+  left: -18em;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#two {
+  position: fixed;
+  top: 20em;
+  left: -18em;
+  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {left: -18em; top: 30em}
+  100%  {left: -.5em; top: 30em}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left: -18em; top: 30em}
+  100%  {left: -.5em; top: 30em}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+  0%   {left: -18em; top: 18em}
+  100%  {left: -.5em; top: 18em}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+  0%   {left: -18em; top: 18em}
+  100%  {left: -.5em; top: 18em}
+}
+
+.alert-flag {
+padding: 0em;
+background-color: #ffffff;
+color: #000;
+border-color: #17419E;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
