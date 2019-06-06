@@ -29,7 +29,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: June 6, 2019
+                Last update: June 7, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -367,9 +367,15 @@
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://trello.com/b/gc2K8sVL" target="">
+                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="">
                                     <i class="fab fa-trello fa-padding"></i>
-                                    Trello board
+                                    Course planning kanban
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="">
+                                    <i class="fab fa-github fa-padding"></i>
+                                    Gh-pages
                                 </a>
                             </li>
                         </ul>
@@ -454,6 +460,12 @@
                                 <a href="https://docs.google.com/spreadsheets/d/1JO7WuUh1wgte_1tP7swInM_Mh1kMSH-ENKUUiVs9B90/edit?usp=sharing" target="_blank">
                                     design drafts
                                 </a>
+
+                                <div style="display: flex; height: 1em; overflow: hidden; font-size: .5rem; background-color: #e9ecef; border-radius: .5rem; margin-top: .5em;">
+                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30"
+                                         aria-valuemin="0" aria-valuemax="100">30%
+                                    </div>
+                                </div>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
@@ -528,9 +540,24 @@
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
                                 CRCS website Vijay Reddi's MLPerf
+                                <a href="#" onclick="myFunction()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
                             </h6>
                         </div>
-                        <ul class="list-group list-group-flush">
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("showMLPerf");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showMLPerf" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
                                 <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
@@ -582,9 +609,24 @@
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
                                 Embedded Ethics
+                                <a href="#" onclick="myFunction()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
                             </h6>
                         </div>
-                        <ul class="list-group list-group-flush">
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("showEmbeddedEthics");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showEmbeddedEthics" style="display: none;">
                             <li class="list-group-item list-group-item-margin">
                                 Administrator training
                                 <div class="progress mt-1" style="height: 1em; font-size: .75em;" hidden>
