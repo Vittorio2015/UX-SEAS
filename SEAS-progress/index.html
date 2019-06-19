@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -427,7 +428,7 @@
                                 <i class="fas fa-cogs fa-padding"></i>
                                 AWS resource provisioning tool
 								
-								<a href="#" onclick="myFunctionAWS()" class="float-right" title="Project history">
+								<a onclick="myFunctionAWS()" class="float-right" title="Project history">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
 
@@ -511,13 +512,13 @@
                     <div class="card card-label_success"><!-- card - Stephen Chong's HarvardCS website -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
+                                <i class="fas fa-wheelchair fa-padding"></i>
                                 Prof. Stephen Chong's HarvardCS website
                             </h6>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
-                                Usability and accessibility review
+                                Accessibility review
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
                                 <a href="https://harvardcs.info/index.html" target="_blank">
@@ -589,6 +590,56 @@
                         </ul>
                     </div><!-- / card - Zoom training -->
 
+                    <div class="card card-label_warning"><!-- card - Accessibility -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                Accessibility
+                                <a onclick="myFunctionProfDev2()" class="float-right" hidden>
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionProfDev2() {
+                                var x = document.getElementById("showProfDev2");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Initiatives, events, comunity of practice
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Siteimprove orientation
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Siteimprove June meeting
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showProfDev2" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 13 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                React (lynda.com)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
+                                
+                            </li>
+                        </ul>
+                    </div><!-- / card - Accessibility -->					
+
                 </div><!-- / In progress -->
 
                 <div class="col-sm col-sm-margin"><!-- Done -->
@@ -602,7 +653,7 @@
                                 <i class="far fa-file-code fa-padding"></i>
                                 Prof. Martin's Atmospheric Sciences website
 								
-								<a href="#" onclick="myFunctionMartin()" class="float-right">
+								<a onclick="myFunctionMartin()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -646,9 +697,9 @@
 					<div class="card card-label_success"><!-- card - SEAS website -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
+                                <i class="fas fa-wheelchair fa-padding"></i>
                                 SEAS website accessibility review
-                                <a href="#" onclick="myFunctionSite()" class="float-right">
+                                <a onclick="myFunctionSite()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -700,7 +751,7 @@
                             <h6 class="card-title">
                                 <i class="fas fa-cogs fa-padding"></i>
                                 Employee Action Form Manager
-                                <a href="#" onclick="myFunctionEAFM()" class="float-right">
+                                <a onclick="myFunctionEAFM()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -741,7 +792,7 @@
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
                                 CRCS website Vijay Reddi's MLPerf
-                                <a href="#" onclick="myFunctionMLPerf()" class="float-right">
+                                <a onclick="myFunctionMLPerf()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -813,7 +864,7 @@
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
                                 Embedded Ethics
-                                <a href="#" onclick="myFunctionEmbeddedEthics()" class="float-right">
+                                <a onclick="myFunctionEmbeddedEthics()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -899,6 +950,42 @@
                         </ul>
                     </div><!-- / card - Philosophy -->
 
+                    <div class="card card-label_secondary"><!-- card - Professional Development -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Professional Development
+                                <a onclick="myFunctionProfDev()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionProfDev() {
+                                var x = document.getElementById("showProfDev");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 13 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                React (lynda.com)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
+                                
+                            </li>
+                        </ul>
+                    </div><!-- / card - Professional Development -->
+
                 </div><!-- / Done -->
 
             </div><!-- / row -->
@@ -917,6 +1004,14 @@
                         <li class="card-label_success">
                             <i class="far fa-file-code fa-padding"></i>
                             Web sites
+                        </li>
+                        <li class="card-label_secondary">
+                            <i class="fas fa-graduation-cap fa-padding"></i>
+							Professional development (self training, courses, seminars, etc.)
+                        </li>
+                        <li class="card-label_warning">
+                            <i class="fas fa-wheelchair fa-padding"></i>
+							Accessibility reviews and events
                         </li>
                     </ul>
                 </div>
