@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="https://www.seas.harvard.edu/favicon.ico">
+        <title>CodePen - Bootstrap 4 single page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="dashboard.css" rel="stylesheet">
+
+        <!-- Harvard Branding -->
+        <style>
+              .nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+                color: #fff;
+                background-color: #A51C30;
+              }
+
+              .navbar-inverse .navbar-nav > li > a {
+                  color: #eee;
+              }
+              a {
+                color: #A51C30;
+                text-decoration: none;
+              }
+              h1, h2{
+                color: #A51C30;
+              }
+              h2{
+                color: #A51C30;
+                border-top:1px solid #eee;
+                padding: 1em 0 0 0;
+              }
+              img.border {
+                border:1px solid #eee;
+              }
+              .img-hover img {
+                  -webkit-transition: all .3s ease; /* Safari and Chrome */
+                  -moz-transition: all .3s ease; /* Firefox */
+                  -o-transition: all .3s ease; /* IE 9 */
+                  -ms-transition: all .3s ease; /* Opera */
+                  transition: all .3s ease;
+              }
+              .img-hover img:hover {
+                  -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+                  -webkit-transform:translateZ(0) scale(1.01); /* Safari and Chrome */
+                  -moz-transform:scale(1.01); /* Firefox */
+                  -ms-transform:scale(1.01); /* IE 9 */
+                  -o-transform:translatZ(0) scale(1.01); /* Opera */
+                  transform:translatZ(0) scale(1.01);
+
+                border:1px solid #A51C30;
+              }
+              .grayscale {
+                -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+                -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+                filter: brightness(1.10) grayscale(100%);
+              }
+              .text-muted-description { /*component descendent to indent description*/
+                color: #777;
+                padding-left:1em;
+              }
+              .table {
+               font-size: 1em;
+               }
+
+
+        </style><!-- /Harvard Branding -->
+
+        <!-- CharftJS -->
+        <script src="https://www.chartjs.org/dist/2.7.3/Chart.bundle.js"></script>
+
+        <style>
+            .container section {
+                height: 100vh;
+            }
+
+            .container section#section1 {
+                position: relative;
+                margin-top: 6em;
+            }
+
+            .container section#section1, .container section#section3 {
+                background-color: #ddd;
+            }
+
+            .container section#section2, .container section#section4 {
+                background-color: #ccc;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            nav {
+                background: red;
+                margin-bottom: 50px;
+            }
+
+            .nav--left {
+                margin-top: 8em;
+            }
+
+            a.support {
+                color: #CCCCCC;
+            }
+
+            .navbar-text--SEAS {
+                color: #ccc;
+                font-size: 1.5em;
+                margin-top: 1.15em;
+                white-space: nowrap;
+            }
+
+            .navbar--img {
+                height: 4em;
+                margin-top: -0.5em;
+                margin-left: .5em;
+            }
+
+            :target:before {
+                content: "";
+                display: block;
+                height: 8em;
+            }
+
+        </style>
+    </head>
+    <body translate="no">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height: 6em;">
+            <a class="navbar-brand text-left">
+                <img src="https://www.seas.harvard.edu/sites/default/files/H_SEAS_logo_RGB_on_black_1.png" class="navbar--img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item navbar-text navbar-text--SEAS mr-auto my-auto ml-5">
+                        SEAS / HarvardCS User Experience
+                    </li>
+                </ul>
+                <a href="mailto:vbucchieri@seas.harvard.edu?subject=HarvardCS%20Accessibility%20Review" class="support">
+                <i class="far fa-envelope fa-lg"></i>
+            </a>
+            </div>
+        </nav>
+
+        <div class="position-fixed fixed-top nav--left">
+
+            <div class="col-2 list-group flex-column mr-auto">
+                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#section1">
+                    Section 1
+                </a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#section2">
+                    Section 2
+                </a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#section3">
+                    Section 3
+                </a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#section4">
+                    Section 4
+                </a>
+            </div>
+
+
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-10 justify-content-end">
+                <div class="container">
+                    <section id="section1">section1</section>
+                    <section id="section2">section2</section>
+                    <section id="section3">section3</section>
+                    <section id="section4">section4</section>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script>
+
+        </script>
+
+    </body>
+</html>

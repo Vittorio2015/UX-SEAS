@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="https://www.seas.harvard.edu/favicon.ico">
+        <title>SEAS / Harvard CS Concentration User Experience</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="dashboard.css" rel="stylesheet">
+
+        <!-- Harvard Branding -->
+        <style>
+              a {
+                color: #A51C30;
+                text-decoration: none;
+              }
+              h1, h2{
+                color: #A51C30;
+              }
+              h2{
+                color: #A51C30;
+                border-top:1px solid #eee;
+                padding: 1em 0 0 0;
+              }
+              img.border {
+                border:1px solid #eee;
+              }
+              .img-hover img {
+                  -webkit-transition: all .3s ease; /* Safari and Chrome */
+                  -moz-transition: all .3s ease; /* Firefox */
+                  -o-transition: all .3s ease; /* IE 9 */
+                  -ms-transition: all .3s ease; /* Opera */
+                  transition: all .3s ease;
+              }
+              .img-hover img:hover {
+                  -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+                  -webkit-transform:translateZ(0) scale(1.01); /* Safari and Chrome */
+                  -moz-transform:scale(1.01); /* Firefox */
+                  -ms-transform:scale(1.01); /* IE 9 */
+                  -o-transform:translatZ(0) scale(1.01); /* Opera */
+                  transform:translatZ(0) scale(1.01);
+
+                border:1px solid #A51C30;
+              }
+              .grayscale {
+                -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+                -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+                filter: brightness(1.10) grayscale(100%);
+              }
+              .text-muted-description { /*component descendent to indent description*/
+                color: #777;
+                padding-left:1em;
+              }
+              .table {
+               font-size: 1em;
+               }
+
+        </style><!-- /Harvard Branding -->
+
+        <!-- CharftJS -->
+        <script src="https://www.chartjs.org/dist/2.7.3/Chart.bundle.js"></script>
+
+        <!-- CSS Grid, amended Bootsrap -->
+		<style>
+            
+			/* CSS Grid */
+			.finding-header {
+				grid-area: header-finding;
+				font-weight: bold;
+				color: #A51C30;
+			}
+            .finding h3 {
+				font-size: 1.25em;
+			}
+            .finding h4 {
+				font-size: 1.1em;
+			}
+			.finding-content {
+				grid-area: content-finding;
+			}
+			.finding-image {
+				grid-area: image-finding;
+			}
+            .recommendation-header {
+				grid-area: header-recommendation;
+			}
+            .recommendation-header h3 {
+				font-weight: bold;
+				color: #00aaad;
+			}
+			.recommendation-content {
+				grid-area: content-recommendation;
+			}
+			.recommendation-image {
+				grid-area: image-recommendation;
+			}
+			.recommendation-content2 {
+				grid-area: content-recommendation2;
+			}
+			.recommendation-image2 {
+				grid-area: image-recommendation2;
+			}
+			.recommendation-content3 {
+				grid-area: content-recommendation3;
+			}
+			.recommendation-image3 {
+				grid-area: image-recommendation3;
+			}
+			.recommendation-content4 {
+				grid-area: content-recommendation4;
+			}
+			.recommendation-image4 {
+				grid-area: image-recommendation4;
+			}
+			.recommendation-content5 {
+				grid-area: content-recommendation5;
+			}
+			.recommendation-image5 {
+				grid-area: image-recommendation5;
+			}
+			
+			.figure > img {
+				align-self: auto;
+				border: 1px solid #dee2e6!important;
+			}
+
+			.finding {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+				grid-template-areas:
+					"header-finding header-finding"
+					"content-finding image-finding"
+					"header-recommendation header-recommendation"
+					"content-recommendation image-recommendation"
+					"content-recommendation2 image-recommendation2"
+					"content-recommendation3 image-recommendation3"
+					"content-recommendation4 image-recommendation4"
+					"content-recommendation5 image-recommendation5";
+				border-bottom: 1px solid #eee;
+				border-left: 1px solid #eee;
+			}
+			
+			.finding > div {
+				border-top: 1px solid #eee;
+				border-right: 1px solid #eee;
+				padding: .5em;
+			}
+			
+			
+            html {
+                scroll-behavior: smooth;
+            }
+
+            :target:before {
+                content: "";
+                display: block;
+                height: 8em;
+            }
+
+            a.support {
+                color: #CCCCCC;
+            }
+			
+			p[class^="indent"] {
+				margin-bottom: .2em;
+			}
+			
+			.indent-1 {
+				margin-left: 1em;
+			}
+			
+			.indent-2 {
+				margin-left: 2em;
+			}
+
+			
+			/* Modifying Bootstrap classes */
+            .nav--left {
+                margin-top: 8em;
+                border-right: 1px solid #eee;
+            }
+
+            .navbar-text--SEAS {
+                color: #ccc;
+                font-size: 1.5em;
+                margin-top: 1.15em;
+                white-space: nowrap;
+            }
+
+            .navbar--img {
+                height: 4em;
+                margin-top: -0.5em;
+                margin-left: .5em;
+            }
+			
+			.code-recommend {
+				font-weight: bold;
+				color: #00aaad;
+			}
+
+        </style>
+    </head>
+    <body translate="no">
+
+        <nav class="navbar navbar-dark bg-dark fixed-top" style="height: 5.5em;">
+            <a class="navbar-brand text-left">
+                <img src="https://www.seas.harvard.edu/sites/default/files/H_SEAS_logo_RGB_on_black_1.png" class="navbar--img">
+            </a>
+            <span class="navbar-text navbar-text--SEAS mr-auto my-auto ml-5">
+                SEAS / Harvard CS Concentration User Experience
+            </span>
+            <a href="mailto:vbucchieri@seas.harvard.edu?subject=EAFM%20Accessibility%20Review" class="support">
+                <i class="far fa-envelope fa-lg"></i>
+            </a>
+        </nav>
+
+        <!-- Left navigation -->
+		<div class="col-2 position-fixed fixed-top nav--left ml-2 flex-column mr-auto">
+            <strong>
+                Accessibility
+            </strong>
+            <a class="nav-link" href="#overview">Overview</a>
+
+            <a class="nav-link" href="#specifications">Specifications</a>
+
+            <a class="nav-link" href="#summary">Summary</a>
+
+            <a class="nav-link" href="#forms">Forms</a>
+
+            <a class="nav-link" href="#role">Role</a>
+
+            <a class="nav-link" href="#color">Color</a>
+
+            <a class="nav-link" href="#tab">Tab order</a>
+
+        </div>
+        
+		<!-- Main content -->
+		<div class="row justify-content-end ml-2">
+            <div class="col-10 justify-content-end">
+                <div class="container">
+                    <section id="overview">
+                        <h2>
+                            Overview
+                        </h2>
+						<p>
+                            This Accessibility evaluation was not conducted with any user of assistive technology. It is
+                            highly recommended to test products with target users, as well as with users of assistive
+                            technology.
+                        </p>
+                    </section>
+                    <section id="specifications">
+                        <h2>
+                            Specifications
+                        </h2>
+						<div class="col-sm-12">
+                        <p>
+                            This accessibility audit was conducted on a MacBook Pro with a Macintosh operating system version
+                            10.14.5 and on a DELL Latitude E7450 with a Windows 10 operating system 
+                        </p>
+                        <p>
+                            The product was accessed with a Chrome browser via
+                            <a href="https://harvardcs.info/" target="_blank">
+                                https://harvardcs.info/
+                                <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                            </a>
+                        </p>
+                        <p>
+                            The testing tools used for this audit were:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://www.apple.com/accessibility/mac/vision/" target="_blank">
+                                    VoiceOver
+                                    <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                                </a>
+                                to simulate screen reader technology
+                            </li>
+                            <li>
+                                <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en"
+                                        target="_blank">
+                                    Chrome Vox browser extension
+                                    <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                                </a>
+                                to simulate screen reader technology
+                            </li>
+                            <li>
+                                <a href="https://developers.google.com/web/tools/chrome-devtools/inspect-styles/"
+                                        target="_blank">
+                                    Google Inspect
+                                    <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                                </a>
+                                for code inspection
+                            </li>
+                            <li>
+                                <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?hl=en-US"
+                                        target="_blank">
+                                    Siteimprove Chrome browser extension
+                                    <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                                </a>
+                                for code inspection
+                            </li>
+                            <li>
+                                <a href="https://webaim.org/resources/contrastchecker/" target="_blank">
+                                    WebAIM Color Contrast Checker
+                                    <small><i class="fas fa-external-link-alt fa-sm"></i></small>
+                                </a>
+                                to check and recommend accessible color contrast for visual impairment
+                            </li>
+                        </ul>
+                    </div><!-- / Specifications information-->
+                    </section>
+                    <section id="summary">
+                        <h2>
+                            Summary
+                        </h2>
+						<p>
+                            An inspection of the content revealed several accessibility issues.
+                            <br>
+                            <strong>
+                                Even though most of the required A and AA WCAG 2.1 guidelines were detected, only
+                                testing with native users of assistive technology will ensure that all the content is
+                                properly accessible.
+                            </strong>
+                            <br>
+                            User testing should be scheduled after all the accessibility issues listed below are
+                            addressed.
+                        </p>
+						<div style="width: 20em; margin: 0 auto;">
+							<canvas id="chartjs-4" class="chartjs" style="display: block; margin-bottom: 2em;"></canvas>
+							<script>
+								new Chart(document.getElementById("chartjs-4"),{
+									"type":"doughnut","data":{
+										"labels":["68% Inaccessible"],
+										"datasets":[{
+											"label":"My First Dataset",
+											"data":[68,32],
+											"backgroundColor":["rgb(204, 0, 0)","rgb(240, 240, 240)"]
+										}]
+									}
+								});
+							</script>
+						</div>
+                    </section>
+                    <section id="forms">
+                        <h2>
+                            Forms
+                        </h2>
+						<div class="finding">
+							<div class="finding-header">
+								<h3>Finding</h3>
+							</div>
+							<div class="finding-content">
+								<p>
+									The form element has a label, but text has not been added (label is empty).
+								</p>
+								<h4>Current code</h4>
+								<p>
+									<code>
+										<p class="indent-0">&lt;div class="searchbox"&gt;</p>
+										<p class="indent-1">&lt;label for="search-by"&gt;</p>
+										<p class="indent-2">&lt;i class="fa fa-search"&gt;&lt;/i&gt;</p>
+										<p class="indent-1">&lt;/label&gt;</p>
+										<p class="indent-2">&lt;input data-search-input="" id="search-by" type="text" placeholder="Search..." autocomplete="off"&gt;</p>
+										<p class="indent-2">&lt;span data-search-clear=""&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/span&gt;</p>
+										<p>&lt;/div&gt;</p>
+									</code>
+								</p>
+							</div>
+							<div class="finding-image">
+								<figure class="figure">
+									<img src="img-form.png" style="width: 70%;" alt="screen capture of search form">
+									<figcaption class="figure-caption">Current interface.</figcaption>
+								</figure>
+							</div>
+							<div class="recommendation-header">
+								<h3>Recommendation</h3>
+								
+								<p>
+									Add the text for the form element within the label-tag or WAI-ARIA <code>aria-label</code> 
+									or <code>aria-labelledby</code> attribute that is already present.
+								</p>
+								<h4>
+									Resources and techniques
+								</h4>
+								<ul>
+									<li>
+										<a href="https://accessibility.huit.harvard.edu/provide-accessible-labels-and-instructions">
+											Provide accessible labels and instructions
+										</a>
+									</li>
+									<li>
+										<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute">
+											Using the <code>aria-label</code> attribute
+										</a>
+									</li>
+									<li>
+										<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute">
+											Using the <code>aria-labelledby</code> attribute
+										</a>
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA4">
+											ARIA4
+										</a>
+										Using a WAI-ARIA role to expose the role of a user interface component
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/F68">
+											F68
+										</a>
+										Failure of Success Criterion 1.3.1 and 4.1.2 due to the association of label and user interface controls not being programmatically determinable
+									</li>
+								</ul>
+								<h4>Example of accessible code</h4>
+								<p>
+									<code>
+										<p class="indent-0">&lt;div class="searchbox"&gt;</p>
+										<p class="indent-1">&lt;label for="search-by"&gt;</p>
+										<p class="indent-2">&lt;i class="fa fa-search"
+										<span class="code-recommend"> 
+										<br>
+										aria-label="Type search term"</span>&gt;&lt;/i&gt;</p>
+										<p class="indent-1">&lt;/label&gt;</p>
+										<p class="indent-2">&lt;input data-search-input="" id="search-by" type="text" placeholder="Search..." autocomplete="off" <span class="code-recommend"> aria-labelledby="search-by"</span>&gt;</p>
+										<p class="indent-2">&lt;span data-search-clear=""&gt;&lt;i class="fa fa-close" <span class="code-recommend"> 
+										<br>
+										aria-labelledby="search-by"
+										<br>
+										aria-label="Clear search"</span>&gt;&lt;/i&gt;&lt;/span&gt;</p>
+										<p>&lt;/div&gt;</p>
+									</code>
+								</p>
+							</div>
+						</div>
+                    </section>
+					<section id="role">
+                        <h2>
+                            Role
+                        </h2>
+						<div class="finding">
+							<div class="finding-header">
+								<h3>Findings</h3>
+							</div>
+							<div class="finding-content">
+								<p>There is no information that indicates any changes of the check icons:</p>
+								<p><i class="fa fa-check read-icon" style="color: #ff3333"></i>
+								<code>&lt;i class=&quot;fa fa-check read-icon&quot; style=&quot;&quot;&gt;&lt;/i&gt;</code></p>
+							</div>
+							<div class="finding-image">
+								<figure class="figure">
+									<img src="img-color_search_current.png" class="img-fluid" alt="flow of current interface">
+									<figcaption class="figure-caption">Current interface.</figcaption>
+								</figure>
+							</div>
+							<div class="recommendation-header">
+								<h3>Recommendation #1</h3>
+							
+								<h4>Role of icons in sidebar</h4>
+								
+								<p>
+									Use WAI-ARIA state and property attributes to expose the state, 
+									properties and values of a user interface component so that they can be read and set by assistive technology, 
+									and so that assistive technology is notified of changes to these values. The WAI-ARIA specification provides a 
+									normative description of each attribute, and the role of the user interface elements that they support. 
+									When rich internet applications define new user interface widgets, 
+									exposing the state and property attributes enables users to understand the widget and how to interact with it.
+								</p>
+							
+								<h5>
+									Resources and techniques
+								</h5>
+								<ul>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/aria#ARIA5">
+											ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component
+										</a>
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/aria#ARIA6">
+											ARIA6: Using <code>aria-label</code> to provide labels for objects
+										</a>
+									</li>
+								</ul>
+								
+								<h3>Recommendation #2</h3>
+								
+								<h4>Status of icons in sidebar</h4>
+								
+								<p>
+									Define the role of an element using the <code>role</code> attribute with one of the non-abstract values defined in the 
+									<a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">
+										WAI-ARIA Definition of Roles
+									</a>. 
+									The WAI-ARIA specification provides an informative description of each role, 
+									how it relates to other roles, and the states and properties for each role. 
+									When rich internet applications define new user interface widgets, 
+									exposing the roles enables users to understand the widget and how to interact with it.
+								</p>
+							
+								<h5>
+									Resources and techniques
+								</h5>
+								<ul>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/aria#ARIA4">
+											ARIA4: Using a WAI-ARIA role to expose the role of a user interface component
+										</a>
+									</li>
+								</ul>
+								
+								<h3>Recommendation #3</h3>
+								
+								<h4>Associate each check icon with its correspondent link</h4>
+								
+								<p>
+									The <code>aria-labelledby</code> attribute associates an element with text that is visible elsewhere on the page 
+									by using an ID reference value that matches the ID attribute of the labeling element. 
+									Assistive technology such as screen readers use the text of the element identified by the value of the <code>aria-labelledby</code> 
+									attribute as the text alternative for the element with the attribute.
+								</p>
+							
+								<h5>
+									Resources and techniques
+								</h5>
+								<ul>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/aria#ARIA10">
+											ARIA10: Using <code>aria-labelledby</code> to provide a text alternative for non-text content
+										</a>
+									</li>
+								</ul>
+							</div>
+                    </section>
+                    <section id="color">
+                        <h2>
+                            Color
+                        </h2>
+						<div class="finding">
+							<div class="finding-header">
+								<h3>Findings</h3>
+							</div>
+							<div class="finding-content">
+								<p>
+									It appears that color is the only distinguishing feature about links in blocks of text.
+								</p>
+								<p>
+									If links in blocks of text are identified only by color, the color contrast ratio between 
+									the link text and the surrounding text needs to be at 4.5:1 for normal text and 3:1 for large text, 
+									and a contrast ratio of at least 3:1 for graphics and user interface components 
+									(such as form input borders). This is not the case here
+								</p>
+								<p>
+									Furthermore, for links identified only by color there should be additional visual cues when 
+									users point to the link with their mouse or move keyboard focus to the link. 
+									The additional visual cues could be underlining the link or making it bold.
+								</p>
+								<p>
+									This applies to links that are visually part of a block of text. Menu items etc. should not be considered here.
+								</p>
+							</div>
+							<div class="finding-image">
+								<figure class="figure">
+									<img src="img-color_search_current.png" class="img-fluid" alt="flow of current interface">
+									<figcaption class="figure-caption">Current color.</figcaption>
+								</figure>
+							</div>
+							<div class="recommendation-header">
+								<h3>Recommendations</h3>
+							
+								<p>
+									Consider any of the following:
+								</p>
+								<ul>
+										<li>
+											Make sure there are other visual indicators of links besides the color, such as underline or bold.
+										</li>
+										<li>
+											Or ensure that links have an appropriate contrast ratio with surrounding text, and provide 
+											additional visual cues when pointing with a mouse or moving keyboard focus to the link.
+										</li>
+										<li>
+											Please notice that the appropriate color contrast ratio for links identified only by color should be
+											measured text to text and not text to background.
+										</li>
+								</ul>
+								
+								<h4>
+									Resources and techniques
+								</h4>
+								<ul>
+									<li>
+										<a href="https://accessibility.huit.harvard.edu/use-sufficient-color-contrast">
+											Use sufficient color contrast
+										</a>
+									</li>
+									<li>
+										<a href="https://accessibility.huit.harvard.edu/avoid-reliance-color">
+											Avoid reliance on color
+										</a>
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/F73">
+											F73
+										</a>
+										Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/G183">
+											G183
+										</a>
+										Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on focus for 
+										links or controls where color alone is used to identify them
+									</li>
+								</ul>
+							
+							</div>
+							<div class="recommendation-content">
+								<ol>
+									<li>
+										Change the color of the search icons, the input form <code>placeholder</code> 
+										and added text (<code>MENU-SEARCH-BOX-ICONS-color</code>) from <code>#FDA1A1</code> to <code>#FDC9C9</code>
+									</li>
+									<li>
+										Change the color of each topic link over white color background (<code>MENU-SECTION-ACTIVE-CATEGORY-color</code>)
+										from <code>#777777</code> to <code>#737373</code>
+									</li>
+									<li>
+										Change the <code>background-color</code> of the sidebar (<code>MENU-SECTIONS-BG-color</code>)
+										from <code>#312525</code> to <code>#000000</code>
+									</li>
+									<li>
+										Change the font <code>color</code> of "MORE" the sidebar (<code>MAIN-TITLES-TEXT-color</code>)
+										from <code>#5e5e5e</code> to <code>#7A7A7A</code>
+									</li>
+								</ol>
+								
+								<p>
+									Change the font color of links (<code>MAIN-LINK-color</code>) 
+									from <code>#F31C1C</code> to <code>#DA0B0B</code>
+								</p>
+							</div>
+							<div class="recommendation-image">
+								<figure class="figure">
+									<img src="img-color_search_recommended.png" class="img-fluid" alt="image of recommended color corrections">
+									<figcaption class="figure-caption">Recommended color</figcaption>
+								</figure>
+							</div>
+							
+							<div class="recommendation-content2">
+								<p>
+									Change the color of <code>div.notices.info</code> 
+									from <code>#F0B37E</code> to <code>#AC5C15</code>
+								</p>
+								
+							</div>
+							<div class="recommendation-image2">
+								<figure class="figure">
+									<img src="img-color_home_info_current.png" class="img-fluid" alt="image of current color">
+									<figcaption class="figure-caption">Current color</figcaption>
+								</figure>
+								<figure class="figure">
+									<img src="img-color_home_info_recommended.png" class="img-fluid" alt="image of recommended color corrections">
+									<figcaption class="figure-caption">Recommended color</figcaption>
+								</figure>
+							</div>
+							
+							<div class="recommendation-content3">
+								<p>
+									Change the color of <code>div.notices.tip</code> 
+									from <code>#5cb85ccc</code> to <code>#3A833A</code>
+								</p>
+							</div>
+							<div class="recommendation-image3">
+								<figure class="figure">
+									<img src="img-color_home_tip_current.png" class="img-fluid" alt="image of current color">
+									<figcaption class="figure-caption">Current color</figcaption>
+								</figure>
+								<figure class="figure">
+									<img src="img-color_home_tip_recommended.png" class="img-fluid" alt="image of recommended color corrections">
+									<figcaption class="figure-caption">Recommended color</figcaption>
+								</figure>
+							</div>
+							
+							<div class="recommendation-content4">
+								<p>
+									Change the font color of credits 
+									from <code>lightgrey</code> to <code>#737373</code>
+								</p>
+							</div>
+							<div class="recommendation-image4">
+								<figure class="figure">
+									<img src="img-color_credits_current.png" class="img-fluid" alt="image of current color">
+									<figcaption class="figure-caption">Current color</figcaption>
+								</figure>
+								<figure class="figure">
+									<img src="img-color_credits_recommended.png" class="img-fluid" alt="image of recommended color corrections">
+									<figcaption class="figure-caption">Recommended color</figcaption>
+								</figure>
+							</div>
+							
+							<div class="recommendation-content5">
+								<p>
+									Change the font color of links (<code>MAIN-LINK-color</code>) 
+									from <code>#F31C1C</code> to <code>#DA0B0B</code>
+								</p>
+							</div>
+							<div class="recommendation-image5">
+								<figure class="figure">
+									<img src="img-color_link_current.png" class="img-fluid" alt="image of current color">
+									<figcaption class="figure-caption">Current color</figcaption>
+								</figure>
+								<figure class="figure">
+									<img src="img-color_link_recommended.png" class="img-fluid" alt="image of recommended color corrections">
+									<figcaption class="figure-caption">Recommended color</figcaption>
+								</figure>
+							</div>
+							
+						</div>
+                    </section>
+                    <section id="tab">
+                        <h2>
+                            Tab order
+                        </h2>
+						<div class="finding">
+							<div class="finding-header">
+								<h3>Finding</h3>
+							</div>
+							<div class="finding-content">
+								<p>
+									It is not currently possible to leverage the search functionality without the use of a mouse. 
+									<br>
+									Just by using the tab key, search results can be displayed but by the next tab key stroke, 
+									the search results are hidden and the focus moves to the first item of the left navigation ("FAQ")
+								</p>
+								<p>
+									Here is the current sequence
+								</p>
+								<ol>
+									<li>
+										Tab key action moves the focus in the search input form
+									</li>
+									<li>
+										Typing a term reveals the search results drop down
+									</li>
+									<li>
+										Next tab key stroke doesn't move the focus to the drop down, 
+										it rather dismisses the drop down and moves the focus to the first link in the sidebar below.
+									</li>
+								</ol>
+							</div>
+							<div class="finding-image">
+								<figure class="figure">
+									<img src="img-tab_current.png" class="img-fluid" alt="flow of current interface">
+									<figcaption class="figure-caption">Current flow</figcaption>
+								</figure>
+							</div>
+							<div class="recommendation-header">
+								<h3>Recommendation</h3>
+							</div>
+							<div class="recommendation-content">
+								<p>
+									Ensure that the tabbing order defined on the page is logical,
+									that the tab index has a meaningful sequence, 
+									that does not interfere with the sequence for the entire page,
+									and that the sequence for the entire page is meaningful.
+								</p>
+								<h4>
+									Resources and techniques
+								</h4>
+								<ul>
+									<li>
+										<a href="https://accessibility.huit.harvard.edu/encode-elements-logical-order">
+											Encode elements in a logical order
+										</a>
+									</li>
+									<li>
+										<a href="https://www.w3.org/TR/WCAG20-TECHS/H4">
+											H4
+										</a>
+										Creating a logical tab order through links, form controls, and objects
+									</li>
+								</ul>
+								<h4>Example of an accessible flow</h4>
+								Refer to the numbers on the adjacent image
+								<ol>
+									<li>
+										Use the <code>role</code> function to indicate the presence of the dynamic drop down
+									</li>
+									<li>
+										Allow the links of the search results drop down to be anchor links
+									</li>
+									<li>
+										Each search result drop down item should link to the corresponding item in the left navigation
+									</li>
+								</ol>
+								<h4>Recommended alternative solution</h4>
+								<p>
+									Screen readers easily detect heading structure (<code>h1</code>, <code>h2</code>, <code>h3</code>, etc.) 
+									and can present it to assistive technology users as an interactive table of content.
+									<br>
+									Reviewing heading structure is one of the first steps assistive technology users take
+									when visiting a web site. The screen reader "View by headings" filter allows to quickly comprehend 
+									the information hierarchy (when headings are correctly implemented) and also turns headings into anchor links
+									to facilitate navigation and content access.
+								</p>
+								<p>
+									For this reason, each topic link in the left navigation should be also headings (possibly <code>h3</code>.
+								</p>
+							</div>
+							<div class="recommendation-image">
+								<figure class="figure">
+									<img src="img-tab_recommended.png" class="img-fluid" alt="flow of proposed interface">
+									<figcaption class="figure-caption">Recommended flow</figcaption>
+								</figure>
+							</div>
+						</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script>
+
+        </script>
+
+    </body>
+</html>
