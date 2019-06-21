@@ -30,7 +30,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: June 20, 2019
+                Last update: June 21, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -241,7 +241,7 @@
                             <h6 class="card-title">
                                 <i class="fas fa-cogs fa-padding"></i>
                                 Course Planner
-								<a href="#" onclick="myFunctionCoursePlanner()" class="float-right" title="Project history">
+								<a onclick="myFunctionCoursePlanner()" class="float-right" title="Project history">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
                             </h6>
@@ -421,6 +421,23 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
+					
+					<div class="card card-label_success"><!-- card - HarvardCS usability-->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-user fa-padding"></i>
+                                HarvardCS usability review
+                            </h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://harvardcs.info/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    HarvardCS Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - HarvardCS usability -->
 
                     <div class="card card-label_primary"><!-- card - AWS -->
                         <div class="card-body card-header-margin">
@@ -509,26 +526,6 @@
                         </ul>
                     </div><!-- / card - AWS -->
 
-                    <div class="card card-label_success"><!-- card - Stephen Chong's HarvardCS website -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-wheelchair fa-padding"></i>
-                                Prof. Stephen Chong's HarvardCS website
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Accessibility review
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://harvardcs.info/index.html" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    HarvardCS Website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Stephen Chong's HarvardCS website -->
-
                     <div class="card card-label_success"><!-- card - Milind Tambe's USC website -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -557,7 +554,7 @@
                     <div class="card card-label_success"><!-- card - Zoom training -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
+                                <i class="fas fa-graduation-cap fa-padding"></i>
                                 Zoom training
                             </h6>
                         </div>
@@ -618,11 +615,11 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Siteimprove orientation
+                                Siteimprove orientation (webcast)
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Siteimprove June meeting
+                                Siteimprove June meeting (webcast)
                             </li>
 						</ul>
 
@@ -638,7 +635,55 @@
                                 
                             </li>
                         </ul>
-                    </div><!-- / card - Accessibility -->					
+                    </div><!-- / card - Accessibility -->		
+
+					<div class="card card-label_secondary"><!-- card - Professional Development -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Professional Development
+                                <a onclick="myFunctionProfDev()" class="float-right" hidden>
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionProfDev() {
+                                var x = document.getElementById("showProfDev");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Training, self training, events
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://www.lynda.com/React-js-tutorials/Learning-React-js/800214-2.html" target="_blank">
+									Learning React.js (lynda.com)
+								</a>
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 13 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                React (lynda.com)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
+                                
+                            </li>
+                        </ul>
+                    </div><!-- / card - Professional Development -->					
 
                 </div><!-- / In progress -->
 
@@ -647,11 +692,56 @@
                         Done
                     </h5>
 
-                    <div class="card card-label_success"><!-- card - Atmospheric Sciences website -->
+                    <div class="card card-label_success"><!-- card - HarvardCS accessibility -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                HarvardCS accessibility review
+                                <a onclick="myFunctionHarvardCS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionHarvardCS() {
+                                var x = document.getElementById("showHarvardCS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showHarvardCS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 12 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Review and documentation
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/SEAS-HarvardCS/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    HarvardCS website accessibility review
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://harvardcs.info/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    HarvardCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - HarvardCS accessibility -->
+					
+					<div class="card card-label_success"><!-- card - Atmospheric Sciences website -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
-                                Prof. Martin's Atmospheric Sciences website
+                                Atmospheric Sciences website
 								
 								<a onclick="myFunctionMartin()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
@@ -950,41 +1040,6 @@
                         </ul>
                     </div><!-- / card - Philosophy -->
 
-                    <div class="card card-label_secondary"><!-- card - Professional Development -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                Professional Development
-                                <a onclick="myFunctionProfDev()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionProfDev() {
-                                var x = document.getElementById("showProfDev");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 13 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                React (lynda.com)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
-                                
-                            </li>
-                        </ul>
-                    </div><!-- / card - Professional Development -->
 
                 </div><!-- / Done -->
 
@@ -1012,6 +1067,10 @@
                         <li class="card-label_warning">
                             <i class="fas fa-wheelchair fa-padding"></i>
 							Accessibility reviews and events
+                        </li>
+                        <li class="card-label_warning">
+                            <i class="fas fa-user fa-padding"></i>
+							Usability reviews and events
                         </li>
                     </ul>
                 </div>
