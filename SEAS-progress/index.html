@@ -30,7 +30,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: July 2, 2019
+                Last update: July 3, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -75,13 +75,140 @@
                         Not started
                     </h5>
 
-                    <h6 hidden>
-                        This month
-                    </h6>
+                    <div class="card card-label_primary"><!-- card - AWS -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-cogs fa-padding"></i>
+                                AWS resource provisioning tool
 
-                    <h6 hidden>
-                        To be planned
-                    </h6>
+								<a onclick="myFunctionAWS()" class="float-right" title="Project history">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+
+								<script>
+									function myFunctionAWS() {
+										var x = document.getElementById("showAWS");
+										if (x.style.display === "none") {
+											x.style.display = "block";
+										} else {
+											x.style.display = "none";
+										}
+									}
+								</script>
+                            </h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Planning next steps
+                            </li>
+						</ul>
+
+						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
+                                Total time - 23 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                App demo on July 1
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                App demo prep
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Scheduled pilot testing sessions
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Prepared demo for users
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Stylized the interface for user testing
+                                according to Vittorio's
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    HTML templates
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Finalized
+                                <a href="https://docs.google.com/document/d/14Pv0UHN7qZp_CaXLBs0T1X2Vl-Elr1oPMRRvjV5H2wQ/edit?usp=sharing" target="_blank">
+                                    questionnaire
+                                </a>
+                                for user testing (Vittorio and Faras)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Early Planning - Tuesday, February 26
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                List of users to test with (from Chris') - March 6
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Vittorio's access to the interface - March 7
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    User Experience feedback to Faras - March 11
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://d2b4z2hciygw50.cloudfront.net/index.html" target="_blank">
+                                    <i class="fas fa-cogs fa-padding"></i>
+                                    AWS resource provisioning tool - MVP
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    <i class="fas fa-cogs fa-padding"></i>
+                                    User Experience feedback
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - AWS -->
+					
+					<div class="card card-label_success"><!-- card - Zoom training -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Zoom training
+                            </h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Develop training material
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Deciding next steps
+                            </li>
+
+                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
+                                Total time - 3 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Planning meeting on July 2
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed Zoom documentation
+                            </li>
+
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="http://teamcore.usc.edu/" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Current Teamcore Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Zoom training -->
 					
 					<div class="card card-label_success"><!-- card - CRCS redesign -->
                         <div class="card-body card-header-margin">
@@ -248,19 +375,23 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
-                                Database interface
+                                Website transfer
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-								Follow up meeting on July 2
+								Open Scholar implementation
                             </li>
 
+                            
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Initial meeting on June 28
+                                Total time - 3.75 hours
                             </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 2 hours
+                            <li class="list-group-item list-group-item-margin ltext-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Follow up meeting on July 2
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
+                                Initial meeting on June 28
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted" hidden>
                                 <a href="http://teamcore.usc.edu/" target="_blank">
@@ -270,39 +401,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Mazur website -->
-					
-					<div class="card card-label_success"><!-- card - Zoom training -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                Zoom training
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Develop training material
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Planning meeting on July 2
-                            </li>
-
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed Zoom documentation
-                            </li>
-
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="http://teamcore.usc.edu/" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Current Teamcore Website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Zoom training -->
 					
 					<div class="card card-label_primary"><!-- card - Course Planner -->
 					
@@ -343,15 +441,15 @@
                                 Addressing
                                 <a href="https://github.com/seas-computing/course-planner/projects/1" target="_blank">
                                     Kamban
-                                </a> issues
+                                </a> tasks
                             </li>
 						</ul>
 						
                         <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" hidden><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
                                 Total time - 77 hours
                             </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
                                 Designed new drafts of the
                                 <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
@@ -493,6 +591,53 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
+
+                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Embedded Ethics
+                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionEmbeddedEthics2() {
+                                var x = document.getElementById("showEmbeddedEthics2");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: true;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                Adding content
+                                <div class="progress mt-1" style="height: 1em; font-size: .75em;" hidden>
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50"
+                                         aria-valuemin="0" aria-valuemax="100">60%
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Trained the administrator of the website
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Embedded Ethics public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Embedded Ethics -->
 					
 					<div class="card card-label_success"><!-- card - SEAS website -->
                         <div class="card-body card-header-margin">
@@ -516,8 +661,6 @@
                             }
                         </script>
 
-                        
-
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
@@ -526,7 +669,7 @@
 						</ul>
 						
 						<ul class="list-group list-group-flush" id="showSite" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 Total time - 16 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
@@ -563,14 +706,17 @@
                             </h6>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 5 hours
+                            <li class="list-group-item list-group-item-margin">
+                                Website transfer
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
                                 Advising Milind Tambe's assistant
                             </li>
-							<li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
                                 Contacted by Milind Tambe's assistant
                             </li>
@@ -614,6 +760,12 @@
 						<ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
                                 Initiatives, events, comunity of practice
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://support.siteimprove.com/hc/en-gb/community/posts/360018900292?flash_digest=4bcf30bb3bb07a74bb919b7d6f814343330712d7" target="_blank">
+									June Accessibility Education Call
+								</a>
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
@@ -704,104 +856,6 @@
                     <h5 class="cards-header">
                         Done
                     </h5>
-
-                    <div class="card card-label_primary"><!-- card - AWS -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-cogs fa-padding"></i>
-                                AWS resource provisioning tool
-
-								<a onclick="myFunctionAWS()" class="float-right" title="Project history">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-
-								<script>
-									function myFunctionAWS() {
-										var x = document.getElementById("showAWS");
-										if (x.style.display === "none") {
-											x.style.display = "block";
-										} else {
-											x.style.display = "none";
-										}
-									}
-								</script>
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush" hidden>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                App demo on July 1
-                            </li>
-						</ul>
-
-						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
-                                Total time - 22 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                App demo on July 1
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                App demo prep
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Scheduled pilot testing sessions
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Prepared demo for users
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Stylized the interface for user testing
-                                according to Vittorio's
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    HTML templates
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Finalized
-                                <a href="https://docs.google.com/document/d/14Pv0UHN7qZp_CaXLBs0T1X2Vl-Elr1oPMRRvjV5H2wQ/edit?usp=sharing" target="_blank">
-                                    questionnaire
-                                </a>
-                                for user testing (Vittorio and Faras)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Early Planning - Tuesday, February 26
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                List of users to test with (from Chris') - March 6
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Vittorio's access to the interface - March 7
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    <i class="far fa-check-square fa-padding"></i>
-                                    User Experience feedback to Faras - March 11
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://d2b4z2hciygw50.cloudfront.net/index.html" target="_blank">
-                                    <i class="fas fa-cogs fa-padding"></i>
-                                    AWS resource provisioning tool - MVP
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    <i class="fas fa-cogs fa-padding"></i>
-                                    User Experience feedback
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - AWS -->
 
                     <h3><span class="badge badge-secondary">FY19</span></h3>
 
