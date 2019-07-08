@@ -30,7 +30,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: July 5, 2019
+                Last update: July 8, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -74,6 +74,60 @@
                     <h5 class="cards-header">
                         Not started
                     </h5>
+
+                    <div class="card card-label_success"><!-- card - Mazur website -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Professor Mazur's website
+
+                            <a onclick="myFunctionMazur()" class="float-right" title="Project history">
+                                <i class="fas fa-list-ul fa-padding"></i>
+                            </a>
+
+                            <script>
+                                function myFunctionMazur() {
+                                    var x = document.getElementById("showMazur");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-margin">
+                            Website transfer to Open Scholar
+                        </li>
+                        <li class="list-group-item list-group-item-margin">
+                        <i class="far fa-square fa-padding"></i>
+                            Waiting for Eric's reply
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush" id="showMazur" style="display: none;">
+                            
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 4.75 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                Follow up meeting on July 2
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Initial meeting on June 28
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="http://teamcore.usc.edu/" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Initial meeting
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Mazur website -->
 
                     <div class="card card-label_primary"><!-- card - AWS -->
                         <div class="card-body card-header-margin">
@@ -178,18 +232,35 @@
                             <h6 class="card-title">
                                 <i class="fas fa-graduation-cap fa-padding"></i>
                                 Zoom training
+                                <a onclick="myFunctionZoom()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
                             </h6>
                         </div>
+
+                        <script>
+                            function myFunctionZoom() {
+                                var x = document.getElementById("showZoom");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
-                                Develop training material
+                                Training material and plans
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
                                 Deciding next steps
                             </li>
-
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 Total time - 3 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
@@ -349,7 +420,7 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert" >
+                    <div class="alert alert-info" role="alert" hidden>
                         Working from home on Friday, July 5
                     </div><!-- / Daily alert-->
 
@@ -358,42 +429,6 @@
                         <br>
                         Beginning earlier and leaving earlier for the rest of the week.
                     </div>
-
-                    <div class="card card-label_success"><!-- card - Mazur website -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Professor Mazur's website
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Website transfer
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-								Open Scholar implementation
-                            </li>
-
-                            
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 4.75 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin ltext-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Follow up meeting on July 2
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
-                                Initial meeting on June 28
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                <a href="http://teamcore.usc.edu/" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Initial meeting
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Mazur website -->
 					
 					<div class="card card-label_primary"><!-- card - Course Planner -->
 					
@@ -584,53 +619,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
-
-                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Embedded Ethics
-                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionEmbeddedEthics2() {
-                                var x = document.getElementById("showEmbeddedEthics2");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: true;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 1 hour
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                Adding content
-                                <div class="progress mt-1" style="height: 1em; font-size: .75em;" hidden>
-                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50"
-                                         aria-valuemin="0" aria-valuemax="100">60%
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Trained the administrator of the website
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Embedded Ethics public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Embedded Ethics -->
 					
 					<div class="card card-label_success"><!-- card - SEAS website -->
                         <div class="card-body card-header-margin">
@@ -695,19 +683,44 @@
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
-                                Prof. Milind Tambe's USC website in Open Scholar
+                                Teamcore website
+                                <a onclick="myFunctionTeamcore()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
                             </h6>
                         </div>
+
+                        <script>
+                            function myFunctionTeamcore() {
+                                var x = document.getElementById("showTeamcore");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
-                                Website transfer
+                                
+                                Website transfer to Open Scholar
+
+                            <div class="progress" style="height: 2px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
                                 Advising Milind Tambe's assistant
                             </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 7 hours
+                                Total time - 11 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -716,7 +729,7 @@
                             <li class="list-group-item list-group-item-margin text-muted">
                                 <a href="http://teamcore.usc.edu/" target="_blank">
                                     <i class="fas fa-globe-americas fa-padding"></i>
-                                    Teamcore Website
+                                    USC Teamcore Website
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
@@ -849,6 +862,45 @@
                     <h5 class="cards-header">
                         Done
                     </h5>
+
+                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Embedded Ethics
+                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionEmbeddedEthics2() {
+                                var x = document.getElementById("showEmbeddedEthics2");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2.5 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Added contant
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Embedded Ethics public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Embedded Ethics -->
 
                     <h3><span class="badge badge-secondary">FY19</span></h3>
 
