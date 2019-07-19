@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: July 18, 2019
+                Last update: July 19, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -75,200 +75,79 @@
                     <h5 class="cards-header">
                         Not started
                     </h5>
-					
-					<div class="card card-label_primary"><!-- card - Course Planner -->
-					
+
+                    <div class="card card-label_success"><!-- card - Mazur website -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="fas fa-cogs fa-padding"></i>
-                                Course Planner
-								<a onclick="myFunctionCoursePlanner()" class="float-right" title="Project history">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
+                                <i class="far fa-file-code fa-padding"></i>
+                                Professor Mazur's website
 
-                        <script>
-                            function myFunctionCoursePlanner() {
-                                var x = document.getElementById("showCoursePlanner");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
+                            <a onclick="myFunctionMazur()" class="float-right" title="Project history">
+                                <i class="fas fa-list-ul fa-padding"></i>
+                            </a>
+
+                            <script>
+                                function myFunctionMazur() {
+                                    var x = document.getElementById("showMazur");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
                                 }
-                            }
-                        </script>
+                            </script>
 
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Redesign and implementation of current scheduling tool.
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Looking into React for the
-                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
-                                    HTML mockup
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Scheduling meeting with Kathy
-                            </li>
-						</ul>
-						
-                        <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
-                                Total time - 84 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Addressed
-                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="_blank">
-                                    Kamban
-                                </a> tasks for this sprint
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Designed new drafts of the
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    room view wire frames
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Met with users to review work in progress and next steps
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    room view wireframes
-                                </a>
-                                and
-                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
-                                    HTML mockup
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Drafted developers' feedback of
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    room view wireframes
-                                </a>
-                                and added alike course highlight to
-                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
-                                    HTML mockup
-                                </a>
-                            </li>
+                        </h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-margin">
+                            Website transfer to Open Scholar
+                        </li>
+                        <li class="list-group-item list-group-item-margin">
+                            <i class="far fa-square fa-padding"></i>
+                            Scheduling meeting with Eric's to define next steps
+                        </li>
+                    </ul>
 
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Revised HTML template with developer's feedback (opacity instead of hidden)
+                    <ul class="list-group list-group-flush" id="showMazur" style="display: none;">
+                            
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 15 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Revised HTML template with developer's feedback (opacity instead of hidden)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed with developers HTML template and
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    room view wireframes
+                                <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Drafted Open Scholar templates
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Coded in HTML and CSS
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Draft 3 MVP wireframe
-                                </a>
+                                    <i class="far fa-check-square fa-padding"></i>
+                                Follow up meeting on July 2
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
-                                Drafted
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    wireframe of the room view interface
-                                </a>
+                                Initial meeting on June 28
                             </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Reviewed specific Trello cards for GitHub tasks
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Drafted milestones
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Reviewed Draft 2 and Draft 3 MVP wireframes
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Drafted Draft 1 of MVP wireframes
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
-                                    Drafted Draft 1 of MVP wireframes
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/drawings/d/1_w--hY1CkIH-S7k_i79lObpODoppHqG0-4bJakaTIaU/edit?usp=sharing" target="_blank">
-                                    Drafted wireframes from Trello cards with developers
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Met with users and ask about
-                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing" target="_blank">
-                                    recent inquiries
-                                </a>- March 20
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed user stories with developers from
-                                <a href="https://trello.com/c/wukRWwGh" target="_blank">
-                                    card - source 101
-                                </a>
-                                to
-                                <a href="https://trello.com/c/OHyyPdK7" target="_blank">
-                                    card - source 210
-                                </a>
-                                - February 22
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Completed User stories reviews with developers - February 26
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing" target="_blank">
-                                    Documented inquiries for users
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="http://teamcore.usc.edu/" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Initial meeting
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="">
-                                    <i class="fab fa-trello fa-padding"></i>
-                                    Course planning kanban
+                                <a href="http://mazur.harvard.edu/beta/index.php" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                     Current  website
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="">
-                                    <i class="fab fa-github fa-padding"></i>
-                                    Gh-pages
+                                <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                     New Open Scholar website
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- / card - Course Planner -->
+                    </div><!-- / card - Mazur website -->
 					
 					<div class="card card-label_success"><!-- card - Open Scholar info template -->
                         <div class="card-body card-header-margin">
@@ -472,77 +351,202 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert" hidden>
-                        Working from home on Friday, July 12
+                    <div class="alert alert-info" role="alert">
+                        Working from home on Friday, July 19
                     </div><!-- / Daily alert-->
-
-                    <div class="card card-label_success"><!-- card - Mazur website -->
+					
+					<div class="card card-label_primary"><!-- card - Course Planner -->
+					
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Professor Mazur's website
+                                <i class="fas fa-cogs fa-padding"></i>
+                                Course Planner
+								<a onclick="myFunctionCoursePlanner()" class="float-right" title="Project history">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
 
-                            <a onclick="myFunctionMazur()" class="float-right" title="Project history">
-                                <i class="fas fa-list-ul fa-padding"></i>
-                            </a>
-
-                            <script>
-                                function myFunctionMazur() {
-                                    var x = document.getElementById("showMazur");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
+                        <script>
+                            function myFunctionCoursePlanner() {
+                                var x = document.getElementById("showCoursePlanner");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
                                 }
-                            </script>
-                        </h6>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-margin">
-                            Website transfer to Open Scholar
-                        </li>
-                        <li class="list-group-item list-group-item-margin">
-                        <i class="far fa-square fa-padding"></i>
-                        <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
-                            Drafing Open Scholar templates
-                        </a>
-                        </li>
-                    </ul>
+                            }
+                        </script>
 
-                    <ul class="list-group list-group-flush" id="showMazur" style="display: none;">
-                            
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 10.5 hours
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Redesign and implementation of current scheduling tool.
                             </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"></i>
-                                Follow up meeting on July 2
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Looking into React for the
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
+                                    HTML mockup
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Meeting with Kathy
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    Addressing
+                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="_blank">
+                                    Kamban
+                                </a> tasks for this sprint
+                            </li>
+						</ul>
+						
+                        <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
+                                Total time - 85 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
-                                Initial meeting on June 28
+                                Designed new drafts of the
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    room view wire frames
+                                </a>
                             </li>
-                            <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                <a href="http://teamcore.usc.edu/" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Initial meeting
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with users to review work in progress and next steps
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    room view wireframes
+                                </a>
+                                and
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
+                                    HTML mockup
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Drafted developers' feedback of
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    room view wireframes
+                                </a>
+                                and added alike course highlight to
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="_blank">
+                                    HTML mockup
+                                </a>
+                            </li>
+
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Revised HTML template with developer's feedback (opacity instead of hidden)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Revised HTML template with developer's feedback (opacity instead of hidden)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed with developers HTML template and
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    room view wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Coded in HTML and CSS
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Draft 3 MVP wireframe
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Drafted
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    wireframe of the room view interface
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Reviewed specific Trello cards for GitHub tasks
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Drafted milestones
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Reviewed Draft 2 and Draft 3 MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Drafted Draft 1 of MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing" target="_blank">
+                                    Drafted Draft 1 of MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1_w--hY1CkIH-S7k_i79lObpODoppHqG0-4bJakaTIaU/edit?usp=sharing" target="_blank">
+                                    Drafted wireframes from Trello cards with developers
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with users and ask about
+                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing" target="_blank">
+                                    recent inquiries
+                                </a>- March 20
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed user stories with developers from
+                                <a href="https://trello.com/c/wukRWwGh" target="_blank">
+                                    card - source 101
+                                </a>
+                                to
+                                <a href="https://trello.com/c/OHyyPdK7" target="_blank">
+                                    card - source 210
+                                </a>
+                                - February 22
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Completed User stories reviews with developers - February 26
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing" target="_blank">
+                                    Documented inquiries for users
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="http://mazur.harvard.edu/beta/index.php" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                     Current  website
+                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="">
+                                    <i class="fab fa-trello fa-padding"></i>
+                                    Course planning kanban
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                     New Open Scholar website
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html" target="">
+                                    <i class="fab fa-github fa-padding"></i>
+                                    Gh-pages
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- / card - Mazur website -->
+                    </div><!-- / card - Course Planner -->
 					
 					<div class="card card-label_success"><!-- card - Zoom training -->
                         <div class="card-body card-header-margin">
@@ -626,7 +630,7 @@
 
 						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
-                                Total time - 24 hours
+                                Total time - 25 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
@@ -738,7 +742,7 @@
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 34.5 hours
+                                Total time - 36 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -758,52 +762,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Milind Tambe's USC website -->
-
-                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Embedded Ethics
-                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Website content revisions
-                            </li>
-						</ul>
-
-                        <script>
-                            function myFunctionEmbeddedEthics2() {
-                                var x = document.getElementById("showEmbeddedEthics2");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 4 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Met with new administrator
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Embedded Ethics public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Embedded Ethics -->
 
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
@@ -926,6 +884,56 @@
                     <h5 class="cards-header">
                         Done
                     </h5>
+
+                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Embedded Ethics
+                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Website content revisions
+                            </li>
+						</ul>
+
+                        <script>
+                            function myFunctionEmbeddedEthics2() {
+                                var x = document.getElementById("showEmbeddedEthics2");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 4 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Website content revisions
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with new administrator
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Embedded Ethics public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Embedded Ethics -->
 					
 					<div class="card card-label_success"><!-- card - SEAS website -->
                         <div class="card-body card-header-margin">
@@ -1028,45 +1036,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - ES 100 -->
-
-                    <div class="card card-label_success"><!-- card - Embedded Ethics -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Embedded Ethics
-                                <a onclick="myFunctionEmbeddedEthics2()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionEmbeddedEthics2() {
-                                var x = document.getElementById("showEmbeddedEthics2");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2.5 hour
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Added contant
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Embedded Ethics public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Embedded Ethics -->
 
                     <h3><span class="badge badge-secondary">FY19</span></h3>
 
