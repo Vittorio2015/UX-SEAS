@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: July 23, 2019
+                Last update: July 25, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -291,12 +291,22 @@
                     <ul class="list-group list-group-flush" id="showMazur" style="display: none;">
                             
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 15.5 hours
+                                Total time - 20 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Migrated "Research" and "Alumni" content from old website
+                                </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Met with Jonathan to define next steps
+                                </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <a href="https://projects.iq.harvard.edu/mazur/home" target="_blank">
                                     <i class="far fa-check-square fa-padding"></i>
-                                    Met with Eric's to define next steps
+                                    Met with Eric to define next steps
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
@@ -467,7 +477,7 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Advising Milind Tambe's assistant
+                                Advising Milind Tambe's assistants
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
@@ -477,7 +487,7 @@
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 39.5 hours
+                                Total time - 40.5 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -546,7 +556,7 @@
 						
                         <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
-                                Total time - 85 hours
+                                Total time - 86 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -690,48 +700,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
-					
-					<div class="card card-label_success"><!-- card - ServiceNow -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                Service Now Tickets
-                                <a onclick="myFunctionServiceNow()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionServiceNow() {
-                                var x = document.getElementById("showServiceNow");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do%3Fsys_id=d7a9ee5cdb32bb80dffdbc32ba961975%26sysparm_stack=incident_list.do%3Fsysparm_query=active=true" target="_blank">
-                                    INC03236711
-                                </a>
-                            </li>
-						</ul>
-						
-						<ul class="list-group list-group-flush" id="showServiceNow" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 1 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
-                                <i class="far fa-check-square fa-padding"></i>
-                                Planning meeting on July 16
-                            </li>
-                        </ul>
-                    </div><!-- / card - ServiceNow -->
 					
 					<div class="card card-label_success"><!-- card - Zoom training -->
                         <div class="card-body card-header-margin">
@@ -905,6 +873,50 @@
                     <h5 class="cards-header">
                         Done
                     </h5>
+					
+					<div class="card card-label_success"><!-- card - ServiceNow -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Service Now Tickets
+                                <a onclick="myFunctionServiceNow()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionServiceNow() {
+                                var x = document.getElementById("showServiceNow");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do%3Fsys_id=d7a9ee5cdb32bb80dffdbc32ba961975%26sysparm_stack=incident_list.do%3Fsysparm_query=active=true" target="_blank">
+                                    INC03236711
+                                </a>
+                            </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showServiceNow" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do%3Fsys_id=d7a9ee5cdb32bb80dffdbc32ba961975%26sysparm_stack=incident_list.do%3Fsysparm_query=active=true" target="_blank">
+                                    INC03236711
+                                </a> - 1 hour
+                            </li>
+                        </ul>
+                    </div><!-- / card - ServiceNow -->
 
                     <div class="card card-label_success"><!-- card - Embedded Ethics -->
                         <div class="card-body card-header-margin">
