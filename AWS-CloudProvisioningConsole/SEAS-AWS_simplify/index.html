@@ -1,0 +1,406 @@
+
+
+<!--Current UI code of http://cloudresourceprovision-ux-cr.s3-website-us-east-1.amazonaws.com/index.html-->
+
+
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" href="https://www.seas.harvard.edu/favicon.ico">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+
+        <link href="css/floating-labels.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/component-custom-switch.css">
+
+        <title>
+            Cloud Resources Console | Harvard John A. Paulson School of Engineering and Applied Sciences
+        </title>
+        <meta name="description" content="">
+
+        <style>
+            h2 {
+                font-size: 1.25em;
+            }
+            h2.navbar-text {
+                font-size: 1.75em;
+            }
+            h3 {
+                font-size: 1.15em;
+            }
+            h4 {
+                font-size: 1em;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <a class="navbar-brand">
+                <img src="https://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/tib/files/2015_seaslogo_rgb_02.png?m=1472141717&itok=zwdYyihR" alt="Logo of Harvard John A. Paulson School of Engineering and Applied Sciences" style="height: 3em;" alt="Logo of Harvard John A. Paulson School of Engineering and Applied Sciences">
+            </a>
+            <h2 class="navbar-text mx-auto">
+                Cloud Resources Console
+            </h2>
+            <button id="signOut" class="btn btn-outline-secondary ml-auto mr-4">Sign Out</button>
+            <span class="navbar-text">
+                <a href="mailto:fadel@g.harvard.edu?subject=SEASX%20Cloud%20Resources%20PConsolel" class="navbar-link">
+                    <h4>Contact us</h4>
+                </a>
+            </span>
+        </nav>
+
+    <div class="container">
+        <div class="row col mt-5 mb-5">
+            <!--
+            User Environment
+            -->
+            <div id="userEnvMainDiv"  style="display: none" class="col mt-5 mb-5">
+                <div class="card">
+                    <h2 class="card-header">New User Environment</h2>
+                    <div class="card-body">
+                        <div class="userEnvMainDiv">
+                            <h3> User Environment Initiation</h3>
+                                <div id="helpWithInit" class="alert alert-info" role="alert">
+                                    <h3>New user</h3>
+                                    <ul>
+                                        <li>
+                                            To setup your cloud environment, click on "Initiate My Environment" button
+                                            below
+                                        </li>
+                                        <li>
+                                            To create cloud resources, wait until your environment is ready
+                                            and the "Create Stack" button under "Create Stack of Cloud Resources"
+                                            becomes active
+                                        </li>
+                                        <li>
+                                            If you don't see any progress within 5 minutes, refresh this browser page
+                                            and
+                                            <a href="mailto:help@seas.harvard.edu" title="help@seas.harvard.edu"
+                                               class="alert-link">
+                                                contact us
+                                            </a>
+                                            for assistance
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-3">
+                                        <button id="deleteVPCStack" class="btn btn-outline-danger"
+                                                style="display: none;">Delete My Environment
+                                        </button>
+                                    </div>
+                                    <div class="col mt-3">
+                                        <button id="createVPCStack" disabled="disabled"
+                                                class="btn btn-outline-primary float-right">Initiate My Environment
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            Show stacks
+            -->
+            <div id="showStacksMainDiv" style="" class="col mt-5 mb-5">
+                <div class="card">
+                    <h2 class="card-header">Your Cloud Resources</h2>
+                    <div class="card-body">
+                        <div class="showStacksMainDiv">
+                            <h3>Your Created Resources</h3>
+                            <div id="noStacks" class="alert alert-info mt-4" role="alert">
+                                You have no stacks
+                            </div>
+                            <div id="stacksdiv" class="stackslist" style="margin-top: 4em; display: none;">
+                                <label for="stackList"> Stacks List </label><br>
+                                <select id="stackList" class="custom-select"> </select> <br> <br>
+                                <table id="stackInfoTable" class="table table-compressed">
+                                    <tr>
+                                        <td>
+                                            <div class="progress" style="height: 2.5em;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                     role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                     aria-valuemax="100" style="width: 100%;">
+                                                    Creating stack
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="mb-1">
+                                    <small>
+                                        To avoid unnecessary charges, stop processing activity when it is not needed
+                                    </small>
+                                </p>
+                                <p id="ec2status"></p>
+                                <form class="form mb-n2">
+                                    <div class="switch-field">
+                                        <input type="radio" id="stackStartEC2" name="switch-one" value="yes" checked/>
+                                        <label for="stackStartEC2">
+                                            <i class="far fa-play-circle"></i>
+                                            Start Server
+                                        </label>
+                                        <input type="radio" id="stackStopEC2" name="switch-one" value="no" />
+                                        <label for="stackStopEC2">
+                                            <i class="far fa-stop-circle"></i>
+                                            Stop Server
+                                        </label>
+                                    </div>
+                                </form>
+                                <p class="mb-1">
+                                    <small>
+                                        Deleting the current stack will delete all the resources created by this stack
+                                    </small>
+                                </p>
+                                <div class="col ml-n3">
+                                    <button id="stackTerminate" class="btn btn-outline-danger">Delete Stack</button>
+                                </div>
+                                <!--UI comment - commenting start/stop buttons-->
+                                <!--<button id="stackStopEC2" class="btn btn-outline-primary float-right ml-4">-->
+                                    <!--Stop-->
+                                    <!--<i class="far fa-stop-circle"></i>-->
+                                <!--</button>-->
+                                <!--<button id="stackStartEC2" class="btn btn-outline-primary float-right">-->
+                                    <!--Start-->
+                                    <!--<i class="far fa-play-circle"></i>-->
+                                <!--</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            Create Stack
+            -->
+            <div id="createStacksMainDiv" style="" class="col mt-5 mb-5">
+                <div class="card">
+                    <h2 class="card-header">Create Stack of Cloud Resources</h2>
+                    <div class="card-body mb-n5">
+                        <div class="createStacksMainDiv">
+
+                            <div id="awsenv" hidden>
+                                <div class="form-group row">
+                                    <label for="vpc" class="col-sm-5 col-form-label" style="display: none">VPC</label>
+                                    <div class="col-sm-7">
+                                        <select id="vpc" class="custom-select" style="display: none">
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="subnet" class="col-sm-5 col-form-label" style="display: none">SUBNET</label>
+                                    <div class="col-sm-7">
+                                        <select id="subnet" class="custom-select" style="display: none">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="aws-resources">
+                                <h3>Select Instance Specifications:</h3>
+
+                                <div class="form-group row mt-4">
+                                    <label for="stackname" class="col-sm-5 col-form-label">Stack Name*</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" id="stackname" value=""  class="form-control"
+                                       style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                    </div>
+                                </div>
+                                <p class="mt-n2 text-muted">
+                                    <small>
+                                        * Must start with an alpha character and contain only letters, numbers, dashes.
+                                    </small>
+                                </p>
+                                <hr>
+
+
+                                <div class="form-group row mt-4">
+                                    <label for="ami" class="col-sm-5 col-form-label">OS Image</label>
+                                    <div class="col-sm-7">
+                                        <select id="ami" class="custom-select">
+                                            <option value="ami-0f59f590d763a0f21">SEAS-CentOS-7.6-Update-26-6-19</option></select>
+                                    </div>
+                                </div>
+                                <p class="text-muted">
+                                    <small>
+                                        * Select the Operating System configuration for your operating environment.
+                                    </small>
+                                </p>
+                                <hr>
+
+                                <div class="row mt-4 text-nowrap">
+                                    <div class="col">
+                                        <label for="type" class="form-label">Capacity (EC2 Type)</label>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group col text-center">
+                                            <input type="radio" id="type1" name="memoryOptions" value="t2.micro">
+                                            <br>
+                                            <label for="type1">0.5G Memory*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group col text-center">
+                                            <input type="radio" id="type2" name="memoryOptions" value="t2.small">
+                                            <br>
+                                            <label for="type2">1G Memory*</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-n2 text-muted">
+                                    <small>
+                                        * 1 virtual Center Processing Units.
+                                    </small>
+                                </p>
+                                <hr>
+
+
+                                <div class="form-group row mt-4">
+                                    <label for="username" class="col-sm-5 col-form-label">Login User Name*</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" id="username" value=""  class="form-control"
+                                       style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                    </div>
+                                </div>
+                                <p class="mt-n2 text-muted">
+                                    <small>
+                                        * Choose a user name to login to the new server.
+                                    </small>
+                                </p>
+                                <hr>
+
+
+                                <div class="form-group row mt-4">
+                                    <label for="sshkey" class="col-sm-5 col-form-label">SSH Public Key*</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" id="sshkey" value=""  class="form-control"
+                                       style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                    </div>
+                                </div>
+                                <p class="mt-n2 text-muted">
+                                    <small>
+                                        * Retrieve your <code>.ssh/id_rsa.pub</code> and paste it in the above form; it will be installed on the home directory of the new server.
+                                        <!-- * Type a SSH public key that will be installed on the user home directory on the new server. -->
+                                    </small>
+                                </p>
+                                <hr>
+
+
+                                <div class="form-group row mt-4">
+                                    <label for="ports" class="col-sm-5 col-form-label">Server Open Ports*</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" id="ports" value="22"  class="form-control"
+                                       style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                    </div>
+                                </div>
+                                <p class="mt-n2 text-muted">
+                                    <small>
+                                        * Type comma separated port numbers, which the new server will open
+                                        exclusively to the Source Network
+                                        (<a href="https://docs.aws.amazon.com/storagegateway/latest/userguide/Resource_Ports.html" target="_blank">AWS port requirements</a>).
+                                    </small>
+                                </p>
+                                <hr>
+
+
+
+                                <div class="row mt-4">
+                                        <div class="col">
+                                            <label for="ami" class="form-label">Network Access*</label>
+                                        </div>
+                                    <div class="col">
+                                        <div class="form-group col text-center">
+                                            <input type="radio" id="accessRadio1" name="accessOptions" value="private">
+                                            <br>
+                                            <i class="fas fa-lock"></i>
+                                            <label for="accessRadio1">Private</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group col text-center">
+                                            <input type="radio" id="accessRadio2" name="accessOptions" value="public">
+                                            <br>
+                                            <i class="fas fa-globe"></i>
+                                            <label for="accessRadio2">Public</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted">
+                                    <small>
+                                        * Private network requires Harvard Key
+                                    </small>
+                                </p>
+                                
+                                <hr/>
+
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <p> <small> Resources cost information on <br>
+                                            <a href="https://calculator.s3.amazonaws.com/index.html" target="_blank" >AWS COST CALCULATOR </a> </small> 
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <button id="createStack" class="btn btn-primary float-right">Create Stack</button>
+                                    </div>
+                                </div>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <span class="navbar-text mx-auto">
+                Copyright © 2019 The President and Fellows of Harvard College
+                |
+                <a href="http://accessibility.harvard.edu/">Accessibility</a>
+                |
+                <a href="http://www.harvard.edu/reporting-copyright-infringements">Report Copyright Infringement</a>
+            </span>
+        </nav>
+
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+        <script src="js/resources.js"></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+
+    </body>
+</html>
