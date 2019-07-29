@@ -339,6 +339,61 @@
                             </li>
                         </ul>
                     </div><!-- / card - Milind Tambe's USC website -->
+					
+					<div class="card card-label_success"><!-- card - Zoom training -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Zoom training
+                                <a onclick="myFunctionZoom()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionZoom() {
+                                var x = document.getElementById("showZoom");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Training material and plans
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Reviewing material
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Meeting with Rich on July 31
+                            </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 4 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Planning meeting on July 16
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Planning meeting on July 2
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed Zoom documentation
+                            </li>
+                        </ul>
+                    </div><!-- / card - Zoom training -->
 
                     <h6>Not started</h6>
 					
@@ -687,61 +742,6 @@
                         </ul>
                     </div><!-- / card - Course Planner -->
 					
-					<div class="card card-label_success"><!-- card - Zoom training -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                Zoom training
-                                <a onclick="myFunctionZoom()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionZoom() {
-                                var x = document.getElementById("showZoom");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Training material and plans
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Reviewing material
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Meeting with Rich
-                            </li>
-						</ul>
-						
-						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 4 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Planning meeting on July 16
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Planning meeting on July 2
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed Zoom documentation
-                            </li>
-                        </ul>
-                    </div><!-- / card - Zoom training -->
-					
 					<div class="card card-label_success"><!-- card - Open Scholar onboarding -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -777,7 +777,7 @@
                         </ul>
                         <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2 hours
+                                Total time - 3 hours
                             </li>
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
