@@ -302,6 +302,10 @@
                                 <i class="far fa-square fa-padding"></i>
                                 Preparing Open Scholar training material for Teamcore students
                             </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Meeting with Professor Tambe on August 1
+                            </li>
 						</ul>
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
@@ -335,33 +339,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Milind Tambe's USC website -->
-					
-					<div class="card card-label_success"><!-- card - Open Scholar info template -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Open Scholar info template
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Start-up information and resources template for every new SEAS Open Scholar website 
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/MLPerf/index.html" target="_blank">
-                                    Drafted content design
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                <a href="https://crcs.seas.harvard.edu" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    CRCS website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Open Scholar info template -->
 
                     <h6>Not started</h6>
 					
@@ -764,6 +741,58 @@
                             </li>
                         </ul>
                     </div><!-- / card - Zoom training -->
+					
+					<div class="card card-label_success"><!-- card - Open Scholar onboarding -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Open Scholar info template
+                                <a onclick="myFunctionOnboarding()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionOnboarding() {
+                                var x = document.getElementById("showOnboarding");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Onboarding information and resources template for every new SEAS Open Scholar website 
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    Drafting content in sandbox
+                                </a> 
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    Drafting content in sandbox
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="https://crcs.seas.harvard.edu" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    CRCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Open Scholar onboarding -->
 
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
