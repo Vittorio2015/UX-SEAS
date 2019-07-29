@@ -44,6 +44,10 @@
     <!-- Custom styles for news flag -->
     <link href="css/flag.css" rel="stylesheet">
 
+    <!-- Vimeo api -->
+    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+
     <style>
 
       body {
@@ -95,6 +99,36 @@
       padding: 1.1em 1em!important;
       }
 
+      .group {
+  position: relative;
+      padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.group iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#poster-image {
+                  background: url('img/home_video_background.png') center center;
+                background-size: cover;
+                bottom: 0;
+                left: 16px;
+                opacity: 1.0;
+                position: absolute;
+                right: 0;
+                top: 16px;
+                z-index: 10;
+                height: 281px;
+                width: 500px;
+  transition: all 0.3s ease-in;
+}
     </style>
 
   </head>
@@ -220,7 +254,20 @@
 
               </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 1em;">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/344805927" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                
+                <!-- <img class="MyVideo" src="img/home_video_background.png" alt="" data-videoId="344805927" data-url="http://vimeo.com/344805927"> -->
+
+                <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/344805927" width="640" height="360" frameborder="0" allowfullscreen>
+                  <img class="MyVideo" src="img/home_video_background.png" alt="" data-videoId="344805927" data-url="http://vimeo.com/344805927">
+                </iframe> -->
+                  
+
+                        <div id="poster-image" onmousedown="myFunction()></div>
+                        <div class="group" id="process-video"></div>
+                        <iframe id="player_344805927" src="https://player.vimeo.com/video/344805927?wmode=opaque&api=1  &amp;player_id=vimeo&amp;title=0&amp;byline=0&amp;portrait=1&amp;badge=0&amp;color=ffffff&amp;wmode=opaque" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                  </div>
+
             </div>
           </div>
         </div>
@@ -403,6 +450,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+    document.getElementById("poster-image").onmousedown = function() { fadeImage() };
+
+function fadeImage() {
+  document.getElementById("poster-image").style.display = "none";
+}
+
+$(document).ready(function(){
+    var player = $("#player_344805927");
+        froogaloop = $f(player[0].id);
+
+    player.mouseover(function(){
+        froogaloop.api('play');
+    })
+});
+    </script>
 
   </body>
 
