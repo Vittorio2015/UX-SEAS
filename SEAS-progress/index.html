@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: August 6, 2019
+                Last update: August 7, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -276,6 +276,104 @@
                         </ul>
                     </div><!-- / card - AWS -->
 
+                    <div class="card card-label_success"><!-- card - IACS -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                IACS website
+                                <a onclick="myFunctionIACS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionIACS() {
+                                var x = document.getElementById("showIACS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                User Experience advice on website redesign
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Planning meeting 
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showIACS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed theme structure, assessed web site for content management
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed meeting
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Institute for Applied Computational Science (IACS) public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - IACS -->
+					
+					<div class="card card-label_success"><!-- card - Open Scholar onboarding -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Open Scholar info template
+                                <a onclick="myFunctionOnboarding()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionOnboarding() {
+                                var x = document.getElementById("showOnboarding");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Onboarding information and resources template for every new SEAS Open Scholar website 
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 3.5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    Drafted content in sandbox
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="https://crcs.seas.harvard.edu" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    CRCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Open Scholar onboarding -->
+
                     <h6>Not started</h6>
 					
 					<div class="card card-label_success"><!-- card - CRCS redesign -->
@@ -342,35 +440,6 @@
                         </ul>
                     </div><!-- / card - Bioengineering -->
 
-                    <div class="card card-label_success"><!-- card - IACS -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                IACS website
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                User Experience advice on website redesign
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Lori plans to rebuild the IACS website without Open Scholar
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed theme structure, assessed web site for content management
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Institute for Applied Computational Science (IACS) public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - IACS -->
-
                     <div class="card card-label_success"><!-- card - Capstone -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -425,7 +494,7 @@
                     </h5>
 
                     <div class="alert alert-info" role="alert" hidden>
-                        Recovering from dental work, working and meeting from home on Friday, August 2
+                        On Friday, August 9, home for furnace maintenance, then to 114 Mt. Auburn for Open Scholar analytics class
                     </div><!-- / Daily alert-->
 					
 					<div class="card card-label_success"><!-- card - Zoom training -->
@@ -456,13 +525,23 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Meeting with Richard, then sharing PowerPoint presentation
+                                Update slides with information from 
+                                <a href="https://docs.google.com/document/d/1doUmsnqwveOLf1qrpzzRgbDkoXMao7dl7UKzCW8NFTE/edit?usp=sharing" target="_blank">
+                                     material shared by Rebecca and Rich
+                                </a>
                             </li>
-						</ul>
+                            </ul>
 						
 						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 10 hours
+                                Total time - 10.5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with Richard, shared 
+                                <a href="https://docs.google.com/presentation/d/1npURbX5F4DohAZEM-c2aS5GA09ImqeUne4Lq8P9KHnw/edit?usp=sharing" target="_blank">
+                                    PowerPoint presentation with the team
+                                </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -470,7 +549,7 @@
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://drive.google.com/open?id=1J0orfrxKUs6Yd6mvi6UiLCSYmzFA83FI" target="_blank">
+                                <a href="https://docs.google.com/presentation/d/1npURbX5F4DohAZEM-c2aS5GA09ImqeUne4Lq8P9KHnw/edit?usp=sharing" target="_blank">
                                     Drafted Powerpoint with Rich's content
                                 </a>
                             </li>
@@ -531,15 +610,15 @@
                                 <i class="far fa-square fa-padding"></i>
                                 Preparing Open Scholar training material for Teamcore students
                             </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Meeting with Professor Tambe on August 6
-                            </li>
 						</ul>
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 Total time - 40.5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with Professor Tambe and Postdocs on August 6
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -604,23 +683,30 @@
                                 </a>
                             </li>
                             <li class="list-group-item list-group-item-margin">
-                                <li class="list-group-item list-group-item-margin">
-                                    <i class="far fa-square fa-padding"></i>
-                                    Addressing
-                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="_blank">
-                                    Kamban
-                                </a> tasks for this sprint
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <li class="list-group-item list-group-item-margin">
-                                    <i class="far fa-square fa-padding"></i>
-                                    Sprint planning meeting on Tuesday, August 6
+                                <i class="far fa-square fa-padding"></i>
+                                Addressing Kamban tasks 
+                                <a href="https://github.com/seas-computing/course-planner/projects/1#card-23076803" target="_blank">
+                                    #27
+                                </a> and
+                                <a href="https://github.com/seas-computing/course-planner/projects/1#card-24257834" target="_blank">
+                                    #33
+                                </a>
                             </li>
 						</ul>
 						
                         <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
-                                Total time - 92 hours
+                                Total time - 93 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Sprint planning meeting on Tuesday, August 6
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://docs.google.com/drawings/d/1739kb1Yi73FFMrom062JUJ8Jsk8NWqUrhCHY9crTDec/edit?usp=sharing" target="_blank">
+                                    Google Drawings diagram of LucidChart for Robert
+                                </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -778,58 +864,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
-					
-					<div class="card card-label_success"><!-- card - Open Scholar onboarding -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Open Scholar info template
-                                <a onclick="myFunctionOnboarding()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionOnboarding() {
-                                var x = document.getElementById("showOnboarding");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Onboarding information and resources template for every new SEAS Open Scholar website 
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
-                                    Drafting content in sandbox
-                                </a> 
-                            </li>
-                        </ul>
-                        <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 3.5 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
-                                    Drafting content in sandbox
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                <a href="https://crcs.seas.harvard.edu" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    CRCS website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Open Scholar onboarding -->
 
                     <div class="card card-label_success"><!-- card - Embedded Ethics -->
                         <div class="card-body card-header-margin">
@@ -862,7 +896,7 @@
 
                         <ul class="list-group list-group-flush" id="showEmbeddedEthics2" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 10 hours
+                                Total time - 10.5 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
