@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: August 8, 2019
+                Last update: August 9, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -215,6 +215,62 @@
                         </ul>
                     </div><!-- / card - Open Scholar onboarding -->
 
+                    <div class="card card-label_success"><!-- card - IACS -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                IACS website
+                                <a onclick="myFunctionIACS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionIACS() {
+                                var x = document.getElementById("showIACS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                User Experience advice on website redesign
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Planning meeting on August 12
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showIACS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                CMS discussion on August 8
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed theme structure, assessed web site for content management
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed meeting
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Institute for Applied Computational Science (IACS) public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - IACS -->
+
                     <h6>Not started</h6>
 					
 					<div class="card card-label_success"><!-- card - CRCS redesign -->
@@ -334,8 +390,8 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert" hidden>
-                        On Friday, August 9, home for furnace maintenance, then to 114 Mt. Auburn for Open Scholar analytics class
+                    <div class="alert alert-info" role="alert"><!-- Daily alert-->
+                        On Friday, August 9, home for furnace maintenance, then to 114 Mt. Auburn for an Open Scholar analytics class
                     </div><!-- / Daily alert-->
 
                     <div class="card card-label_primary"><!-- card - AWS -->
@@ -363,7 +419,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Workflow diagram
+                                Drafting a workflow diagram to facilitate planning
                             </li>
 						</ul>
 						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
@@ -565,7 +621,7 @@
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 42 hours
+                                Total time - 44 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -812,58 +868,6 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
-
-                    <div class="card card-label_success"><!-- card - IACS -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                IACS website
-                                <a onclick="myFunctionIACS()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionIACS() {
-                                var x = document.getElementById("showIACS");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                User Experience advice on website redesign
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Planning meeting on August 8
-                            </li>
-                        </ul>
-                        <ul class="list-group list-group-flush" id="showIACS" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed theme structure, assessed web site for content management
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed meeting
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Institute for Applied Computational Science (IACS) public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - IACS -->
 
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
