@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: August 9, 2019
+                Last update: August 12, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -215,90 +215,7 @@
                         </ul>
                     </div><!-- / card - Open Scholar onboarding -->
 
-                    <div class="card card-label_success"><!-- card - IACS -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                IACS website
-                                <a onclick="myFunctionIACS()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionIACS() {
-                                var x = document.getElementById("showIACS");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                User Experience advice on website redesign
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Planning meeting on August 12
-                            </li>
-                        </ul>
-                        <ul class="list-group list-group-flush" id="showIACS" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                CMS discussion on August 8
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed theme structure, assessed web site for content management
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed meeting
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Institute for Applied Computational Science (IACS) public website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - IACS -->
-
                     <h6>Not started</h6>
-					
-					<div class="card card-label_success"><!-- card - CRCS redesign -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                CRCS website redesign
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                Waiting for Vijay's and Jim's reply
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/MLPerf/index.html" target="_blank">
-                                    Drafted content design
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="https://crcs.seas.harvard.edu" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    CRCS website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - CRCS redesign -->
 
                     <div class="card card-label_success"><!-- card - Bioengineering -->
                         <div class="card-body card-header-margin">
@@ -390,7 +307,7 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert"><!-- Daily alert-->
+                    <div class="alert alert-info" role="alert" hidden><!-- Daily alert-->
                         On Friday, August 9, home for furnace maintenance, then to 114 Mt. Auburn for an Open Scholar analytics class
                     </div><!-- / Daily alert-->
 
@@ -499,6 +416,62 @@
                             </li>
                         </ul>
                     </div><!-- / card - AWS -->
+
+                    <div class="card card-label_success"><!-- card - IACS -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                IACS website
+                                <a onclick="myFunctionIACS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionIACS() {
+                                var x = document.getElementById("showIACS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                User Experience advice on website redesign
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Planning meeting on August 12
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showIACS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                CMS discussion on August 8
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed theme structure, assessed web site for content management
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed meeting
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://iacs.seas.harvard.edu/home" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Institute for Applied Computational Science (IACS) public website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - IACS -->
 					
 					<div class="card card-label_success"><!-- card - Zoom training -->
                         <div class="card-body card-header-margin">
@@ -621,7 +594,7 @@
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 44 hours
+                                Total time - 50 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -868,6 +841,33 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
+					
+					<div class="card card-label_success"><!-- card - CRCS redesign -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                CRCS website redesign
+                            </h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Planning meeting with Professor Tambe on August 12
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/MLPerf/index.html" target="_blank">
+                                    Drafted content design
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://crcs.seas.harvard.edu" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    CRCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - CRCS redesign -->
 
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
@@ -980,21 +980,21 @@
 									Learning React.js (lynda.com)
 								</a>
                             </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://hwpi.harvard.edu/digital-content-connect?utm_source=Digital+Roundup&utm_campaign=7bf7750653-EMAIL_CAMPAIGN_2019_07_26_02_51&utm_medium=email&utm_term=0_b7af3c0d9f-7bf7750653-166868899&mc_cid=7bf7750653&mc_eid=a8834b16e8" target="_blank">
-									Analytics workshop (August 9)
-								</a>
-                            </li>
 						</ul>
 
                         <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 13 hours
+                                Total time - 15 hours
                             </li>
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
                                 React (lynda.com)
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://hwpi.harvard.edu/digital-content-connect?utm_source=Digital+Roundup&utm_campaign=7bf7750653-EMAIL_CAMPAIGN_2019_07_26_02_51&utm_medium=email&utm_term=0_b7af3c0d9f-7bf7750653-166868899&mc_cid=7bf7750653&mc_eid=a8834b16e8" target="_blank">
+									Analytics workshop (August 9)
+								</a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
                                 
