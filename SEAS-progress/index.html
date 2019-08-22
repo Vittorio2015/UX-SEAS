@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: August 20, 2019
+                Last update: August 22, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -498,7 +498,7 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert" hidden><!-- Daily alert-->
+                    <div class="alert alert-info" role="alert"><!-- Daily alert-->
                         On Friday, August 23, working remotely
                     </div><!-- / Daily alert-->
 				
@@ -530,15 +530,11 @@
                                 <i class="far fa-square fa-padding"></i>
                                 Advising Milind Tambe's assistants
                             </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Preparing Open Scholar training material for Teamcore students
-                            </li>
 						</ul>
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 56 hours
+                                Total time - 58 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -913,7 +909,176 @@
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- / card - HarvardCS design -->
+                    </div><!-- / card - HarvardCS design -->	
+
+					<div class="card card-label_secondary"><!-- card - Train -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                User Experience training
+                                <a onclick="myFunctionTrain()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionTrain() {
+                                var x = document.getElementById("showTrain");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                User Experience and Open Scholar training
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://www.lynda.com/React-js-tutorials/Learning-React-js/800214-2.html" target="_blank">
+									Open Scholar training to Teamcore Postdocs on September 9
+								</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Preparing Open Scholar training material for Teamcore Postdocs
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showTrain" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 3 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                React (lynda.com)
+                            </li>
+                        </ul>
+                    </div><!-- / card - Train -->
+					
+					<div class="card card-label_success"><!-- card - Accessibility of SEAS AV -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                Accessibility of 114 Western Ave AV 
+                                <a onclick="myFunctionSiteSEASav()" class="float-right" >
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionSiteSEASav() {
+                                var x = document.getElementById("showSiteSEASav");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+								Addressing accessibility of 114 Western Avenue AV
+                            </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showSiteSEASav" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Accessibility review of the functional website and editing interface
+                            </li>
+                        </ul>
+                    </div><!-- / card - Accessibility of  SEAS AV -->
+					
+					<div class="card card-label_success"><!-- card - Accessibility of new SEAS Computing website content -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                SEAS Computing new website accessibility review
+                                <a onclick="myFunctionSiteSEAScomputing()" class="float-right" hidden>
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionSiteSEAScomputing() {
+                                var x = document.getElementById("showSiteSEAScomputing");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+								Reviewing the accessibility of the new SEAS Computing website content
+                            </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showSiteSEAScomputing" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - ? hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Accessibility review of the functional website and editing interface
+                            </li>
+                        </ul>
+                    </div><!-- / card - Accessibility of new SEAS Computing website content -->
+					
+					<div class="card card-label_success"><!-- card - Accessibility of new apply.SEAS website content -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                New apply.SEAS accessibility review
+                                <a onclick="myFunctionSiteApplySEAS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionSiteApplySEAS() {
+                                var x = document.getElementById("showSiteApplySEAS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+								Reviewing the accessibility of the new apply.SEAS website content
+                            </li>
+						</ul>
+						
+						<ul class="list-group list-group-flush" id="showSiteApplySEAS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Accessibility review of the functional website and editing interface
+                            </li>
+                        </ul>
+                    </div><!-- / card - Accessibility of new new apply.SEAS website content -->
 
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
@@ -1024,6 +1189,12 @@
                                 <i class="far fa-square fa-padding"></i>
                                 <a href="https://www.lynda.com/React-js-tutorials/Learning-React-js/800214-2.html" target="_blank">
 									Learning React.js (lynda.com)
+								</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://hilt.harvard.edu/news-and-events/annual-conference/" target="_blank">
+									HILT Conference (September 27)
 								</a>
                             </li>
                             <li class="list-group-item list-group-item-margin">
