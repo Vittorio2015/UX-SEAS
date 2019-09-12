@@ -143,21 +143,39 @@
                     </div>
                 </div>
 
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-item">
-                        <a href="4.html" role="button" class="btn btn-outline-secondary text-left" style="">
-                            <i class="far fa-arrow-alt-circle-left"></i>
-                            Back
-                        </a>
-                    </a>
-                    <a class="navbar-item">
-                        <a class="navbar-item ml-auto">
-                            <button type="button" class="btn btn-outline-secondary">
-                                Next
-                                <i class="far fa-arrow-alt-circle-right"></i>
-                            </button>
-                        </a>
-                    </a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <ul class="navbar-nav" style="width: 100%;">
+                            <li class="navbar-item">
+                                <a href="4.html" role="button" class="btn btn-outline-secondary text-left">
+                                    <i class="far fa-arrow-alt-circle-left"></i>
+                                    Back
+                                </a>
+                            </li>
+                            <li class="navbar-item ml-5" style="width: 20em; text-align: center;">
+                                <label for="speechVolume" style="margin-bottom: -.25em;">
+                                    <i class="fas fa-microphone"></i>
+                                    Speech volume
+                                </label>
+                                <br>
+                                <input type="range" class="custom-range mt-n3" id="speechVolume">
+                            </li>
+                            <li class="navbar-item ml-5" style="width: 20em; text-align: center;">
+                                <label for="programVolume" style="margin-bottom: -.25em;">
+                                    <i class="fas fa-volume-up"></i>
+                                    Program volume
+                                </label>
+                                <br>
+                                <input type="range" class="custom-range mt-n3" id="programVolume">
+                            </li>
+                            <li class="navbar-item ml-auto">
+                                <a class="navbar-item">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        Next
+                                        <i class="far fa-arrow-alt-circle-right"></i>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
                 </nav>
             </main>
 
