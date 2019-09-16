@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: September 13, 2019
+                Last update: September 16, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -195,121 +195,73 @@
                         </ul>
                     </div><!-- / card - Accessibility of new SEAS Computing website content -->
 
-                    <div class="card card-label_primary"><!-- card - AWS -->
+                    <div class="card card-label_success"><!-- card - Open Scholar onboarding -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="fas fa-cogs fa-padding"></i>
-                                AWS resource provisioning tool
-
-								<a onclick="myFunctionAWS()" class="float-right" title="Project history">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Open Scholar info template
+                                <a onclick="myFunctionOnboarding()" class="float-right">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
-
-								<script>
-									function myFunctionAWS() {
-										var x = document.getElementById("showAWS");
-										if (x.style.display === "none") {
-											x.style.display = "block";
-										} else {
-											x.style.display = "none";
-										}
-									}
-								</script>
                             </h6>
                         </div>
-                        <ul class="list-group list-group-flush" hidden>
+
+                        <script>
+                            function myFunctionOnboarding() {
+                                var x = document.getElementById("showOnboarding");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Onboarding information and resources template for every new SEAS Open Scholar website 
+                            </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Drafted a 
-                                <a href="https://docs.google.com/drawings/d/12RIsUS32a8B-IWqSPpwZmbtUFJCE-OQM0bPm51lMHRw/edit?usp=sharing" target="_blank"></a>workflow diagram</a> 
-                                to facilitate planning
-                            </li>
-						</ul>
-						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
-                                Total time - 33 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Drafted a 
-                                <a href="https://docs.google.com/drawings/d/12RIsUS32a8B-IWqSPpwZmbtUFJCE-OQM0bPm51lMHRw/edit?usp=sharing" target="_blank"></a>workflow diagram</a> 
-                                to facilitate planning
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Planning meeting on <a href="https://github.com/harvard/CloudProvisioningConsole/projects/2#card-23482589" target="_blank">Kanban board</a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/SEAS-AWS_simplify/index.html" target="_blank">HTML mockups</a> 
-                                with users' feedback (<a href="https://github.com/harvard/CloudProvisioningConsole/projects/2#card-23482589" terget="_blank">Kanban board</a>)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                App demo on July 1
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                App demo prep
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Scheduled pilot testing sessions
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Prepared demo for users
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Stylized the interface for user testing
-                                according to Vittorio's
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    HTML templates
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Finalized
-                                <a href="https://docs.google.com/document/d/14Pv0UHN7qZp_CaXLBs0T1X2Vl-Elr1oPMRRvjV5H2wQ/edit?usp=sharing" target="_blank">
-                                    questionnaire
-                                </a>
-                                for user testing (Vittorio and Faras)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Early Planning - Tuesday, February 26
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                List of users to test with (from Chris') - March 6
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Vittorio's access to the interface - March 7
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    <i class="far fa-check-square fa-padding"></i>
-                                    User Experience feedback to Faras - March 11
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://d2b4z2hciygw50.cloudfront.net/index.html" target="_blank">
-                                    <i class="fas fa-cogs fa-padding"></i>
-                                    AWS resource provisioning tool - MVP
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
-                                    <i class="fas fa-cogs fa-padding"></i>
-                                    User Experience feedback
+                                Add links once the new SEAS website is released
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- / card - AWS -->
+                        <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Revised 
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    drafted content
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Reviewed 
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    drafted content
+                                </a>
+                                with Chris
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
+                                    Drafted content in sandbox
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="https://crcs.seas.harvard.edu" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    CRCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Open Scholar onboarding -->
 
-                    <h6>Not started</h6>
+					<h6>Not started</h6>
 
                     <div class="card card-label_success"><!-- card - Capstone -->
                         <div class="card-body card-header-margin">
@@ -436,48 +388,119 @@
                         </ul>
                     </div><!-- / card - IACS -->
 					
-					<div class="card card-label_success"><!-- card - Department of Elena Glassman -->
+					<div class="card card-label_primary"><!-- card - AWS -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Elena Glassman's website 
-                                <a onclick="myFunctionGlassman()" class="float-right">
+                                <i class="fas fa-cogs fa-padding"></i>
+                                AWS resource provisioning tool
+
+								<a onclick="myFunctionAWS()" class="float-right" title="Project history">
                                     <i class="fas fa-list-ul fa-padding"></i>
                                 </a>
+
+								<script>
+									function myFunctionAWS() {
+										var x = document.getElementById("showAWS");
+										if (x.style.display === "none") {
+											x.style.display = "block";
+										} else {
+											x.style.display = "none";
+										}
+									}
+								</script>
                             </h6>
                         </div>
-
-                        <script>
-                            function myFunctionGlassman() {
-                                var x = document.getElementById("showGlassman");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-						
-						<ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Open Scholar website
-                            </li>
+                        <ul class="list-group list-group-flush" hidden>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Waiting for Elena Glassman's reply
+                                Drafted a 
+                                <a href="https://docs.google.com/drawings/d/12RIsUS32a8B-IWqSPpwZmbtUFJCE-OQM0bPm51lMHRw/edit?usp=sharing" target="_blank"></a>workflow diagram</a> 
+                                to facilitate planning
                             </li>
 						</ul>
-
-                        <ul class="list-group list-group-flush" id="showGlassman" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 8 hours
+						<ul class="list-group list-group-flush" id="showAWS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light"><!-- done ruler -->
+                                Total time - 33 hours
                             </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
-                                Contacted Elena Glassman (August 30)
+                                Drafted a 
+                                <a href="https://docs.google.com/drawings/d/12RIsUS32a8B-IWqSPpwZmbtUFJCE-OQM0bPm51lMHRw/edit?usp=sharing" target="_blank"></a>workflow diagram</a> 
+                                to facilitate planning
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Planning meeting on <a href="https://github.com/harvard/CloudProvisioningConsole/projects/2#card-23482589" target="_blank">Kanban board</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/SEAS-AWS_simplify/index.html" target="_blank">HTML mockups</a> 
+                                with users' feedback (<a href="https://github.com/harvard/CloudProvisioningConsole/projects/2#card-23482589" terget="_blank">Kanban board</a>)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light list-group-item-done"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                App demo on July 1
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                App demo prep
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Scheduled pilot testing sessions
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Prepared demo for users
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Stylized the interface for user testing
+                                according to Vittorio's
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    HTML templates
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Finalized
+                                <a href="https://docs.google.com/document/d/14Pv0UHN7qZp_CaXLBs0T1X2Vl-Elr1oPMRRvjV5H2wQ/edit?usp=sharing" target="_blank">
+                                    questionnaire
+                                </a>
+                                for user testing (Vittorio and Faras)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Early Planning - Tuesday, February 26
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                List of users to test with (from Chris') - March 6
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Vittorio's access to the interface - March 7
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    User Experience feedback to Faras - March 11
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://d2b4z2hciygw50.cloudfront.net/index.html" target="_blank">
+                                    <i class="fas fa-cogs fa-padding"></i>
+                                    AWS resource provisioning tool - MVP
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/AWS-CloudProvisioningConsole/index.html" target="_blank">
+                                    <i class="fas fa-cogs fa-padding"></i>
+                                    User Experience feedback
+                                </a>
                             </li>
                         </ul>
-                    </div><!-- / card - Department of Elena Glassman -->
+                    </div><!-- / card - AWS -->
 
                     <div class="card card-label_success"><!-- card - Bioengineering -->
                         <div class="card-body card-header-margin">
@@ -591,7 +614,7 @@
 						
 						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 16.5 hours
+                                Total time - 19 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -708,7 +731,15 @@
 						
 						<ul class="list-group list-group-flush" id="showSiteSEASav" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 32 hours
+                                Total time - 37.5 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Draft 5 of
+                                <a href="https://drive.google.com/file/d/1Ak6BBKMYPWvq-i0Haa46P3PWJvZrl6iG/view?usp=sharing" target="_blank">
+                                    wireframes
+                                </a>
+                                (September 16)
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -800,7 +831,7 @@
 						
 						<ul class="list-group list-group-flush" id="showTeamcore" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 80 hours
+                                Total time - 81 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -863,17 +894,21 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Addressing Kamban tasks #25 and #26
+                                Working on Kamban tasks #15, #16, #26 and #27
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Course Planning sprint planning (September 13)
+                                Course Planning sprint planning (September 16)
                             </li>
 						</ul>
 						
                         <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light" ><!-- done ruler -->
-                                Total time - 111 hours
+                                Total time - 112 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Course Planning sprint planning (September 13)
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -1089,66 +1124,6 @@
                         </ul>
                     </div><!-- / card - Course Planner -->
 					
-					<div class="card card-label_success"><!-- card - Open Scholar onboarding -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Open Scholar info template
-                                <a onclick="myFunctionOnboarding()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionOnboarding() {
-                                var x = document.getElementById("showOnboarding");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Onboarding information and resources template for every new SEAS Open Scholar website 
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Revising <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
-                                drafted content
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="list-group list-group-flush" id="showOnboarding" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 5 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Reviewed 
-                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
-                                    drafted content
-                                </a>
-                                with Chris
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://projects.iq.harvard.edu/user_experience/seas-open-scholar-onboarding" target="_blank">
-                                    Drafted content in sandbox
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                <a href="https://crcs.seas.harvard.edu" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    CRCS website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Open Scholar onboarding -->
-
 					<div class="card card-label_secondary"><!-- card - Train -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -1191,7 +1166,7 @@
 
                         <ul class="list-group list-group-flush" id="showTrain" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 4.5 hours
+                                Total time - 6.5 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -1349,7 +1324,148 @@
                                 
                             </li>
                         </ul>
-                    </div><!-- / card - Professional Development -->					
+                    </div><!-- / card - Professional Development -->	
+
+					<div class="card card-label_secondary"><!-- card - SEAS events -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                SEAS events
+                                <a onclick="myFunctionSEASevent()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionSEASevent() {
+                                var x = document.getElementById("showSEASevent");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Events, talks, presentations
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showSEASevent" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 1 hours
+                            </li>
+                            
+                            <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-georg-gerber" target="_blank">
+                                        IACS Georg Gerber's "Bayesian Machine Learning Models for Understanding Microbiome Dynamics" (September 20)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/structuring_elastic_sheets_and_filaments_with_a_twist" target="_blank">
+                                        Arshad Kudrolli's "Structuring Elastic Sheets and Filaments With a Twist" (September 25)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/mde_talk_sameh_wahba_on_resiliency" target="_blank">
+                                        MDE Talk: Sameh Wahba on Resiliency (September 25)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/democratizing_urban_data_exploration?utm_campaign=widget&utm_medium=widget&utm_source=Harvard+SEAS" target="_blank">
+                                        IACS Juliana Freire's "Democratizing Urban Data Exploration" (September 26)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/guest_speaker_mary_barth_senior_scientist_ncar" target="_blank">
+                                        Mary Barth's "Guest Speaker: Mary Barth, Senior Scientist, NCAR" (September 27)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/machine_learning_and_computer_vision_for_neurodevelopmental_disorders_helping_one_child_at_a_time" target="_blank">
+                                        Guillermo Sapiro's "Machine Learning and Computer Vision for Neurodevelopmental Disorders: Helping One Child at a Time" (September 27)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://hilt.harvard.edu/news-and-events/annual-conference/2019-conference-program/" target="_blank">
+                                        HILT conference (September 27)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/guest_speaker_vitaly_feldman_research_scientist_google_research?utm_campaign=widget&utm_medium=widget&utm_source=Harvard+SEAS" target="_blank">
+                                        Guest Speaker: Vitaly Feldman, Research Scientist, Google Research (September 30)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/social_costs_of_air_pollution_in_china" target="_blank">
+                                        Siqi Zheng's : "Social Costs of Air Pollution in China" (October 3)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/quantifying_upstream_and_downstream_emissions_from_oil_and_natural_gas" target="_blank">
+                                        Brian McDonald's : "Quantifying Upstream and Downstream Emissions from Oil and Natural Gas" (October 4)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-jia-liu-harvard-seas" target="_blank">
+                                        IACS Jia Liu's : "Multimodal Mapping of Brain Activity" (October 4)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/guest_speaker_raghu_meka_ucla" target="_blank">
+                                        Guest Speaker: Raghu Meka, UCLA (omplexity theory, learning and probability theory) (October 7)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/guest_speaker_daniel_heller_memorial_sloan_kettering_cancer_center" target="_blank">
+                                        Guest Speaker: Daniel Heller, Memorial Sloan Kettering Cancer Center (October 10)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://events.seas.harvard.edu/event/guest_speaker_arno_rauschenbeutel_professor_tu_austria" target="_blank">
+                                        Arno Rauschenbeutel
+                                    </a> (<a href="https://www.humboldt-professur.de/en/preistraeger/preistraeger-2018/rauschenbeutel-arno" target="_blank">Quantum optics / Atomic physics</a>) (October 11)
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://iacs.seas.harvard.edu/event/data-science-ecosystems-ai-improve-social-research?delta=0" target="_blank">
+                                        IACS Dr. Alex Liu's "Data Science Ecosystems with AI to Improve Social Research" (November 14)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-francisco-f%C3%B6rster-bur%C3%B3n-universidad-de-chile?delta=0" target="_blank">
+                                        IACS Francisco Förster Burón's "The Universe in a Stream: Challenges and Progress of the ALeRCE Broker" (November 15)
+                                    </a>
+                                </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-1" target="_blank">
+									IACS Tambe's "AI for Social Good" (September 13)
+								</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
+                                
+                            </li>
+                        </ul>
+                    </div><!-- / card - SEAS events -->					
 
                 </div><!-- / In progress -->
 
@@ -1360,7 +1476,50 @@
 
                     <h3><span class="badge badge-secondary" hidden>Q1-FY20</span></h3>
 					
-					<div class="card card-label_success"><!-- card - HarvardCS design-->
+					<div class="card card-label_success"><!-- card - Department of Elena Glassman -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Elena Glassman's website 
+                                <a onclick="myFunctionGlassman()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionGlassman() {
+                                var x = document.getElementById("showGlassman");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                Open Scholar website
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                Waiting for Elena Glassman's reply
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showGlassman" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Contacted Elena Glassman (August 30 and September 12)
+                            </li>
+                        </ul>
+                    </div><!-- / card - Department of Elena Glassman -->
+
+                    <div class="card card-label_success"><!-- card - HarvardCS design-->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
