@@ -569,8 +569,8 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert"><!-- Daily alert-->
-                        On Thursday September 19, working remotely
+                    <div class="alert alert-info" role="alert" hidden><!-- Daily alert-->
+                        On Friday September 20, working remotely
                     </div><!-- / Daily alert-->
 					
 					<div class="card card-label_success"><!-- card - Accessibility of SEAS AV -->
@@ -1194,6 +1194,58 @@
                         </ul>
                     </div><!-- / card - Teamcore OpenScholar training -->
 
+                    <div class="card card-label_success"><!-- card - Department of Elena Glassman -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Elena Glassman's website 
+                                <a onclick="myFunctionGlassman()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionGlassman() {
+                                var x = document.getElementById("showGlassman");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                Open Scholar website
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                Design recommendations for 
+                                <a href="http://glassmanlab.seas.harvard.edu/" target="_blank">
+                                    Glassman Lab Website
+                                </a>
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showGlassman" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1.5 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Contacted Elena Glassman (August 30 and September 12)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <i class="fas fa-globe-americas fa-padding"></i>
+                                <a href="http://glassmanlab.seas.harvard.edu/" target="_blank">
+                                    Glassman Lab Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Department of Elena Glassman -->
+
                     <div class="card card-label_warning"><!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -1507,56 +1559,7 @@
 
                     <h3><span class="badge badge-secondary" hidden>Q1-FY20</span></h3>
 					
-					<div class="card card-label_success"><!-- card - Department of Elena Glassman -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Elena Glassman's website 
-                                <a onclick="myFunctionGlassman()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionGlassman() {
-                                var x = document.getElementById("showGlassman");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-						
-						<ul class="list-group list-group-flush" hidden>
-                            <li class="list-group-item list-group-item-margin">
-                                Open Scholar website
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                Waiting for Elena Glassman's reply
-                            </li>
-						</ul>
-
-                        <ul class="list-group list-group-flush" id="showGlassman" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 1 hour
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"></i>
-                                Contacted Elena Glassman (August 30 and September 12)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted">
-                                <a href="http://glassmanlab.seas.harvard.edu/" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Glassman Lab Website
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Department of Elena Glassman -->
-
-                    <div class="card card-label_success"><!-- card - HarvardCS design-->
+					<div class="card card-label_success"><!-- card - HarvardCS design-->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
