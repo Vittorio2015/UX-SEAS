@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: September 19, 2019
+                Last update: September 20, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -569,7 +569,7 @@
                         In progress
                     </h5>
 
-                    <div class="alert alert-info" role="alert" hidden><!-- Daily alert-->
+                    <div class="alert alert-info" role="alert"><!-- Daily alert-->
                         On Friday September 20, working remotely
                     </div><!-- / Daily alert-->
 					
@@ -605,7 +605,7 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Product review on October 7
+                                Product review (October 7)
                             </li>
 						</ul>
 						
@@ -983,17 +983,21 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Team meeting (September 19)
+                                Revising training content
                             </li>
-                            <li class="list-group-item list-group-item-margin">
+                            <li class="list-group-item list-group-item-margin" hidden>
                                 <i class="far fa-square fa-padding"></i>
-                                Zoom class scheduled for September 24
+                                Zoom class (September 24)
                             </li>
                             </ul>
 						
 						<ul class="list-group list-group-flush" id="showZoom" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 Total time - 19 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Team meeting (September 19)
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -1216,13 +1220,13 @@
                             }
                         </script>
 						
-						<ul class="list-group list-group-flush" hidden>
+						<ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-margin">
-                                Open Scholar website
+                                Lab website
                             </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
+                            <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Design recommendations for 
+                                User Experience recommendations for 
                                 <a href="http://glassmanlab.seas.harvard.edu/" target="_blank">
                                     Glassman Lab Website
                                 </a>
@@ -1274,12 +1278,6 @@
                             </li>
                             <li class="list-group-item list-group-item-margin" hidden>
                                 <i class="far fa-square fa-padding"></i>
-                                <a href="https://go.3playmedia.com/wbn-09-19-2019-aem" target="_blank">
-									3Play Media "Accessible Educational Materials as a Foundation for UDL" (September 19 webinar)
-								</a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
                                 <a href="https://zoom.us/webinar/register/WN_Mobq7VKaRQ6hdqFQhfKi5g" target="_blank">
 									August Siteimprove Accessibility Education Community Call (August 22 webinar)
 								</a>
@@ -1288,9 +1286,15 @@
 
                         <ul class="list-group list-group-flush" id="showProfDev2" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 8 hours
+                                Total time - 9 hours
                             </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    <a href="https://go.3playmedia.com/wbn-09-19-2019-aem" target="_blank">
+                                        3Play Media "Accessible Educational Materials as a Foundation for UDL" (September 19 webinar)
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
                                 <i class="far fa-check-square fa-padding"></i>
                                 <a href="https://zoom.us/webinar/register/WN_Mobq7VKaRQ6hdqFQhfKi5g" target="_blank">
 									August Siteimprove Accessibility Education Community Call (August 22 webinar)
@@ -1559,7 +1563,52 @@
 
                     <h3><span class="badge badge-secondary" hidden>Q1-FY20</span></h3>
 					
-					<div class="card card-label_success"><!-- card - HarvardCS design-->
+					<div class="card card-label_success"><!-- card - Woodward Yang website -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Woodward Yang's website 
+                                <a onclick="myFunctionYang()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionYang() {
+                                var x = document.getElementById("showYang");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                Open Scholar website
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showYang" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 1 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light"><!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met and coached Woody Yang (September 19)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <i class="fas fa-globe-americas fa-padding"></i>
+                                <a href="https://projects.iq.harvard.edu/wyang" target="_blank">
+                                    Woody Yang's Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Woodward Yang website -->
+
+                    <div class="card card-label_success"><!-- card - HarvardCS design-->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
