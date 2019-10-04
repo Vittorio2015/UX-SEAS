@@ -70,10 +70,10 @@
 
             <div class="row">
 
-                <div class="col-sm col-sm-margin"><!-- Not started -->
+                <div class="col-sm col-sm-margin"><!-- Planned -->
 
                     <h5 class="cards-header">
-                        On hold
+                        Planned
                     </h5>
 
                     <div class="card card-label_success"><!-- card - Zoom training -->
@@ -416,7 +416,7 @@
                         Teaching and working remotely from China between October 16 and November 7 2019
                     </div><!-- / 大连 -->
                     
-                    <h6>Not started</h6>
+                    <h6>On hold</h6>
 
                     <div class="card card-label_success"><!-- card - Accessibility of new SEAS Computing website content -->
                         <div class="card-body card-header-margin">
@@ -789,7 +789,65 @@
                         </ul>
                     </div><!-- / card - Study Plan -->
 
-                </div><!-- / Not started -->
+                    <div class="card card-label_success"><!-- card - Bioengineering -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                Bioengineering website design
+                                <a onclick="myFunctionBioengineering()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionBioengineering() {
+                                var x = document.getElementById("showBioengineering");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Waiting for Paul Karoff's feedback
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush" id="showBioengineering" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Completed design proposal
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/Bioengineering/website01/index.html" target="_blank">
+                                    <i class="fab fa-github fa-padding"></i>
+                                    Design proposal
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <a href="https://www.seas.harvard.edu/bioengineering" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Bioengineering public website
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <a href="https://bme.harvard.edu/home" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Bioengineering Open Scholar page by Eliza
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Bioengineering -->
+
+                </div><!-- / Planned -->
 
                 <div class="col-sm col-sm-margin"><!-- In progress -->
                     <h5 class="cards-header">
@@ -1191,65 +1249,7 @@
                         </ul>
                     </div><!-- / card - CRCS redesign -->
 					
-					<div class="card card-label_success"><!-- card - Bioengineering -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"></i>
-                                Bioengineering website design
-                                <a onclick="myFunctionBioengineering()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionBioengineering() {
-                                var x = document.getElementById("showBioengineering");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                Waiting for Paul Karoff's feedback
-                            </li>
-                        </ul>
-
-                        <ul class="list-group list-group-flush" id="showBioengineering" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Completed design proposal
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/Bioengineering/website01/index.html" target="_blank">
-                                    <i class="fab fa-github fa-padding"></i>
-                                    Design proposal
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <a href="https://www.seas.harvard.edu/bioengineering" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Bioengineering public website
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <a href="https://bme.harvard.edu/home" target="_blank">
-                                    <i class="fas fa-globe-americas fa-padding"></i>
-                                    Bioengineering Open Scholar page by Eliza
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Bioengineering -->
-
-                    <div class="card card-label_success"><!-- card - Teamcore  -->
+					<div class="card card-label_success"><!-- card - Teamcore  -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
