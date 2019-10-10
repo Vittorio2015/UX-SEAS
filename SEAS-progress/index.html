@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: October 9, 2019
+                Last update: October 10, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -513,7 +513,57 @@
                     
                     <h6>On hold</h6>
 
-                    <div class="card card-label_success" hidden><!-- card - Department of Elena Glassman -->
+                    <div class="card card-label_success"><!-- card - IACS Compufest -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                IACS Compufest
+                                <a onclick="myFunctionCompufest()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionCompufest() {
+                                var x = document.getElementById("showCompufest");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Compufest content on an OpenScholar website
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Offering Lori Ray the alternative to publish the Compufest content on OpenScholar
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush" id="showCompufest" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 0 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Chris propoed Lori to consider OpenScholar (October 9)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted" hidden>
+                                <a href="https://www.computefest.seas.harvard.edu/" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Current IACS Compufest website on Wix
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - IACS Compufest -->
+
+					<div class="card card-label_success" hidden><!-- card - Department of Elena Glassman -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
@@ -1032,7 +1082,7 @@
                             <li class="list-group-item list-group-item-margin">
                                 Initiatives, events, comunity of practice
                             </li>
-                            <li class="list-group-item list-group-item-margin">
+                            <li class="list-group-item list-group-item-margin" hidden>
                                 <i class="far fa-square fa-padding"></i>
                                 Digital Accessibility Liaisons kickoff (October 9)
                             </li>
@@ -1040,7 +1090,11 @@
 
                         <ul class="list-group list-group-flush" id="showAccessibility" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 9 hours
+                                Total time - 3 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Digital Accessibility Liaisons kickoff (October 9)
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -1078,8 +1132,8 @@
 						</ul>
 
                         <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 0 hours
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
@@ -1087,14 +1141,17 @@
 									Learning React.js (lynda.com)
 								</a>
                             </li>
-                            <li class="list-group-item list-group-item-margin">
+                            <li class="list-group-item list-group-item-margin" hidden>
                                 <i class="far fa-square fa-padding"></i>
-                                <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446" target="_blank">
-									Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations (Harvard Digital Scholarship Support Group, October 9)
+                                <a href="url" target="_blank">
+									Next (date)
 								</a>
                             </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
-                                
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                    <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446" target="_blank">
+									Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations (Harvard Digital Scholarship Support Group, October 9)
+								</a>
                             </li>
                         </ul>
                     </div><!-- / card - Professional Development -->	
