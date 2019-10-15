@@ -31,7 +31,7 @@
             </h5>
             <hr>
             <p class="muted">
-                Last update: October 11, 2019
+                Last update: October 15, 2019
                 <br>
                 <a href="#legend">
                     Legend
@@ -510,11 +510,191 @@
                         </ul>
                     </div><!-- / card - Design of  SEAS AV -->
 				
-                    <div class="alert alert-info" role="alert" ><!-- 大连 -->
-                        <!-- <i class="fas fa-plane fa-padding"></i> -->
-                        <i class="fas fa-globe-asia fa-padding"></i>
-                        Teaching and working remotely from China between October 16 and November 7 2019
-                    </div><!-- / 大连 -->
+                    <div class="card card-label_warning"><!-- card - Accessibility -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                Accessibility
+                                <a onclick="myFunctionAccessibility()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionAccessibility() {
+                                var x = document.getElementById("showAccessibility");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Initiatives, events, comunity of practice
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                Digital Accessibility Liaisons kickoff (October 9)
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showAccessibility" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 3 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Digital Accessibility Liaisons kickoff (October 9)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Disability Inclusion Workshop (October 1)
+                            </li>
+                        </ul>
+                    </div><!-- / card - Accessibility -->		
+
+					<div class="card card-label_secondary"><!-- card - Professional Development -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                Professional Development
+                                <a onclick="myFunctionProfDev()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionProfDev() {
+                                var x = document.getElementById("showProfDev");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Training, self training, events
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://www.lynda.com/React-js-tutorials/Learning-React-js/800214-2.html" target="_blank">
+									Learning React.js (lynda.com)
+								</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                    <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446" target="_blank">
+									Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations (Harvard Digital Scholarship Support Group, October 9)
+								</a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Professional Development -->	
+
+					<div class="card card-label_secondary"><!-- card - SEAS events -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"></i>
+                                SEAS events
+                                <a onclick="myFunctionSEASevent()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionSEASevent() {
+                                var x = document.getElementById("showSEASevent");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+						
+						<ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                Events, talks, presentations
+                            </li>
+						</ul>
+
+                        <ul class="list-group list-group-flush" id="showSEASevent" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-check-square fa-padding"></i>
+                                <a href="https://twitter.com/HCRCS/status/1176593536759681024" target="_blank">
+                                    CRCS Professional Development Panel this Monday: Putting Together Application Packages (October 1)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://events.seas.harvard.edu/event/quantifying_upstream_and_downstream_emissions_from_oil_and_natural_gas" target="_blank">
+                                    Brian McDonald's : "Quantifying Upstream and Downstream Emissions from Oil and Natural Gas" (October 4)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-jia-liu-harvard-seas" target="_blank">
+                                    IACS Jia Liu's : "Multimodal Mapping of Brain Activity" (October 4)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://crcs.seas.harvard.edu/event/andrew-perrault-game-focused-learning-cooperative-and-non-cooperative-games" target="_blank">
+                                    CRCS - Andrew Perrault: Game-Focused Learning in Cooperative and Non-Cooperative Games (October 7)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://events.seas.harvard.edu/event/guest_speaker_raghu_meka_ucla" target="_blank">
+                                    Guest Speaker: Raghu Meka, UCLA (omplexity theory, learning and probability theory) (October 7)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://events.seas.harvard.edu/event/guest_speaker_daniel_heller_memorial_sloan_kettering_cancer_center" target="_blank">
+                                    Guest Speaker: Daniel Heller, Memorial Sloan Kettering Cancer Center (October 10)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://events.seas.harvard.edu/event/guest_speaker_arno_rauschenbeutel_professor_tu_austria" target="_blank">
+                                    Arno Rauschenbeutel
+                                </a> (<a href="https://www.humboldt-professur.de/en/preistraeger/preistraeger-2018/rauschenbeutel-arno" target="_blank">Quantum optics / Atomic physics) (October 11)</a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://iacs.seas.harvard.edu/event/data-science-ecosystems-ai-improve-social-research?delta=0" target="_blank">
+                                    IACS Dr. Alex Liu's "Data Science Ecosystems with AI to Improve Social Research" (November 14)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"></i>
+                                <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-francisco-f%C3%B6rster-bur%C3%B3n-universidad-de-chile?delta=0" target="_blank">
+                                    IACS Francisco Förster Burón's "The Universe in a Stream: Challenges and Progress of the ALeRCE Broker" (November 15)
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
+                                
+                            </li>
+                        </ul>
+                    </div><!-- / card - SEAS events -->		
                     
                     <h6>On hold</h6>
 
@@ -715,6 +895,12 @@
                         On Friday October 11, working from home
                     </div><!-- / Daily alert-->
 					
+					<div class="alert alert-info" role="alert" ><!-- 大连 -->
+                        <!-- <i class="fas fa-plane fa-padding"></i> -->
+                        <i class="fas fa-globe-asia fa-padding"></i>
+                        Teaching and working remotely from China between October 16 and November 7 2019
+                    </div><!-- / 大连 -->
+					
 					<div class="card card-label_primary"><!-- card - Course Planner -->
 					
                         <div class="card-body card-header-margin">
@@ -744,14 +930,17 @@
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Working on Kamban task
+                                Working on Kamban tasks
                                 <a href="https://github.com/seas-computing/course-planner/projects/1#card-26624319" target="_blank">
-                                    #43
-                                </a>
+                                    #43</a>,
+                                <a href="https://github.com/seas-computing/course-planner/projects/1#card-27121869" target="_blank">
+                                    #48</a> and
+                                <a href="https://github.com/seas-computing/course-planner/projects/1#card-27666362" target="_blank">
+                                    #54</a>.
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Course planning sprint retrospective (October 11)
+                                Course Planning sprint planning (October 15)
                             </li>
 						</ul>
 						
@@ -761,7 +950,11 @@
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
-                                Working on Kamban tasks
+                                Course planning sprint retrospective (October 11)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Worked on Kamban tasks
                                 <a href="https://github.com/seas-computing/course-planner/projects/1#card-27121869" target="_blank">
                                     #48
                                 </a>,
@@ -1009,9 +1202,16 @@
                                 </a>
                             </li>
                         </ul>
-                    </div><!-- / card - Course Planner -->
-					
-					<div class="card card-label_success"><!-- card - IACS Compufest -->
+                    </div><!-- / card - Course Planner -->			
+
+                </div><!-- / In progress -->
+
+                <div class="col-sm col-sm-margin"><!-- Done -->
+                    <h5 class="cards-header">
+                        Done
+                    </h5>
+
+                    <div class="card card-label_success"><!-- card - IACS Compufest -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
@@ -1033,19 +1233,24 @@
                             }
                         </script>
 
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush" hidden>
                             <li class="list-group-item list-group-item-margin">
                                 ComputeFest website content on OpenScholar
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"></i>
-                                Meeting with Lori Ray to discuss the ComputeFest website (October 11)
+                                Next (date)
                                 </a>
                             </li>
                         </ul>
                         <ul class="list-group list-group-flush" id="showCompufest" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - .5 hour
+                                Total time - 1.5 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with Lori Ray to discuss the ComputeFest website (October 11)
+                                </a>
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"></i>
@@ -1066,206 +1271,7 @@
                         </ul>
                     </div><!-- / card - IACS Compufest -->
 
-					<div class="card card-label_warning"><!-- card - Accessibility -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-wheelchair fa-padding"></i>
-                                Accessibility
-                                <a onclick="myFunctionAccessibility()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionAccessibility() {
-                                var x = document.getElementById("showAccessibility");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-						
-						<ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Initiatives, events, comunity of practice
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                Digital Accessibility Liaisons kickoff (October 9)
-                            </li>
-						</ul>
-
-                        <ul class="list-group list-group-flush" id="showAccessibility" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 3 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Digital Accessibility Liaisons kickoff (October 9)
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                Disability Inclusion Workshop (October 1)
-                            </li>
-                        </ul>
-                    </div><!-- / card - Accessibility -->		
-
-					<div class="card card-label_secondary"><!-- card - Professional Development -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                Professional Development
-                                <a onclick="myFunctionProfDev()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionProfDev() {
-                                var x = document.getElementById("showProfDev");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-						
-						<ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Training, self training, events
-                            </li>
-						</ul>
-
-                        <ul class="list-group list-group-flush" id="showProfDev" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://www.lynda.com/React-js-tutorials/Learning-React-js/800214-2.html" target="_blank">
-									Learning React.js (lynda.com)
-								</a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="url" target="_blank">
-									Next (date)
-								</a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-check-square fa-padding"></i>
-                                    <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446" target="_blank">
-									Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations (Harvard Digital Scholarship Support Group, October 9)
-								</a>
-                            </li>
-                        </ul>
-                    </div><!-- / card - Professional Development -->	
-
-					<div class="card card-label_secondary"><!-- card - SEAS events -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"></i>
-                                SEAS events
-                                <a onclick="myFunctionSEASevent()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionSEASevent() {
-                                var x = document.getElementById("showSEASevent");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-						
-						<ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                Events, talks, presentations
-                            </li>
-						</ul>
-
-                        <ul class="list-group list-group-flush" id="showSEASevent" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden><!-- done ruler -->
-                                Total time - 2 hours
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-check-square fa-padding"></i>
-                                <a href="https://twitter.com/HCRCS/status/1176593536759681024" target="_blank">
-                                    CRCS Professional Development Panel this Monday: Putting Together Application Packages (October 1)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://events.seas.harvard.edu/event/quantifying_upstream_and_downstream_emissions_from_oil_and_natural_gas" target="_blank">
-                                    Brian McDonald's : "Quantifying Upstream and Downstream Emissions from Oil and Natural Gas" (October 4)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-jia-liu-harvard-seas" target="_blank">
-                                    IACS Jia Liu's : "Multimodal Mapping of Brain Activity" (October 4)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://crcs.seas.harvard.edu/event/andrew-perrault-game-focused-learning-cooperative-and-non-cooperative-games" target="_blank">
-                                    CRCS - Andrew Perrault: Game-Focused Learning in Cooperative and Non-Cooperative Games (October 7)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://events.seas.harvard.edu/event/guest_speaker_raghu_meka_ucla" target="_blank">
-                                    Guest Speaker: Raghu Meka, UCLA (omplexity theory, learning and probability theory) (October 7)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://events.seas.harvard.edu/event/guest_speaker_daniel_heller_memorial_sloan_kettering_cancer_center" target="_blank">
-                                    Guest Speaker: Daniel Heller, Memorial Sloan Kettering Cancer Center (October 10)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://events.seas.harvard.edu/event/guest_speaker_arno_rauschenbeutel_professor_tu_austria" target="_blank">
-                                    Arno Rauschenbeutel
-                                </a> (<a href="https://www.humboldt-professur.de/en/preistraeger/preistraeger-2018/rauschenbeutel-arno" target="_blank">Quantum optics / Atomic physics) (October 11)</a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://iacs.seas.harvard.edu/event/data-science-ecosystems-ai-improve-social-research?delta=0" target="_blank">
-                                    IACS Dr. Alex Liu's "Data Science Ecosystems with AI to Improve Social Research" (November 14)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin" hidden>
-                                <i class="far fa-square fa-padding"></i>
-                                <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-francisco-f%C3%B6rster-bur%C3%B3n-universidad-de-chile?delta=0" target="_blank">
-                                    IACS Francisco Förster Burón's "The Universe in a Stream: Challenges and Progress of the ALeRCE Broker" (November 15)
-                                </a>
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light" hidden><!-- done ruler -->
-                                
-                            </li>
-                        </ul>
-                    </div><!-- / card - SEAS events -->					
-
-                </div><!-- / In progress -->
-
-                <div class="col-sm col-sm-margin"><!-- Done -->
-                    <h5 class="cards-header">
-                        Done
-                    </h5>
-
-                    <div class="card card-label_success"><!-- card - Harvard Robotics  -->
+					<div class="card card-label_success"><!-- card - Harvard Robotics  -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
                                 <i class="far fa-file-code fa-padding"></i>
