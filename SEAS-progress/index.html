@@ -31,7 +31,7 @@
         </h5>
         <hr>
         <p class="muted">
-            Last update: November 4, 2019
+            Last update: November 7, 2019
             <br>
             <a href="#legend">
                 Legend
@@ -910,7 +910,7 @@
                     On Friday October 11, working from home
                 </div><!-- / Daily alert-->
 
-                <div class="alert alert-info" role="alert">
+                <div class="alert alert-info" role="alert" hidden>
                     <!-- 大连 -->
                     <!-- <i class="fas fa-plane fa-padding"></i> -->
                     <i class="fas fa-globe-asia fa-padding"></i>
@@ -1242,70 +1242,6 @@
                 </div><!-- / card - Course Planner -->
 
                 <div class="card card-label_success">
-                <!-- card - Sciences and Cooking -->
-
-                    <div class="card-body card-header-margin">
-                        <h6 class="card-title">
-                            <i class="far fa-file-code fa-padding"></i>
-                            Sciences and Cooking wesbsite
-                            <a onclick="myFunctionScienceCooking()" class="float-right" title="Project history">
-                                <i class="fas fa-list-ul fa-padding"></i>
-                            </a>
-                        </h6>
-                    </div>
-
-                    <script>
-                    function myFunctionScienceCooking() {
-                        var x = document.getElementById("showScienceCooking");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                    }
-                    </script>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-margin">
-                            <i class="far fa-square fa-padding"></i>
-                            Adding News and Event pages
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush" id="showScienceCooking" style="display: none;">
-                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                            <!-- done ruler -->
-                            Total time - 15 hours
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                            <i class="far fa-check-square fa-padding"></i>
-                            Added past events
-                            (November 1)
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                            <i class="far fa-check-square fa-padding"></i>
-                            Merged content form the 
-                            <a href="https://seas.prod.acquia-sites.com/science-and-cooking-2018" target="_blank">
-                                old SEAS website
-                            </a>
-                            (October 16)
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted">
-                            <a href="https://projects.iq.harvard.edu/science-and-cooking-lecture-series" target="_blank">
-                                <i class="fas fa-globe-americas fa-padding"></i>
-                                OpenScholar website
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted">
-                            <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do?sys_id=2920d5451b24ccd4efd8a79b2d4bcbdf" target="_blank">
-                                <i class="fas fa-globe-americas fa-padding"></i>
-                                ServiceNow ticket
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- / card - Sciences and Cooking -->
-
-                <div class="card card-label_success">
                     <!-- card - SEAS Computing website -->
     
                     <div class="card-body card-header-margin">
@@ -1363,7 +1299,59 @@
                             </a>
                         </li>
                     </ul>
-                </div><!-- / card - SEAS Computing website -->    
+                </div><!-- / card - SEAS Computing website -->   
+
+                <div class="card card-label_success">
+                    <!-- card - PhD Open House website -->
+    
+                    <div class="card-body card-header-margin">
+                        <h6 class="card-title">
+                            <i class="far fa-file-code fa-padding"></i>
+                            PhD Open House website
+                            <a onclick="myFunctionPhdOpenHouse()" class="float-right" title="Project history">
+                                <i class="fas fa-list-ul fa-padding"></i>
+                            </a>
+                        </h6>
+                    </div>
+
+                    <script>
+                    function myFunctionPhdOpenHouse() {
+                        var x = document.getElementById("showPhdOpenHouse");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                    </script>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-margin">
+                            SEAS rebranding
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            Rebranding the current site.
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush" id="showPhdOpenHouse" style="display: none;">
+                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                            <!-- done ruler -->
+                            Total time - .5 hours
+                        </li>
+                        <li class="list-group-item list-group-item-margin text-muted bg-light">
+                            <i class="far fa-check-square fa-padding"></i>
+                            Contacted Marie and Julie via Eliza (November 4)
+                        </li>
+                        <li class="list-group-item list-group-item-margin text-muted">
+                            <a href="https://openhouse.seas.harvard.edu/" target="_blank">
+                                <i class="fas fa-globe-americas fa-padding"></i>
+                                PhD Open House website
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / card - PhD Open House website -->    
         
             </div><!-- / In progress -->
 
@@ -1372,6 +1360,75 @@
                 <h5 class="cards-header">
                     Done
                 </h5>
+
+                <div class="card card-label_success">
+                        <!-- card - Sciences and Cooking -->
+        
+                            <div class="card-body card-header-margin">
+                                <h6 class="card-title">
+                                    <i class="far fa-file-code fa-padding"></i>
+                                    Sciences and Cooking wesbsite
+                                    <a onclick="myFunctionScienceCooking()" class="float-right" title="Project history">
+                                        <i class="fas fa-list-ul fa-padding"></i>
+                                    </a>
+                                </h6>
+                            </div>
+        
+                            <script>
+                            function myFunctionScienceCooking() {
+                                var x = document.getElementById("showScienceCooking");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                            </script>
+        
+                            <ul class="list-group list-group-flush" hidden>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    Adding News and Event pages
+                                </li>
+                            </ul>
+        
+                            <ul class="list-group list-group-flush" id="showScienceCooking" style="display: none;">
+                                <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                                    <!-- done ruler -->
+                                    Total time - 17 hours
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Added News and Event pages
+                                    (November 4)
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Added past events
+                                    (November 1)
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Merged content form the 
+                                    <a href="https://seas.prod.acquia-sites.com/science-and-cooking-2018" target="_blank">
+                                        old SEAS website
+                                    </a>
+                                    (October 16)
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted">
+                                    <a href="https://projects.iq.harvard.edu/science-and-cooking-lecture-series" target="_blank">
+                                        <i class="fas fa-globe-americas fa-padding"></i>
+                                        OpenScholar website
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted">
+                                    <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do?sys_id=2920d5451b24ccd4efd8a79b2d4bcbdf" target="_blank">
+                                        <i class="fas fa-globe-americas fa-padding"></i>
+                                        ServiceNow ticket
+                                    </a>
+                                </li>
+                            </ul>
+                </div><!-- / card - Sciences and Cooking -->
 
                 <div class="card card-label_success">
                         <!-- card - Linsey Moyer's website -->
