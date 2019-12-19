@@ -31,7 +31,7 @@
         </h5>
         <hr>
         <p class="muted">
-            Last update: December 18, 2019
+            Last update: December 19, 2019
             <br>
             <a href="#legend">
                 Legend
@@ -140,105 +140,12 @@
                 </div><!-- / card - SEAS Computing website -->
 
                 <div class="card card-label_secondary">
-                    <!-- card - SEAS events -->
-                    <div class="card-body card-header-margin">
-                        <h6 class="card-title">
-                            <i class="fas fa-graduation-cap fa-padding"></i>
-                            SEAS events
-                            <a onclick="myFunctionSEASevent()" class="float-right">
-                                <i class="fas fa-list-ul fa-padding"></i>
-                            </a>
-                        </h6>
-                    </div>
-
-                    <script>function myFunctionSEASevent() {
-                        var x = document.getElementById("showSEASevent");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                    }</script>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-margin">
-                            Events, talks, presentations
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush" id="showSEASevent" style="display: none;">
-                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden>
-                            <!-- done ruler -->
-                            Total time - 2 hours
-                        </li>
-                        <li class="list-group-item list-group-item-margin">
-                            <i class="far fa-check-square fa-padding"></i>
-                            <a href="https://twitter.com/HCRCS/status/1176593536759681024" target="_blank">
-                                CRCS Professional Development Panel this Monday: Putting Together Application Packages (October 1)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://events.seas.harvard.edu/event/quantifying_upstream_and_downstream_emissions_from_oil_and_natural_gas" target="_blank">
-                                Brian McDonald's : "Quantifying Upstream and Downstream Emissions from Oil and Natural Gas" (October 4)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-jia-liu-harvard-seas" target="_blank">
-                                IACS Jia Liu's : "Multimodal Mapping of Brain Activity" (October 4)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://crcs.seas.harvard.edu/event/andrew-perrault-game-focused-learning-cooperative-and-non-cooperative-games" target="_blank">
-                                CRCS - Andrew Perrault: Game-Focused Learning in Cooperative and Non-Cooperative Games (October 7)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://events.seas.harvard.edu/event/guest_speaker_raghu_meka_ucla" target="_blank">
-                                Guest Speaker: Raghu Meka, UCLA (omplexity theory, learning and probability theory) (October 7)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://events.seas.harvard.edu/event/guest_speaker_daniel_heller_memorial_sloan_kettering_cancer_center" target="_blank">
-                                Guest Speaker: Daniel Heller, Memorial Sloan Kettering Cancer Center (October 10)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://events.seas.harvard.edu/event/guest_speaker_arno_rauschenbeutel_professor_tu_austria" target="_blank">
-                                Arno Rauschenbeutel
-                            </a> (<a href="https://www.humboldt-professur.de/en/preistraeger/preistraeger-2018/rauschenbeutel-arno" target="_blank">Quantum optics / Atomic physics) (October 11)</a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://iacs.seas.harvard.edu/event/data-science-ecosystems-ai-improve-social-research?delta=0" target="_blank">
-                                IACS Dr. Alex Liu's "Data Science Ecosystems with AI to Improve Social Research" (November 14)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin" hidden>
-                            <i class="far fa-square fa-padding"></i>
-                            <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-francisco-f%C3%B6rster-bur%C3%B3n-universidad-de-chile?delta=0" target="_blank">
-                                IACS Francisco Förster Burón's "The Universe in a Stream: Challenges and Progress of the ALeRCE Broker" (November 15)
-                            </a>
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
-                            <!-- done ruler -->
-
-                        </li>
-                    </ul>
-                </div><!-- / card - SEAS events -->
-
-                <div class="card card-label_secondary">
                     <!-- card - FY20 SEAS Website Audit -->
                     <div class="card-body card-header-margin">
                         <h6 class="card-title">
                             <i class="fas fa-balance-scale fa-padding"></i>
                             FY20 SEAS Website Audit
-                            <a onclick="myFunctionFY20seasWebsiteAudit()" class="float-right">
+                            <a onclick="myFunctionFY20seasWebsiteAudit()" class="float-right" hidden>
                                 <i class="fas fa-list-ul fa-padding"></i>
                             </a>
                         </h6>
@@ -265,7 +172,7 @@
                         </li>
                     </ul>
 
-                    <ul class="list-group list-group-flush" id="showFY20seasWebsiteAudit" style="display: none;" hidden>
+                    <ul class="list-group list-group-flush" id="showFY20seasWebsiteAudit" style="display: none;" >
                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                             <!-- done ruler -->
                             Total time - 4 hours
@@ -283,7 +190,7 @@
                         <h6 class="card-title">
                             <i class="fas fa-balance-scale fa-padding"></i>
                             FY20 SEAS OpenScholar Theme
-                            <a onclick="myFunctionOpenScholarTheme()" class="float-right">
+                            <a onclick="myFunctionOpenScholarTheme()" class="float-right" hidden>
                                 <i class="fas fa-list-ul fa-padding"></i>
                             </a>
                         </h6>
@@ -304,7 +211,7 @@
                         </li>
                     </ul>
 
-                    <ul class="list-group list-group-flush" id="showOpenScholarTheme" style="display: none;" hidden>
+                    <ul class="list-group list-group-flush" id="showOpenScholarTheme" style="display: none;" >
                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                             <!-- done ruler -->
                             Total time - 4 hours
@@ -315,53 +222,6 @@
                         </li>
                     </ul>
                 </div><!-- / card - FY20 SEAS OpenScholar Theme -->
-
-                <div class="card card-label_secondary">
-                    <!-- card - Accessibility of new SEAS Computing website content -->
-                    <div class="card-body card-header-margin">
-                        <h6 class="card-title">
-                            <i class="fas fa-wheelchair fa-padding"></i>
-                            <sup><i class="fas fa-balance-scale text-muted"></i></sup>
-                            SEAS Computing website accessibility review
-                            <a onclick="myFunctionSiteSEAScomputing()" class="float-right" hidden>
-                                <i class="fas fa-list-ul fa-padding"></i>
-                            </a>
-                        </h6>
-                    </div>
-
-                    <script>function myFunctionSiteSEAScomputing() {
-                        var x = document.getElementById("showSiteSEAScomputing");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                    }</script>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-margin">
-                            <i>SEAS Office of Computing section on seas.harvard.edu</i>
-                        </li>
-                        <li class="list-group-item list-group-item-margin">
-                            <i class="far fa-square fa-padding"></i>
-                            Review the accessibility of the contenrt of the new
-                            <a href="https://seasdrupal.prod.acquia-sites.com/office-computing" target="_blank">
-                                Office of Computing website
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush" id="showSiteSEAScomputing" style="display: none;">
-                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                            <!-- done ruler -->
-                            Total time - ? hours
-                        </li>
-                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                            <i class="far fa-check-square fa-padding"></i>
-                            Accessibility review of the functional website and editing interface
-                        </li>
-                    </ul>
-                </div><!-- / card - Accessibility of new SEAS Computing website content -->
 
                 <div class="card card-label_success">
                     <!-- card - OpenScholar onboarding -->
@@ -513,6 +373,99 @@
                     </ul>
                 </div><!-- / card - Professional Development -->
 
+                <div class="card card-label_secondary">
+                    <!-- card - SEAS events -->
+                    <div class="card-body card-header-margin">
+                        <h6 class="card-title">
+                            <i class="fas fa-graduation-cap fa-padding"></i>
+                            SEAS events
+                            <a onclick="myFunctionSEASevent()" class="float-right">
+                                <i class="fas fa-list-ul fa-padding"></i>
+                            </a>
+                        </h6>
+                    </div>
+
+                    <script>function myFunctionSEASevent() {
+                        var x = document.getElementById("showSEASevent");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }</script>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-margin">
+                            Events, talks, presentations
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush" id="showSEASevent" style="display: none;">
+                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light" hidden>
+                            <!-- done ruler -->
+                            Total time - 2 hours
+                        </li>
+                        <li class="list-group-item list-group-item-margin">
+                            <i class="far fa-check-square fa-padding"></i>
+                            <a href="https://twitter.com/HCRCS/status/1176593536759681024" target="_blank">
+                                CRCS Professional Development Panel this Monday: Putting Together Application Packages (October 1)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://events.seas.harvard.edu/event/quantifying_upstream_and_downstream_emissions_from_oil_and_natural_gas" target="_blank">
+                                Brian McDonald's : "Quantifying Upstream and Downstream Emissions from Oil and Natural Gas" (October 4)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-jia-liu-harvard-seas" target="_blank">
+                                IACS Jia Liu's : "Multimodal Mapping of Brain Activity" (October 4)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://crcs.seas.harvard.edu/event/andrew-perrault-game-focused-learning-cooperative-and-non-cooperative-games" target="_blank">
+                                CRCS - Andrew Perrault: Game-Focused Learning in Cooperative and Non-Cooperative Games (October 7)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://events.seas.harvard.edu/event/guest_speaker_raghu_meka_ucla" target="_blank">
+                                Guest Speaker: Raghu Meka, UCLA (omplexity theory, learning and probability theory) (October 7)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://events.seas.harvard.edu/event/guest_speaker_daniel_heller_memorial_sloan_kettering_cancer_center" target="_blank">
+                                Guest Speaker: Daniel Heller, Memorial Sloan Kettering Cancer Center (October 10)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://events.seas.harvard.edu/event/guest_speaker_arno_rauschenbeutel_professor_tu_austria" target="_blank">
+                                Arno Rauschenbeutel
+                            </a> (<a href="https://www.humboldt-professur.de/en/preistraeger/preistraeger-2018/rauschenbeutel-arno" target="_blank">Quantum optics / Atomic physics) (October 11)</a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://iacs.seas.harvard.edu/event/data-science-ecosystems-ai-improve-social-research?delta=0" target="_blank">
+                                IACS Dr. Alex Liu's "Data Science Ecosystems with AI to Improve Social Research" (November 14)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin" hidden>
+                            <i class="far fa-square fa-padding"></i>
+                            <a href="https://iacs.seas.harvard.edu/event/iacs-seminar-francisco-f%C3%B6rster-bur%C3%B3n-universidad-de-chile?delta=0" target="_blank">
+                                IACS Francisco Förster Burón's "The Universe in a Stream: Challenges and Progress of the ALeRCE Broker" (November 15)
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                            <!-- done ruler -->
+
+                        </li>
+                    </ul>
+                </div><!-- / card - SEAS events -->
+
                 <h6>On hold</h6>
 
                 <div class="card card-label_success" hidden>
@@ -603,7 +556,7 @@
 
                 <div class="alert alert-info" role="alert" > 
                     <!-- Daily alert-->
-                    On Wednesday December 18, working remotely
+                    On Wednesday December 19, working remotely
                 </div><!-- / Daily alert-->
 
                 <div class="card card-label_primary">
@@ -1135,6 +1088,56 @@
 
                 <h3 hidden><span class="badge badge-secondary">Q2-FY20</span></h3>
                 <!-- Q1 - October-December --> 
+
+                <div class="card card-label_secondary">
+                        <!-- card - Accessibility of new SEAS Computing website content -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"></i>
+                                <sup><i class="fas fa-balance-scale text-muted"></i></sup>
+                                SEAS Computing accessibility 
+                                <a onclick="myFunctionSiteSEAScomputing()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+    
+                        <script>function myFunctionSiteSEAScomputing() {
+                            var x = document.getElementById("showSiteSEAScomputing");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                        }</script>
+    
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                <i>SEAS Office of Computing section on seas.harvard.edu</i>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Review the accessibility of the contenrt of the new
+                                <a href="https://www.seas.harvard.edu/office-computing" target="_blank">
+                                    Office of Computing website
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <ul class="list-group list-group-flush" id="showSiteSEAScomputing" style="display: none;">
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 3 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Accessibility review of the functional website and editing interface (December 18)
+                            </li>
+                        </ul>
+                </div><!-- / card - Accessibility of new SEAS Computing website content -->
 
                 <div class="card card-label_success">
                     <!-- card - SEAS Computing website -->
