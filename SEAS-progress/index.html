@@ -31,7 +31,7 @@
         </h5>
         <hr>
         <p class="muted">
-            Last update: January 16, 2020
+            Last update: January 17, 2020
             <br>
             <a href="#legend">
                 Legend
@@ -77,6 +77,56 @@
                 <h5 class="cards-header">
                     Q3 FY20
                 </h5>
+    
+                <div class="card card-label_warning">
+                    <!-- card - Zoom training -->
+                    <div class="card-body card-header-margin">
+                        <h6 class="card-title">
+                            <i class="fas fa-chalkboard-teacher fa-padding"></i>
+                            Zoom training
+                            <a onclick="myFunctionZoomQ3FY20()" class="float-right">
+                                <i class="fas fa-list-ul fa-padding"></i>
+                            </a>
+                        </h6>
+                    </div>
+    
+                    <script>function myFunctionZoomQ3FY20() {
+                        var x = document.getElementById("showZoomQ3FY20");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }</script>
+    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-margin">
+                            Training material and plans
+                        </li>
+                        <li class="list-group-item list-group-item-margin">
+                            <i class="far fa-square fa-padding"></i>
+                            Revising 
+                            <a href="https://docs.google.com/presentation/d/1xzhVo7WzwGf0Yi1E2yW4a3-Y8Bv5r0RigreQGObeocQ/edit?usp=sharing" target="_blank">
+                                slide presentation
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-margin">
+                            <i class="far fa-square fa-padding"></i>
+                            Review meeting with Rebecca and Rich (January 23)
+                        </li>
+                    </ul>
+    
+                    <ul class="list-group list-group-flush" id="showZoomQ3FY20" style="display: none;">
+                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                            <!-- done ruler -->
+                            Total time - 1 hour
+                        </li>
+                        <li class="list-group-item list-group-item-margin text-muted bg-light">
+                            <i class="far fa-check-square fa-padding"></i>
+                            Planned next steps with Rebecca and Rich (January 16)
+                        </li>
+                    </ul>
+                </div><!-- / card - Zoom training -->
 
                 <div class="card card-label_success">
                     <!-- card - SEAS Computing website -->
@@ -231,7 +281,11 @@
                     <ul class="list-group list-group-flush" id="showSiteSEASavQ3fy20" style="display: none;">
                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                             <!-- done ruler -->
-                            Total time - 1 hour
+                            Total time - 2 hour
+                        </li>
+                        <li class="list-group-item list-group-item-margin text-muted bg-light">
+                            <i class="far fa-check-square fa-padding"></i>
+                            Met with Adtech vendor (January 16)
                         </li>
                         <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
                             <i class="far fa-check-square fa-padding"></i>
@@ -251,20 +305,20 @@
                 </div><!-- / card - 114 Western Ave AV panels -->
 
                 <div class="card card-label_secondary">
-                    <!-- card - Smith -->
+                    <!-- card - CEE -->
                     <div class="card-body card-header-margin">
                         <h6 class="card-title">
                             <i class="far fa-file-code fa-padding"></i>
                             <sup><i class="fas fa-balance-scale text-muted"></i></sup>
-                            Prof. Smith's OpenScholar website
-                            <a onclick="myFunctionSmithQ3FY20()" class="float-right">
+                            CEE OpenScholar website
+                            <a onclick="myFunctionCEE()" class="float-right">
                                 <i class="fas fa-list-ul fa-padding"></i>
                             </a>
                         </h6>
                     </div>
 
-                    <script>function myFunctionSmithQ3FY20() {
-                        var x = document.getElementById("showSmithQ3FY20");
+                    <script>function myFunctionCEE() {
+                        var x = document.getElementById("showCEE");
                         if (x.style.display === "none") {
                             x.style.display = "block";
                         } else {
@@ -282,24 +336,24 @@
                         </li>
                     </ul>
 
-                    <ul class="list-group list-group-flush" id="showSmithQ3FY20" style="display: none;">
+                    <ul class="list-group list-group-flush" id="showCEE" style="display: none;">
                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                             <!-- done ruler -->
-                            Total time - 2 hour
+                            Total time - 1 hour
                         </li>
                         <li class="list-group-item list-group-item-margin text-muted bg-light">
                             <i class="far fa-check-square fa-padding"></i>
-                            Met with Professor Smith, planned next steps
-                            (January 7)
+                            Met with Faras and Nishant, planned next steps
+                            (January 16)
                         </li>
-                        <li class="list-group-item list-group-item-margin text-muted">
+                        <li class="list-group-item list-group-item-margin text-muted" hidden>
                             <a href="https://scholar.harvard.edu/mikesmith" target="_blank">
                                 <i class="fas fa-globe-americas fa-padding"></i>
                                 Professor Smith's OpenScholar website
                             </a>
                         </li>
                     </ul>
-                </div><!-- / card - Smith -->
+                </div><!-- / card - CEE -->
 
                 <div class="card card-label_secondary">
                     <!-- card - FY20 SEAS OpenScholar Theme -->
@@ -675,7 +729,7 @@
                 </div><!-- / Daily alert-->
 
                 <div class="card card-label_primary">
-                    <!-- card - Course Planner -->
+                <!-- card - Course Planner -->
 
                     <div class="card-body card-header-margin">
                         <h6 class="card-title">
@@ -709,7 +763,7 @@
                     <ul class="list-group list-group-flush" id="showCoursePlanner" style="display: none;">
                         <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
                             <!-- done ruler -->
-                            Total time - 146 hours
+                            Total time - 150 hours
                         </li>
                         <li class="list-group-item list-group-item-margin text-muted bg-light">
                             <i class="far fa-square fa-padding"></i>
@@ -1068,7 +1122,7 @@
                 </div><!-- / card - Course Planner -->
 
                 <div class="card card-label_success">
-                    <!-- card - Usability of 114 and SEC AV panel interfaces -->
+                <!-- card - Usability of 114 and SEC AV panel interfaces -->
                     <div class="card-body card-header-margin">
                         <h6 class="card-title">
                             <i class="far fa-file-code fa-padding"></i>
@@ -1175,7 +1229,7 @@
                 </div><!-- / card - Usability of 114 and SEC AV panel interfaces -->
 
                 <div class="card card-label_secondary">
-                    <!-- card - Accessibility -->
+                <!-- card - Accessibility -->
                     <div class="card-body card-header-margin">
                         <h6 class="card-title">
                             <i class="fas fa-wheelchair fa-padding"></i>
@@ -1255,6 +1309,65 @@
                 <!-- Q1 - October-December --> 
 
                 <div class="card card-label_secondary">
+                        <!-- card - Smith -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"></i>
+                                <sup><i class="fas fa-balance-scale text-muted"></i></sup>
+                                Prof. Smith's OpenScholar website
+                                <a onclick="myFunctionSmithQ3FY20()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"></i>
+                                </a>
+                            </h6>
+                        </div>
+    
+                        <script>function myFunctionSmithQ3FY20() {
+                            var x = document.getElementById("showSmithQ3FY20");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                        }</script>
+    
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Setting up website
+                            </li>
+                        </ul>
+    
+                        <ul class="list-group list-group-flush" id="showSmithQ3FY20" style="display: none;">
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 2 hour
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Set up website
+                                (January 10)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"></i>
+                                Met with Professor Smith, planned next steps
+                                (January 7)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://scholar.harvard.edu/mikesmith" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"></i>
+                                    Professor Smith's OpenScholar website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Smith -->
+
+                <div class="card card-label_secondary">
                         <!-- card - Accessibility -->
                         <div class="card-body card-header-margin">
                             <h6 class="card-title">
@@ -1311,7 +1424,7 @@
                                 Disability Inclusion Workshop (October 1)
                             </li>
                         </ul>
-                    </div><!-- / card - Accessibility -->
+                </div><!-- / card - Accessibility -->
 
                 <div class="card card-label_secondary">
                         <!-- card - Accessibility of new SEAS Computing website content -->
@@ -1466,14 +1579,14 @@
                         <h6 class="card-title">
                             <i class="fas fa-chalkboard-teacher fa-padding"></i>
                             Zoom training
-                            <a onclick="myFunctionZoom()" class="float-right">
+                            <a onclick="myFunctionZoomQ2FY20()" class="float-right">
                                 <i class="fas fa-list-ul fa-padding"></i>
                             </a>
                         </h6>
                     </div>
     
-                    <script>function myFunctionZoom() {
-                        var x = document.getElementById("showZoom");
+                    <script>function myFunctionZoomQ2FY20() {
+                        var x = document.getElementById("showZoomQ2FY20");
                         if (x.style.display === "none") {
                             x.style.display = "block";
                         } else {
@@ -1491,7 +1604,7 @@
                         </li>
                     </ul>
     
-                    <ul class="list-group list-group-flush" id="showZoom" style="display: none;">
+                    <ul class="list-group list-group-flush" id="showZoomQ2FY20" style="display: none;">
                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                             <!-- done ruler -->
                             Total time - 33 hours
