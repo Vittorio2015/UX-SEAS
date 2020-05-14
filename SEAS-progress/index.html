@@ -796,6 +796,79 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
+    
+                    <div class="card card-label_warning">
+                        <!-- card - Teamcore COVID-19 OpenScholar website -->
+                            <div class="card-body card-header-margin">
+                                <h6 class="card-title">
+                                    <i class="fas fa-chalkboard-teacher fa-padding"></i>
+                                    <sup><i class="fas fa-balance-scale text-muted"></i></sup>
+                                    Teamcore COVID-19
+                                    <a onclick="myFunctionTeamcoreQ4FY20()" class="float-right">
+                                        <i class="fas fa-list-ul fa-padding"></i>
+                                    </a>
+                                </h6>
+                            </div>
+    
+                            <script>
+                                function myFunctionTeamcoreQ4FY20() {
+                                    var x = document.getElementById("showFunctionTeamcoreQ4FY20");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+    
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item list-group-item-margin">
+                                    <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    Merge News from USC server
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <i class="far fa-square fa-padding"></i>
+                                    <a href="https://teamcore.seas.harvard.edu/test-tambe" target="_blank">
+                                        Design of Professor Tambe's home page
+                                    </a>
+                                </li>
+                            </ul>
+    
+                            <ul class="list-group list-group-flush" id="showFunctionTeamcoreQ4FY20" style="display: none;">
+                                <li class="list-group-item list-group-item-margin" hidden>
+                                    <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                                </li>
+                                <li class="list-group-item list-group-item-margin" hidden>
+                                    Remote assistance to faculty and staff
+                                </li>
+                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                    <!-- done ruler -->
+                                    Q4FY20 total time - 52 hours
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    OpenScholar assistance (Teamcore COVID-19 publications) to Professor Tambe's Postdoc (April 20)
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Past News taxonomy (April 30) 
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-square fa-padding"></i>
+                                    New Professor Tambe page (ongoing) 
+                                    <!-- 8 hrs on May 14 -->
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <a href="https://teamcore.seas.harvard.edu/publications/covid-19#" target="_blank">
+                                        <i class="fas fa-globe-americas fa-padding"></i>
+                                        Teamcore COVID-19 OpenScholar publications 
+                                    </a>
+                                </li>
+                            </ul>
+                    </div><!-- / card - Teamcore COVID-19 website -->
 
                     <div class="card card-label_success">
                         <!-- card - Embedded Ethics -->
@@ -962,7 +1035,7 @@
                         <h4><span class="badge badge-primary">Q4-FY20</span></h4>
                         <!-- Q1 - April - June -->
     
-                        <div class="card card-label_warning">
+                        <div class="card card-label_warning" hidden>
                             <!-- card - Teamcore COVID-19 OpenScholar website -->
                                 <div class="card-body card-header-margin">
                                     <h6 class="card-title">
