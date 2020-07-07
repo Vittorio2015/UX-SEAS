@@ -1,0 +1,3192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Code rain</title>
+
+    <!-- Amend Bootstrap -->
+    <style>
+
+        body {
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: .75rem;
+            font-weight: 400;
+            line-height: 1;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        /* Bootstrap narrow column */
+
+        .row#coderain {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            background-color: rgb(0, 0, 0);
+            width: 900px;
+            height: 20em;
+        }
+        .row#coderain2 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 7em;
+        }
+        .row#coderain3 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 8em;
+        }
+        .row#coderain4 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 9em;
+        }
+        .row#coderain5 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 10em;
+        }
+        .row#coderain6 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 11em;
+        }
+        .row#coderain7 {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 900px;
+            position: absolute;
+            top: 8.5em;
+            left: 12em;
+        }
+
+        .coderaindrop {
+            width: 1em;
+        }
+
+        .col-sm-1 {
+            /* padding-top: .75rem; */
+            padding-bottom: .75rem;
+            border: 0px solid rgba(0, 0, 0, 0.2);
+            color: lime;
+            width: 1em;
+            position: relative;
+            min-height: 1px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .col-sm {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 1em;
+        }
+
+        /* Manual opacity change */
+
+        .module:nth-child(4n) {
+            opacity: .8;
+        }
+
+        .module:nth-child(2n) {
+            opacity: .7;
+        }
+
+        .module:nth-child(3n) {
+            opacity: .6;
+        }
+
+        .module:nth-child(4n) {
+            opacity: .5;
+        }
+
+        /* Child incremental opacity change */
+        
+        .rain:nth-child(1n) {
+            opacity: .9;
+        }
+
+        /* Glow on paragraph tag - last character */
+
+        p {
+            color: white;
+            text-shadow: 0 0 0.8em lime, 0 0 0.8em lime, 0 0 0.8em lime, 0 0 0.8em lime, 0 0 0.2em white;
+        }
+
+        /* Out of focus font */
+        .blur {
+        color: transparent;
+        text-shadow: 0 0 2px rgba(50,205,50,1);
+        }
+
+        .matrix {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .micro {
+            color: #FFFB00;
+            text-shadow: 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.8em #FFFB00, 0 0 0.2em #FFFB00;
+        }
+
+        .micro-off {
+            color: lime;
+            text-shadow: 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000, 0 0 0em #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="width: 900px; margin-left: 6em;">
+        <h1>Code rain</h1>
+
+        <h2>Working code</h2>
+
+        <div class="row text-center" id="coderain">
+        <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">H
+                        <div class="rain">(
+                            <div class="rain">f
+                                <div class="rain">u
+                                    <div class="rain">n
+                                        <div class="rain">c
+                                            <div class="rain">t
+                                                <div class="rain">i
+                                                    <div class="rain">o
+                                                        <div class="rain">n
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>()</p>
+            </div>
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">d
+                        <div class="rain">(
+                            <div class="rain">e
+                                <div class="rain">l
+                                    <div class="rain">e
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">m
+                        <div class="micro-off">e
+                            <div class="rain">n
+                                <div class="rain">t
+                                    <div class="rain">)
+                                        <div class="rain">{
+                                            <div class="rain">i
+                                                <div class="rain">f
+                                                    <div class="rain">(
+                                                        <div class="rain">!
+                                                            <div class="rain">e
+                                                                <div class="rain">l
+                                                                    <div class="rain">e
+                                                                        <div class="rain">m
+                                                                            <div class="rain">e
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">M
+                        <div class="rain">s
+                            <div class="rain">w
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">t
+                                        <div class="micro-off rain">c
+                                            <div class="">h
+                                                <div class="">(
+                                                    <div class="">u
+                                                        <div class="micro">n
+                                                            <div class="micro-off">i
+                                                                <div class="rain">t
+                                                                    <div class="rain">s
+                                                                        <div class="rain">)
+                                                                            <div class="rain">{
+                                                                                <div class="rain">c
+                                                                                    <div class="rain">a
+                                                                                        <div class="rain">s
+                                                                                            <div class="rain">e
+                                                                                                <div class="rain">"
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">l
+                        <div class="rain">S
+                            <div class="rain">e
+                                <div class="rain">t
+                                    <div class="rain">u
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="micro">p
+                                            <div class="">I
+                                                <div class="">n
+                                                    <div class="micro-off">f
+                                                        <div class="micro">o
+                                                            <div class="micro-off">r
+                                                                <div class="rain">m
+                                                                    <div class="rain">a
+                                                                        <div class="rain">t
+                                                                            <div class="rain">i
+                                                                                <div class="rain">o
+                                                                                    <div class="rain">n
+                                                                                        <div class="rain">(
+                                                                                            <div class="rain">e
+                                                                                                <div class="rain">l
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                </section>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">s
+                        <div class="rain">h
+                            <div class="rain">e
+                                <div class="rain">i
+                                    <div class="rain">g
+                                        <div class="rain">h
+                                            <div class="rain">t
+                                                <div class="rain">=
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="rain">t
+                    <div class="rain">h
+                        <div class="rain">i
+                            <div class="rain">s
+                                <div class="rain">.
+                                    <div class="rain">e
+                                        <div class="rain">l
+                                            <div class="rain">e
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>m</p>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">f
+                        <div class="rain">(
+                            <div class="rain">a
+                                <div class="rain">t
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">t
+                                        <div class="">r
+                                            <div class="">V
+                                                <div class="">a
+                                                    <div class="">l
+                                                        <div class="">u
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+                <div class="rain blur" style="margin-top: -1.35em;">s
+                    <div class="rain">[
+                        <div class="rain">a
+                            <div class="rain">t
+                                <div class="rain">t
+                                    <div class="rain">r
+                                        <div class="rain">i
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">i
+                        <div class="rain">f
+                            <div class="rain">(
+                                <div class="rain">d
+                                    <div class="">o
+                                        <div class="">c
+                                            <div class="">u
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>m</p>
+                <div class="" style="margin-top: -1.35em;">e
+                    <div class="micro">n
+                        <div class="micro-off">t
+                            <div class="rain">q
+                                <div class="rain">u
+                                    <div class="rain">e
+                                        <div class="rain">r
+                                            <div class="rain">y
+                                                <div class="rain">S
+                                                    <div class="rain">e
+                                                        <div class="rain">r
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">m
+                        <div class="rain">a
+                        </div>
+                    </div>
+                </section>
+                <p>t</p>
+                <div class="rain" style="margin-top: -1.34em;">&nbsp;
+                    <div class="micro">c
+                        <div class="micro-off">h
+                            <div class="">=
+                                <div class="">r
+                                    <div class="">e
+                                        <div class="micro">g
+                                            <div class="micro-off">e
+                                                <div class="rain">x
+                                                    <div class="rain">.
+                                                        <div class="rain">e
+                                                            <div class="rain">x
+                                                                <div class="rain">e
+                                                                    <div class="rain">c
+                                                                        <div class="rain">(
+                                                                            <div class="rain">c
+                                                                                <div class="rain">s
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .9;">E
+                        <div class="rain">l
+                            <div class="rain">e
+                                <div class="rain">m
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">e
+                                        <div class="">n
+                                            <div class="">t
+                                                <div class="">Q
+                                                    <div class="">u
+                                                        <div class="">e
+                                                            <div class="micro-off">r
+                                                                <div class="rain">i
+                                                                    <div class="rain">e
+                                                                        <div class="rain">s
+                                                                            <div class="rain">.
+                                                                                <div class="rain">u
+                                                                                    <div class="rain">p
+                                                                                        <div class="rain">d
+                                                                                            <div class="rain">a
+                                                                                                <div class="rain">t
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 10 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">&nbsp;
+                                <div class="rain blur">D
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">O
+                                        <div class="blur">M
+                                            <div class="">C
+                                                <div class="micro">o
+                                                    <div class="blur">n
+                                                        <div class="micro">t
+                                                            <div class="blur">e
+                                                                <div class="rain">n
+                                                                    <div class="rain">t
+                                                                        <div class="rain">L
+                                                                            <div class="rain">o
+                                                                                <div class="rain">a
+                                                                                    <div class="rain">d
+                                                                                        <div class="rain">e
+                                                                                            <div class="rain">d
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">a
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <div class="row text-center" id="coderain2">
+        <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">a
+                        <div class="rain">{
+                            <div class="rain">v
+                                <div class="rain">a
+                                    <div class="rain">r
+                                        <div class="rain">E
+                                            <div class="rain">l
+                                                <div class="rain">e
+                                                    <div class="rain">m
+                                                        <div class="rain">e
+                                                            <div class="rain">n
+                                                                <div class="rain">t
+                                                                    <div class="rain">Q
+                                                                        <div class="rain">u
+                                                                            <div class="rain">e
+                                                                                <div class="rain">r
+                                                                                    <div class="rain">i
+                                                                                        <div class="rain">e
+                                                                                            <div class="rain">s
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 2 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="blur">/
+                        <div class="rain">{
+                            <div class="rain">e
+                                <div class="rain">l
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">e
+                                        <div class="">m
+                                            <div class="">e
+                                                <div class="">n
+                                                    <div class="">t
+                                                        <div class="">=
+                                                            <div class="blur">d
+                                                                <div class="rain">o
+                                                                    <div class="rain">c
+                                                                        <div class="rain">u
+                                                                            <div class="rain">m
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">i
+                        <div class="rain">t
+                            <div class="rain">h
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">s
+                                        <div class="rain blur">.
+                                            <div class="">e
+                                                <div class="">l
+                                                    <div class="">e
+                                                        <div class="micro">m
+                                                            <div class="blur">n
+                                                                <div class="rain">t
+                                                                    <div class="rain">=
+                                                                        <div class="rain">e
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>l</p>
+                <div class="rain" style="margin-top: -1.3em; opacity: .5;">e
+                    <div class="rain">m
+                        <div class="rain">e
+                            <div class="rain">n
+                                <div class="rain">t
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">u
+                        <div class="rain">a
+                            <div class="rain">t
+                                <div class="rain">t
+                                    <div class="rain">r
+                                        <div class="rain">V
+                                            <div class="rain">a
+                                                <div class="rain">l
+                                                    <div class="rain">u
+                                                        <div class="rain">e
+                                                            <div class="rain">s
+                                                                <div class="rain">=
+                                                                    <div class="rain">{}
+                                                                        <div class="rain">;
+                                                                            <div class="rain">f
+                                                                                <div class="rain">o
+                                                                                    <div class="rain">r
+                                                                                        <div class="rain">(
+                                                                                            <div class="rain">k
+                                                                                                <div class="rain">e
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">r
+                        <div class="rain">e
+                            <div class="rain">m
+                                <div class="rain">o
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">v
+                                        <div class="">e
+                                            <div class="">A
+                                                <div class="">t
+                                                    <div class="">t
+                                                        <div class="">r
+                                                            <div class="micro-off blur">i
+                                                                <div class="rain blur">b
+                                                                    <div class="rain">u
+                                                                        <div class="rain">t
+                                                                            <div class="rain">e
+                                                                                <div class="rain">(
+                                                                                    <div class="rain">a
+                                                                                        <div class="rain">t
+                                                                                            <div class="rain">t
+                                                                                                <div class="rain">r
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <p>!</p>
+                    <div class="rain" style="margin-top: -1.35em;">q
+                        <div class="rain blur">u
+                            <div class="rain">e
+                                <div class="rain">r
+                                    <div class="">y
+                                        <div class="">&
+                                            <div class="">&
+                                                <div class="">'
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                    <div class="micro">u
+                                                        <div class="micro-off">n
+                                                            <div class="rain">d
+                                                                <div class="rain">e
+                                                                    <div class="rain">f
+                                                                        <div class="rain">i
+                                                                            <div class="rain">n
+                                                                                <div class="rain">e
+                                                                                    <div class="rain">d
+                                                                                        <div class="rain">'
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                </section>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">@
+                        <div class="rain">p
+                            <div class="rain">a
+                                <div class="rain">r
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">a
+                                        <div class="">m
+                                            <div class="">{
+                                                <div class="">C
+                                                    <div class="">s
+                                                        <div class="">s
+                                                            <div class="blur">R
+                                                                <div class="rain">u
+                                                                    <div class="rain">l
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+                <div class="rain" style="opacity: .5; margin-top: -1.34em;">[]
+                    <div class="rain">S
+                        <div class="rain">t
+                            <div class="rain">r
+                                <div class="rain">i
+                                    <div class="rain">n
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">e
+                                <div class="rain">l
+                                    <div class="rain">s
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="micro">e
+                                            <div class="micro-off">{
+                                                <div class="">c
+                                                    <div class="micro">o
+                                                        <div class="micro-off">n
+                                                            <div class="rain">s
+                                                                <div class="rain">o
+                                                                    <div class="rain">l
+                                                                        <div class="rain">e
+                                                                            <div class="rain">.
+                                                                                <div class="rain">l
+                                                                                    <div class="rain">o
+                                                                                        <div class="rain">g
+                                                                                            <div class="rain">(
+                                                                                                <div class="rain">d
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                </section>
+            </div>
+            <!-- 9 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">/
+                        <div class="rain">*
+                            <div class="rain">S
+                                <div class="rain">a
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">f
+                                        <div class="blur">a
+                                            <div class="">r
+                                                <div class="">i
+                                                    <div class="">i
+                                                        <div class="micro">C
+                                                            <div class="blur">a
+                                                                <div class="rain">b
+                                                                    <div class="rain">K
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>o</p>
+                <div class="rain" style="margin-top: -1.34em;">n
+                    <div class="rain">q
+                        <div class="rain">u
+                            <div class="rain">e
+                                <div class="rain">r
+                                    <div class="rain">o
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain blur">E
+                                <div class="rain">l
+                                    <div class="micro">e
+                                        <div class="blur">m
+                                            <div class="">e
+                                                <div class="">n
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                    <div class="micro">t
+                                                        <div class="micro">Q
+                                                            <div class="blur">u
+                                                                <div class="rain">e
+                                                                    <div class="rain">r
+                                                                        <div class="rain">i
+                                                                            <div class="rain">e
+                                                                                <div class="rain">s
+                                                                                    <div class="rain">)
+                                                                                        <div class="rain">{
+                                                                                            <div class="rain">w
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                </section>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">2
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <div class="row text-center" id="coderain3">
+            <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">r
+                        <div class="rain" style="opacity: .7;">=
+                            <div class="rain">t
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>h</p>
+                <section>
+                    <div class="rain" style="opacity: .7;">i
+                        <div class="rain">s
+                            <div class="rain">.
+                                <div class="rain">E
+                                    <div class="rain">l
+                                        <div class="rain">e
+                                            <div class="rain">m
+                                                <p>e</p>
+                                                <div class="rain">n
+                                                    <div class="rain">t
+                                                        <div class="rain">Q
+                                                            <div class="rain">u
+                                                                <div class="rain">e
+                                                                    <div class="rain">r
+                                                                        <div class="rain">i
+                                                                            <div class="rain">e
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 2 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">M
+                        <div class="rain">&nbsp;
+                            <div class="rain">&nbsp;
+                                <div class="rain">v
+                                    <div class="rain">a
+                                        <div class="rain">r
+                                            <div class="rain">f
+                                                <div class="rain">o
+                                                    <div class="rain">n
+                                                        <div class="rain">t
+                                                            <div class="rain">S
+                                                                <div class="rain">&nbsp;
+                                                                    <div class="rain">&nbsp;
+                                                                        <div class="rain">i
+                                                                            <div class="rain">z
+                                                                                <div class="rain">e
+                                                                                    <div class="rain">=
+                                                                                        <div class="rain">g
+                                                                                            <div class="rain">e
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">c
+                        <div class="rain">v
+                            <div class="rain">a
+                                <div class="rain">r
+                                    <div class="rain">k
+                                        <div class="rain">e
+                                            <div class="rain">y
+                                                <div class="rain">o
+                                                    <div class="rain">p
+                                                        <div class="rain">t
+                                                            <div class="rain">i
+                                                                <div class="rain">o
+                                                                    <div class="rain">n
+                                                                        <div class="rain">w
+                                                                            <div class="rain">i
+                                                                                <div class="rain">d
+                                                                                    <div class="rain">t
+                                                                                        <div class="rain">h
+                                                                                            <div class="rain">=
+                                                                                                <div class="rain">0
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .7;">i
+                        <div class="rain">a
+                            <div class="rain">t
+                                <div class="rain">t
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">r
+                                        <div class="">N
+                                            <div class="">a
+                                                <div class="">m
+                                                    <div class="">e
+                                                        <div class="">=
+                                                            <div class="micro-off">o
+                                                                <div class="rain">p
+                                                                    <div class="rain">t
+                                                                        <div class="rain">i
+                                                                            <div class="rain">o
+                                                                                <div class="rain">n
+                                                                                    <div class="rain">.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>m</p>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">s
+                        <div class="rain">e
+                            <div class="blur">t
+                                <div class="rain">u
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">p
+                                        <div class="micro-off">E
+                                            <div class="rain">l
+                                                <div class="micro">e
+                                                    <div class="micro-off">m
+                                                        <div class="rain">e
+                                                            <div class="rain">n
+                                                                <div class="rain">t
+                                                                    <div class="rain">(
+                                                                        <div class="rain">e
+                                                                            <div class="rain">l
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+                <div class="rain" style="margin-top: -1.35em;">m
+                    <div class="rain">e
+                        <div class="rain">n
+                            <div class="rain">t
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">&nbsp;
+                                <div class="rain">t
+                                    <div class="rain">h
+                                        <div class="">r
+                                            <div class="">o
+                                                <div class="">w
+                                                    <div class="">'
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="micro">N
+                                                            <div class="blur">o
+                                                                <div class="rain">d
+                                                                    <div class="rain">o
+                                                                        <div class="rain">c
+                                                                            <div class="rain">u
+                                                                                <div class="rain">m
+                                                                                    <div class="rain">e
+                                                                                        <div class="rain">n
+                                                                                            <div class="rain">t
+                                                                                                <div class="rain">.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                </section>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <p>f</p>
+                    <div class="rain" style="margin-top: -1.34em;">u
+                        <div class="rain">n
+                            <div class="rain">c
+                                <div class="rain">t
+                                    <div class="rain">i
+                                        <div class="rain">o
+                                            <div class="rain">n
+                                                <div class="rain">r
+                                                    <div class="rain">e
+                                                        <div class="rain">&nbsp;
+                                                            <div class="rain">&nbsp;
+                                                                <div class="rain">a
+                                                                    <div class="rain">d
+                                                                        <div class="rain">R
+                                                                            <div class="rain">u
+                                                                                <div class="rain">l
+                                                                                    <div class="rain">e
+                                                                                        <div class="rain">s
+                                                                                            <div class="rain">(
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">&nbsp;
+                                <div class="rain">v
+                                    <div class="">a
+                                        <div class="">r
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="micro">d
+                                                <div class="">o
+                                                    <div class="micro-off">m
+                                                        <div class="rain">L
+                                                            <div class="rain">o
+                                                                <div class="rain">a
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                </section>
+                <p>d</p>
+                <div class="rain blur">e
+                    <div class="rain">d
+                        <div class="rain">=
+                            <div class="rain">f
+                                <div class="rain">u
+                                    <div class="rain">n
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .3;">i
+                        <div class="rain">f
+                            <div class="rain">(
+                                <div class="rain">/
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">K
+                        <div class="blur">H
+                            <div class="">T
+                                <div class="">M
+                                    <div class="">L
+                                        <div class="micro">|
+                                            <div class="blur">W
+                                                <div class="rain">e
+                                                    <div class="rain">b
+                                                        <div class="rain">K
+                                                            <div class="rain">i
+                                                                <div class="rain">t
+                                                                    <div class="rain">|
+                                                                        <div class="rain">i
+                                                                            <div class="rain">C
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 10 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .5;">w
+                        <div class="rain">i
+                            <div class="rain">n
+                                <div class="rain">d
+                                    <div class="rain">o
+                                        <div class="rain">w
+                                            <div class="rain">.
+                                                <div class="rain">a
+                                                    <div class="rain">d
+                                                        <div class="rain">d
+                                                            <div class="rain">E
+                                                                <div class="rain">v
+                                                                    <div class="rain">e
+                                                                        <div class="rain">n
+                                                                            <div class="rain">t
+                                                                                <div class="rain">L
+                                                                                    <div class="rain">i
+                                                                                        <div class="rain">s
+                                                                                            <div class="rain">t
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">3
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <div class="row text-center" id="coderain4">
+        <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">v
+                        <div class="rain">t
+                            <div class="rain">h
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">w
+                        <div class="micro">i
+                            <div class="micro">t
+                                <div class="micro">h
+                                    <div class="micro">T
+                                        <div class="micro">r
+                                            <div class="micro-off">a
+                                                <div class="rain">c
+                                                    <div class="rain">k
+                                                        <div class="rain">i
+                                                            <div class="rain">n
+                                                                <div class="rain">g
+                                                                    <div class="rain">7
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>=</p>
+            </div>
+            <!-- 2 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">I
+                        <div class="rain">r
+                            <div class="rain">e
+                                <div class="rain">t
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">u
+                                        <div class="">r
+                                            <div class="">n
+                                                <div class="">p
+                                                    <div class="">a
+                                                        <div class="">r
+                                                            <div class="micro-off">s
+                                                                <div class="rain">e
+                                                                    <div class="rain">F
+                                                                        <div class="rain">l
+                                                                            <div class="rain">o
+                                                                                <div class="rain">a
+                                                                                    <div class="rain">t
+                                                                                        <div class="rain">(
+                                                                                            <div class="rain">f
+                                                                                                <div class="rain">o
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">r
+                        <div class="rain">t
+                            <div class="rain">h
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">s
+                                        <div class="">.
+                                            <div class="">a
+                                                <div class="">d
+                                                    <div class="">d
+                                                        <div class="">O
+                                                            <div class="micro-off">p
+                                                                <div class="rain">t
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>i</p>
+                <div class="rain" style="margin-top: -.3em;">o
+                    <div class="rain">n
+                        <div class="rain">=
+                            <div class="rain">f
+                                <div class="rain">u
+                                    <div class="rain">n
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .4;">d
+                        <div class="rain">i
+                            <div class="rain">f
+                                <div class="rain">(
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">o
+                                        <div class="micro-off">p
+                                            <div class="rain">t
+                                                <div class="rain">i
+                                                    <div class="rain">o
+                                                        <div class="micro">n
+                                                            <div class="micro-off">.
+                                                                <div class="rain">m
+                                                                    <div class="rain">o
+                                                                        <div class="rain">d
+                                                                            <div class="rain">e
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">e
+                        <div class="rain">l
+                            <div class="rain">e
+                                <div class="rain">m
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">e
+                                        <div class="micro-off">n
+                                            <div class="rain">t
+                                            </div>
+                                        </div>
+                                    </div>
+                                                <div class="micro">Q
+                                                    <div class="micro-off">&nbsp;
+                                                        <div class="rain">&nbsp;
+                                                            <div class="rain">u
+                                                                <div class="rain">e
+                                                                    <div class="rain blur">r
+                                                                        <div class="rain">i
+                                                                            <div class="rain">e
+                                                                                <div class="rain">s
+                                                                                    <div class="rain">S
+                                                                                        <div class="rain">e
+                                                                                            <div class="rain">t
+                                                                                                <div class="rain">u
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                </section>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">v
+                        <div class="rain">a
+                            <div class="rain">r
+                                <div class="rain">r
+                                    <div class="rain">e
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>j</p>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .6;">(
+                        <div class="rain">t
+                            <div class="rain">h
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">s
+                        <div class="">w
+                            <div class="">i
+                                <div class="">t
+                                    <div class="">h
+                                        <div class="micro">T
+                                            <div class="micro-off">r
+                                                <div class="rain">a
+                                                    <div class="rain">c
+                                                        <div class="rain">k
+                                                            <div class="rain">i
+                                                                <div class="rain">n
+                                                                    <div class="rain">g
+                                                                        <div class="rain">=
+                                                                            <div class="rain">w
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">@
+                                <div class="rain">i
+                                    <div class="rain">f
+                                        <div class="rain">(
+                                            <div class="rain">@
+                                                <div class="rain">_
+                                                    <div class="rain">w
+                                                        <div class="rain">i
+                                                            <div class="rain">n
+                                                                <div class="rain">3
+                                                                    <div class="rain">2
+                                                                        <div class="rain">||
+                                                                            <div class="rain">@
+                                                                                <div class="rain">w
+                                                                                    <div class="rain">i
+                                                                                        <div class="rain">n
+                                                                                            <div class="rain">6
+                                                                                                <div class="rain">4
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 9 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .6;">v
+                        <div class="rain">a
+                            <div class="rain">r
+                                <div class="rain">D
+                                    <div class="rain">O
+                                        <div class="rain">M
+                                            <div class="rain">L
+                                                <div class="rain">o
+                                                    <div class="rain">a
+                                                        <div class="rain">d
+                                                            <div class="rain">T
+                                                                <div class="rain">i
+                                                                    <div class="rain">m
+                                                                        <div class="rain">e
+                                                                            <div class="rain">r
+                                                                                <div class="rain">=
+                                                                                    <div class="rain">s
+                                                                                        <div class="rain">e
+                                                                                            <div class="rain">t
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>I</p>
+            </div>
+            <!-- 10 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">c
+                        <div class="rain">l
+                            <div class="rain">e
+                                <div class="rain">a
+                                    <div class="rain">r
+                                        <div class="rain">I
+                                            <div class="rain">n
+                                                <div class="rain">t
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>e</p>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <div class="row text-center" id="coderain5">
+        <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">a
+                        <div class="rain">v
+                            <div class="rain">a
+                                <div class="rain">r
+                                    <div class="rain">e
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="micro">l
+                                    <div class="blur">e
+                                        <div class="rain">m
+                                            <div class="rain">e
+                                                <div class="rain">n
+                                                    <div class="rain">t
+                                                        <div class="rain">s
+                                                            <div class="rain">=
+                                                                <div class="rain">[]
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </section>
+                <p class="blur">;</p>
+            </div>
+            <!-- 2 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">T
+                        <div class="rain">c
+                            <div class="rain">o
+                                <div class="rain">n
+                                    <div class="rain">v
+                                        <div class="rain">e
+                                            <div class="rain">r
+                                                <div class="rain">t
+                                                    <div class="rain">T
+                                                        <div class="rain">o
+                                                            <div class="rain">P
+                                                                <div class="rain">x
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>e</p>
+                <div class="blur" style="opacity: .5; margin-top: -1.3em;">
+                    <div class="rain">2
+                        <div class="rain">3
+                            <div class="rain">4
+                                <div class="rain">5
+                                    <div class="rain">6
+                                        <div class="rain">7
+                                            <div class="rain">8
+                                                <div class="rain">9
+                                                    <div class="rain">0
+                                                        <div class="rain">1
+                                                            <div class="rain">2
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <div class="grid">
+                    <div class="rain">o
+                        <div class="rain">v
+                        </div>
+                    </div>
+                    <p>a</p>
+                    <div class="rain" style="opacity: .5; margin-top: -1.3em;">&nbsp;</div>
+                        <div class="micro">r
+                            <div class="rain blur">i
+                                <div class="rain">d
+                                    <div class="micro">x
+                                        <div class="micro-off blur">&nbsp;
+                                            <div class="rain">&nbsp;
+                                                <div class="rain">&nbsp;
+                                                    <div class="rain">=
+                                                        <div class="rain">f
+                                                            <div class="rain">u
+                                                                <div class="rain">n
+                                                                    <div class="rain">c
+                                                                        <div class="rain">t
+                                                                            <div class="rain">i
+                                                                                <div class="rain">o
+                                                                                    <div class="rain">n
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">i
+                        <div class="rain">f
+                            <div class="rain">(
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rain">!
+                        <div class="micro">a
+                            <div class="micro-off">&nbsp;
+                                <div class="rain">&nbsp;
+                                    <div class="rain">t
+                                        <div class="rain">t
+                                            <div class="micro">r
+                                                <div class="micro-off">V
+                                                    <div class="rain">a
+                                                        <div class="rain">l
+                                                            <div class="rain">&nbsp;
+                                                                <div class="rain">&nbsp;
+                                                                    <div class="rain">u
+                                                                        <div class="rain">e
+                                                                            <div class="rain">s
+                                                                                <div class="rain">[
+                                                                                    <div class="rain">a
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">R
+                        <div class="rain">e
+                            <div class="rain">s
+                                <div class="rain">i
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p class="micro">z</p>
+                <div class="rain blur">&nbsp;
+                    <div class="rain">&nbsp;
+                        <div class="rain">&nbsp;
+                            <div class="rain">&nbsp;
+                                <div class="rain">&nbsp;
+                                    <div class="rain">&nbsp;
+                                        <div class="rain">e
+                                            <div class="rain">S
+                                                <div class="rain">e
+                                                    <div class="rain">n
+                                                        <div class="rain">s
+                                                            <div class="rain">o
+                                                                <div class="rain">r
+                                                                    <div class="rain">(
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">e
+                        <div class="rain">x
+                            <div class="rain">t
+                                <div class="rain">r
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">a
+                                        <div class="">c
+                                            <div class="">t
+                                                <div class="">Q
+                                                    <div class="">u
+                                                        <div class="micro">e
+                                                            <div class="blur">r
+                                                                <div class="rain">y
+                                                                    <div class="rain">(
+                                                                        <div class="rain">c
+                                                                            <div class="rain">s
+                                                                                <div class="rain">s
+                                                                                    <div class="rain">)
+                                                                                        <div class="rain">{
+                                                                                            <div class="rain">v
+                                                                                                <div class="rain">a
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .4;">@
+                        <div class="rain">p
+                            <div class="rain">a
+                                <div class="rain">r
+                                    <div class="rain">a
+                                        <div class="rain">m
+                                            <div class="rain">{
+                                                <div class="rain">B
+                                                    <div class="rain">o
+                                                        <div class="rain">o
+                                                            <div class="rain">l
+                                                                <div class="rain">e
+                                                                    <div class="rain">a
+                                                                        <div class="rain">n
+                                                                            <div class="rain">}
+                                                                                <div class="rain">w
+                                                                                    <div class="rain">i
+                                                                                        <div class="rain">t
+                                                                                            <div class="rain">h
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">/
+                        <div class="rain">*
+                            <div class="rain">M
+                                <div class="rain">o
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">z
+                                        <div class="">i
+                                            <div class="">l
+                                                <div class="">l
+                                                    <div class="">a
+                                                        <div class="">C
+                                                            <div class="micro-off">h
+                                                                <div class="rain">r
+                                                                    <div class="rain">o
+                                                                        <div class="rain">m
+                                                                            <div class="rain">e
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>O</p>
+                <div class="rain blur" style="margin-top: -1.34em;">p
+                    <div class="rain">e
+                        <div class="rain">r
+                            <div class="rain">a
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ∫ -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .8;">i
+                        <div class="rain">f
+                            <div class="rain">(
+                                <div class="rain">/
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">l
+                                        <div class="">o
+                                            <div class="">a
+                                                <div class="micro-off">d
+                                                    <div class="">e
+                                                        <div class="micro">d
+                                                            <div class="micro-off">|
+                                                                <div class="rain">c
+                                                                    <div class="rain">o
+                                                                        <div class="rain">m
+                                                                            <div class="rain">p
+                                                                                <div class="rain">l
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+            </div>
+            <!-- 10 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">w
+                        <div class="rain">i
+                            <div class="rain">n
+                                <div class="rain">d
+                                    <div class="rain">o
+                                        <div class="rain">w
+                                            <div class="rain">.
+                                                <div class="rain">o
+                                                    <div class="rain">n
+                                                        <div class="rain">l
+                                                            <div class="rain">o
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>a</p>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <div class="row text-center" id="coderain6">
+        <!-- Glow -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">r
+                        <div class="rain">f
+                            <div class="rain">u
+                                <div class="rain">n
+                                    <div class="rain">c
+                                        <div class="rain">t
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="micro">i
+                                                <div class="micro">o
+                                                    <div class="rain micro-off">n
+                                                        <div class="rain">g
+                                                            <div class="rain">e
+                                                                <div class="rain">t
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    </div>
+                    <p>E</p>
+                    <div class="rain blur">m
+                        <div class="rain">S
+                            <div class="rain">i
+                                <div class="rain">z
+                                    <div class="rain">e
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 2 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">•
+                        <div class="rain blur">v
+                            <div class="rain">a
+                                <div class="rain">r
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">u
+                                        <div class="">n
+                                            <div class="">i
+                                                <div class="">t
+                                                    <div class="">s
+                                                        <div class="">=
+                                                            <div class="micro-off">v
+                                                                <div class="rain">a
+                                                                    <div class="rain">l
+                                                                        <div class="rain">u
+                                                                            <div class="rain">e
+                                                                                <div class="rain">.
+                                                                                    <div class="rain">r
+                                                                                        <div class="rain">e
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>p</p>
+            </div>
+            <!-- 3 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">f
+                        <div class="rain">w
+                            <div class="rain">i
+                                <div class="">d
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">t
+                                        <div class="micro-off">h
+                                            <div class="">=
+                                                <div class="micro">t
+                                                    <div class="">h
+                                                        <div class="micro-off blur" style="opacity: .5;">i
+                                                            <div class="rain">s
+                                                                <div class="rain">.
+                                                                    <div class="rain">e
+                                                                        <div class="rain">l
+                                                                            <div class="rain">e
+                                                                                <div class="rain">m
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>e</p>
+            </div>
+            <!-- 4 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <p>c</p>
+                        <div class="rain" style="margin-top: -1.3em;">f
+                            <div class="rain">o
+                                <div class="rain">r
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="micro">(
+                                        <div class="">v
+                                            <div class="">a
+                                                <div class="">r
+                                                    <div class="">k
+                                                        <div class="">i
+                                                            <div class="micro-off">n
+                                                                <div class="rain">a
+                                                                    <div class="rain">t
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>t</p>
+                <div class="rain blur" style="margin-top: -1.35em;">r
+                    <div class="rain">i
+                        <div class="rain">b
+                            <div class="rain">u
+                                <div class="rain">t
+                                    <div class="rain">e
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain blur">t
+                        <div class="rain">h
+                            <div class="rain">i
+                                <div class="rain">s
+                                    <div class="rain">.
+                                        <div class="rain">w
+                                            <div class="rain">i
+                                                <div class="rain">t
+                                                    <div class="rain">h
+                                                        <div class="rain">T
+                                                            <div class="rain">r
+                                                                <div class="rain">a
+                                                                    <div class="rain">c
+                                                                        <div class="rain">k
+                                                                            <div class="rain">i
+                                                                                <div class="rain">n
+                                                                                    <div class="rain">g
+                                                                                        <div class="rain">)
+                                                                                            <div class="rain">{
+                                                                                                <div class="rain">e
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 6 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .3;">w
+                        <div class="rain">h
+                            <div class="rain">i
+                                <div class="rain">l
+                                    <div class="">e
+                                        <div class="">(
+                                            <div class="">n
+                                                <div class="">u
+                                                    <div class="">l
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">l
+                        <div class="blur">!
+                            <div class="rain">=
+                                <div class="rain">=
+                                    <div class="rain">(
+                                        <div class="rain">m
+                                            <div class="rain">a
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 7 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .6;">t
+                        <div class="rain">h
+                            <div class="rain">r
+                                <div class="rain">o
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="micro">w
+                        <div class="">'
+                            <div class="">w
+                                <div class="">i
+                                    <div class="">t
+                                        <div class="micro">h
+                                            <div class="micro-off">T
+                                                <div class="rain">r
+                                                    <div class="rain">a
+                                                        <div class="rain">c
+                                                            <div class="rain">k
+                                                                <div class="rain">i
+                                                                    <div class="rain">n
+                                                                        <div class="rain">g
+                                                                            <div class="rain">i
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 8 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain" style="opacity: .6;">i
+                        <div class="rain">f
+                            <div class="rain">(
+                                <div class="rain">d
+                                    <div class="rain">o
+                                        <div class="rain">c
+                                            <div class="rain">u
+                                                <div class="rain">m
+                                                    <div class="rain">e
+                                                        <div class="rain">n
+                                                            <div class="rain">t
+                                                                <div class="rain">.
+                                                                    <div class="rain">a
+                                                                        <div class="rain">d
+                                                                            <div class="rain">d
+                                                                                <div class="rain">E
+                                                                                    <div class="rain">v
+                                                                                        <div class="rain">e
+                                                                                            <div class="rain">n
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 9 -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">&nbsp;
+                        <div class="rain">c
+                            <div class="rain">l
+                                <div class="rain">e
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="micro">a
+                                        <div class="micro-off">r
+                                            <div class="micro">I
+                                                <div class="micro-off">n
+                                                    <div class="">t
+                                                        <div class="micro">e
+                                                            <div class="micro-off">r
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <p>v</p>
+            </div>
+            <!-- done -->
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">a
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-1 coderaindrop">
+                <section class="grid">
+                    <div class="rain">1
+                        <div class="rain">2
+                            <div class="rain">3
+                                <div class="rain">4
+                                    <div class="rain">5
+                                        <div class="rain">6
+                                            <div class="rain">7
+                                                <div class="rain">8
+                                                    <div class="rain">9
+                                                        <div class="rain">0
+                                                            <div class="rain">1
+                                                                <div class="rain">2
+                                                                    <div class="rain">3
+                                                                        <div class="rain">4
+                                                                            <div class="rain">5
+                                                                                <div class="rain">6
+                                                                                    <div class="rain">7
+                                                                                        <div class="rain">8
+                                                                                            <div class="rain">9
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>8</p>
+            </div>
+        </div>
+
+        <!-- Tests -->
+        <section hidden>
+
+            <h2>Code rain tests</h2>
+        
+            <div class="row mb-5" id="coderain">
+                <div class="col-sm-1">
+                    <section class="grid">
+                        <article class="module">1</article>
+                        <article class="module">2</article>
+                        <article class="module">3</article>
+                        <article class="module">4</article>
+                        <article class="module">5</article>
+                    </section>
+                </div>
+        
+                <!-- Child incremental opacity change -->
+                <div class="col-sm-1">
+                    <section class="grid">
+                        <div class="rain">1
+                            <div class="rain">2
+                                <div class="rain">3
+                                    <div class="rain">4
+                                        <div class="rain text-shadow">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        
+                <!-- Glow -->
+                <div class="col-sm-1">
+                    <section class="grid">
+                        <div class="rain">1
+                            <div class="rain">2
+                                <div class="rain">3
+                                    <div class="rain">4
+                                        <div class="rain">5
+                                            <div class="rain">6
+                                                <div class="rain">7
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <p>8</p>
+                </div>
+        
+                <!-- .glow and .blur -->
+                <div class="col-sm-1">
+                    <section class="grid">
+                        <div class="rain blur">1
+                            <div class="rain">2
+                                <div class="rain">3
+                                    <div class="rain">4
+                                        <div class="rain">5
+                                            <div class="rain">6
+                                                <div class="rain">7
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="blur">8</p class="rain blur">
+                </div>
+        
+            </div>
+        </section>
+
+        <div class="row mt-3">
+            <h2>Reference</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="figure">
+                    <img src="code-rain.png"
+                        class="figure-img img-fluid rounded mx-auto d-block" alt="code rain">
+                    <figcaption class="figure-caption">Guide for highlighting "microflidics"</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure">
+                    <img src="http://windowsclan.com/wp-content/uploads/2016/10/matrix-code-scroll-wallpaper.gif"
+                        class="figure-img img-fluid rounded mx-auto d-block" alt="code rain">
+                    <figcaption class="figure-caption">RedPill Matrix Screensaver for Mac OS X</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h2>Code</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>JavaScript</h3>
+                <div>
+                    From 
+                    <a href="https://js-agent.newrelic.com/nr-1163.min.js">
+                        Harvard.edu
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>jQuery</h3>
+                <div>
+                    From 
+                    <a href="https://www.harvard.edu/sites/all/themes/hedu2015/assets/js-element-queries/ElementQueries.js">
+                        Harvard.edu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
