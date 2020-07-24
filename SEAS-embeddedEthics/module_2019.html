@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      a.moreInfoBtn:link, a.moreInfoBtn:visited, a.moreInfoBtn:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color: #007bff;
+          border-color: #007bff;
+          -webkit-text-decoration-skip: objects;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.25em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+      /* specific to this page */
+
+      .team-member h4 {
+      font-size: 1.1em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .team-member img {
+      width: 10em;
+      height: 10em;
+      }
+
+      /* Responsive data table from https://css-tricks.com/responsive-data-tables/ */
+    /* This query will take effect for any screen smaller than 760px and also iPads specifically. */
+	@media
+	  only screen
+    and (max-width: 760px), (min-device-width: 768px)
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+      background: #eee;
+    }
+
+		td-responsive {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+		}
+
+		td-responsive:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+
+		/* Label the data */
+		td:nth-of-type(1):before { content: "Status"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(2):before { content: "Course"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(3):before { content: "Course Level"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(4):before { content: "Module"; font-weight: bold; margin-right: 1em; }
+		td:nth-of-type(5):before { content: "Module Author"; font-weight: bold; margin-right: 1em; }
+	    }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Teaching Lab -->
+    <section id="teachLab" style="margin-top: -6em;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+              Development of Course Modules
+            </h2>
+            <h3 class="section-subheading text-muted">
+              Course modules are developed in the
+              <strong>Embedded EthiCS Teaching Lab</strong>.
+              <br>
+              In this weekly seminar our team of
+              graduate and postdoctoral fellows collaborate with one another
+              to develop and refine course modules, identify pedagogical challenges and strategies for addressing them,
+              and research topics of mutual interest in computer ethics.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="module" style="margin-top: -6em;">
+      <!--Intro paragraph-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -14em;">
+            <h2 class="section-heading">
+              Goals of Course Modules
+            </h2>
+            <h4 class="section-heading">
+              The Embedded EthiCS course modules teach students to...
+            </h4>
+          </div>
+        </div>
+        <div class="row justify-content-md-center" style="margin-top: -7em;">
+
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member">
+              <!--Image from https://www.flickr.com/photos/grinnell/6838820266/in/album-72157649172492365/-->
+              <img class="rounded-circle" src="img/module/6838820266_cabb842084_z.jpg" alt="Student meeting">
+              <h4>
+                <strong>identify</strong>
+                <span style="font-weight: 400;">
+                  ethical and social issues
+                </span>
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member">
+              <!--Image from https://www.flickr.com/photos/grinnell/21878502902/in/album-72157649172492365/-->
+              <img class="rounded-circle img-fluid" src="img/module/21878502902_7226555e96_z.jpg" alt="Student discussion">
+              <h4>
+                <strong>reason</strong>
+                <span style="font-weight: 400;">
+                  through ethical and social issues
+                </span>
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member">
+              <!--Image from https://www.flickr.com/photos/grinnell/28695283714/in/album-72157649172492365/-->
+              <img class="rounded-circle img-fluid" src="img/module/28695283714_2324ea8180_z.jpg" alt="Student discussion">
+              <h4>
+                <strong>communicate</strong>
+                <span style="font-weight: 400;">
+                  their reasoned position
+                </span>
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member">
+              <!--Image from https://www.flickr.com/photos/grinnell/16646995538/in/album-72157649172492365/-->
+              <img class="rounded-circle img-fluid" src="img/module/16646995538_afa020ba12_z.jpg" alt="Student design session">
+              <h4>
+                <strong>design</strong>
+                <span style="font-weight: 400;">
+                  ethically and socially responsible systems
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+
+    <section id="pastPresent" style="margin-top: -13em;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">
+                Repository of Open Source Course Modules
+              </h2>
+            </div>
+          </div>
+        </div>
+
+      <div class="row" style="margin-bottom: 1em;">
+        <div class="col-lg-12 text-center">
+          These modules are made available under a
+          <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+          <br>
+          Please see each module for copyright and attribution information for that module.
+        </div>
+      </div>
+    </section>
+
+    <section id="courseModules" style="margin-top: -13em;">
+
+      <div class="container">
+
+        <!--table with course modules-->
+        <div class="row">
+          <div class="col-md-12">
+            <small>
+              <table class="table table-sm table-striped" role="table">
+                <thead role="rowgroup">
+                  <tr role="row">
+                    <th scope="col" role="columnheader">Course number</th>
+                    <th scope="col" role="columnheader">Course title</th>
+                    <th scope="col" role="columnheader">Module</th>
+                    <th scope="col" role="columnheader">Ethical issue</th>
+                    <th scope="col" role="columnheader">Philosophical concepts, principles, theories</th>
+                    <th scope="col" role="columnheader">Course level</th>
+                    <th scope="col" role="columnheader">Module author</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CS 1</td>
+                    <td>Great Ideas in Computer Science</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS1.html" class="moreInfo">
+                        Electronic Privacy
+                      </a></td>
+                    <td>Should internet service providers be able to sell information about our browsing patterns without our
+                      consent?</td>
+                    <td>Moral rights; electronic privacy; privacy as a private vs. public good</td>
+                    <td>Introductory undergraduate</td>
+                    <td>Diana Acosta-Navas</td>
+                  </tr>
+                  <tr>
+                    <td>CS 051</td>
+                    <td>Abstraction and Design in Computation</td>
+                    <td>Professional responsibility and software design</td>
+                    <td>When are software companies morally responsible for harmful uses of their products by
+                      others?</td>
+                    <td>Criteria for moral responsibility</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 061</td>
+                    <td>Systems Programming and Machine Organization</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS061.html" class="moreInfo">
+                      ASCII, Unicode, and the Ethics of Natural Language Representation
+                    </a></td>
+                    <td>Can the way we choose to encode natural language be harmful?</td>
+                    <td>Representational harm/allocative harm</td>
+                    <td>Introductory undergraduate</td>
+                    <td>Cat Wade</td>
+                  </tr>
+                  <tr>
+                    <td>AM 106</td>
+                    <td>Applied Algebra</td>
+                    <td>The ethics of applied and theoretical research</td>
+                    <td>
+                      What are the moral reasons to engage in more
+                      applies vs. theoretical research (or more generally, to choose a certain kind of work)?
+                    </td>
+                    <td>Consequentialist vs. deontological ethical theories</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 109b</td>
+                    <td>Introduction to Data Science II</td>
+                    <td>Moral considerations for data science decisions</td>
+                    <td>How are ethical considerations relevant to the data science process?</td>
+                    <td>Moral responsibility; role obligations</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 124</td>
+                    <td>Data Structures and Algorithms</td>
+                    <td><i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS124.html" class="moreInfo">
+                        How can we design models that allocate goods and services fairly?
+                      </a></td>
+                    <td>How should we design models to allocate goods and services to individuals fairly? </td>
+                    <td>Fairness; procedural vs. outcome fairness; decision-making; trade-offs</td>
+                    <td>Upper-level undergraduate</td>
+                    <td>Cat Wade
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>CS 126</td>
+                    <td>Fairness, Privacy, and Validity in Data</td>
+                    <td>
+                      Diversity and equality of opportunity in automated
+                      hiring systems
+                    </td>
+                    <td>How should concerns about (a) meritocracy and (b) equality of opportunity affect the design of
+                      automated hiring systems?</td>
+                    <td>Formal and fair equality of opportunity; pro tanto moral obligation</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 134</td>
+                    <td>Networks</td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS134.html" class="moreInfo">
+                        Privacy in networks
+                      </a></td>
+                    <td>
+                      Facebook, Fake News, and the Ethics of Censorship
+                    </td>
+                    <td>Moral obligation; permission, prohibition, supererogation; utilitarianism; Mill's argument against censorship; Mill's harm principle </td>
+                    <td>Upper-level undergraduate</td>
+                    <td>David Gray Grant</td>
+                  </tr>
+                  <tr>
+                    <td>CS 136</td>
+                    <td>Economics and Computation</td>
+                    <td>Recommender systems and preferences</td>
+                    <td>What is morally good about satisfying individuals&#39; preferences?</td>
+                    <td>Utilitarianism (Harsayni) vs. Scanlon on the value of choice</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 145/245</td>
+                    <td>Cloud Networking and Computing</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS145-245.html" class="moreInfo">
+                        The Ethics of Cloud Security
+                      </a></td>
+                    <td>Why should we care about security from an ethical perspective? Who is responsible for
+                      security breaches?</td>
+                    <td>Rights; responsibility; privacy as a right/merely beneficial good; stakeholders</td>
+                    <td>Upper-level undergraduate and graduate</td>
+                    <td>Cat Wade</td>
+                  </tr>
+                  <tr>
+                    <td>CS 152</td>
+                    <td>Programming Languages</td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS152.html" class="moreInfo">
+                        Ethics in Software Verification and Validation
+                      </a>
+                    </td>
+                    <td>How can we incorporate ethical requirements into software development?</td>
+                    <td>Ethical requirements and design specifications; stakeholder rights and interests</td>
+                    <td>Upper-level undergraduate</td>
+                    <td>David Gray Grant</td>
+                  </tr>
+                  <tr>
+                    <td>CS 161</td>
+                    <td>
+                      Operating Systems
+                    </td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS161.html" class="moreInfo">
+                        Ethical Tradeoffs in System Design: Performance versus Correctness
+                      </a>
+                    </td>
+                    <td>How should software developers make tradeoffs between performance and correctness?</td>
+                    <td>
+                      Cost-benefit analysis (ethics of); individual responsibility; incommensurability 
+                    </td>
+                    <td>Upper-level undergraduate</td>
+                    <td>Kate Vredenburgh</td>
+                  </tr>
+                  <tr>
+                    <td>CS 165</td>
+                    <td>
+                      Data Systems
+                    </td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS165.html" class="moreInfo">
+                        Privacy in the Design of Data Systems
+                      </a>
+                    </td>
+                    <td>Why is privacy important from an ethical perspective? How do tech companies conceive of
+                      privacy?</td>
+                    <td>
+                      Rights; stakeholder rights and interests; different
+                      kinds of privacy; privacy as a right/merely beneficial good; informational privacy
+                    </td>
+                    <td>Upper-level undergraduate</td>
+                    <td>Kate Vredenburgh</td>
+                  </tr>
+                  <tr>
+                    <td>CS 179</td>
+                    <td>Design of Useful and Usable Interface Systems</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS179.html" class="moreInfo">
+                        Ethical Perspectives on Accessible Video Game Design
+                      </a></td>
+                    <td>Are software developers morally obligated to design for inclusion?</td>
+                    <td>Medical, social, and interactive theories of disability; formal and fair equality of opportunity</td>
+                    <td>Upper-level undergraduate</td>
+                    <td>Cat Wade</td>
+                  </tr>
+                  <tr>
+                    <td>CS 181</td>
+                    <td>
+                      Machine Learning
+                    </td>
+                    <td>
+                      <i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS181.html" class="moreInfo">
+                        Discrimination and Machine Learning
+                      </a>
+                    </td>
+                    <td>Do machine learning algorithms discriminate? If so, what can we do to mitigate this?</td>
+                    <td>Discrimination (disparate treatment/impact); social goods/harms; formalized fairness
+                      criteria</td>
+                      <td>Upper-level undergraduate</td>
+                      <td>Kate Vredenburgh</td>
+                  </tr>
+                  <tr>
+                    <td>CS 182</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Machines and moral decision-making</td>
+                    <td>(How) can we design AI systems to make genuinely moral decisions? </td>
+                    <td>A moral decision vs a decision with moral consequences</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 189</td>
+                    <td>Autonomous Robot Systems</td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS189.html" class="moreInfo">
+                        Robots and work 
+                      </a></td>
+                    <td>Why is work valuable for people, and are employers obligated to provide valuable work?</td>
+                    <td>Rawls&#39; and Nozick&#39;s theories of justice</td>
+                    <td>Upper-level undergraduate</td>
+                    <td>Kate Vredenburgh</td>
+                  </tr>
+                  <tr>
+                    <td>CS 222</td>
+                    <td>Algorithms at the End of the Wire</td>
+                    <td>Transparency and search engine algorithms</td>
+                    <td>Do search engine companies have an obligation to be transparent about how they produce and
+                      rank search engine results?</td>
+                    <td>Informational autonomy; democratic principles; marketplace of ideas; responsibility</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 236</td>
+                    <td>
+                      Topics at the Interface between Computer Science
+                      and Economics
+                    </td>
+                    <td><i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS236.html" class="moreInfo">
+                        Interpretability and Explanation
+                      </a></td>
+                    <td>Should full reserve banking with blockchain be instituted? </td>
+                    <td>Rawls&#39; theory of justice</td>
+                    <td>Graduate</td>
+                    <td>Kate Vredenburgh</td>
+                  </tr>
+                  <tr>
+                    <td>CS 263</td>
+                    <td>Systems Security</td>
+                    <td>
+                      <i class="fas fa-check-square" style="color: #52854C;"></i>
+                      <a href="module-CS263.html" class="moreInfo">
+                        The Ethics of Hacking Back
+                      </a>
+                    </td>
+                    <td>Is it morally permissible for companies to &quot;hack back&quot; in response to a cyberattack?</td>
+                    <td>Stakeholder rights and interests; philosophical arguments for and against the moral permissibility of
+                      hacking back</td>
+                      <td>Graduate</td>
+                      <td>David Gray Grant</td>
+                  </tr>
+                  <tr>
+                    <td>CS 265</td>
+                    <td>Big Data Systems</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS265.html" class="moreInfo">
+                        Electronic Privacy and Big Data Systems
+                      </a></td>
+                    <td>How do big data systems affect our conception of privacy?</td>
+                    <td>Privacy; data privacy; electronic privacy; legal rights; moral rights; interests</td>
+                    <td>Graduate</td>
+                    <td>Diana Acosta-Navas</td>
+                  </tr>
+                  <tr>
+                    <td>CS 279</td>
+                    <td>Design of Useful and Usable Interactive Systems </td>
+                    <td>Implicit bias and our moral responsibilities for it in design</td>
+                    <td>Are we responsible for the implicit biases that permeate our user-interface design?</td>
+                    <td>Implicit bias; moral responsibility</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>CS 287</td>
+                    <td>Natural Language Processing</td>
+                    <td><i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="module-CS287.html" class="moreInfo">
+                        Bias and Stereotypes in Word Embedding software
+                      </a></td>
+                    <td>When are stereotypes morally problematic?</td>
+                    <td>
+                      Bias (explicit vs. implicit); stereotypes;
+                      discrimination; statistical truths vs. essentialist claims; representational vs. allocative harms
+                    </td>
+                    <td>Graduate</td>
+                    <td>Diana Acosta-Navas</td>
+                  </tr>
+                  <tr hidden>
+                    <td></td>
+                    <td></td>
+                    <td>Morally responsible software engineering</td>
+                    <td>Are social media companies responsible for how others use their platforms?</td>
+                    <td>The view that technology is morally neutral; implications and criticisms of this view</td>
+                    <td>courseLevel</td>
+                    <td>courseAuthor</td>
+                  </tr>
+                  <tr hidden>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <i class="fas fa-hourglass-half" style="color: #AB4E03;"></i>
+                      <a href="https://embeddedethics.seas.harvard.edu/module-CS134.html" class="moreInfo">
+                        Facebook, fake news, and the ethics of censorship
+                      </a>
+                    </td>
+                    <td>Should social media companies suppress the spread of fake news over their platforms?</td>
+                    <td>Mill&#39;s arguments against censorship</td>
+                    <td>courseLevel</td>
+                    <td>courseAuthor</td>
+                  </tr>
+                  <tr hidden>
+                    <td></td>
+                    <td></td>
+                    <td>Matching mechanisms and fairness</td>
+                    <td>What ethical standards should influence matching mechanism design?</td>
+                    <td>Envy-freeness; justified claims, rights, and benefits</td>
+                    <td>courseLevel</td>
+                    <td>courseAuthor</td>
+                  </tr>
+                  <tr hidden>
+                    <td></td>
+                    <td></td>
+                    <td>Interpretability and fairness</td>
+                    <td>
+                      What reason is there to make algorithms
+                      explainable, and what implications do those reasons have for institutional and algorithmic design?
+                    </td>
+                    <td>Fairness; different types of explanation (justification; causal explanation)</td>
+                    <td>courseLevel</td>
+                    <td>courseAuthor</td>
+                  </tr>
+                  <tr hidden>
+                    <td></td>
+                    <td></td>
+                    <td>courseLevel</td>
+                    <td>Privacy and statistical inference from data</td>
+                    <td>Is it a violation of individuals&#39; privacy to make and act on inferences from data they
+                      make public?</td>
+                    <td>Rights and waiving rights</td>
+                    <td>courseLevel</td>
+                    <td>courseAuthor</td>
+                  </tr>
+                </tbody>
+              </table>
+                </small>
+            <hr>
+            <p>
+              Legend
+            </p>
+            <p>
+              <i class="fas fa-check-square fa-lg" style="color: #52854C; margin-right: .5em;"></i>
+              Completed module
+            </p>
+            <p>
+              <i class="fas fa-hourglass-half fa-lg" style="color: #AB4E03; margin-right: .5em;"></i>
+              In progress module
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+  </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                |
+                <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Accessibility</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

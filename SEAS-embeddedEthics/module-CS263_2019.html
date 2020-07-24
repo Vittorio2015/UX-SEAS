@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131338240-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131338240-1');
+    </script>
+
+    <meta name="description"
+          content="Embedded EthiCS @ Harvard integrates ethical reasoning into core Computer Science courses. It teaches students to think through the ethical and social implications of the systems, programs, and algorithms they design and develop.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Course Modules | CS 263: Systems Security | Embedded EthiCS @ Harvard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon library at https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <style>
+      a.moreInfo:link, a.moreInfo:visited {
+          color: #AB4E03;
+          text-decoration: none;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects;
+          font-size: 1.05em;
+      }
+
+      section h3.section-subheading {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: arial;
+      }
+
+      .copyright {
+      color: #999;
+      }
+
+      .navbar-nav {
+      font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+      font-size: 90%;
+      font-weight: 400;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      }
+
+      a.nav-link {
+      color: #fff;
+      padding: 1.1em 1em!important;
+      }
+
+      .dont-break-out {
+
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      word-break: break-all;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+
+      /* Adds a hyphen where the word breaks, if supported (No Blink) */
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
+    }
+
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand">
+        <img src="img/harvard-logo.png" alt="Harvard University logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module.html" style="color: #fed136;">Course Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <h1 hidden>
+      Embedded ethics at Harvard: Harvard: bringing ethical reasoning into the computer science curriculum.
+    </h1>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div style=" margin-top: 6em; padding: 1em; background: none repeat scroll 0 0 rgba(108, 109, 110, 0);">
+              <div class="intro-lead-in" style="line-height: 1.5em; font-family:verdana,arial,sans-serif; font-style: normal; color: #fff; font-size: 1.3em;">
+                <span style="color: #FFDB6D; font-weight: 400;">
+                  Embedded EthiCS
+                </span>
+                <span style="font-size: smaller;">@</span>
+                Harvard: bringing ethical reasoning into the computer science curriculum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 2em;">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="module.html" class="moreInfo">Course Modules</a>
+            / CS 263: Systems Security
+          </div>
+        </div>
+    </div>
+
+    <section id="module">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center" style="margin-top: -5em;">
+            <h2 class="section-heading" style="font-size: 2em;">Repository of Open Source Course Modules</h2>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 4em;">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active moreInfo" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">
+                  Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="goal-tab" data-toggle="tab" href="#goal" role="tab" aria-controls="goal" aria-selected="false">
+                  Goals
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="material-tab" data-toggle="tab" href="#material" role="tab" aria-controls="material" aria-selected="false">
+                  Materials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link moreInfo" id="implementation-tab" data-toggle="tab" href="#implementation" role="tab" aria-controls="implementation" aria-selected="false">
+                  Implementation
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course:
+                      </strong>
+                      CS 263: Systems Security
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course Level:
+                      </strong>
+                      Graduate
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      While this is a graduate-level course, most of the students that take it are undergraduates. The
+                      material in this module is pitched at the advanced undergraduate level.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Course Description:
+                      </strong>
+                      "This course explores practical attacks on modern computer systems, explaining how those attacks
+                      can be mitigated using careful system design and the judicious application of cryptography. The
+                      course discusses topics like buffer overflows, web security, information flow control, and
+                      anonymous communication mechanisms like Tor. The course includes several small projects which give
+                      students hands-on experience with various offensive and defensive techniques; the final, larger
+                      project is open-ended and driven by student interests."
+                      (<a href="https://mickens.seas.harvard.edu/classes/cs-263-systems-security" target="_blank" class="moreInfo dont-break-out">Course description
+                    <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)
+                    </p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Topic:
+                      </strong>
+                      The Ethics of Hacking Back
+                    </p>
+                    <p>
+                      <strong>
+                        Module Author:
+                      </strong>
+                      David Gray Grant
+                    </p>
+                    <p>
+                      <strong>
+                        Semesters Taught:
+                      </strong>
+                      Fall 2018
+                    </p>
+                    <p>
+                      <strong>
+                        Tags:
+                      </strong>
+                    </p>
+                    <dl>
+                      <dd>
+                        systems <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        cybersecurity <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        hacking back <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        active cyber defense <span class="badge badge-primary">CS</span>
+                      </dd>
+                      <dd>
+                        moral obligation <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        moral rights <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        morally significant stakeholder interests <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        privacy <span class="badge badge-warning">phil</span>
+                      </dd>
+                      <dd>
+                        self-defense <span class="badge badge-warning">phil</span>
+                      </dd>
+                    </dl>
+                    <p>
+                      <strong>
+                        Module Overview:
+                      </strong>
+                      In this module, we consider whether it is ethically acceptable for cybersecurity professionals to
+                      “hack back” when the software systems they defend are targeted by cyberattacks. We begin by
+                      discussing a recent real-world case of hacking back – Facebook’s 2011 response to persistent
+                      cyberattacks conducted by the “Koobface Gang.” With this case study as a focal point, students
+                      consider how various ways in which a cybersecurity team might respond to an attack (including by
+                      hacking back) are likely to affect the rights and interests of all parties concerned. We then
+                      discuss a number of prominent arguments for and against the claim that hacking back is in general
+                      ethically acceptable. Each argument represents a different position about how cybersecurity
+                      professionals should balance competing rights and interests as they decide whether hacking back is
+                      an ethically acceptable option.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Connection to Course Technical Material:
+                      </strong>
+                      This course focuses on teaching students how to mitigate the effects of cyberattacks using passive
+                      defensive strategies that protect sensitive systems and data by making them more difficult to
+                      compromise in the first place. To develop a practical understanding of how modern cyberattacks
+                      work, students learn how to conduct such attacks themselves, employing the same offensive
+                      techniques as malicious attackers. While the course teaches students these techniques so that they
+                      can better “harden” systems against them, the techniques can also be used offensively, to “hack
+                      back” in response to a cyberattack. This module explores whether – and if so, when – these
+                      techniques should be used offensively by cybersecurity professionals. In so doing, the module
+                      helps students to better understand what is at stake, from an ethical point of view, in how
+                      cybersecurity professionals respond to cyberattacks, and puts them in a better position to
+                      ethically evaluate possible responses in real-world decision-making contexts.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      The topic for this module was selected using a strategy that we often employ. First, in
+                      consultation with the professor for the course, we come up with a list of interesting real-world
+                      applications for the technical material covered in class: concrete problems that working computer
+                      scientists are currently drawing on that material to solve. Second, we search for recent articles
+                      and papers about those applications, trying to identify ethical debates that might make good
+                      topics for the module. Third, we try to identify concepts, theories, and arguments from the
+                      philosophical literature that (a) help shed light on those ethical debates and (b) are simple
+                      enough to cover adequately in the context of a single class session. The third step is often the
+                      trickiest, but in some cases is as easy as finding the right philosophical reading. A significant
+                      portion of the philosophical content for this module, for instance, came from an
+                      introductory-level piece by Patrick Lin (see “Assigned Readings” below).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      &copy; 2018 by David Gray Grant,
+                      "The Ethics of Hacking Back"
+                      is made available under a
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">Creative
+                        Commons Attribution 4.0 International license (CC BY 4.0)</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      For the purpose of attribution, cite as:
+                      David Gray Grant and James Mickens,
+                      "The Ethics of Hacking Back"
+                      for CS 263: Systems Security,
+                      Fall 2018,
+                      <a href="https://embeddedethics.seas.harvard.edu/" target="_blank" class="moreInfo">Embedded EthiCS @ Harvard</a>.
+                      <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" class="moreInfo">CC BY 4.0</a>.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Goals:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Familiarize students with contemporary debates about whether corporations should be allowed to
+                        “hack back” in response to cyberattacks.
+                      </li>
+                      <li>
+                        Teach students to ethically evaluate possible courses of action that cybersecurity professionals
+                        might take in response to a cyberattack (including hacking back) by considering how available
+                        responses might affect the rights and interests of different groups of stakeholders.
+                      </li>
+                      <li>
+                        Help students to understand that, in many cases, determining which possible response(s) to a
+                        cyberattack would be ethically acceptable requires determining how competing rights and
+                        interests ought to be balanced.
+                      </li>
+                      <li>
+                        Introduce students to philosophical arguments that take different stances on whether hacking
+                        back (in general) strikes an ethically acceptable balance among competing rights and interests.
+                      </li>
+                      <li>
+                        Help students critically evaluate these arguments by considering whether they yield plausible
+                        results when applied to realistic case studies.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Questions:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Under what conditions, if any, is it morally permissible (or, less technically, ethically
+                        acceptable) for cybersecurity professionals to hack back on behalf of the corporations they work
+                        for?
+                      </li>
+                      <li>
+                        How might the decision to hack back (or not) affect the moral rights and morally significant
+                        interests of different groups of stakeholders?
+                      </li>
+                      <li>
+                        In cases where stakeholder rights and interests conflict, how should cybersecurity professionals
+                        decide how to balance those competing rights and interests in responding to an attack?
+                      </li>
+                      <li>
+                        Why do many commentators believe that hacking back is not just morally wrong, but obviously
+                        morally wrong? (Are they right?)
+                      </li>
+                      <li>
+                        Why do some commentators reject this orthodox position, claiming that hacking back is not only
+                        morally permissible, but should in fact be encouraged?
+                      </li>
+                      <li>
+                        How should cybersecurity professionals respond in cases where there is uncertainty concerning
+                        who is responsible for an attack?
+                      </li>
+                      <li>
+                        Is hacking back a form of vigilantism, self-defense, or neither? How should our answer to this
+                        question affect our views about the moral permissibility of hacking back?
+                      </li>
+                      <li>
+                        Many people believe that it is morally permissible for the government to quarantine individuals
+                        infected with highly contagious, life-threatening diseases without their consent. Is it,
+                        similarly, morally permissible for companies to hack into “infected” third-party machines
+                        controlled by cybercriminals, provided that doing so is necessary to prevent those machines from
+                        being used in potentially devastating cyberattacks?
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Question (1) is the central question for the module. Questions (2) and (3) are closely related
+                      philosophical questions that are essential to consider in answering (1). The remaining questions
+                      explore various perspectives, considerations, and arguments that are useful to consider in
+                      answering questions (1)-(3).
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="material" role="tabpanel" aria-labelledby="material-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Key Philosophical Concepts:
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Moral obligation and permission.
+                      </li>
+                      <li>
+                        Moral rights and morally significant stakeholder interests.
+                      </li>
+                      <li>
+                        Electronic privacy.
+                      </li>
+                      <li>
+                        Vigilantism, self-defense, and “self-help.”
+                      </li>
+                      <li>
+                        Patrick Lin’s “argument from self-defense” and “argument from public health” in favor of the
+                        moral permissibility of hacking back.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p>
+                      <strong>
+                        Assigned Material:
+                      </strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        Patrick Lin, “The Ethics of Hacking Back: Six Arguments from Armed Conflict to Zombies.”
+                        <a href="http://ethics.calpoly.edu/hackingback.pdf" target="_blank" class="moreInfo dont-break-out">
+                          http://ethics.calpoly.edu/hackingback.pdf
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This introductory-level piece sets out six arguments for and against the claim that it is morally
+                      permissible (ethically acceptable) for companies to hack back when they are targeted by
+                      cyberattacks. Reading the piece before class provides students with a good overview of the ethical
+                      issues discussed in the module, and sets us up to dig more deeply into some of the arguments Lin
+                      discusses during the class session.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <ul>
+                      <li>
+                        Nicholas Schmidle, “The Digital Vigilantes Who Hack Back” (The New Yorker).
+                        <a href="https://www.newyorker.com/magazine/2018/05/07/the-digital-vigilantes-who-hack-back" target="_blank" class="moreInfo dont-break-out">
+                          https://www.newyorker.com/magazine/2018/05/07/the-digital-vigilantes-who-hack-back
+                        <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This longform article from the New Yorker provides a mix of relevant empirical background,
+                      illustrative case studies, and quotes from experts and advocates who take varying positions on
+                      whether it would be a good idea to relax current legal restrictions on hacking back. The article
+                      contains a great deal of material that can be referred to during the class session in order to
+                      illustrate key points and concepts.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+
+                <div class="row">
+                  <div class="col">
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Class Agenda:
+                      </strong>
+                    </p>
+                    <ol>
+                      <li>
+                        Overview.
+                      </li>
+                      <li>
+                        What is hacking back?
+                      </li>
+                      <li>
+                        Case study: Facebook and the Koobface gang.
+                      </li>
+                      <li>
+                        Case study analysis: identifying potential effects on stakeholder rights and interests.
+                      </li>
+                      <li>
+                        Arguments that appeal to the benefits of hacking back.
+                      </li>
+                      <li>
+                        Arguments that appeal to the costs of hacking back.
+                      </li>
+                      <li>
+                        Adjudicating conflicting rights and interests: Patrick Lin’s “Argument from Self-Defense” and
+                        “Argument from Public Health.”
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Sample Class Activity:
+                      </strong>
+                      The central case study for this module is the Facebook security team’s 2011 response to ongoing
+                      cyberattacks on its systems and users perpetrated by the so-called “Koobface Gang,” a group of
+                      cybercriminals operating out of St. Petersburg, Russia. After explaining the nature of these
+                      cyberattacks and the offensive actions taken by Facebook’s security team in response, the Embedded
+                      EthiCS TA leads students through a discussion of how the decision to hack back in similar cases
+                      might affect the rights and interests of various stakeholder groups. Groups discussed include the
+                      company being attacked (in this case, Facebook), the company’s userbase (Facebook users), third
+                      parties not involved in the attack who might be inadvertently affected by an offensive response
+                      against the alleged attackers, and other members of the public.
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      Group brainstorming activities like this one, which focus on helping students to explore the
+                      ethical problems discussed in a module for themselves through the lens of real-world case studies,
+                      both promote student engagement in the class discussion and help to make those ethical problems
+                      more concrete. This module was taught for the first time in the fall of 2018, and students were
+                      both highly engaged and made many illuminating contributions to the discussion (by their lights as
+                      reported in student evaluations, and in the opinion of the TA).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Module Assignment:
+                      </strong>
+                      The follow-up assignment for this module is incorporated into a problemset in which students
+                      attempt to use reverse engineering techniques learned in class to gain remote access to, and
+                      exfiltrate data from, a simple email server. (This is, of course, only a simulated exercise!) The
+                      final question of the problemset asks students to imagine that they are employees of a software
+                      company, WidgetCo, whose intellectual property has been stolen by cyberattackers. In this
+                      scenario, WidgetCo believes that the email server they have already compromised belongs to hackers
+                      that have stolen its intellectual property, and wants the student identify a further vulnerability
+                      that will allow them to erase all data stored on the server. WidgetCo claims that these actions
+                      are morally justified in light of the initial attack, and in light of the fact that the hackers
+                      appear to be planning a new attack on both WidgetCo and another company. Students are asked to
+                      explain how they would respond to their employer’s request, and to provide a moral defense of
+                      their response that appeals to arguments discussed in class or the readings.
+
+                  </div>
+                  <div class="col-4">
+                    <p class="text-muted small">
+                      This assignment was developed by the professor in consultation with the Embedded EthiCS TA.
+                      Exercises like this one ask students to apply the philosophical material discussed in the module
+                      to consider how they ought to act in a realistic employment scenarios featuring realistic computer
+                      science problems. Including such assignments in Embedded EthiCS modules is important from a
+                      pedagogical perspective, but they can be difficult for Embedded EthiCS TAs to construct without
+                      assistance from computer scientists. Actively involving the professor (and/or the CS TAs) in the
+                      construction of assignments is one effective way to address this challenge.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <p>
+                      <strong>
+                        Lessons Learned:
+                      </strong>
+                      Student response to this module was overwhelmingly positive when it was taught in the fall of
+                      2018. In follow-up evaluations, 92% of the class reported that the discussion was interesting, and
+                      84% reported that the class helped them think more clearly about the moral issues we discussed.
+                      Further, more than half of the class stayed behind once the session was over to continue the
+                      discussion. Two lessons from our experience with this module are worth emphasizing:
+                    </p>
+                    <ul>
+                      <li>
+                        Teaching this module has reinforced our view that Embedded EthiCS modules work best when they
+                        are built around detailed, real-world case studies. Case studies of this kind help students to
+                        immediately see the practical relevance of the moral issues and philosophical concepts we
+                        discuss in the modules, and provide an effective way for us to make those issues and concepts
+                        more concrete for students.
+                      </li>
+                      <li>
+                        Approximately 25-30 students participated in the class session, making the class similar in size
+                        to a large discussion section. We have found that longer full-class discussion and brainstorming
+                        activities work well with groups of this size, and are an excellent way to promote student
+                        engagement and participatory learning. In larger classes, it is often better to use shorter
+                        activities in which students work together in small groups before reporting back to the full
+                        class.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-dark bg-dark" style="width: 100%; margin-bottom: -1.75em;">
+            <!-- Navbar content -->
+            <div class="col-md-2 col-lg-1">
+              <a class="navbar-brand" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+            </div>
+            <div class="col-md-10 col-lg-11">
+              <div class="copyright mr-auto">
+                <span style="color: #A6A6A6">Except where otherwise noted, content on this site is licensed under a </span>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                |
+                <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Accessibility</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
