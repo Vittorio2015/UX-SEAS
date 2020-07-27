@@ -24,7 +24,7 @@
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <title>Course Modules | CS 287 | Embedded EthiCS @ Harvard</title>
+    <title>Course Modules | CS 109a | Embedded EthiCS @ Harvard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -151,7 +151,7 @@
         <div class="row">
           <div class="col-md-12">
             <a href="module.html" class="moreInfo">Course Modules</a>
-            / CS 287: Natural Language Processing
+            / CS 109a: Introduction to Data Science 
           </div>
         </div>
     </div>
@@ -203,25 +203,42 @@
                         <div class="row">
                         <div class="col-8">
                             <p>
-                                <strong>
-                                    Course:
-                                </strong>
-                                CS 287: Natural Language Processing
+                            <strong>
+                                Course:
+                            </strong>
+                            CS 109a: Introduction to Data Science
                             </p>
                             <p>
-                                <strong>
-                                    Course Level:
-                                </strong>
-                                Graduate
+                            <strong>
+                                Course Level:
+                            </strong>
+                            Upper-level undergraduate
                             </p>
                             <p>
-                                <strong>
-                                    Course Description:
-                                </strong>
-                                "Machine learning for natural language processing with a focus on deep learning and generative models. Topics include language modeling, information extraction, multi-model applications, text generation, machine translation, and deep generative models. Course is taught as a reading seminar with student presentations."                                
+                            <strong>
+                                Course Description:
+                            </strong>
+                            “This course is the first half of a one‐year introduction to data science. We will focus on the analysis of data to perform predictions using statistical and machine learning methods. Topics include data scraping, data management, data visualization, regression and classification methods, and deep neural networks. You will get ample practice through weekly homework assignments. The class material integrates the five key facets of an investigation using data:
                             </p>
-                            <p>
-                                (<a href="https://harvard-ml-courses.github.io/cs287-web/" target="_blank" class="moreInfo">Course description
+                            <ol>
+                                <li>
+                                    data collection ‐ data wrangling, cleaning, and sampling to get a suitable data set
+                                </li>
+                                <li>
+                                    data management ‐ accessing data quickly and reliably
+                                </li>
+                                <li>
+                                    exploratory data analysis – generating hypotheses and building intuition
+                                </li>
+                                <li>
+                                    prediction or statistical learning
+                                </li>
+                                <li>
+                                    communication – summarizing results through visualization, stories, and interpretable summaries
+                                </li>
+                            </ol>
+
+                            (<a href="https://harvard-iacs.github.io/2019-CS109A/" target="_blank" class="moreInfo">Course description
                                 <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)"
                             </p>
                         </div>
@@ -241,19 +258,19 @@
                             <strong>
                                 Module Topic:
                             </strong>
-                            Bias and Stereotypes in Word-Embedding software
+                            Algorithmic Fairness and Recidivism Prediction
                             </p>
                             <p>
                             <strong>
                                 Module Author:
                             </strong>
-                            Diana Acosta-Navas
+                            Heather Spradley
                             </p>
                             <p>
                             <strong>
                                 Semesters Taught:
                             </strong>
-                            Spring 2019
+                            Spring 2020
                             </p>
                             <p>
                             <strong>
@@ -262,55 +279,31 @@
                             </p>
                             <dl>
                                 <dd>
-                                    bias <span class="badge badge-warning">phil</span>
-                                </dd>
-                                <dd>
-                                    stereotypes <span class="badge badge-warning">phil</span>
+                                    fairness <span class="badge badge-warning">phil</span>
                                 </dd>
                                 <dd>
                                     discrimination <span class="badge badge-warning">phil</span>
                                 </dd>
                                 <dd>
-                                    natural language processing <span class="badge badge-primary">CS</span>
-                                </dd>
-                                <dd>
-                                    word embeddings <span class="badge badge-primary">CS</span>
+                                    prediction <span class="badge badge-primary">CS</span>
                                 </dd>
                                 <dd>
                                     machine learning <span class="badge badge-primary">CS</span>
                                 </dd>
-
-                                <!-- Templates for tags
                                 <dd>
-                                    phil <span class="badge badge-warning">phil</span>
+                                    bias <span class="badge badge-success">both</span>
                                 </dd>
-                                <dd>
-                                    cs <span class="badge badge-primary">CS</span>
-                                </dd>
-                                <dd>
-                                    both <span class="badge badge-success">both</span>
-                                </dd> -->
                             </dl>
-                            <div class="col-4">
-                            </div>
+                            <p>
+                            <strong>
+                                Module Overview:
+                            </strong>
+                            </p>
+                            <p>
+                                In this module, we discuss algorithmic fairness, focusing on the special case of fairness in recidivism prediction. The central case study for the module is COMPAS, a recidivism prediction tool that is used widely in the criminal justice system. In 2016, ProPublica published a piece arguing that COMPAS is unfairly biased against black defendants on the grounds that the tool’s false positive rate for black defendants is higher than its false positive rate for white defendants. Northpointe, the company that developed COMPAS, responded by arguing that the tool is “racially neutral” because it is calibrated between races: any two individuals that receive the same score are equally likely to reoffend, regardless of race. After reconstructing and evaluating both arguments (and drawing on John Rawls’ views about procedural fairness in A Theory of Justice), we consider more general questions about fairness in recidivism prediction. How, in general, might preexisting racial bias affect the performance of recidivism prediction tools based on machine learning? What can data scientists working on recidivism prediction problems do to help ensure that the systems they develop are fair? And should the criminal justice system be using recidivism prediction algorithms to make decisions in the first place?
+                            </p>
                         </div>
-    
-                        <div class="row">
-                            <div class="col-8">
-                                <p>
-                                <strong>
-                                    Module Overview:
-                                </strong>
-                                </p>
-                                <p>
-                                    The module examines the relation between gender stereotypes and the biases encoded in word embeddings. Students discuss some of the ethical problems that arise when gender bias becomes encoded in word embeddings, including the perpetuation and amplification of stereotypes, the infliction of representational and allocative harm, and the solidification of prejudice. After discussing some pros and cons of debiasing algorithms, the final part of the module explores the moral concerns that this solution may raise. This final discussion focuses on the thought that bias often happens without our full awareness, hence debiasing and other technical solutions should be immersed in wide-ranging cultural transformations towards inclusion and equality.
-                                </p>
-                            </div>
-                            <div class="col-4">
-                                <p class="text-muted small">
-                                    
-                                </p>
-                            </div>
+                        <div class="col-4">
                         </div>
                     </div>
 
@@ -326,12 +319,12 @@
                             <strong>
                                 Connection to Course Material:
                             </strong>
-                            In the lead-up to the module, the course covers word-embedding techniques and their potential uses in processing natural language. In the module we examine a potential drawback of these techniques and the ethical problems raised by their employment, while also examining the advantages and disadvantages of alternative approaches. Specifically, the module invites students to weigh the technical advantages of word-embeddings against their potential to propagate gender stereotypes by encoding biases rooted in our use of language. Students are provided with philosophical concepts that help them articulate whether taking advantage of the computing power offered by word embeddings justifies the kind of harm that may be inflicted when biases are perpetuated and solidified.
+                            In this course, students learn how to build predictive models and consider various problems that interfere with the accuracy of these models, such as feedback loops. In the module, we consider how to develop predictive models that are both accurate and fair. We also challenge the idea that ensuring fairness requires sacrificing accuracy, particularly in the case of recidivism prediction. 
                             </p>
                         </div>
                         <div class="col-4">
                             <p class="text-muted small">
-                                
+                            
                             </p>
                         </div>
                     </div>
@@ -356,27 +349,17 @@
                             </p>
                             <ol>
                                 <li>
-                                    Introducing students to the concepts of bias, stereotypes, and discrimination.
+                                    Introduce students to the topic of algorithmic fairness, with a focus on fairness in recidivism prediction.
                                 </li>
                                 <li>
-                                    Discussing the existence of gender biases in word-embedding software, and its correlation to gender stereotypes.
+                                    Consider various ways in which predictive algorithms might be unfair, as well as how to develop fairer predictive algorithms. 
                                 </li>
                                 <li>
-                                    Guiding students in thinking about the ethical problems raised by the presence of gender bias in word-embedding software.
-                                </li>
-                                <li>
-                                    Prompting students to consider the potential advantages of debiasing word-embeddings, and its potential drawbacks.
-                                </li>
-                                <li>
-                                    Using case-studies to train students to identify morally problematic aspects in the context of complex real-world scenarios.
+                                    Equip students with philosophical tools to help them think more clearly about algorithmic fairness.
                                 </li>
                             </ol>
                         </div>
-                        <div class="col-4">
-                            <p class="text-muted small">
-                                
-                            </p>
-                        </div>
+                        <div class="col-4"></div>
                     </div>
 
                     <div class="row">
@@ -394,22 +377,19 @@
                         </p>
                         <ol>
                             <li>
-                                What are the distinctive features of stereotypes?
+                                What is fairness and what features of a predictive algorithm make it fair?
                             </li>
                             <li>
-                                What makes stereotypes morally problematic?
+                                What kinds of features of an individual would a fair algorithm take into account?
                             </li>
                             <li>
-                                Can individuals be harmed by the presence of stereotypes in language processing software?
-                            </li>
-                            <li>
-                                Can debiasing algorithms resolve the issue given that bias and stereotypes are widespread in our culture?
+                                In what ways can data collection be done fairly or unfairly and how does that impact the fairness of the predictive model that was trained on that data?
                             </li>
                         </ol>
                     </div>
                     <div class="col-4">
                         <p class="text-muted small">
-                            
+
                         </p>
                     </div>
                     </div>
@@ -434,22 +414,19 @@
                             </p>
                             <ul>
                                 <li>
-                                    Bias (explicit vs. implicit)
+                                    Fairness
                                 </li>
                                 <li>
-                                    Stereotypes
+                                    John Rawls’ “veil of ignorance” thought experiment
+                                </li>
+                                <li>
+                                    Moral relevance and irrelevance
+                                </li>
+                                <li>
+                                    Bias
                                 </li>
                                 <li>
                                     Discrimination
-                                </li>
-                                <li>
-                                    Statistical truths vs essentialist claims
-                                </li>
-                                <li>
-                                    Prejudice
-                                </li>
-                                <li>
-                                    Representational vs. allocative harms
                                 </li>
                             </ul>
                         </div>
@@ -473,12 +450,14 @@
                     <div class="row">
                         <div class="col-8">
                             <p>
-                                Bolukbasi, T., Chang, K.W., Zou, J.Y., Saligrama, V. and Kalai, A.T., 2016. <a href="https://arxiv.org/abs/1607.06520" class="moreInfo">Man is to computer programmer as woman is to homemaker? Debiasing word embeddings.</a> In Advances in neural information processing systems (pp. 4349-4357).
+                                Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, “Machine Bias” (ProPublica).
                             </p>
                         </div>
                         <div class="col-4">
                             <p class="text-muted small">
-                                This piece shows that word embedding software trained on Google News articles exhibits female/male gender stereotypes and argues that the widespread use of this software could potentially amplify whatever biases are coded in their data. It suggests a methodology for modifying embeddings in a manner that removes gender stereotypes without sacrificing the computational power of these algorithms.
+                                This piece by ProPublica initiated the debate about whether COMPAS is biased against black defendants. In addition to introducing students to one of the central arguments in that debate, the reading provides useful background about COMPAS and how it is used in the criminal justice system.
+                                <br>
+                                One of the main reasons for choosing this topic was the extent to which it has been discussed and addressed in the CS community. Although it is often helpful to draw students’ attention brand new issues they might not have noticed before, we had a unique opportunity here to address something that already felt pressing to students and to give them philosophical tools to navigate the ongoing discussion in the CS community. Since this is the article that drew so much attention to the topic, it served as a great starting point for walking students through the current discussion in their community while also introducing them to philosophical tools for reflecting on the concepts such as “fairness” and “bias”. 
                             </p>
                         </div>
                     </div>
@@ -509,31 +488,37 @@
                     </div>
 
                     <div class="row">
-                    <div class="col-8">
+                    <div class="col-12">
                         <p>
                         <strong>
                             Class Agenda:
                         </strong>
                         </p>
                         <ol>
-                            <li>
-                                Active learning exercise:  identifying analogies that reflect gender stereotypes.
-                            </li>
-                            <li>
-                                Class discussion: what is a stereotype?
-                            </li>
-                            <li>
-                                Presentation on the findings of gender biases in word2vec.
-                            </li>
-                            <li>
-                                Small group discussion: what is wrong with allowing gender biases into word-embeddings?
-                            </li>
-                            <li>
-                                Class-wide discussion about the moral issues raised by different kinds of bias.
-                            </li>
-                            <li>
-                                Discussion of debiasing techniques and their advantages and disadvantages.
-                            </li>
+                        <li>
+                            Overview.
+                        </li>
+                        <li>
+                            Case study: the COMPAS recidivism prediction tool.
+                        </li>
+                        <li>
+                            ProPublica’s argument that COMPAS is unfair.
+                        </li>
+                        <li>
+                            Philosophical concepts: fairness, moral relevance, John Rawls’ veil of ignorance thought experiment.
+                        </li>
+                        <li>
+                            Technical concepts: false positive rates and calibration.
+                        </li>
+                        <li>
+                            Argument that COMPAS is fair (based on Rob Long’s article “Fairness in Machine Learning”).
+                        </li>
+                        <li>
+                            Data and data collection as further objections to the fairness of COMPAS.
+                        </li>
+                        <li>
+                            Discussion.
+                        </li>
                         </ol>
                     </div>
 
@@ -551,12 +536,7 @@
                             </strong>
                             </p>
                             <p>
-                                At the beginning of the session, students are given a list of analogies that link professions to genders, including ballerina/dancer, hostess/bartender, vocalist/guitarist, among others. They are asked to mark those analogies that reflect gender stereotypes. When they finish, the lecturer polls students to find out how they responded to four analogies: one that is clearly stereotypical (homemaker/computer scientist), one that is not (Queen/King), and two that are debatable (Diva/Rockstar, and Interior Designer/Architect). The Embedded Ethics fellow then leads a discussion about the distinctive features of gender stereotypes, which serves as a starting point to discuss the ethical problems raised by the existence gender biases in word-embeddings.
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <p class="text-muted small">
-                                
+                                In order to get students to feel the force of the ethical questions about predictive algorithms used in recidivism prediction, the module begins with two polls. In the first poll, students are asked to consider a scenario in which they are a judge making a pre-trial decision: they must decide whether to make that decision based on their own judgment or based on a risk assessment produced by a predictive algorithm. In the second poll, they are asked to make the same decision but from the perspective of the detainee about whom the pre-trial decision is being made. After the polls are complete, the students discuss their reasons for their answers. Then, they are asked to consider the common assumption that predictive tools will allow us to pass the buck on certain kinds of responsibilities in high stakes cases. They then discuss the way in which the responsibility of the creator of the predictive algorithm is heightened because of the way in which the algorithms are relied upon. This module was prepared for a very large class, so part of the motivation behind this assignment was that it could be done with several hundred people. In smaller classes, longer or more complicated activities would be possible. Taking polls worked well in that students were able to respond simultaneously and the results brought out interesting discussion.
                             </p>
                         </div>
                     
@@ -576,16 +556,10 @@
                             </strong>
                             </p>
                             <p>
-                                Students are asked to imagine that they are tasked with producing an image captioning software that employs machine learning. They are directed to focus on the generation of gender-specific caption words, choosing between two models. The first model relies on learned priors based on the image context. It exploits contextual cues to determine gender-specific words. The second model generates gender-specific words based on the appearance of persons in the scene. This model incorporates an equalizer, which ensures equal gender probability when gender evidence is occluded and confident predictions when gender evidence is present. Further, it limits gender evidence to the visual aspects of persons.
-                            </p>
-                            <p>
-                                After considering the two models, students are asked if either or both might perpetuate or amplify gender biases and, if the answer is positive, whether these models may solidify harmful stereotypes. They are then asked to consider which demographic groups might be rendered vulnerable to harmful stereotypes as a result of using the software and how such vulnerability could be prevented. 
+                                In a post-module assignment, students are asked to explore recidivism data and corresponding COMPAS scores published by ProPublica. They are then asked to: (1) find correlations and differences between a defendant’s race and various other variables in the data; (2) write a short response to the question, “With respect to these variables, how could bias in the data or data collection be impacting or causing these differences?”; (3) build three predictive models from the data that leave out race and other correlating variables in different ways in order to see what impact different variables are having on the model; and (4) discuss the resulting false positive rates amongst different racial groups in each of their models and what implications this has for the fairness of predictive algorithms.
+                                One motivation behind this assignment was to get students to see just how different the results of various models can be depending on decisions made with respect to the fairness of the data. Many students tend to think of the task as one of representing data as accurately as possible in a model, but this exercise forces them to challenge that idea. They are able to think through in practice the relation between accuracy and fairness by building and running several models.
                             </p>
                         </div>
-                        <div class="col-4">
-                            <p class="text-muted small">
-                                
-                            </p>
                     
                     </div>
 
@@ -603,19 +577,7 @@
                             </strong>
                             </p>
                             <p>
-                                Student response to the module was positive when it was taught in the spring of 2019. In follow-up surveys, 85.1% of students reported that they found the module interesting. 77.7% said that participating in the module helped them think more clearly about the ethical issues discussed. 85.1% said that the module increased their interest in learning about the ethical issues discussed.
-                            </p>
-                            <p>
-                                A few things we learned from the experience:
-                            </p>
-                            <p>
-                                The philosophical content and questions could be more strongly motivated. The module could begin with a more engaging activity so as to prevent passivity and make the ethical problem appear more urgent and engaging. Likewise, having more specific ethical questions on the table from early on could help frame and orient the exercise and encourage more in-depth philosophical discussion.
-                            </p>
-                            <p>
-                                It would be ideal if a computer scientist could present the technical material, which is necessary for the module but requires some technical fluency to be made more interesting. 
-                            </p>
-                            <p>
-                                Technical terms and key philosophical questions should be explained at depth, and examples of abstract ideas should be given so as to maximize clarity and improve the quality of philosophical discussion.
+                                Since the course had recently covered the technical concepts of calibration and false positive rates, we assumed that spending time reviewing these concepts would be unnecessary. In practice, however, we found that some students were not fluent enough with these concepts to readily apply them in the context of a new discussion about algorithmic fairness. When we teach the module again, we plan to spend more time reviewing these concepts before introducing new material.
                             </p>
                         </div>
                     
@@ -630,8 +592,8 @@
     </section>
 
     <div class="container">
-        <div class="row">
-        </div>
+      <div class="row">
+      </div>
     </div>
 
     <!-- Footer -->

@@ -24,7 +24,7 @@
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <title>Course Modules | CS 287 | Embedded EthiCS @ Harvard</title>
+    <title>Course Modules | CS 61 | Embedded EthiCS @ Harvard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -151,7 +151,7 @@
         <div class="row">
           <div class="col-md-12">
             <a href="module.html" class="moreInfo">Course Modules</a>
-            / CS 287: Natural Language Processing
+            / CS 61: Systems Programming and Machine Organization
           </div>
         </div>
     </div>
@@ -206,22 +206,24 @@
                                 <strong>
                                     Course:
                                 </strong>
-                                CS 287: Natural Language Processing
+                                CS 61: Systems Programming and Machine Organization
                             </p>
                             <p>
                                 <strong>
                                     Course Level:
                                 </strong>
-                                Graduate
+                                Upper-level undergraduate
                             </p>
                             <p>
                                 <strong>
                                     Course Description:
                                 </strong>
-                                "Machine learning for natural language processing with a focus on deep learning and generative models. Topics include language modeling, information extraction, multi-model applications, text generation, machine translation, and deep generative models. Course is taught as a reading seminar with student presentations."                                
+                                "CS 61 is a first course in computer systems programming, meaning the creation of high-performance programs that use computer hardware effectively. Although many programs today are written in high-level programming languages—and many programs simply glue together existing components—the best programmers are craftspeople who understand their tools. For software builders, this requires a working knowledge of computer internal organization. It means understanding how machines interpret instructions, how compilers turn programming languages into instructions, and how operating systems combine programs and libraries to create running code. And it requires understanding the factors that affect code performance.
+                                <br>
+                                CS 61 introduces you the tools you need to build robust, efficient software and the mental tools you need to understand software systems written by others. We hope you'll discover that systems software development is fun and worth the effort. We intend the course to be broadly accessible, though it will be easier for those who have some experience with systems programming in C++ or other C-like languages."
                             </p>
                             <p>
-                                (<a href="https://harvard-ml-courses.github.io/cs287-web/" target="_blank" class="moreInfo">Course description
+                                (<a href="https://cs61.seas.harvard.edu/site/2018/CourseDescription/" target="_blank" class="moreInfo">Course description
                                 <sup><i class="fas fa-external-link-alt fa-sm"></i></sup></a>)"
                             </p>
                         </div>
@@ -241,19 +243,19 @@
                             <strong>
                                 Module Topic:
                             </strong>
-                            Bias and Stereotypes in Word-Embedding software
+                            ASCII, Unicode and the Ethics of Natural Language Representation
                             </p>
                             <p>
                             <strong>
                                 Module Author:
                             </strong>
-                            Diana Acosta-Navas
+                            Cat Wade (later contributions by Marion Boulicault)
                             </p>
                             <p>
                             <strong>
                                 Semesters Taught:
                             </strong>
-                            Spring 2019
+                            Fall 2019-2020
                             </p>
                             <p>
                             <strong>
@@ -262,22 +264,28 @@
                             </p>
                             <dl>
                                 <dd>
-                                    bias <span class="badge badge-warning">phil</span>
+                                    harm <span class="badge badge-warning">phil</span>
+                                </dd>
+                                <dd>
+                                    representational harm <span class="badge badge-warning">phil</span>
+                                </dd>
+                                <dd>
+                                    allocative harm <span class="badge badge-warning">phil</span>
                                 </dd>
                                 <dd>
                                     stereotypes <span class="badge badge-warning">phil</span>
                                 </dd>
                                 <dd>
-                                    discrimination <span class="badge badge-warning">phil</span>
+                                    systems <span class="badge badge-primary">CS</span>
                                 </dd>
                                 <dd>
-                                    natural language processing <span class="badge badge-primary">CS</span>
+                                    ASCII <span class="badge badge-primary">CS</span>
                                 </dd>
                                 <dd>
-                                    word embeddings <span class="badge badge-primary">CS</span>
+                                    Unicode <span class="badge badge-primary">CS</span>
                                 </dd>
                                 <dd>
-                                    machine learning <span class="badge badge-primary">CS</span>
+                                    natural language encoding <span class="badge badge-primary">CS</span>
                                 </dd>
 
                                 <!-- Templates for tags
@@ -303,7 +311,10 @@
                                 </strong>
                                 </p>
                                 <p>
-                                    The module examines the relation between gender stereotypes and the biases encoded in word embeddings. Students discuss some of the ethical problems that arise when gender bias becomes encoded in word embeddings, including the perpetuation and amplification of stereotypes, the infliction of representational and allocative harm, and the solidification of prejudice. After discussing some pros and cons of debiasing algorithms, the final part of the module explores the moral concerns that this solution may raise. This final discussion focuses on the thought that bias often happens without our full awareness, hence debiasing and other technical solutions should be immersed in wide-ranging cultural transformations towards inclusion and equality.
+                                    In this module, we consider the ethics of natural language representation in modern software systems. Software systems play a central role in how we communicate with one another, and the computer scientists who design these systems are sometimes faced with difficult choices about what representational resources they should make available to their users. To what extent should social media platforms support the vast array of languages used throughout the world? To what extent should the developers of smartphone operating systems provide their users with emoji reflecting the diverse identities and communicative needs of members of minority groups?
+                                </p>
+                                <p>
+                                    This module is co-taught by the professor for the course and the Embedded EthiCS Fellow. After an introduction to the ethical issues considered in the module from the TA, the professor gives a brief presentation on the technical and historical dimensions of the module’s core case study: the shift from ASCII to Unicode, and the associated choices developers made about which languages to support. The Fellow then leads a discussion of how these choices members of different linguistic communities, and why those effects matter morally. Finally, students consider various strategies that the developers of Unicode could adopt to better address the needs of minority communities.
                                 </p>
                             </div>
                             <div class="col-4">
@@ -326,12 +337,12 @@
                             <strong>
                                 Connection to Course Material:
                             </strong>
-                            In the lead-up to the module, the course covers word-embedding techniques and their potential uses in processing natural language. In the module we examine a potential drawback of these techniques and the ethical problems raised by their employment, while also examining the advantages and disadvantages of alternative approaches. Specifically, the module invites students to weigh the technical advantages of word-embeddings against their potential to propagate gender stereotypes by encoding biases rooted in our use of language. Students are provided with philosophical concepts that help them articulate whether taking advantage of the computing power offered by word embeddings justifies the kind of harm that may be inflicted when biases are perpetuated and solidified.
+                            This module occurs during the course’s first unit on data representation and storage. The professor’s presentation during the module expands on the technical material already covered in this unit, with a focus on how it applies to the module’s central case study: the shift from ASCII to Unicode. This sets the TA up to lead a discussion of how the technical issues discussed by the professor interact with broader social and ethical concerns.
                             </p>
                         </div>
                         <div class="col-4">
                             <p class="text-muted small">
-                                
+                                We have found that it is important to build modules around real-world case studies that both connect to technical material discussed in the course and raise ethical issues that students can readily appreciate. The shift from ASCII to Unicode has both features. Further, Unicode is the standard for encoding emojis, which provide a particularly intuitive and relatable way to illustrate the module’s core philosophical concepts (see the sample class activity in the "Implementation" tab).
                             </p>
                         </div>
                     </div>
@@ -356,19 +367,16 @@
                             </p>
                             <ol>
                                 <li>
-                                    Introducing students to the concepts of bias, stereotypes, and discrimination.
+                                    Familiarize students with the technical aspects of ASCII and Unicode, and with the social and technical considerations that drove the shift from ASCII to Unicode.
                                 </li>
                                 <li>
-                                    Discussing the existence of gender biases in word-embedding software, and its correlation to gender stereotypes.
+                                    Introduce students to two philosophical concepts that are useful for evaluating formal systems for representing natural language: allocative harm and representational harm.
                                 </li>
                                 <li>
-                                    Guiding students in thinking about the ethical problems raised by the presence of gender bias in word-embedding software.
+                                    Give students practice applying these concepts to evaluate choices made by software developers about what representational resources to provide to their users.
                                 </li>
                                 <li>
-                                    Prompting students to consider the potential advantages of debiasing word-embeddings, and its potential drawbacks.
-                                </li>
-                                <li>
-                                    Using case-studies to train students to identify morally problematic aspects in the context of complex real-world scenarios.
+                                    Give students practice identifying and evaluating possible strategies for alleviating representational harms in the design of formal systems for representing natural languages.
                                 </li>
                             </ol>
                         </div>
@@ -394,16 +402,19 @@
                         </p>
                         <ol>
                             <li>
-                                What are the distinctive features of stereotypes?
+                                How should software developers decide what representational resources to make available to their users for use in communication?
                             </li>
                             <li>
-                                What makes stereotypes morally problematic?
+                                In what ways can the choices developers make about what representational resources to make available negatively affect the members of different communities, including minority communities?
                             </li>
                             <li>
-                                Can individuals be harmed by the presence of stereotypes in language processing software?
+                                What is the difference between 'representational' and 'allocative' harm?What is a normative question or statement?
                             </li>
                             <li>
-                                Can debiasing algorithms resolve the issue given that bias and stereotypes are widespread in our culture?
+                                What are stereotypes, and in what ways can relying on stereotypes harm others?
+                            </li>
+                            <li>
+                                Were the choices made by the developers of ASCII and Unicode the right choices, given the constrains they were operating under, or were there other choices that would have been better from a moral perspective?
                             </li>
                         </ol>
                     </div>
@@ -434,22 +445,13 @@
                             </p>
                             <ul>
                                 <li>
-                                    Bias (explicit vs. implicit)
+                                    Harm and intent
+                                </li>
+                                <li>
+                                    Representational harms and allocative harms
                                 </li>
                                 <li>
                                     Stereotypes
-                                </li>
-                                <li>
-                                    Discrimination
-                                </li>
-                                <li>
-                                    Statistical truths vs essentialist claims
-                                </li>
-                                <li>
-                                    Prejudice
-                                </li>
-                                <li>
-                                    Representational vs. allocative harms
                                 </li>
                             </ul>
                         </div>
@@ -473,12 +475,12 @@
                     <div class="row">
                         <div class="col-8">
                             <p>
-                                Bolukbasi, T., Chang, K.W., Zou, J.Y., Saligrama, V. and Kalai, A.T., 2016. <a href="https://arxiv.org/abs/1607.06520" class="moreInfo">Man is to computer programmer as woman is to homemaker? Debiasing word embeddings.</a> In Advances in neural information processing systems (pp. 4349-4357).
+                                Note: Due to the fact that this was an intensive first year course, the module had no assigned readings. 
                             </p>
                         </div>
                         <div class="col-4">
                             <p class="text-muted small">
-                                This piece shows that word embedding software trained on Google News articles exhibits female/male gender stereotypes and argues that the widespread use of this software could potentially amplify whatever biases are coded in their data. It suggests a methodology for modifying embeddings in a manner that removes gender stereotypes without sacrificing the computational power of these algorithms.
+                                
                             </p>
                         </div>
                     </div>
@@ -517,22 +519,22 @@
                         </p>
                         <ol>
                             <li>
-                                Active learning exercise:  identifying analogies that reflect gender stereotypes.
+                                An introduction to the ethics of character encoding: should emoji be more inclusive?
                             </li>
                             <li>
-                                Class discussion: what is a stereotype?
+                                Representational harm vs. allocative harm.
                             </li>
                             <li>
-                                Presentation on the findings of gender biases in word2vec.
+                                Active learning exercise: how could developers make the current set of emoji more inclusive?
                             </li>
                             <li>
-                                Small group discussion: what is wrong with allowing gender biases into word-embeddings?
+                                Technical material – ASCII, Unicode, UTF-8 (presented by CS professor)
                             </li>
                             <li>
-                                Class-wide discussion about the moral issues raised by different kinds of bias.
+                                Representational and allocative harms in the development of ASCII and Unicode.
                             </li>
                             <li>
-                                Discussion of debiasing techniques and their advantages and disadvantages.
+                                Remaining ethical issues with Unicode, and how best to address them.
                             </li>
                         </ol>
                     </div>
@@ -551,7 +553,7 @@
                             </strong>
                             </p>
                             <p>
-                                At the beginning of the session, students are given a list of analogies that link professions to genders, including ballerina/dancer, hostess/bartender, vocalist/guitarist, among others. They are asked to mark those analogies that reflect gender stereotypes. When they finish, the lecturer polls students to find out how they responded to four analogies: one that is clearly stereotypical (homemaker/computer scientist), one that is not (Queen/King), and two that are debatable (Diva/Rockstar, and Interior Designer/Architect). The Embedded Ethics fellow then leads a discussion about the distinctive features of gender stereotypes, which serves as a starting point to discuss the ethical problems raised by the existence gender biases in word-embeddings.
+                                After being introduced to the concept of representational harm, students are presented with a slide containing the current set of ‘yellow’ emoji representing families of different kinds. In small groups, students discuss what kinds of families are left out from the current set and whether those omissions constitute representational harms. The Embedded EthiCS Fellow then asks the students to split into small groups again. Half the groups are asked to formulate an argument that the current set does represent a representational harm (e.g. those groups who are already marginalized are usually the ones not represented, furthering their marginalization). The other half is asked to formulate an argument that set does not constitute a representational harm (e.g. it is pragmatically impossible to represent every different in an emoji set). Groups are then called upon alternately to generate a debate-like discussion. 
                             </p>
                         </div>
                         <div class="col-4">
@@ -576,10 +578,7 @@
                             </strong>
                             </p>
                             <p>
-                                Students are asked to imagine that they are tasked with producing an image captioning software that employs machine learning. They are directed to focus on the generation of gender-specific caption words, choosing between two models. The first model relies on learned priors based on the image context. It exploits contextual cues to determine gender-specific words. The second model generates gender-specific words based on the appearance of persons in the scene. This model incorporates an equalizer, which ensures equal gender probability when gender evidence is occluded and confident predictions when gender evidence is present. Further, it limits gender evidence to the visual aspects of persons.
-                            </p>
-                            <p>
-                                After considering the two models, students are asked if either or both might perpetuate or amplify gender biases and, if the answer is positive, whether these models may solidify harmful stereotypes. They are then asked to consider which demographic groups might be rendered vulnerable to harmful stereotypes as a result of using the software and how such vulnerability could be prevented. 
+                                Note: Due to the fact that this was an intensive first year course, the module had no assignment.
                             </p>
                         </div>
                         <div class="col-4">
@@ -603,20 +602,19 @@
                             </strong>
                             </p>
                             <p>
-                                Student response to the module was positive when it was taught in the spring of 2019. In follow-up surveys, 85.1% of students reported that they found the module interesting. 77.7% said that participating in the module helped them think more clearly about the ethical issues discussed. 85.1% said that the module increased their interest in learning about the ethical issues discussed.
+                                Student response to this module has been positive. Students are highly engaged and seem to grasp the key concepts. Class discussion is energetic and fruitful. 
                             </p>
-                            <p>
-                                A few things we learned from the experience:
-                            </p>
-                            <p>
-                                The philosophical content and questions could be more strongly motivated. The module could begin with a more engaging activity so as to prevent passivity and make the ethical problem appear more urgent and engaging. Likewise, having more specific ethical questions on the table from early on could help frame and orient the exercise and encourage more in-depth philosophical discussion.
-                            </p>
-                            <p>
-                                It would be ideal if a computer scientist could present the technical material, which is necessary for the module but requires some technical fluency to be made more interesting. 
-                            </p>
-                            <p>
-                                Technical terms and key philosophical questions should be explained at depth, and examples of abstract ideas should be given so as to maximize clarity and improve the quality of philosophical discussion.
-                            </p>
+                            <ul>
+                                <li>
+                                    This module is distinctive in the way it integrates philosophical, historical and technical content. The class is structured so that the philosophical content (e.g. the introduction and use of the concepts of representational and allocative harm) taught by the Embedded EthiCS Fellow fits in directly with the historical and technical content taught by the professor. This demonstrates to the students that the philosophical, historical and technical dimensions of natural language processing are strongly intertwined and must be understood in tandem
+                                </li>
+                                <li>
+                                    Co-teaching the class also demonstrates to the students that the professor is invested in the ethical dimensions of the course. Given that the professor is the main authority figure and that she already has a relationship with the students, this demonstration of investment gives extra weight and authority to the ethical material.
+                                </li>
+                                <li>
+                                    This module uses the example of emojis to introduce the students to the philosophical concepts. Starting with a familiar and simple example before getting into complex material makes the module more accessible and engages students right from the start (even those who might be struggling with the technical aspects).
+                                </li>
+                            </ul>
                         </div>
                     
                     </div>
