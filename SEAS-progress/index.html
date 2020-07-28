@@ -643,30 +643,25 @@
                             <li class="list-group-item list-group-item-margin">
                                 Remote assistance to faculty and staff
                             </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Professor Parkes' Applied Cryptography and Society OpenScholar website
+                                <!-- 6.75 -->
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"></i>
+                                Lab Map availability to students
+                                <!-- 2.75 -->
+                            </li>
                         </ul>
 
                         <ul class="list-group list-group-flush" id="showZoomAssistanceQ1FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                 <!-- done ruler -->
-                                Q1FY21 total time - 13.25 hours
+                                Q1FY21 total time - 9.5 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-square fa-padding"></i>
-                                Teamcore News
-                                <!-- 4 -->
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-square fa-padding"></i>
-                                Professor Parkes' Applied Cryptography and Society OpenScholar website
-                                <!-- 6.75 -->
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-square fa-padding"></i>
-                                Lab Map availability to students
-                                <!-- 2.75 -->
-                            </li>
-                            <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                Completed tasks are moved to the "Done" column.
+                                Completed projects are moved to the "Done" column.
                             </li>
                         </ul>
                     </div><!-- / card - Remote assistance -->
@@ -1845,6 +1840,52 @@
                                     <a href="https://projects.iq.harvard.edu/gil-engineering" target="_blank">
                                         <i class="fas fa-globe-americas fa-padding"></i>
                                         Professor Gil OpenScholar website
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- card - Teamcore -->
+                        <div class="card card-label_warning">
+                            
+                            <div class="card-body card-header-margin">
+                                <h6 class="card-title">
+                                    <i class="fas fa-chalkboard-teacher fa-padding"></i>
+                                    <sup><i class="fas fa-balance-scale text-muted"></i></sup>
+                                    Teamcore website
+                                    <a onclick="myFunctionTeamcoreQ1FY21()" class="float-right">
+                                        <i class="fas fa-list-ul fa-padding"></i>
+                                    </a>
+                                </h6>
+                            </div>
+    
+                            <script>
+                                function myFunctionTeamcoreQ1FY21() {
+                                    var x = document.getElementById("showTeamcoreQ1FY21");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+    
+                            <ul class="list-group list-group-flush" id="showTeamcoreQ1FY21" style="display: none;">
+                                <li class="list-group-item list-group-item-margin">
+                                    <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                                </li>
+                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                    <!-- done ruler -->
+                                    Q1FY21 total time - 5 hours
+                                </li>
+                                <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                    <i class="far fa-check-square fa-padding"></i>
+                                    Teamcore news
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <a href="https://teamcore.seas.harvard.edu/" target="_blank">
+                                        <i class="fas fa-globe-americas fa-padding"></i>
+                                        Teamcore website
                                     </a>
                                 </li>
                             </ul>
