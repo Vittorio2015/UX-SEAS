@@ -20,6 +20,9 @@
         <!-- SEAS favicon -->
         <link rel="shortcut icon" href="https://www.seas.harvard.edu/favicon.ico" type="image/vnd.microsoft.icon">
 
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
         <title>FY21 / Vittorio / SEAS / Progress Report</title>
 
     </head>
@@ -817,6 +820,35 @@
                     <div class="alert alert-info" role="alert">                        
                         Working from home until further notice
                     </div><!-- / Daily alert-->
+
+                    <!-- Chart -->
+                    <div class="card mb-4 p-2">
+                        <h6>
+                            Q1FY21 effort distribution
+                        </h6>
+                        <canvas id="Q1FY21" class="chartjs mb-3" style="width: 100%;"></canvas>
+                        <script>
+                        new Chart(document.getElementById("Q1FY21"), 
+                            { 
+                                "type": "doughnut", 
+                                "data": 
+                                { "labels": 
+                                ["Course Planner", 
+                                    "OpenScholar", 
+                                    "Misc."], 
+                                    "datasets": 
+                                        [{ "label": "Q1FY21 effort distribution", 
+                                            "data": [27.75, 87.75, 213.50], 
+                                            "backgroundColor": 
+                                                ["rgb(165, 28, 48)", 
+                                                "rgb(78, 136, 199)", 
+                                                "rgb(0, 170, 173)"] 
+                                        }] 
+                                }
+                            });
+                        </script>
+                        <p class="text-muted">Misc.: Staff standups, 1:1, DIB meetings and training, PAIF, blog, professional development.</p>
+                    </div>
 
                     <div class="card card-label_primary">
                     <!-- card - Course Planner -->
@@ -2312,6 +2344,35 @@
                         <div class="collapse" id="collapseQ4-FY20">
                             <div class="card card-body">
 
+                                <!-- Chart -->
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        Q4FY20 effort distribution
+                                    </h6>
+                                    <canvas id="Q4FY20" class="chartjs mb-3" style="width: 100%;"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("Q4FY20"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "Q4FY20 effort distribution", 
+                                                        "data": [122.50, 109.25, 142.25], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: Staff standups, 1:1, DIB meetings and training, PAIF, blog, professional development.</p>
+                                </div>
+
                                 <div class="alert alert-info" role="alert">
                                     <!-- Daily alert-->
                                     Worked from home - March through June 2020
@@ -3704,6 +3765,35 @@
 
                         <div class="collapse" id="collapseQ3-FY20">
                             <div class="card card-body">
+
+                                <!-- Chart -->
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        Q3FY20 effort distribution
+                                    </h6>
+                                    <canvas id="Q3FY20" class="chartjs mb-3"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("Q3FY20"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "Q4FY20 effort distribution", 
+                                                        "data": [40, 54.5, 301.5], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: 114 and SEC AV directory panel, Zoom training, Staff standups, 1:1, DIB meetings and training, PAIF, blog, professional development.</p>
+                                </div>
 
                                 <div class="card card-label_primary">
                                     <!-- card - Course Planner -->
