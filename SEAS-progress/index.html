@@ -2330,6 +2330,71 @@
 
                     </section>
 
+                    
+                    <h4><span class="badge badge-primary">FY20</span></h4>
+                    <section id="chart-past">
+                        <div class="card mb-4 p-2">
+                            <h6>
+                                FY20 effort distribution
+                            </h6>
+                            <canvas id="ctx" style="display: block;" height="300"></canvas>
+                            <script type="text/javascript">
+                                var chart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['Q4 FY20', 'Q3 FY20', 'Q2 FY20', 'Q1 FY20'], // responsible for how many bars are gonna show on the chart
+                                        // create 12 datasets, since we have 12 items
+                                        // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                        // put 0, if there is no data for the particular bar
+                                        datasets: [{
+                                            label: 'Course Planner',
+                                            data: [122.5, 40, 38, 60],
+                                            backgroundColor: '#A51C30'
+                                        }, {
+                                            label: 'AWS Console',
+                                            data: [0, 0, 0, 33],
+                                            backgroundColor: '#ed1b34'
+                                        }, {
+                                            label: 'Open Scholar',
+                                            data: [109.25, 54.5, 122, 108],
+                                            backgroundColor: '#4e88c7'
+                                        }, {
+                                            label: 'AV Panel',
+                                            data: [0, 24, 0, 0],
+                                            backgroundColor: '#ec8f9c'
+                                        }, {
+                                            label: 'DIB',
+                                            data: [4, 1, 0, 0],
+                                            backgroundColor: '#bb89ca'
+                                        }, {
+                                            label: 'Accessibility',
+                                            data: [23.5, 22, 7, 39],
+                                            backgroundColor: '#cbdb2a'
+                                        }, {
+                                            label: 'Misc.',
+                                            data: [114.75, 254.5, 309, 215],
+                                            backgroundColor: '#00aaad'
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: false,
+                                        legend: {
+                                            position: 'bottom' // place legend on the right side of chart
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                stacked: true // this should be set to make the bars stacked
+                                            }],
+                                            yAxes: [{
+                                                stacked: true // this also..
+                                            }]
+                                        }
+                                    }
+                                    });
+                            </script>
+                        </div>
+                    </section>
+
                     <section id="Q4-FY20">
                         <!-- Q4 - April-June -->
 
@@ -2358,19 +2423,21 @@
                                             { "labels": 
                                             ["Course Planner", 
                                                 "OpenScholar", 
+                                                "Accessibility",
                                                 "Misc."], 
                                                 "datasets": 
                                                     [{ "label": "Q4FY20 effort distribution", 
-                                                        "data": [122.50, 109.25, 142.25], 
+                                                        "data": [122.50, 109.25, 23.5, 118.75], 
                                                         "backgroundColor": 
                                                             ["rgb(165, 28, 48)", 
                                                             "rgb(78, 136, 199)", 
+                                                            "rgb(203, 219, 42)", 
                                                             "rgb(0, 170, 173)"] 
                                                     }] 
                                             }
                                         });
                                     </script>
-                                    <p class="text-muted">Misc.: Staff standups, 1:1, DIB meetings and training, PAIF, blog, professional development.</p>
+                                    <p class="text-muted">Misc.: Staff standups, 1:1, DIB meetings and training, PAIF, professional development.</p>
                                 </div>
 
                                 <div class="alert alert-info" role="alert">
@@ -3753,7 +3820,7 @@
                     </section>
 
                     <section id="Q3-FY20">
-                        <!-- Q2 - January-March -->
+                    <!-- Q3 - January-March -->
 
                         <h4>
                             <a class="badge badge-light" data-toggle="collapse" href="#collapseQ3-FY20" role="button" aria-expanded="false"
@@ -3771,28 +3838,30 @@
                                     <h6>
                                         Q3FY20 effort distribution
                                     </h6>
-                                    <canvas id="Q3FY20" class="chartjs mb-3"></canvas>
+                                    <canvas id="Q3FY20b" class="chartjs mb-3"></canvas>
                                     <script>
-                                    new Chart(document.getElementById("Q3FY20"), 
-                                        { 
-                                            "type": "doughnut", 
-                                            "data": 
-                                            { "labels": 
-                                            ["Course Planner", 
-                                                "OpenScholar", 
-                                                "Misc."], 
-                                                "datasets": 
-                                                    [{ "label": "Q4FY20 effort distribution", 
-                                                        "data": [40, 54.5, 301.5], 
-                                                        "backgroundColor": 
-                                                            ["rgb(165, 28, 48)", 
-                                                            "rgb(78, 136, 199)", 
-                                                            "rgb(0, 170, 173)"] 
-                                                    }] 
-                                            }
-                                        });
+                                        new Chart(document.getElementById("Q3FY20b"), 
+                                            { 
+                                                "type": "doughnut", 
+                                                "data": 
+                                                { "labels": 
+                                                ["Course Planner", 
+                                                    "OpenScholar", 
+                                                    "Accessibility",
+                                                    "Misc."], 
+                                                    "datasets": 
+                                                        [{ "label": "Q3FY20 effort distribution", 
+                                                            "data": [40, 54.5, 21, 280.5], 
+                                                            "backgroundColor": 
+                                                                ["rgb(165, 28, 48)", 
+                                                                "rgb(78, 136, 199)", 
+                                                                "rgb(203, 219, 42)", 
+                                                                "rgb(0, 170, 173)"] 
+                                                        }] 
+                                                }
+                                            });
                                     </script>
-                                    <p class="text-muted">Misc.: 114 and SEC AV directory panel, Zoom training, Staff standups, 1:1, DIB meetings and training, PAIF, blog, professional development.</p>
+                                    <p class="text-muted">Misc.: 114 and SEC AV directory panel, 114 Western Ave AV panels, Zoom training, staff standups, 1:1, professional development.</p>
                                 </div>
 
                                 <div class="card card-label_primary">
@@ -4277,8 +4346,7 @@
                                             <li class="list-group-item list-group-item-margin">
                                                 <i>Assisting SEAS Community with usability and accessibility issues.</i>
                                             </li>
-                                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"
-                                                hidden>
+                                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                                 <!-- done ruler -->
                                                 Q3FY20 total time - 15 hours
                                             </li>
@@ -5267,7 +5335,7 @@
                     </section>
 
                     <section id="Q2-FY20">
-                        <!-- Q1 - October-December -->
+                    <!-- Q1 - October-December -->
 
                         <h4>
                             <a class="badge badge-light" data-toggle="collapse" href="#collapseQ2-FY20" role="button" aria-expanded="false"
@@ -5279,6 +5347,37 @@
 
                         <div class="collapse" id="collapseQ2-FY20">
                             <div class="card card-body">
+
+                                <!-- Chart -->
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        Q2FY20 effort distribution
+                                    </h6>
+                                    <canvas id="Q2FY20" class="chartjs mb-3"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("Q2FY20"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Accessibility",
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "Q2FY20 effort distribution", 
+                                                        "data": [38, 122, 7, 309], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(203, 219, 42)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: 114 Western Ave AV panels, Zoom training, staff standups, 1:1, professional development.</p>
+                                </div>
     
                                 <div class="card card-label_primary">
                                     <!-- card - Course Planner -->
@@ -5600,8 +5699,7 @@
                                         <li class="list-group-item list-group-item-margin">
                                             <i>Assisting SEAS Community with usability and accessibility issues.</i>
                                         </li>
-                                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"
-                                            hidden>
+                                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                             <!-- done ruler -->
                                             Total time - 4 hours
                                         </li>
@@ -6820,7 +6918,7 @@
                     </section>
 
                     <section id="Q1-FY20">
-                        <!-- Q1 - July-September -->
+                    <!-- Q1 - July-September -->
 
                         <h4>
                             <a class="badge badge-light" data-toggle="collapse" href="#collapseQ1-FY20" role="button" aria-expanded="false"
@@ -6832,6 +6930,37 @@
 
                         <div class="collapse" id="collapseQ1-FY20">
                             <div class="card card-body">
+
+                                <!-- Chart -->
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        Q1FY20 effort distribution
+                                    </h6>
+                                    <canvas id="Q3FY20" class="chartjs mb-3"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("Q3FY20"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Accessibility",
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "Q1FY20 effort distribution", 
+                                                        "data": [38, 122, 30, 286], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(203, 219, 42)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: Staff standups, 1:1, professional development.</p>
+                                </div>
 
                                 <div class="card card-label_primary">
                                     <!-- card - Course Planner -->
@@ -7054,14 +7183,14 @@
                                         <h6 class="card-title">
                                             <i class="fas fa-chalkboard-teacher fa-padding"></i>
                                             Teamcore OpenScholar training
-                                            <a onclick="myFunctionTeamcoreOpenScholarTraining()" class="float-right">
+                                            <a onclick="myFunctionTeamcoreOpenScholarTrainingQ1fy20()" class="float-right">
                                                 <i class="fas fa-list-ul fa-padding"></i>
                                             </a>
                                         </h6>
                                     </div>
 
-                                    <script>function myFunctionTeamcoreOpenScholarTraining) {
-                                            var x = document.getElementById("showTeamcoreOpenScholarTraining");
+                                    <script>function myFunctionTeamcoreOpenScholarTrainingQ1fy20) {
+                                            var x = document.getElementById("showTeamcoreOpenScholarTrainingQ1fy20");
                                             if (x.style.display === "none") {
                                                 x.style.display = "block";
                                             } else {
@@ -7079,7 +7208,7 @@
                                         </li>
                                     </ul>
 
-                                    <ul class="list-group list-group-flush" id="showTeamcoreOpenScholarTraining" style="display: none;">
+                                    <ul class="list-group list-group-flush" id="showTeamcoreOpenScholarTrainingQ1fy20" style="display: none;">
                                         <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                             <!-- done ruler -->
                                             Total time - 5 hours
@@ -7223,7 +7352,7 @@
                                     <div class="card-body card-header-margin">
                                         <h6 class="card-title">
                                             <i class="fas fa-cogs fa-padding"></i>
-                                            AWS resource provisioning tool
+                                            AWS console
 
                                             <a onclick="myFunctionAWS()" class="float-right" title="Project history">
                                                 <i class="fas fa-list-ul fa-padding"></i>
@@ -7575,8 +7704,7 @@
                                     </ul>
 
                                     <ul class="list-group list-group-flush" id="showMCB" style="display: none;">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"
-                                            hidden>
+                                        <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                             <!-- done ruler -->
                                             Total time - 6 hours
                                         </li>
@@ -8304,11 +8432,10 @@
                             </div>
                         </div>
                     </section>
-
-                    <section id="FY19">
+                    <section id="Q4FY19">
 
                         <h4>
-                            <a class="badge badge-light" data-toggle="collapse" href="#collapseFY19" role="button" aria-expanded="false"
+                            <a class="badge badge-primary" data-toggle="collapse" href="#collapseFY19" role="button" aria-expanded="false"
                             aria-controls="collapseFY19">
                                 FY19
                                 <i class="fas fa-sort-down"></i>
@@ -8317,6 +8444,37 @@
 
                         <div class="collapse" id="collapseFY19">
                             <div class="card card-body">
+
+                                <!-- Chart -->
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY19 effort distribution
+                                    </h6>
+                                    <canvas id="FY19" class="chartjs mb-3"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("FY19"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Accessibility",
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "FY19 effort distribution", 
+                                                        "data": [105, 56, 13, 106], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(203, 219, 42)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
+                                </div>
                                 
                                 <div class="card card-label_primary">
                                     <!-- card - Course Planner -->
