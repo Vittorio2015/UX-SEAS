@@ -54,7 +54,7 @@
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
-                        Updated on November 4, 2020 
+                        Updated on November 5, 2020 
                     </span>
                 </div>
             </nav>
@@ -656,6 +656,65 @@
                             });
                         </script>
                         <p class="text-muted">Misc.: Staff standups, 1:1 catch-ups, DIB meetings and events, Harvard volunteering and diversity, Office of Computing articles, SEAS websites review, professional development.</p>
+                    </div>
+
+
+                    <!-- card - accessible expand -->
+                    <style>
+                        /* style the expandable's button */
+                        [data-expandable] {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                        /* background: #293352; */
+                        border: 0;
+                        color: #000000;
+                        padding: 0.25em 0em;
+                        margin-bottom: 0.25em;
+                        }
+
+                        /* make sure there is a focus style for keyboard accessibility */
+                        [data-expandable]:focus {
+                        outline: 2px solid #FFFFFF;
+                        outline-offset: 1px;
+                        }
+
+                        /* the arrow using pseudo-content and unicode */
+                        [data-expandable][aria-expanded="false"]::after {
+                        content: '\25b6\0020';
+                        float: right;
+                        }
+                        /* the arrow for the expanded state using pseudo-content and unicode */
+                        [data-expandable][aria-expanded="true"]::after {
+                        content: '\25bC\0020';
+                        float: right;
+                        }
+
+                        /* pair visual appearance with accessible state  */
+                        .expandable[aria-hidden="true"] {
+                        display: none;
+                        }
+
+                        button {
+                            background-color: #ffffff !important;
+                        }
+                    </style>
+                    <div class="card card-label_primary" hidden>
+    
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <button data-expandable="section-name" title="Project history">
+                                    <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
+                                    accessible expand
+                                    <span class="sr-only">view project history below</span>
+                                </button>
+                            </h6>
+                            <p id="section-name">
+                                <span class="sr-only">Project history.</span>
+                                Section content
+                            </p>
+                        </div>
+
                     </div>
 
                     <div class="card card-label_primary">
@@ -11382,6 +11441,60 @@
                 $('.popover-dismiss').popover({
                 trigger: 'focus'
                 })
+        </script>
+
+        
+        <!-- Accessible expandable content -->
+        <script>
+            /*!
+        jQuery a11yExpandable plugin
+        @name jquery.a11yExpandable.js
+        @author Heydon (heydon@heydonworks.com or @heydonworks)
+        @version 1.0
+        @date 01/01/2013
+        @category jQuery Plugin
+        @copyright (c) 2015 (Heydon Pickering)
+        @license Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+        */
+
+        (function( $ ) {
+        $.fn.a11yExpandable = function() {
+
+        return this.each(function() {
+
+        var elem = $(this);
+        var plugin = this;
+
+        // set the ARIA state and relationship attributes
+        elem.attr({
+        'aria-expanded': 'false',
+        'aria-controls': elem.attr('data-expandable') 
+        });
+
+        // find the element to expand by id
+        var expandable = $('#'+elem.attr('data-expandable')).attr({
+        'aria-hidden': 'true',
+        'class': 'expandable'
+        });
+
+        // click handler
+        elem.on('click', function() {
+
+        // Cast the expanded state as a boolean
+        var expanded = $(this).attr('aria-expanded') === 'false' ? false : true;
+
+        // Switch the states of aria-expanded and aria-hidden
+        elem.attr('aria-expanded', !expanded);
+        expandable.attr('aria-hidden', expanded);
+
+        });
+
+        });
+
+        };
+        }( jQuery ));
+
+        $('[data-expandable]').a11yExpandable();
         </script>
     </body>
 
