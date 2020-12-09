@@ -54,7 +54,7 @@
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
-                        Updated on December 8, 2020 
+                        Updated on December 9, 2020 
                     </span>
                 </div>
             </nav>
@@ -67,6 +67,65 @@
                     <h5 class="cards-header">
                         Pending
                     </h5>
+
+                    <div class="card card-label_secondary">
+                        <!-- card - Study Plan project -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
+                                <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
+                                Study Plan project
+                                <a onclick="myFunctionStudyPlanQ2FY21()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionStudyPlanQ2FY21() {
+                                var x = document.getElementById("showStudyPlanQ2FY21");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Study Plan project, student users,
+                                    sophomores and juniors, concentration requirements, Applied Mathematics. Steve Chong,
+                                    director (Computer Science).</i>
+                            </li>
+
+                            <!-- Upcoming events -->
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
+                                Study plan rebuild kick-off
+                                (December 14)
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush" id="showStudyPlanQ2FY21" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Q2FY21 total time - 0 hours
+                            </li>
+                        </ul>
+                    
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
+                                <a href="url" target="_blank">
+                                    details
+                                    </a>
+                                (date)
+                                <!-- Notes
+                                -  -->
+                            </li>
+                        </ul>
+                    </div><!-- / card - Study Plan -->
 
                     <div class="card card-label_secondary">
                         <!-- card - Accessibility -->
@@ -278,14 +337,13 @@
                             </li>
 
                             <!-- Upcoming events -->
-                                        
-                                <!-- Strategic Collaboration and Community Engagement (HBS IT) -->
+                        
+                                <!-- Managing Diversity (LinkedIn Learning) -->
                                 <li class="list-group-item list-group-item-margin bg-light">
                                     <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
-                                    <a href="https://harvard.zoom.us/meeting/register/tJEqceqgrzwiGt1sGT_n9M6zZK0pzHYJKh7S" target="_blank">
-                                        Strategic Collaboration and Community Engagement (HBS IT)
-                                    </a>
-                                    (December 4)
+                                    Managing Diversity (LinkedIn Learning)
+                                    (February 6)
+                                    <!--  -->
                                     <!-- Notes
                                     -  -->
                                 </li>
@@ -457,22 +515,11 @@
                                         
                                 <!-- Strategic Collaboration and Community Engagement (HBS IT) -->
                                 <li class="list-group-item list-group-item-margin bg-light">
-                                    <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
                                     <a href="https://harvard.zoom.us/meeting/register/tJEqceqgrzwiGt1sGT_n9M6zZK0pzHYJKh7S" target="_blank">
                                         Strategic Collaboration and Community Engagement (HBS IT)
                                     </a>
                                     (December 4)
-                                    <!-- Notes
-                                    -  -->
-                                </li>
-                                        
-                                <!-- Wellbeing & Finding Balance (SEAS HR) -->
-                                <li class="list-group-item list-group-item-margin bg-light">
-                                    <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
-                                    <a href="https://harvard.zoom.us/meeting/register/tJEqceqgrzwiGt1sGT_n9M6zZK0pzHYJKh7S" target="_blank">
-                                        Wellbeing & Finding Balance (SEAS HR)
-                                    </a>
-                                    (December 8)
                                     <!-- Notes
                                     -  -->
                                 </li>
@@ -568,31 +615,6 @@
                     <h5 class="cards-header">
                         Q3-FY21
                     </h5>
-
-                    <div class="card card-label_success">
-                        <!-- card - Study Plan project -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                                <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                Study Plan project
-                            </h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding" hidden></i>
-                                <i>Work with Chris to gather requirements for the rebuild of the Study Plan tool.</i>
-                            </li>
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light"
-                                hidden>
-                                <!-- done ruler -->
-                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                Study Plan project, student users,
-                                sophomores and juniors, concentration requirements, Applied Mathematics. Steve Chong,
-                                director (Computer Science).
-                            </li>
-                        </ul>
-                    </div><!-- / card - Study Plan -->
 
                     <div class="card card-label_success">
                         <!-- card - Q2FY21 114 and SEC AV directory panel -->
@@ -712,7 +734,7 @@
                         Working from home until further notice
                     </div><!-- / Daily alert-->
 
-                    <!-- Chart - last update on 20201207 -->
+                    <!-- Chart - last update on 20201208 -->
                     <div class="card mb-4 p-2">
                         <h6>
                             Q2FY21 effort distribution
@@ -729,7 +751,7 @@
                                     "Misc."], 
                                     "datasets": 
                                         [{ "label": "Q2FY21 effort distribution", 
-                                            "data": [25.75, 53.75, 188.5], 
+                                            "data": [26, 57.5, 191.5], 
                                             "backgroundColor": 
                                                 ["rgb(165, 28, 48)", 
                                                 "rgb(78, 136, 199)", 
@@ -939,7 +961,7 @@
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
                                 Weekly office hours with Professor Nada Amin
-                                <!-- 5.25 -->
+                                <!-- 5.5 -->
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
@@ -953,14 +975,14 @@
                                 <a href="https://www.keutschgroup.com" target="_blank">
                                     Keutsch Group website
                                 </a> accessibility review
-                                <!-- .5 -->
+                                <!-- 2.25 -->
                             </li>
                         </ul>
 
                         <ul class="list-group list-group-flush" id="showZoomAssistanceQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                 <!-- done ruler -->
-                                Q2FY21 total time - 8.75 hours
+                                Q2FY21 total time - 10.75 hours
                             </li>
                         </ul>
                     </div><!-- / card - Remote assistance -->
@@ -1106,7 +1128,7 @@
                             <ul class="list-group list-group-flush" id="showEmbeddedEthicsQ2FY21" style="display: none;">
                                 <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                     <!-- done ruler -->
-                                    Q2FY21 total time - 13.25 hours
+                                    Q2FY21 total time - 15.5 hours
                                 </li>
                                 <li class="list-group-item list-group-item-margin text-muted bg-light">
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -1160,12 +1182,16 @@
                                 <i class="far fa-square fa-padding"><span class="sr-only">Event to attend</span></i>
                                 Weekly meetings with mentee 
                             </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"><span class="sr-only">Event to attend</span></i>
+                                Career Development Resources - SEAS HR (December 15) 
+                            </li>
                         </ul>
 
                         <ul class="list-group list-group-flush" id="showWITmentorshipQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                 <!-- done ruler -->
-                                Q2FY21 total time - 5.5 hours
+                                Q2FY21 total time - 5.6 hours
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
                                 <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
@@ -1176,7 +1202,7 @@
                                 Orientation, WIT+ Mentoring Program Kick Off (November 18) 
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                <i class="far fa-square fa-padding"><span class="sr-only">Event to attend</span></i>
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
                                 Personal Development, EQ for Mentors (December 8) 
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light">
@@ -1240,6 +1266,17 @@
                             </li>
 
 <!-- ###### Upcoming event  ##### -->
+                        
+                                <!-- Diversity, Inclusion, Belonging (December 14) -->
+                                <li class="list-group-item list-group-item-margin bg-light" >
+                                    <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
+                                    <a href="https://dib.harvard.edu/community-conversations" target="_blank">
+                                        Diversity, Inclusion, Belonging
+                                    </a> (December 14)
+                                    <!--  -->
+                                    <!-- Notes
+                                    -  -->
+                                </li>
                         
                                 <!-- Diversity, Inclusion, Belonging (LinkedInLearning.com) -->
                                 <li class="list-group-item list-group-item-margin bg-light" >
