@@ -54,7 +54,7 @@
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
-                        Updated on December 9, 2020 
+                        Updated on December 10, 2020 
                     </span>
                 </div>
             </nav>
@@ -734,7 +734,7 @@
                         Working from home until further notice
                     </div><!-- / Daily alert-->
 
-                    <!-- Chart - last update on 20201208 -->
+                    <!-- Chart - last update on 20201209 -->
                     <div class="card mb-4 p-2">
                         <h6>
                             Q2FY21 effort distribution
@@ -751,7 +751,7 @@
                                     "Misc."], 
                                     "datasets": 
                                         [{ "label": "Q2FY21 effort distribution", 
-                                            "data": [26, 57.5, 191.5], 
+                                            "data": [28, 60.5, 193.5], 
                                             "backgroundColor": 
                                                 ["rgb(165, 28, 48)", 
                                                 "rgb(78, 136, 199)", 
@@ -868,7 +868,7 @@
                         <ul class="list-group list-group-flush" id="showCoursePlannerQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
                                 <!-- - Q2FY21 total time -->
-                                Q2FY21 total time - 14.75 hours <!-- Including standups, sprint planning, assistance, etc. -->
+                                Q2FY21 total time - 16.75 hours <!-- Including standups, sprint planning, assistance, etc. -->
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
                                 <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -968,21 +968,14 @@
                                 <a href="https://openhouse.seas.harvard.edu/resources" target="_blank">
                                     SEAS PH.D. Open House
                                 </a>
-                                <!-- 2.5 -->
-                            </li>
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                <a href="https://www.keutschgroup.com" target="_blank">
-                                    Keutsch Group website
-                                </a> accessibility review
-                                <!-- 2.25 -->
+                                <!-- 3.25 -->
                             </li>
                         </ul>
 
                         <ul class="list-group list-group-flush" id="showZoomAssistanceQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                 <!-- done ruler -->
-                                Q2FY21 total time - 10.75 hours
+                                Q2FY21 total time - 9.25 hours
                             </li>
                         </ul>
                     </div><!-- / card - Remote assistance -->
@@ -1128,7 +1121,7 @@
                             <ul class="list-group list-group-flush" id="showEmbeddedEthicsQ2FY21" style="display: none;">
                                 <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                     <!-- done ruler -->
-                                    Q2FY21 total time - 15.5 hours
+                                    Q2FY21 total time - 16.75 hours
                                 </li>
                                 <li class="list-group-item list-group-item-margin text-muted bg-light">
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -1967,7 +1960,7 @@
                             
                             <div class="card-body card-header-margin">
                                 <h6 class="card-title">
-                                    <i class="fas fa-wheelchair"><span class="sr-only">Accessibility reviews and events</span></i>
+                                    <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and events</span></i>
                                     <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
                                     Crestron AV panels
                                     <a onclick="myFunctionCrestronQ2FY21()" class="float-right">
@@ -1998,6 +1991,48 @@
                                 <li class="list-group-item list-group-item-margin text-muted bg-light">
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
                                     Accessibility of Crestron AV panels for 114 Western Avenue
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- card - Keutsch Group -->
+                        <div class="card card-label_warning">
+                            
+                            <div class="card-body card-header-margin">
+                                <h6 class="card-title">
+                                    <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and events</span></i>
+                                    <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
+                                    Keutsch Group website accessibility review
+                                    <a onclick="myFunctionKeutschGroupQ2FY21()" class="float-right">
+                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
+                                    </a>
+                                </h6>
+                            </div>
+    
+                            <script>
+                                function myFunctionKeutschGroupQ2FY21() {
+                                    var x = document.getElementById("showKeutschGroupQ2FY21");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+    
+                            <ul class="list-group list-group-flush" id="showKeutschGroupQ2FY21" style="display: none;">
+                                <li class="list-group-item list-group-item-margin">
+                                    <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                                </li>
+                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                    <!-- done ruler -->
+                                    Q2FY21 total time - 3.75 hour
+                                </li>
+                                <li class="list-group-item list-group-item-margin">
+                                    <a href="https://www.keutschgroup.com/home" target="_blank">
+                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
+                                        Keutsch Group Google Sites website
                                     </a>
                                 </li>
                             </ul>
@@ -2187,7 +2222,7 @@
                             <!-- card - Screen reader demonstration -->
                                 <div class="card-body card-header-margin">
                                     <h6 class="card-title">
-                                        <i class="fas fa-wheelchair"><span class="sr-only">Accessibility reviews and events</span></i>
+                                        <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and events</span></i>
                                         <i class="fas fa-chalkboard-teacher"><span class="sr-only">Advising and training to faculty and staff</span></i>
                                         <a href="https://drive.google.com/file/d/1qM99tB0sqZz6DoT__oBkvGc6XQ3JGgqv/view?usp=sharing" target="_blank">
                                             Screen reader demonstration to SEAS developers
