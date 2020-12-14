@@ -54,7 +54,7 @@
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
-                        Updated on December 10, 2020 
+                        Updated on December 14, 2020 
                     </span>
                 </div>
             </nav>
@@ -67,65 +67,6 @@
                     <h5 class="cards-header">
                         Pending
                     </h5>
-
-                    <div class="card card-label_secondary">
-                        <!-- card - Study Plan project -->
-                        <div class="card-body card-header-margin">
-                            <h6 class="card-title">
-                                <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
-                                <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                Study Plan project
-                                <a onclick="myFunctionStudyPlanQ2FY21()" class="float-right">
-                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <script>
-                            function myFunctionStudyPlanQ2FY21() {
-                                var x = document.getElementById("showStudyPlanQ2FY21");
-                                if (x.style.display === "none") {
-                                    x.style.display = "block";
-                                } else {
-                                    x.style.display = "none";
-                                }
-                            }
-                        </script>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-margin">
-                                <i>Study Plan project, student users,
-                                    sophomores and juniors, concentration requirements, Applied Mathematics. Steve Chong,
-                                    director (Computer Science).</i>
-                            </li>
-
-                            <!-- Upcoming events -->
-                            <li class="list-group-item list-group-item-margin">
-                                <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
-                                Study plan rebuild kick-off
-                                (December 14)
-                            </li>
-                        </ul>
-
-                        <ul class="list-group list-group-flush" id="showStudyPlanQ2FY21" style="display: none;">
-                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                <!-- done ruler -->
-                                Q2FY21 total time - 0 hours
-                            </li>
-                        </ul>
-                    
-                        <ul class="list-group list-group-flush" hidden>
-                            <li class="list-group-item list-group-item-margin bg-light">
-                                <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
-                                <a href="url" target="_blank">
-                                    details
-                                    </a>
-                                (date)
-                                <!-- Notes
-                                -  -->
-                            </li>
-                        </ul>
-                    </div><!-- / card - Study Plan -->
 
                     <div class="card card-label_secondary">
                         <!-- card - Accessibility -->
@@ -729,12 +670,12 @@
 
                     <!-- Daily alert-->
                     <div class="alert alert-info" role="alert">                        
-                        Vacation day on December 10, 2020
-                        <hr>
+                        <!-- Vacation day on December 10, 2020
+                        <hr> -->
                         Working from home until further notice
                     </div><!-- / Daily alert-->
 
-                    <!-- Chart - last update on 20201209 -->
+                    <!-- Chart - last update on 20201213 -->
                     <div class="card mb-4 p-2">
                         <h6>
                             Q2FY21 effort distribution
@@ -751,7 +692,7 @@
                                     "Misc."], 
                                     "datasets": 
                                         [{ "label": "Q2FY21 effort distribution", 
-                                            "data": [28, 60.5, 193.5], 
+                                            "data": [28.25, 63, 197.75], 
                                             "backgroundColor": 
                                                 ["rgb(165, 28, 48)", 
                                                 "rgb(78, 136, 199)", 
@@ -868,7 +809,7 @@
                         <ul class="list-group list-group-flush" id="showCoursePlannerQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
                                 <!-- - Q2FY21 total time -->
-                                Q2FY21 total time - 16.75 hours <!-- Including standups, sprint planning, assistance, etc. -->
+                                Q2FY21 total time - 17 hours <!-- Including standups, sprint planning, assistance, etc. -->
                             </li>
                             <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
                                 <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -921,6 +862,65 @@
                             </li>
                         </ul>
                     </div><!-- / card - Course Planner -->
+
+                    <div class="card card-label_secondary">
+                        <!-- card - Study Plan project -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
+                                <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
+                                Study Plan project
+                                <a onclick="myFunctionStudyPlanQ2FY21()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionStudyPlanQ2FY21() {
+                                var x = document.getElementById("showStudyPlanQ2FY21");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Study Plan project, student users,
+                                    sophomores and juniors, concentration requirements, Applied Mathematics. Steve Chong,
+                                    director (Computer Science).</i>
+                            </li>
+
+                            <!-- Upcoming events -->
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"><span class="sr-only">Scheduled event</span></i>
+                                Study plan rebuild kick-off
+                                (December 14)
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush" id="showStudyPlanQ2FY21" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Q2FY21 total time - 0 hours
+                            </li>
+                        </ul>
+                    
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Attended event</span></i>
+                                <a href="url" target="_blank">
+                                    details
+                                    </a>
+                                (date)
+                                <!-- Notes
+                                -  -->
+                            </li>
+                        </ul>
+                    </div><!-- / card - Study Plan -->
     
                     <div class="card card-label_warning">
                     <!-- card - Remote assistance -->
@@ -961,7 +961,7 @@
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
                                 Weekly office hours with Professor Nada Amin
-                                <!-- 5.5 -->
+                                <!-- 7.75 -->
                             </li>
                             <li class="list-group-item list-group-item-margin">
                                 <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
@@ -975,7 +975,7 @@
                         <ul class="list-group list-group-flush" id="showZoomAssistanceQ2FY21" style="display: none;">
                             <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                 <!-- done ruler -->
-                                Q2FY21 total time - 9.25 hours
+                                Q2FY21 total time - 11.5 hours
                             </li>
                         </ul>
                     </div><!-- / card - Remote assistance -->
@@ -1469,7 +1469,7 @@
 <!-- ###### Awareness ##### -->
                             <li class="list-group-item list-group-item-margin bg-light" >
                                 <h6>Q2FY21 Awareness</h6>
-                                <span class="text-muted">(This time is not logged. Notes in HTML comments.)</span>
+                                <span class="text-muted">(Readings during personal time)</span>
                             </li>
 
                             <section id="dib_Q2FY21_readAndCommented">
@@ -1622,10 +1622,65 @@
                                     <!-- What did I learn that I didn't know? -->
                                     <!-- What information could inspire my engagement? -->
                                 </li>
+
+                                <!-- Studying obstacles to Black homeownership (Harvard Gazette) -->
+                                <li class="list-group-item list-group-item-margin bg-light">
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                                    <a href="https://gsas.harvard.edu/news/stories/house-poor" target="_blank">
+                                        Studying obstacles to Black homeownership (Harvard Gazette)
+                                    </a>
+                                    (October 06)
+                                    <!-- What did I learn that I didn't know? -->
+                                    <!-- What information could inspire my engagement? -->
+                                </li>
+
+                                <!-- What to Do About William Faulkner (The Atlantic) -->
+                                <li class="list-group-item list-group-item-margin bg-light">
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                                    <a href="https://www.theatlantic.com/magazine/archive/2020/09/michael-gorra-william-faulkner/614206/" target="_blank">
+                                        What to Do About William Faulkner (The Atlantic)
+                                    </a>
+                                    (December 11)
+                                    <!-- What did I learn that I didn't know? -->
+                                    <!-- What information could inspire my engagement? -->
+                                </li>
+
+                                <!-- The Famous Baldwin-Buckley Debate Still Matters Today (The Atlantic) -->
+                                <li class="list-group-item list-group-item-margin bg-light">
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                                    <a href="https://www.theatlantic.com/entertainment/archive/2019/12/james-baldwin-william-f-buckley-debate/602695/" target="_blank">
+                                        The Famous Baldwin-Buckley Debate Still Matters Today (The Atlantic)
+                                    </a>
+                                    (December 12)
+                                    <!-- What did I learn that I didn't know? -->
+                                    <!-- What information could inspire my engagement? -->
+                                </li>
+
+                                <!-- Another long-overdue reckoning for America -->
+                                <li class="list-group-item list-group-item-margin bg-light">
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                                    <a href="https://news.harvard.edu/gazette/story/2020/07/reflecting-on-supreme-court-ruling-and-nfl-team-name-change/" target="_blank">
+                                        Another long-overdue reckoning for America
+                                    </a>
+                                    (December 13)
+                                    <!-- What did I learn that I didn't know? -->
+                                    <!-- What information could inspire my engagement? -->
+                                </li>
                                 
                             </section>
 
                             <section id="dib_Q2FY21_toRead">
+
+                                <!-- Turning a light on our implicit biases (The Harvard Gazette) -->
+                                <li class="list-group-item list-group-item-margin bg-light" hidden>
+                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                                    <a href="https://news.harvard.edu/gazette/story/2020/12/taking-a-hard-look-at-our-implicit-biases/" target="_blank">
+                                        Turning a light on our implicit biases (The Harvard Gazette)
+                                    </a>
+                                    (** ##)
+                                    <!-- What did I learn that I didn't know? -->
+                                    <!-- What information could inspire my engagement? -->
+                                </li>
 
                                 <!-- Making Differences Matter (Harvard Business Review) -->
                                 <li class="list-group-item list-group-item-margin bg-light" hidden>
@@ -1643,17 +1698,6 @@
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
                                     <a href="https://harvardu.myhbp.org/hmm12/articles/R2006E-PDF-ENG.pdf" target="_blank">
                                         Reinventing the Leader Selection Process (Harvard Business Review)
-                                    </a>
-                                    (** ##)
-                                    <!-- What did I learn that I didn't know? -->
-                                    <!-- What information could inspire my engagement? -->
-                                </li>
-
-                                <!-- Be a Better Ally (Harvard Business Review) -->
-                                <li class="list-group-item list-group-item-margin bg-light" hidden>
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://harvardu.myhbp.org/hmm12/articles/R2006L-PDF-ENG.pdf" target="_blank">
-                                        Be a Better Ally (Harvard Business Review)
                                     </a>
                                     (** ##)
                                     <!-- What did I learn that I didn't know? -->
@@ -1715,33 +1759,11 @@
                                     <!-- What information could inspire my engagement? -->
                                 </li>
 
-                                <!-- Another long-overdue reckoning for America -->
-                                <li class="list-group-item list-group-item-margin bg-light" hidden>
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://news.harvard.edu/gazette/story/2020/07/reflecting-on-supreme-court-ruling-and-nfl-team-name-change/" target="_blank">
-                                        Another long-overdue reckoning for America
-                                    </a>
-                                    (** ##)
-                                    <!-- What did I learn that I didn't know? -->
-                                    <!-- What information could inspire my engagement? -->
-                                </li>
-
                                 <!-- ‘Must inequality and brutality be our national legacy?’ (The Harvard Gazette) -->
                                 <li class="list-group-item list-group-item-margin bg-light" hidden>
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
                                     <a href="https://news.harvard.edu/gazette/story/2020/08/political-experts-see-change-on-horizon-amid-pandemic/" target="_blank">
                                         ‘Must inequality and brutality be our national legacy?’ (The Harvard Gazette)
-                                    </a>
-                                    (** ##)
-                                    <!-- What did I learn that I didn't know? -->
-                                    <!-- What information could inspire my engagement? -->
-                                </li>
-
-                                <!-- What to Do About William Faulkner (The Atlantic) -->
-                                <li class="list-group-item list-group-item-margin bg-light" hidden>
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://www.theatlantic.com/magazine/archive/2020/09/michael-gorra-william-faulkner/614206/" target="_blank">
-                                        What to Do About William Faulkner (The Atlantic)
                                     </a>
                                     (** ##)
                                     <!-- What did I learn that I didn't know? -->
@@ -1961,7 +1983,7 @@
                             <ul class="list-group list-group-flush" id="showFunctionCRCSQ2FY21" style="display: none;">
                                 <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
                                     <!-- done ruler -->
-                                    Q2FY21 total time - 13.5 hours
+                                    Q2FY21 total time - 13.75 hours
                                 </li>
                                 <li class="list-group-item list-group-item-margin bg-light">
                                     <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -11945,7 +11967,6 @@
                 trigger: 'focus'
                 })
         </script>
-
         
         <!-- Accessible expandable content -->
         <script>
@@ -11999,6 +12020,7 @@
 
         $('[data-expandable]').a11yExpandable();
         </script>
+        
     </body>
 
 </html>
