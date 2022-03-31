@@ -46,18 +46,18 @@
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active" hidden>
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item" hidden>
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item" hidden>
-                        </li>
-                    </ul>
-                    <span class="navbar-text muted">
+                <div class="" id="navbarText" style="float: right; padding: .5em 0;">
+                    <div class="dropdown navbar-text muted mr-4">
+                        <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
+                            FY History
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="index.html">FY22</a>
+                            <a class="dropdown-item" href="fy21.html">FY21</a>
+                            <a class="dropdown-item" href="fy20.html">FY20</a>
+                        </div>
+                        </div>
+                        <span class="navbar-text muted">
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
@@ -976,6 +976,7 @@
             </div><!-- / legend -->
 
         </div><!-- / container -->
+        
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
