@@ -105,6 +105,18 @@ border-top: 2px solid rgba(0,0,0,.125);
     margin-bottom: 1em;
 }
 
+/* Nav with legend link and date */
+.justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+    margin-top: -2.85em;
+}
+@media only screen and (max-width: 760px) {
+    .justify-content-end {
+        margin-top: 0em;
+    }
+}
+    
 /* accessible expand cards */
 
             /* style the expandable's button */
