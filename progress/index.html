@@ -23,7 +23,7 @@
         <!-- Chart.js -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-        <title>FY21 / Vittorio / SEAS / Progress Report</title>
+        <title>FY22 / Vittorio / SEAS / Progress Report</title>
 
     </head>
 
@@ -42,7 +42,7 @@
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" hidden>
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="" id="navbarText" style="float: right; padding: .5em 0;">
+            <!-- <div class="" id="navbarText" style="float: right; padding: .5em 0;">
                 <div class="dropdown navbar-text muted mr-4">
                     <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
                         FY History
@@ -59,15 +59,14 @@
                     </a>
                     Updated on April 22, 2022
                 </span>
-            </div>
-        </div>
+            </div> -->
 
 
             <main>
                 <div class="row mt-5">
 
     <!-- Pending -->
-                    <div role="pending" aria-label="Pending projects" class="col-sm col-sm-margin">
+                    <div role="pending" aria-label="Pending projects" class="col mx-1 bg-light">
 
                         <h2 style="display: block;">
                             Pending
@@ -307,7 +306,7 @@
                     </div><!-- / Planned -->
 
     <!-- In progress -->
-                    <div role="inProgress" aria-label="Projects in progress" class="col-sm col-sm-margin">
+                     <div role="inProgress" aria-label="Projects in progress" class="col mx-1 bg-light">
                     
                         <h2>
                             <a name="main_content" id="main_content" tabindex="-1">In progress</a>
@@ -325,7 +324,8 @@
                             </h3>
                             <!-- This time totals include items moved to Done column -->
                             <p class="text-muted text-center">April - June</p>
-                            <canvas id="Q4FY22" class="chartjs mb-3" style="width: 100%;" aria-label="Q4FY22 effort distribution chart"></canvas>
+                            <canvas id="Q4FY22" aria-label="Q4FY22 effort distribution chart"  class="chartjs mb-3"></canvas>
+                            <!-- <canvas id="Q4FY22" class="chartjs mb-3" style="width: 100% !important;" aria-label="Q4FY22 effort distribution chart"></canvas> -->
                             <script>
                             new Chart(document.getElementById("Q4FY22"), 
                                 { 
@@ -1359,7 +1359,7 @@
                     </div><!-- / In progress -->
 
     <!-- Done -->
-                    <div role="Completed" aria-label="Completed projects" class="col-sm col-sm-margin">
+                    <div role="Completed" aria-label="Completed projects" class="col mx-1 bg-light">
                         <h2 style="display: block;">
                             Done
                         </h2>
@@ -6045,36 +6045,36 @@
                         <!-- FY19 -->
                         <div role="FY20-chart" aria-label="FY19 effort distribution">
                             <h3><a href ="fy19.html" class="badge badge-primary" title="Projects completed in FY19">FY19</a></h3>
-                                <div class="card mb-4 p-2">
-                                    <h6>
-                                        FY19 effort distribution
-                                    </h6>
-                                    <canvas id="FY19" class="chartjs mb-3"></canvas>
-                                    <script>
-                                    new Chart(document.getElementById("FY19"), 
-                                        { 
-                                            "type": "doughnut", 
-                                            "data": 
-                                            { "labels": 
-                                            ["Course Planner", 
-                                                "OpenScholar", 
-                                                "Accessibility",
-                                                "Misc."], 
-                                                "datasets": 
-                                                    [{ "label": "FY19 effort distribution", 
-                                                        "data": [105, 56, 13, 106], 
-                                                        "backgroundColor": 
-                                                            ["rgb(165, 28, 48)", 
-                                                            "rgb(78, 136, 199)", 
-                                                            "rgb(203, 219, 42)", 
-                                                            "rgb(0, 170, 173)"] 
-                                                    }] 
-                                            }
-                                        });
-                                    </script>
-                                    <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
-                                </div>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY19 effort distribution
+                                </h6>
+                                <canvas id="FY19" class="chartjs mb-3"></canvas>
+                                <script>
+                                new Chart(document.getElementById("FY19"), 
+                                    { 
+                                        "type": "doughnut", 
+                                        "data": 
+                                        { "labels": 
+                                        ["Course Planner", 
+                                            "OpenScholar", 
+                                            "Accessibility",
+                                            "Misc."], 
+                                            "datasets": 
+                                                [{ "label": "FY19 effort distribution", 
+                                                    "data": [105, 56, 13, 106], 
+                                                    "backgroundColor": 
+                                                        ["rgb(165, 28, 48)", 
+                                                        "rgb(78, 136, 199)", 
+                                                        "rgb(203, 219, 42)", 
+                                                        "rgb(0, 170, 173)"] 
+                                                }] 
+                                        }
+                                    });
+                                </script>
+                                <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
                             </div>
+                        </div>
                     </div>
 
                 </div><!-- / row -->
