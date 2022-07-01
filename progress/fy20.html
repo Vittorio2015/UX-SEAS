@@ -52,8 +52,9 @@
                             FY History
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="index.html">FY22</a>
-                            <a class="dropdown-item" href="fy21.html">FY21</a>
+                            <a class="dropdown-item" href="index.html">FY23</a>
+                            <a class="dropdown-item" href="fy22.html">FY22</a>
+                            <a class="dropdown-item" href="fy20.html">FY20</a>
                             <a class="dropdown-item" href="fy19.html">FY19</a>
                         </div>
                         </div>
@@ -81,72 +82,54 @@
 
                             <div role="FY22" aria-label="Projects completed in FY22">
                                 <div role="FY22-chart" aria-label="FY22 effort distribution">
-                                    <h3><a href ="index.html" class="badge badge-primary" title="Projects completed in FY22">FY22</a></h3>
+                                    <h3><a href ="fy22.html" class="badge badge-primary" title="Projects completed in FY22">FY22</a></h3>
                                     <div class="card mb-4 p-2">
-                                        <!-- Q1-FY22 Chart -->
-                                        <div class="card mb-4 p-2">
-                                            <h3>
-                                                Q1FY22 effort distribution
-                                            </h3>
-                                            <!-- This time totals include items moved to Done column -->
-                                            <p class="text-muted text-center">July - September</p>
-                                            <canvas id="Q1FY22" class="chartjs mb-3" style="width: 100%;" aria-label="Q1FY22 effort distribution chart"></canvas>
-                                            <script>
-                                            new Chart(document.getElementById("Q1FY22"), 
-                                                { 
-                                                    "type": "doughnut", 
-                                                    "data": 
-                                                    { "labels": 
-                                                    ["Course Planner and Mark One",
-                                                     "Directory panel",
-                                                     "OpenScholar", 
-                                                        "Misc."], 
-                                                        "datasets": 
-                                                            [{ "label": "Q1FY22 effort distribution", 
-                                                                "data": [36.75, 18.5, 365, 0],
-                                                                "backgroundColor": 
-                                                                    ["rgb(165, 28, 48)", 
-                                                                    "rgb(161, 195, 66)", 
-                                                                    "rgb(78, 136, 199)", 
-                                                                    "rgb(0, 170, 173)"] 
-                                                            }] 
+                                        <h6>
+                                            FY22 effort distribution
+                                        </h6>
+                                        <canvas id="fy22" style="display: block;" height="300" width="308"></canvas>
+                                        <script type="text/javascript">
+                                            var chart = new Chart(fy22, {
+                                                type: 'bar',
+                                                data: {
+                                                    labels: ['Q1 FY22', 'Q2 FY22', 'Q3 FY22', 'Q4 FY22'], // responsible for how many bars are gonna show on the chart
+                                                    // create 12 datasets, since we have 12 items
+                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                    // put 0, if there is no data for the particular bar
+                                                    datasets: [{
+                                                        label: 'Course Planner',
+                                                        data: [36.75, 22, 23.25, 25.25],
+                                                        backgroundColor: '#A51C30'
+                                                    }, {
+                                                        label: 'Directory Panel',
+                                                        data: [18.5, 0, 0, 0],
+                                                        backgroundColor: 'rgb(253, 126, 20)'
+                                                    }, {
+                                                        label: 'OpenScholar',
+                                                        data: [365, 298.5, 200, 159.25],
+                                                        backgroundColor: '#4e88c7'
+                                                   }, {
+                                                        label: 'Misc.',
+                                                        data: [0, 62, 154.25, 125],
+                                                        backgroundColor: '#00aaad'
+                                                    }]
+                                                },
+                                                options: {
+                                                    responsive: false,
+                                                    legend: {
+                                                        position: 'bottom' // place legend on the right side of chart
+                                                    },
+                                                    scales: {
+                                                        xAxes: [{
+                                                            stacked: true // this should be set to make the bars stacked
+                                                        }],
+                                                        yAxes: [{
+                                                            stacked: true // this also..
+                                                        }]
                                                     }
+                                                }
                                                 });
-                                            </script>
-                                            <p class="text-muted">Misc.: Staff standups, 1:1 catch-ups, DIB meetings and events, Harvard mentoring and BFA advising, SEAS websites review, professional development.</p>
-                                        </div>
-                
-                                        <!-- Q2-FY22 Chart -->
-                                        <div class="card mb-4 p-2">
-                                            <h3>
-                                                Q2FY22 effort distribution
-                                            </h3>
-                                            <!-- This time totals include items moved to Done column -->
-                                            <p class="text-muted text-center">October - December</p>
-                                            <canvas id="Q2FY22" class="chartjs mb-3" style="width: 100%;" aria-label="Q2FY22 effort distribution chart"></canvas>
-                                            <script>
-                                            new Chart(document.getElementById("Q2FY22"), 
-                                                { 
-                                                    "type": "doughnut", 
-                                                    "data": 
-                                                    { "labels": 
-                                                    ["Course Planner and Mark One",
-                                                     "OpenScholar", 
-                                                        "Misc."], 
-                                                        "datasets": 
-                                                            [{ "label": "Q2FY22 effort distribution", 
-                                                                "data": [22, 298.5, 62],
-                                                                "backgroundColor": 
-                                                                    ["rgb(165, 28, 48)", 
-                                                                    "rgb(78, 136, 199)", 
-                                                                    "rgb(0, 170, 173)"] 
-                                                            }] 
-                                                    }
-                                                });
-                                            </script>
-                                            <p class="text-muted">Misc.: SEAS Websites audit, staff standups, biweekly 1:1, DIB meetings and events, Harvard mentoring and BFA advising.</p>
-                                        </div>
-
+                                        </script>
                                     </div>
                                 </div>
                             </div>
