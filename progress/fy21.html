@@ -77,6 +77,55 @@
                             <a name="main_content" id="main_content" tabindex="-1">Next fiscal years</a>
                         </h2>
                         
+                        <!-- FY23 -->
+                        <div role="FY23-chart" aria-label="FY23 effort distribution">
+                            <h3><a href ="fy23.html" class="badge badge-primary" title="Projects completed in FY23">FY23</a></h3>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY23 effort distribution
+                                </h6>
+                                <canvas id="fy23" style="display: block;" height="300" width="308"></canvas>
+                                <script type="text/javascript">
+                                    var chart = new Chart(fy23, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Q1 FY23', 'Q2 FY23', 'Q3 FY23', 'Q4 FY23'], // responsible for how many bars are gonna show on the chart
+                                            // create 12 datasets, since we have 12 items
+                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                            // put 0, if there is no data for the particular bar
+                                            datasets: [{
+                                                label: 'Course Planner',
+                                                data: [23.75, 36.5, 32, 18.5],
+                                                backgroundColor: '#A51C30'
+                                            }, {
+                                                label: 'Remote assistance',
+                                                data: [45, 5, 16, 30],
+                                                backgroundColor: '#4e88c7'
+                                           }, {
+                                                label: 'Misc.',
+                                                data: [296.75, 265, 313, 299.5],
+                                                backgroundColor: '#00aaad'
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: false,
+                                            legend: {
+                                                position: 'bottom' // place legend on the right side of chart
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    stacked: true // this should be set to make the bars stacked
+                                                }],
+                                                yAxes: [{
+                                                    stacked: true // this also..
+                                                }]
+                                            }
+                                        }
+                                        });
+                                </script>
+                            </div>
+                        </div>
+                        
                         <!-- FY22 -->
                         <div role="FY22-chart" aria-label="FY22 effort distribution">
                             <h3><a href ="fy22.html" class="badge badge-primary" title="Projects completed in FY22">FY22</a></h3>
