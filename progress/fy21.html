@@ -52,7 +52,9 @@
                             FY History
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="index.html">FY23</a>
+                            <a class="dropdown-item" href="index.html">FY25</a>
+                            <a class="dropdown-item" href="fy24.html">FY24</a>
+                            <a class="dropdown-item" href="fy23.html">FY23</a>
                             <a class="dropdown-item" href="fy22.html">FY22</a>
                             <a class="dropdown-item" href="fy20.html">FY20</a>
                             <a class="dropdown-item" href="fy19.html">FY19</a>
@@ -62,7 +64,7 @@
                         <a href="#legend" class="mr-4">
                             Legend
                         </a>
-                        Updated on June 30, 2021
+                        Updated on August 5, 2024
                     </span>
                 </div>
             </nav>
@@ -76,6 +78,64 @@
                         <h2>
                             <a name="main_content" id="main_content" tabindex="-1">Next fiscal years</a>
                         </h2>
+                       
+                        <!-- FY24 -->
+                        <div role="FY24-chart" aria-label="FY24 effort distribution">
+                            <h3><a href ="fy24.html" class="badge badge-primary" title="Projects completed in FY21">FY24</a></h3>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY24 effort distribution
+                                </h6>
+                                
+                                <canvas id="fy24" style="display: block;" height="300" width="308"></canvas>
+                                <script type="text/javascript">
+                                    var chart = new Chart(fy24, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Q1 FY24', 'Q2 FY24', 'Q3 FY24', 'Q4 FY24'], // responsible for how many bars are gonna show on the chart
+                                            // create 12 datasets, since we have 12 items
+                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                            // put 0, if there is no data for the particular bar
+                                            datasets: [{
+                                                label: 'Academic products',
+                                                data: [68, 33.5, 25.5, 32],
+                                                backgroundColor: 'rgb(165, 28, 48)'
+                                            }, {
+                                                label: 'Web publishing',
+                                                data: [143, 162, 198, 62],
+                                                backgroundColor: 'rgb(78, 136, 199)'
+                                           }, {
+                                                label: 'SEAS accessibility',
+                                                data: [10.5, 9, 9.5, 10],
+                                                backgroundColor: 'rgb(0, 170, 10)'
+                                            }, {
+                                                label: 'Professional growth',
+                                                data: [2, 16, 62.5, 129],
+                                                backgroundColor: 'rgb(253, 126, 20)'
+                                            }, {
+                                                label: 'Misc.',
+                                                data: [77.5, 127.5, 123.5, 71.5],
+                                                backgroundColor: 'rgb(148, 148, 148)'
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: false,
+                                            legend: {
+                                                position: 'bottom' // place legend on the right side of chart
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    stacked: true // this should be set to make the bars stacked
+                                                }],
+                                                yAxes: [{
+                                                    stacked: true // this also..
+                                                }]
+                                            }
+                                        }
+                                        });
+                                </script>
+                            </div>
+                        </div>
                         
                         <!-- FY23 -->
                         <div role="FY23-chart" aria-label="FY23 effort distribution">
