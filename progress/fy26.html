@@ -1,5 +1,10 @@
 <!doctype html>
 <html lang="en">
+
+<!--    1. edit this file
+        2. save as index.html (override previous)
+        3. insert "fy-past.html" before each daily push -->
+
 <!-- command-k and command-7 to collapse all cards -->
     <head>
         <!-- Required meta tags -->
@@ -23,367 +28,134 @@
         <!-- Chart.js -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-        <title>FY25 / Vittorio / SEAS / Progress Report</title>
+        <title>FY26 / Vittorio / SEAS / Progress Report</title>
 
     </head>
-
 
     <body>
         <div class="container">
 
-            <a href="#main_content" class="skip-main">
-                Skip to main content
-            </a>
-            <span class="navbar-brand" href="#">
-                <img src="https://www.seas.harvard.edu/sites/default/files/images/About%20SEAS/image_large.png" width="15" height="18" alt="" class="mr-2">
-                FY26 / Vittorio / SEAS / Progress Report
-            </span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" hidden>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="nav justify-content-end">
-                <div class="dropdown navbar-text muted mr-4">
-                    <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
-                        FY History
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="fy26.html">FY26</a>
-                        <a class="dropdown-item" href="fy25.html">FY25</a>
-                        <a class="dropdown-item" href="fy24.html">FY24</a>
-                        <a class="dropdown-item" href="fy23.html">FY23</a>
-                        <a class="dropdown-item" href="fy22.html">FY22</a>
-                        <a class="dropdown-item" href="fy21.html">FY21</a>
-                        <a class="dropdown-item" href="fy20.html">FY20</a>
-                        <a class="dropdown-item" href="fy19.html">FY19</a>
-                    </div>
-                </div>
-                <span class="navbar-text muted">
-                    <a href="#legend" class="mr-4">
-                        Legend
-                    </a>
-                    <!-- ##date -->
-                    Updated on October 1, 2025
+                <a href="#main_content" class="skip-main">
+                    Skip to main content
+                </a>
+                <span class="navbar-brand" href="#">
+                    <img src="https://www.seas.harvard.edu/sites/default/files/images/About%20SEAS/image_large.png" width="15" height="18" alt="" class="mr-2">
+                    FY26 / Vittorio / SEAS / Progress Report
                 </span>
-            </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="" id="navbarText" style="float: right; padding: .5em 0;">
+                    <div class="dropdown navbar-text muted mr-4">
+                        <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
+                            FY History
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="index.html">FY26</a>
+                            <a class="dropdown-item" href="fy25.html">FY25</a>
+                            <a class="dropdown-item" href="fy24.html">FY24</a>
+                            <a class="dropdown-item" href="fy23.html">FY23</a>
+                            <a class="dropdown-item" href="fy22.html">FY22</a>
+                            <a class="dropdown-item" href="fy20.html">FY20</a>
+                            <a class="dropdown-item" href="fy19.html">FY19</a>
+                        </div>
+                        </div>
+                        <span class="navbar-text muted">
+                        <a href="#legend" class="mr-4">
+                            Legend
+                        </a>
+                        Updated on September 30, 2025
+                    </span>
+                </div>
+            </nav>
 
             <main>
                 <div class="row mt-5">
 
-    <!-- Pending -->
-                <div role="pending" aria-label="Pending projects" class="col mx-1 bg-light">
-
-                        <h2 style="display: block;">
-                            Pending
-                        </h2>
-
-                        <!-- SEAS Computing articles Q1FY26 -->
-                        <div class="card card-label_success">
-                            <div class="card-body card-header-margin">
-                                <div class="card-title">
-                                    <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q1fy26-seasComputingArticles" title="114 and SEC AV directory panel plans and progress">
-                                        <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                                        <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                        <h3>SEAS Computing articles</h3>
-                                        <span class="sr-only">view plans and progress below</span>
-                                    </button>
-
-                                    <!-- Project description -->
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i>Including authoring content to promote UX and accessibility best practice for the SEAS Community and beyond.</i>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            Advertise articles on SEAS newsletter 
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- plans and progress -->
-                                <div id="q1fy26-seasComputingArticles">
-                                    <h4 class="sr-only">SEAS Computing articles and progress</h4>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- - Q1FY26 total time -->
-                                            Q1FY26 total time - 0 hours
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://projects.iq.harvard.edu/seas-computing" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                                OpenScholar Office of Computing website
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://sites.harvard.edu/seas-computing/" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                                SEAS Computing CampusPress blog
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://www.seas.harvard.edu/office-computing/web-services" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                                SEAS Computing website
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.campuspress.com/en" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                                CampusPress Support and Knowledgebase
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Study Plan Q2FY24 -->
-                        <div class="card card-label_primary" hidden>
-                            <div class="card-body card-header-margin">
-                                <div class="card-title">
-                                    <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy24-StudyPlan" title="Study Plan plans and progress">
-                                        <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
-                                        <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                        <h3>Study Plan</h3>
-                                        <span class="sr-only">view plans and progress below</span>
-                                    </button>
-
-                                    <!-- Project description -->
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i>Redesign and implementation of current Plan of Study tool.</i>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin" hidden>
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            Weekly meetings
-                                            <!-- 0 -->
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- plans and progress -->
-                                <div id="q2fy24-StudyPlan">
-                                    <h4 class="sr-only">Study Plan Q2FY24 plans and progress</h4>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- - Q2FY24 total time -->
-                                            Q2FY24 total time - 0 hours
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin bg-light" hidden>
-                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                            Weekly meetings
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href=" https://studyplan-qa.seas.harvard.edu/" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Private website</span></i>
-                                                Plan of Study Tool
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://seas-computing.github.io/study_plan-ux/" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Private website</span></i>
-                                                Plan of Study Tool User Experience
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.google.com/spreadsheets/d/1Eij62hMG60FDfyVavQBOWJoNmPwU9xpC7sJCSSku254/edit#gid=1041612594" target="_blank">
-                                                <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Sheets document</span></i>
-                                                Plan of Study Tool use cases
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.google.com/drawings/d/1vGvUwbpWzxb5NGbkOJx-0b7yMNKzHoqd5nCxhvfIk2M/edit?usp=sharing" target="_blank">
-                                                <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Sheets document</span></i>
-                                                User flows - student
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.google.com/drawings/d/1pTPg7IrHOBUHBjZEw2pWZgBma73wUwqTXub4OstOKVo/edit?usp=sharing" target="_blank">
-                                                <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Sheets document</span></i>
-                                                User flows - administrator
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.google.com/drawings/d/1ftaa8_u23lV3H5CJQ54AwSPxYL_HJ0ZbE2l-wC_7G9o/edit?usp=sharing" target="_blank">
-                                                <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Sheets document</span></i>
-                                                Wireframes - student
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://docs.google.com/drawings/d/1w3cRATxWVn-VHiSGFZI6-o5cX0ZRfhWavydGTmy84P0/edit?usp=sharing" target="_blank">
-                                                <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Sheets document</span></i>
-                                                Wireframes - administrator
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- SEAS OpenScholar Theme Q2FY24 -->
-                        <div class="card card-label_success" hidden>
-                            <div class="card-body card-header-margin">
-                                <div class="card-title">
-                                    <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy24-OpenScholarTheme" title="SEAS OpenScholar Theme plans and progress">
-                                        <i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY24 Current fiscal year goals and priorities</span></i></sup>
-                                        <h3>SEAS OpenScholar Theme</h3>
-                                        <span class="sr-only">view plans and progress below</span>
-                                    </button>
-
-                                    <!-- Project description -->
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i>Official OpenScholar SEAS templates</i>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            OpenScholar SEAS templates 
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- plans and progress -->
-                                <div id="q2fy24-OpenScholarTheme">
-                                    <h4 class="sr-only">SEAS OpenScholar Theme Q2FY24 plans and progress</h4>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- - Q2FY24 total time -->
-                                            Q2FY24 total time - .5 hours
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            Collaborating with Eliza Grinnell to draft SEAS templates 
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted">
-                                            <a href="https://github.com/openscholar/starterkit" target="_blank">
-                                                <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
-                                                OpenScholar theme starter kit
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- OpenScholar onboarding Q2FY24 -->
-                        <div class="card card-label_success" hidden>
-                            <div class="card-body card-header-margin">
-                                <div class="card-title">
-                                    <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy24-OpenScholarOnboarding" title="OpenScholar onboarding plans and progress">
-                                        <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                                        <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                        <h3>OpenScholar onboarding</h3>
-                                        <span class="sr-only">view plans and progress below</span>
-                                    </button>
-
-                                    <!-- Project description -->
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i>OpenScholar onboarding guidelines for any new OpenScholar account</i>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            Add links once the new SEAS website is released
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- plans and progress -->
-                                <div id="q2fy24-OpenScholarOnboarding">
-                                    <h4 class="sr-only">OpenScholar onboarding Q2FY24 plans and progress</h4>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- - Q2FY24 total time -->
-                                            Q2FY24 total time - 0 hours
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted" hidden>
-                                            <a href="https://crcs.seas.harvard.edu" target="_blank">
-                                                <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                                CRCS website
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- SEAS Accessibility Q2FY24 -->
-                        <div class="card card-label_success" hidden>
-                            <div class="card-body card-header-margin">
-                                <div class="card-title">
-                                    <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy23-Accessibility" title="Accessibility plans and progress">
-                                        <i class="fas fa-wheelchair fa-padding"><span class="sr-only">SEAS Accessibility reviews and events</span></i>
-                                        <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                        <h3>SEAS Accessibility</h3>
-                                        <span class="sr-only">view plans and progress below</span>
-                                    </button>
-
-                                    <!-- Project description -->
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin">
-                                            <i>Assisting SEAS Community with usability and accessibility issues.</i>
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            <a href="https://docs.google.com/document/d/1gEaYSOfFhGMxGbL4jnMFuXmHnlHJHdsH5sNKOl8XUG0/edit?usp=sharing" target="_blank">
-                                                Adding digital accessibility information to SEAS website
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- plans and progress -->
-                                <div id="q2fy23-Accessibility">
-                                    <h4 class="sr-only">Accessibility Q2FY24 plans and progress</h4>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- - Q2FY24 total time -->
-                                            Q2FY24 total time 0 hours
-                                        </li>
-                                        <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                            Adding link to Digital Accessibility Policy on footer of SEAS non-OpenScholar websites
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div><!-- / Planned -->
-
-    <!-- In progress -->
-                    <div role="inProgress" aria-label="Projects in prog ress" class="col mx-1 bg-light">
+    <!-- Next fiscal years -->
+                    <div role="pending" aria-label="Pending projects" class="col-4 col-margin">
                     
                         <h2>
-                            <a name="main_content" id="main_content" tabindex="-1">In progress</a>
+                            <a name="main_content" id="main_content" tabindex="-1">Next fiscal years</a>
                         </h2>
 
-                        <!-- Daily alert-->
-                        <div class="alert alert-info" role="alert">
-                            Working remotely until further notice
-                        </div><!-- / Daily alert-->
+                    </div><!-- / Next fiscal years -->
 
-                        <!-- Chart Q2FY26 -->
+    <!-- Current fiscal year -->
+                    <div role="inProgress" aria-label="Projects in progress" class="col-4 col-margin">
+                    
+                        <h2>
+                            <a name="main_content" id="main_content" tabindex="-1">FY26</a>
+                        </h2>
+                        
+                        <!-- FY26 -->
+                        <div role="FY26-chart" aria-label="FY26 effort distribution">
+                                    <div class="card mb-4 p-2">
+                                        <h6>
+                                            FY26 effort distribution
+                                        </h6>
+                                        <canvas id="fy26" style="display: block;" height="300" width="308"></canvas>
+                                        <script type="text/javascript">
+                                            var chart = new Chart(fy26, {
+                                                type: 'bar',
+                                                data: {
+                                                    labels: ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26'], // responsible for how many bars are gonna show on the chart
+                                                    // create 12 datasets, since we have 12 items
+                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                    // put 0, if there is no data for the particular bar
+                                                    datasets: [{
+                                                        label: 'Academic products',
+                                                        data: [61, 0, 0, 0, 0],
+                                                        backgroundColor: 'rgb(165, 28, 48)'
+                                                    }, {
+                                                        label: 'Web publishing',
+                                                        data: [286, 0, 0, 0, 0],
+                                                        backgroundColor: 'rgb(78, 136, 199)'
+                                                   }, {
+                                                        label: 'SEAS accessibility',
+                                                        data: [15.5, 0, 0, 0, 0],
+                                                        backgroundColor: 'rgb(0, 170, 10)'
+                                                    }, {
+                                                        label: 'Professional growth',
+                                                        data: [6, 0, 0, 0, 0],
+                                                        backgroundColor: 'rgb(253, 126, 20)'
+                                                    }, {
+                                                        label: 'Misc.',
+                                                        data: [29.5, 0, 0, 0, 0],
+                                                        backgroundColor: 'rgb(148, 148, 148)'
+                                                    }]
+                                                },
+                                                options: {
+                                                    responsive: false,
+                                                    legend: {
+                                                        position: 'bottom' // place legend on the right side of chart
+                                                    },
+                                                    scales: {
+                                                        xAxes: [{
+                                                            stacked: true // this should be set to make the bars stacked
+                                                        }],
+                                                        yAxes: [{
+                                                            stacked: true // this also..
+                                                        }]
+                                                    }
+                                                }
+                                                });
+                                        </script>
+                                    </div>
+                        </div>
+
+                        <!-- Chart Q1FY26 -->
                         <div class="card mb-4 p-2">
                             <h3>
-                                Q2FY26 effort distribution
+                                Q1FY26 effort distribution
                             </h3>
                             <!-- This time totals include items moved to Done column -->
-                            <p class="text-muted text-center">October - December</p>
-                            <canvas id="Q2FY26" aria-label="Q2FY26 effort distribution chart"  class="chartjs mb-3"></canvas>
-                            <!-- <canvas id="Q2FY26" class="chartjs mb-3" style="width: 100% !important;" aria-label="Q2FY26 effort distribution chart"></canvas> -->
+                            <p class="text-muted text-center">July - September</p>
+                            <canvas id="Q1FY26" aria-label="Q1FY26 effort distribution chart"  class="chartjs mb-3"></canvas>
+                            <!-- <canvas id="Q1FY26" class="chartjs mb-3" style="width: 100% !important;" aria-label="Q1FY26 effort distribution chart"></canvas> -->
                             <script>
-                            new Chart(document.getElementById("Q2FY26"), 
+                            new Chart(document.getElementById("Q1FY26"), 
                                 { 
                                     "type": "doughnut", 
                                     "data": 
@@ -395,7 +167,7 @@
                                         "Misc."], 
                                         "datasets": 
                                             [{ "label": "Q1FY26 effort distribution", 
-                                                "data": [0, 0, 0, 0, 0],
+                                                "data": [61.5, 288, 15.5, 6, 29],
                                                 "backgroundColor": 
                                                     ["rgb(165, 28, 48)",
                                                     "rgb(78, 136, 199)",
@@ -414,45 +186,59 @@
                                 <strong>Misc.</strong>: staff standups, 1:1 catch-ups</p>
                         </div>
 
-                        <!-- Academic products Q2FY26 -->
+                        <!-- Academic products Q1FY26 -->
                         <div class="card card-label_primary">
                             <div class="card-body card-header-margin">
                                 <div class="card-title">
                                     <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy26-academicProducts" title="Academic products plans and progress">
+                                    <button data-expandable="q1fy26-academicProducts" title="Academic products plans and progress">
                                         <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
-                                        <h3>Q2FY26 Academic products</h3>
+                                        <h3>Q1FY26 Academic products</h3>
                                         <span class="sr-only">view plans and progress below</span>
                                     </button>
                                     <!-- Project description -->
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin">
                                             <a href="https://drive.google.com/drive/folders/1lgM8YuOc9AjRd6DOHUcA6HSMCHem1g99?usp=drive_link" target="_blank"
-                                            title="0 hours">
+                                            title="17 hours">
                                                 <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                                 Study Plan
-                                                
+                                                <!-- 20250703 Dev standup, ticket review - 1 hour -->
+                                                <!-- Working with Amira on wireframes - 15 hour -->
+                                                <!-- 20250917 meeting with my.harvard team - 1 hour -->
                                             </a>
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <a href="https://github.huit.harvard.edu/pages/SEAS/phd-database-ux/index.html" target="_blank"
-                                            title="0 hours">
+                                            title="34 hours">
                                                 <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
                                                 PHD database 
-                                                
+                                                <!-- Draft 5 of wireframes - 1.5 hour -->
+                                                <!-- Draft 6 of wireframes - 3.5 hour -->
+                                                <!-- Draft 6.2 of wireframes - 1 hour -->
+                                                <!-- 20250807 Users meeting and notes - 2.5 hour -->
+                                                <!-- Draft 7.1 updates and commit - 2 hours -->
+                                                <!-- Draft 7.2 updates and commit - 4.5 hours -->
+                                                <!-- Document John Girash's report examples - .5 hour -->
+                                                <!-- Draft 7.3 updates and commit - 4 hours -->
+                                                <!-- Wiki article feedback for Amalya - .5 hour -->
+                                                <!-- Draft 7.4 wireframes updates amd user flow, commits, presentations and dicussions - 3.5 hours -->
+                                                <!-- Draft 7.5 wireframes updates amd user flow, commits, presentations and dicussions - 4 hours -->
+                                                <!-- Draft 8 wireframes updates amd user flow, commits, presentations and dicussions - 2.5 hours -->
+                                                <!-- Mark One color accessibility - 5.5 hours -->
                                             </a>
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <a href="https://seas-computing.github.io/mark-one/index.html#/Theme?id=globalcss"
-                                                title="0 hours" target="_blank">
+                                                title="4 hours" target="_blank">
                                                 <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
                                                 Mark One color accessibility
-                                                
+                                                <!-- Working with Amalya to address the digital accessibility of Mark One colors - 4 hours -->
                                             </a>
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <a href="https://seas-computing.github.io/course-planner_ux/guidelines/guidelines-overview.html"
-                                                title="0 hours" target="_blank">
+                                                title="1 hours" target="_blank">
                                                 <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
                                                 Mark One library of visual components
                                             </a>
@@ -460,13 +246,13 @@
                                     </ul>
                                 </div>
                                 <!-- plans and progress -->
-                                <div id="q2fy26-academicProducts">
+                                <div id="q1fy26-academicProducts">
                                     <h4 class="sr-only">Academic products Q4FY25 plans and progress</h4>
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- ##a Academic products Q2FY26 - Q2FY26 total time -->
-                                            Q2FY26 total time - 0 hours <!-- Including standups, sprint planning, assistance, etc. -->
+                                            <!-- ##a Academic products Q1FY26 - Q1FY26 total time -->
+                                            Q1FY26 total time - 61.5 hours <!-- Including standups, sprint planning, assistance, etc. -->
                                         </li>
                                         <li class="list-group-item list-group-item-margin text-muted bg-light" >
                                             <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
@@ -477,15 +263,15 @@
                             </div>
                         </div>
 
-                        <!-- Web publishing Q2FY26 -->
+                        <!-- Web publishing Q1FY26 -->
                         <div class="card card-label_success" id="web">   
                             <div class="card-body card-header-margin">
                                 <div class="card-title">
                                     <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy26-RemoteAssistance" title="Web publishing plans and progress">
+                                    <button data-expandable="q1fy26-RemoteAssistance" title="Web publishing plans and progress">
                                         <i class="fas fa-chalkboard-teacher fa-padding"><span class="sr-only">Advising and training to faculty or staff</span></i>
                                         <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
-                                        <h3>Q2FY26 Web publishing</h3>
+                                        <h3>Q1FY26 Web publishing</h3>
                                         <span class="sr-only">view plans and progress below</span>
                                     </button>
 
@@ -494,25 +280,54 @@
                                         <li class="list-group-item list-group-item-margin">
                                             <i>Assisting SEAS Community with usability and accessibility issues.</i>
                                         </li>
-                                        <!-- ##w Web publishing Q2FY26 -->
+                                        <!-- ##w Web publishing Q1FY26 -->
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                            <a title="0 hours">
+                                            <a title="247.5 hours">
                                                 OpenScholar and CampusPress web publishing support to
-                                                
+                                                Bertoldi, <!-- Support for website at https://sites.harvard.edu/bertoldi/ - 6 hours -->
+                                                Bettino, <!-- Tech.seas website content download - 3 hours -->
+                                                Brooks and Wei, <!-- VLSIarch OpenScholar website retirement - .5 hour -->
+                                                Buzzutto, <!-- Credentials website - .5 hour -->
+                                                Embedded Ethics, <!-- New module page - 26 hour -->
+                                                Jacob, <!-- ACMG website assistance - 2 hour -->
+                                                Juncheng, <!-- DNS and GitHub website - 2 hour -->
+                                                Keely, <!-- Bionics Lab website - 3.5 hour -->
+                                                King, <!-- EconCS website - 6 hours -->
+                                                Kiyoul, <!-- OpenScholar website to GitHub - 4 hour -->
+                                                Lewis, <!-- Lewis Group website migration - 3.5 hour -->
+                                                Li, <!-- New APEX-AI website and Scholar website download - 5 hour -->
+                                                Lu, <!-- Unhappy with Drupal, CampusPress demo - 28.5 hours -->
+                                                Mickens, <!-- New CampusPress website - .5 hour -->
+                                                Mickley, <!-- CampusPress website assistance - 1 hour -->
+                                                Needleman, <!-- Neddleman Lab CamusPress website - 21 hour -->
+                                                Parker, <!-- DBG website - .5 hour -->
+                                                Pendergrass, <!-- Cheereio DNS redirect - 4.5 hour -->
+                                                Petros, <!-- OpenScholar content migration to https://sites.harvard.edu/cse-lab/ - 54 hours -->
+                                                Reddi, <!-- New SEAS DNS for GitHub.io website - .5 hout -->
+                                                Smith, <!-- Suzanne Smith's Scholar website - 1 hour -->
+                                                Sorensen, <!-- Sorensen group website - 10.5 hours -->
+                                                Stanhope, <!-- ARP Drupal website DNS reditect and launch - .5 hour -->
+                                                Sudan, <!-- Website assistance - 1.5 hour -->
+                                                Tambe, <!-- Teamcore website assistance - 8 hour -->
+                                                Walsh, <!-- Biodesign Drupal website assistance - .5 hour -->
+                                                Weber, <!-- Support for website at https://sites.harvard.edu/weber-group/ - 2 hour -->
+                                                Weitz, <!-- WeitzCampusPress website migration - 36 hours -->
+                                                Zickler, <!-- Retrieval of Library hosted PDF - 1 hour -->
                                             </a>
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <a href="https://docs.google.com/spreadsheets/d/1gd71CLCPGwT8yFqHELmXF92MTysngyzFdQAi3K9kGQs/edit?usp=sharing" target="_blank" 
-                                            title="0 hours">
+                                            title="43 hours">
                                                 <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                                 Post-OpenScholar planning 
-                                                <!-- "SEAS and HWP Weekly Check-in" meetings - 0 hours -->
-                                                <!-- "SEAS and HWP Weekly Check-in" progress reports - 0 hours -->
-                                                <!-- HWP Office Hours - 0 hour -->
-                                                <!-- HWP Working Group. meeting and follow up - 0 hours -->
-                                                <!-- Follow up with website owners - 0 hour -->
-                                                <!-- Migration discussions on weekly check in with Rebecca - 0 hour -->
+                                                <!-- "SEAS and HWP Weekly Check-in" meetings - 8 hours -->
+                                                <!-- "SEAS and HWP Weekly Check-in" progress reports - 14.5 hours -->
+                                                <!-- HWP Office Hours - 6 hour -->
+                                                <!-- HWP Working Group. meeting and follow up - 4.5 hours -->
+                                                <!-- Follow up with website owners - 3 hour -->
+                                                <!-- Migration discussions on weekly check in with Rebecca - 6.5 hour -->
+                                                <!-- Flex Theme discussions - 1.5 hour -->
                                             </a>
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
@@ -524,27 +339,27 @@
                                     </ul>
                                 </div>
                                 <!-- plans and progress -->
-                                <div id="q2fy26-RemoteAssistance">
-                                    <h4 class="sr-only">Web publishing assistance Q2FY26 plans and progress</h4>
+                                <div id="q1fy26-RemoteAssistance">
+                                    <h4 class="sr-only">Web publishing assistance Q1FY26 plans and progress</h4>
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
-                                            <!-- ##w Web publishing Q2FY26 - Q2FY26 total time minus projects moved to Done column -->
-                                            Q2FY26 total time - 0 hours <span hidden>(done: 0)</span>
+                                            <!-- ##w Web publishing Q1FY26 - Q1FY26 total time minus projects moved to Done column -->
+                                            Q1FY26 total time - 288 hours <span hidden>(done: 0)</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- SEAS Accessibility Q2FY26 -->
+                        <!-- SEAS Accessibility Q1FY26 -->
                         <div class="card card-label_primary">
                             <div class="card-body card-header-margin">
                                 <div class="card-title">
                                     <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy26-seasAccessibility" title="seasAccessibility plans and progress">
+                                    <button data-expandable="q1fy26-seasAccessibility" title="seasAccessibility plans and progress">
                                         <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility projects</span></i>
-                                        <h3>Q2FY26 SEAS Accessibility</h3>
+                                        <h3>Q1FY26 SEAS Accessibility</h3>
                                         <span class="sr-only">view plans and progress below</span>
                                     </button>
 
@@ -553,13 +368,13 @@
                                     </ul>
                                 </div>
                                 <!-- plans and progress -->
-                                <div id="q2fy26-seasAccessibility">
-                                    <h4 class="sr-only">SEAS Accessibility Q2FY26 plans and progress</h4>
+                                <div id="q1fy26-seasAccessibility">
+                                    <h4 class="sr-only">SEAS Accessibility Q1FY26 plans and progress</h4>
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- ##x SEAS Accessibility Q2FY26 - Q2FY26 total time -->
-                                            Q2FY26 total time - 0 hours <!-- Including standups, sprint planning, assistance, etc. -->
+                                            <!-- ##x SEAS Accessibility Q1FY26 - Q1FY26 total time -->
+                                            Q1FY26 total time - 7.5 hours <!-- Including standups, sprint planning, assistance, etc. -->
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Web site</span></i>
@@ -577,7 +392,8 @@
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                             <a href="https://hu.sharepoint.com/:x:/r/sites/hrci-SchoolSecurityOfficers/Shared%20Documents/Schools%20and%20Units/SEAS/Annual%20Self-Assessment/2025/SEAS%20Annual%20Self-Assessment%20-%202025%20-%20TO%20COMPLETE.xlsx?d=w01126f3d78694ce2ace9493e0a991777&csf=1&web=1&e=iXIopT" target="_blank">
                                             <i>SEAS Accessibility implementation plans</i>
-                                            
+                                            <!-- 2025 Self assessment - 2 hours -->
+                                            <!-- Annual ISDP/DAS Assessment - 1.5 -->
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of interest</span></i>
@@ -588,16 +404,17 @@
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of interest</span></i>
                                             Digital Accessibility Privacy and Security (DAPS) biweekly meetings
-                                            
+                                            <!-- Aug. 26 meeting - 1 hour -->
+                                            <!-- Sep. 9 meeting - 1 hour -->
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <i>SEAS SiteImprove account</i> 
-                                            <!-- Updates from DAS - 0 hour -->
+                                            <!-- Updates from DAS - 1.5 our -->
                                         </li>
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                             <a href="https://docs.google.com/document/d/16MJBoCdwuozSw-1fx6f7aOQS1tB2c9XsLO0Dxbfy6bM/edit?usp=sharing" 
-                                            title="0 hours">
+                                            title="1 hours">
                                                 SEC signage
                                             </a>
                                         </li>
@@ -611,14 +428,15 @@
                                         <li class="list-group-item list-group-item-margin">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                             <a href="https://seas.harvard.edu" 
-                                            title="0 hours">
+                                            title="3.5 hours">
                                                 SEAS website SiteImprove findings
                                             </a>
                                         </li>
-                                        <li class="list-group-item list-group-item-margin" hidden>
+                                        <li class="list-group-item list-group-item-margin">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
                                             Digital accessibility reviews to
-                                                
+                                                Kiyoul, <!-- https://kiyoul.seas.harvard.edu/ GitHub website - 1 hour -->
+                                                Junchong <!-- https://junchengyang.com/ GitHub website - 1 hour -->
                                         </li>
                                     </ul>
                                 </div>
@@ -626,15 +444,15 @@
 
                         </div>
 
-                        <!-- Professional Development Q2FY26 -->
+                        <!-- Professional Development Q1FY26 -->
                         <div class="card card-label_secondary">
                             <div class="card-body card-header-margin">
                                 <div class="card-title">
                                     <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy26-ProfessionalDevelopment" title="Professional Development plans and progress">
+                                    <button data-expandable="q1fy26-ProfessionalDevelopment" title="Professional Development plans and progress">
                                         <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
                                         <sup><i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY25 goals and priorities</span></i></sup>
-                                        <h3>Q2FY26 Professional Development</h3>
+                                        <h3>Q1FY26 Professional Development</h3>
                                         <span class="sr-only">view plans and progress below</span>
                                     </button>
 
@@ -665,18 +483,18 @@
                                     </ul>
                                 </div>
                                 <!-- plans and progress -->
-                                <div id="q2fy26-ProfessionalDevelopment">
-                                    <h4 class="sr-only">Professional Development Q2FY26 plans and progress</h4>
+                                <div id="q1fy26-ProfessionalDevelopment">
+                                    <h4 class="sr-only">Professional Development Q1FY26 plans and progress</h4>
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                            <!-- ##p Professional Development Q2FY26 total time -->
-                                            Q2FY26 total time - 0 hours
+                                            <!-- ##p Professional Development Q1FY26 total time -->
+                                            Q1FY26 total time - 1 hours
                                         </li>
 
                                         <section id="Webinars">
                                             <li class="list-group-item list-group-item-margin bg-light">
-                                                <h4>Q2FY26 Events and Webinars</h4>
+                                                <h4>Q1FY26 Events and Webinars</h4>
                                             </li>
                                             <li class="list-group-item list-group-item-margin">
                                                 <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled event</span></i>
@@ -845,12 +663,12 @@
                             </div>
                         </div>
 
-                        <!-- Diversity Inclusion Belonging 2FY26 -->
+                        <!-- Diversity Inclusion Belonging Q1FY26 -->
                         <div class="card card-label_warning">
                             <div class="card-body card-header-margin">
                                 <div class="card-title">
                                     <!-- Title and expand/collapse button -->
-                                    <button data-expandable="q2fy26-DIB" title="Diversity Inclusion Belonging plans and progress">
+                                    <button data-expandable="q1fy26-DIB" title="Diversity Inclusion Belonging plans and progress">
                                         <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
                                         <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal year's goals and priorities</span></i></sup>
                                         <h3>Diversity Inclusion Belonging</h3>
@@ -870,18 +688,18 @@
                                     </ul>
                                 </div>
                                 <!-- plans and progress -->
-                                <div id="q2fy26-DIB">
+                                <div id="q1fy26-DIB">
                                     <h4 class="sr-only">Diversity Inclusion Belonging Q3FY24 plans and progress</h4>
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
-                                            <!-- ##d Diversity Inclusion Belonging - 2FY26 total time -->
-                                            Q2FY26 total time - 0 hours
+                                            <!-- ##d Diversity Inclusion Belonging - Q1FY26 total time -->
+                                            Q1FY26 total time - 0 hours
                                         </li>
     <!-- ###### Training ##### -->
-                                        <section id="dib_Q2FY26_training" hidden>
+                                        <section id="dib_Q4FY25_training" hidden>
                                             <li class="list-group-item list-group-item-margin bg-light">
-                                                <h6>Q2FY26 Training</h6>
+                                                <h6>Q4FY25 Training</h6>
                                             </li>
                                                 
                                             <!-- title -->
@@ -976,9 +794,9 @@
                                         </section>
             
     <!-- ###### Events ##### -->
-                                        <section id="dib_Q2FY26_events_attended">
+                                        <section id="dib_Q1FY25_events_attended">
                                             <li class="list-group-item list-group-item-margin bg-light" >
-                                                <h6>Q2FY26 Events</h6>
+                                                <h6>Q1FY26 Events</h6>
                                             </li>
 
                                             <!-- title (organization) -->
@@ -1004,16 +822,16 @@
                                             </li>
                                         </section>
                                         
-                                        <section id="dib_Q2FY26_events_to_attend">
+                                        <section id="dib_Q3FY23_events_to_attend">
                                         </section>
                                         
     <!-- ###### Awareness ##### -->
                                         <li class="list-group-item list-group-item-margin bg-light" hidden>
-                                            <h6>Q2FY26 Awareness</h6>
+                                            <h6>Q1FY25 Awareness</h6>
                                             <span class="text-muted">(Readings during personal time)</span>
                                         </li>
             
-                                        <section id="dib_Q2FY26_readAndCommented">
+                                        <section id="dib_Q1FY26_readAndCommented">
 
                                             <!-- Brave Community: teaching and learning about racism in college -->
                                             <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
@@ -1100,7 +918,7 @@
                                             
                                         </section>
             
-                                        <section id="dib_Q2FY26_toRead" hidden>
+                                        <section id="dib_Q1FY25_toRead" hidden>
             
                                             <!-- Turning a light on our implicit biases (The Harvard Gazette) -->
                                             <li class="list-group-item list-group-item-margin bg-light" hidden>
@@ -1247,7 +1065,7 @@
                                             </li>
                                         </section>
             
-                                        <section id="dib_Q2FY26_resources" hidden>
+                                        <section id="dib_Q4FY24_resources" hidden>
                                             <li class="list-group-item list-group-item-margin bg-light" hidden>
                                                 <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
                                                 <a href="https://guides.library.harvard.edu/BlackCovid/workshops" target="_blank">
@@ -1317,76 +1135,14 @@
 
                         </div>
 
-                    </div>
-    <!-- / In progress -->
 
-    <!-- Done -->
-                    <div role="Completed" aria-label="Completed projects" class="col mx-1 bg-light">
-                        <h2 style="display: block;">
-                            Done
+                    </div><!-- / Current fiscal year -->
+
+    <!-- Past fiscal years -->
+                    <div role="Completed" aria-label="Completed projects" class="col-4 col-margin">
+                        <h2>
+                            Past fiscal years
                         </h2>
-                        
-                        <!-- FY26 -->
-                        <div role="FY26" aria-label="FY26 effort distribution">
-                            <h3><a href ="fy26.html" class="badge badge-primary" title="Projects completed in FY26">FY26</a></h3>
-
-                            <div role="FY26" aria-label="Projects completed in FY26">
-                                <div role="FY26-chart" aria-label="FY26 effort distribution">
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY26 effort distribution
-                                        </h6>
-                                        <canvas id="fy26" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy26, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Academic products',
-                                                        data: [61.5, 0, 0, 0, 0],
-                                                        backgroundColor: 'rgb(165, 28, 48)'
-                                                    }, {
-                                                        label: 'Web publishing',
-                                                        data: [288, 0, 0, 0, 0],
-                                                        backgroundColor: 'rgb(78, 136, 199)'
-                                                   }, {
-                                                        label: 'SEAS accessibility',
-                                                        data: [15.5, 0, 0, 0, 0],
-                                                        backgroundColor: 'rgb(0, 170, 10)'
-                                                    }, {
-                                                        label: 'Professional growth',
-                                                        data: [6, 0, 0, 0, 0],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'Misc.',
-                                                        data: [29.5, 0, 0, 0, 0],
-                                                        backgroundColor: 'rgb(148, 148, 148)'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         
                         <!-- FY25 -->
                         <div role="FY25" aria-label="FY25 effort distribution">
@@ -1451,13 +1207,12 @@
                         </div>
                        
                         <!-- FY24 -->
-                        <div role="FY24-chart" aria-label="FY24 effort distribution">
-                            <h3><a href ="fy24.html" class="badge badge-primary" title="Projects completed in FY21">FY24</a></h3>
+                        <div role="FY24-chart" aria-label="FY21 effort distribution">
+                            <h3><a href ="fy24.html" class="badge badge-primary" title="Projects completed in FY24">FY24</a></h3>
                             <div class="card mb-4 p-2">
                                 <h6>
                                     FY24 effort distribution
                                 </h6>
-                                
                                 <canvas id="fy24" style="display: block;" height="300" width="308"></canvas>
                                 <script type="text/javascript">
                                     var chart = new Chart(fy24, {
@@ -1475,7 +1230,7 @@
                                                 label: 'Web publishing',
                                                 data: [143, 162, 198, 62],
                                                 backgroundColor: 'rgb(78, 136, 199)'
-                                           }, {
+                                            }, {
                                                 label: 'SEAS accessibility',
                                                 data: [10.5, 9, 9.5, 10],
                                                 backgroundColor: 'rgb(0, 170, 10)'
@@ -1507,181 +1262,166 @@
                                 </script>
                             </div>
                         </div>
-
+                       
                         <!-- FY23 -->
-                        <div role="FY23" aria-label="FY23 effort distribution">
-
-                            <div role="FY23" aria-label="Projects completed in FY23">
-                                <div role="FY23-chart" aria-label="FY23 effort distribution">
-                                    <h3><a href ="fy23.html" class="badge badge-primary" title="Projects completed in FY23">FY23</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY23 effort distribution
-                                        </h6>
-                                        <canvas id="fy23" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy23, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY23', 'Q2 FY23', 'Q3 FY23', 'Q4 FY23'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [23.75, 36.5, 32, 18.5],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'Remote assistance',
-                                                        data: [45, 5, 16, 30],
-                                                        backgroundColor: '#4e88c7'
-                                                   }, {
-                                                        label: 'Misc.',
-                                                        data: [296.75, 265, 313, 299.5],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
+                        <div role="FY21-chart" aria-label="FY21 effort distribution">
+                            <h3><a href ="fy23.html" class="badge badge-primary" title="Projects completed in FY21">FY23</a></h3>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY23 effort distribution
+                                </h6>
+                                <canvas id="fy23" style="display: block;" height="300" width="308"></canvas>
+                                <script type="text/javascript">
+                                    var chart = new Chart(fy23, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Q1 FY23', 'Q2 FY23', 'Q3 FY23', 'Q4 FY23'], // responsible for how many bars are gonna show on the chart
+                                            // create 12 datasets, since we have 12 items
+                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                            // put 0, if there is no data for the particular bar
+                                            datasets: [{
+                                                label: 'Course Planner',
+                                                data: [23.75, 36.5, 32, 18.5],
+                                                backgroundColor: '#A51C30'
+                                            }, {
+                                                label: 'Remote assistance',
+                                                data: [45, 5, 16, 30],
+                                                backgroundColor: '#4e88c7'
+                                           }, {
+                                                label: 'Misc.',
+                                                data: [296.75, 265, 313, 299.5],
+                                                backgroundColor: '#00aaad'
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: false,
+                                            legend: {
+                                                position: 'bottom' // place legend on the right side of chart
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    stacked: true // this should be set to make the bars stacked
+                                                }],
+                                                yAxes: [{
+                                                    stacked: true // this also..
+                                                }]
+                                            }
+                                        }
+                                        });
+                                </script>
                             </div>
                         </div>
-
+                       
                         <!-- FY22 -->
-                        <div role="FY22" aria-label="FY22 effort distribution">
-
-                            <div role="FY22" aria-label="Projects completed in FY22">
-                                <div role="FY22-chart" aria-label="FY22 effort distribution">
-                                    <h3><a href ="fy22.html" class="badge badge-primary" title="Projects completed in FY22">FY22</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY22 effort distribution
-                                        </h6>
-                                        <canvas id="fy22" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy22, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY22', 'Q2 FY22', 'Q3 FY22', 'Q4 FY22'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [36.75, 22, 23.25, 25.25],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'Directory Panel',
-                                                        data: [18.5, 0, 0, 0],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'OpenScholar',
-                                                        data: [365, 298.5, 200, 159.25],
-                                                        backgroundColor: '#4e88c7'
-                                                   }, {
-                                                        label: 'Misc.',
-                                                        data: [0, 62, 154.25, 125],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
+                        <div role="FY22-chart" aria-label="FY22 effort distribution">
+                            <h3><a href ="fy22.html" class="badge badge-primary" title="Projects completed in FY21">FY22</a></h3>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY22 effort distribution
+                                </h6>
+                                <canvas id="fy22" style="display: block;" height="300" width="308"></canvas>
+                                <script type="text/javascript">
+                                    var chart = new Chart(fy22, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Q1 FY22', 'Q2 FY22', 'Q3 FY22', 'Q4 FY22'], // responsible for how many bars are gonna show on the chart
+                                            // create 12 datasets, since we have 12 items
+                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                            // put 0, if there is no data for the particular bar
+                                            datasets: [{
+                                                label: 'Course Planner',
+                                                data: [36.75, 22, 23.25, 25.25],
+                                                backgroundColor: '#A51C30'
+                                            }, {
+                                                label: 'Directory Panel',
+                                                data: [18.5, 0, 0, 0],
+                                                backgroundColor: 'rgb(253, 126, 20)'
+                                            }, {
+                                                label: 'OpenScholar',
+                                                data: [365, 298.5, 200, 159.25],
+                                                backgroundColor: '#4e88c7'
+                                            }, {
+                                                label: 'Misc.',
+                                                data: [0, 62, 154.25, 125],
+                                                backgroundColor: '#00aaad'
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: false,
+                                            legend: {
+                                                position: 'bottom' // place legend on the right side of chart
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    stacked: true // this should be set to make the bars stacked
+                                                }],
+                                                yAxes: [{
+                                                    stacked: true // this also..
+                                                }]
+                                            }
+                                        }
+                                        });
+                                </script>
                             </div>
                         </div>
-
+                       
                         <!-- FY21 -->
-                        <div role="FY21" aria-label="FY21 effort distribution">
-
-                            <div role="FY21" aria-label="Projects completed in FY21">
-                                <div role="FY21-chart" aria-label="FY21 effort distribution">
-                                    <h3><a href ="fy21.html" class="badge badge-primary" title="Projects completed in FY21">FY21</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY21 effort distribution
-                                        </h6>
-                                        <canvas id="fy21" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy21, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY21', 'Q2 FY21', 'Q3 FY21', 'Q4 FY21'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [74.5, 29.75, 43, 29.75],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'Study Plan',
-                                                        data: [0, 22.5, 19.75, 28],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'OpenScholar',
-                                                        data: [101.25, 103.25, 333.5, 227.5],
-                                                        backgroundColor: '#4e88c7'
-                                                    }, {
-                                                        label: 'DIB',
-                                                        data: [21, 14, 9, 12],
-                                                        backgroundColor: '#bb89ca'
-                                                    }, {
-                                                        label: 'Misc.',
-                                                        data: [46.25, 13.75, 169.5, 107.75],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
+                        <div role="FY21-chart" aria-label="FY21 effort distribution">
+                            <h3><a href ="fy21.html" class="badge badge-primary" title="Projects completed in FY21">FY21</a></h3>
+                            <div class="card mb-4 p-2">
+                                <h6>
+                                    FY21 effort distribution
+                                </h6>
+                                <canvas id="fy21" style="display: block;" height="300" width="308"></canvas>
+                                <script type="text/javascript">
+                                    var chart = new Chart(fy21, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Q1 FY21', 'Q2 FY21', 'Q3 FY21', 'Q4 FY21'], // responsible for how many bars are gonna show on the chart
+                                            // create 12 datasets, since we have 12 items
+                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                            // put 0, if there is no data for the particular bar
+                                            datasets: [{
+                                                label: 'Course Planner',
+                                                data: [74.5, 29.75, 43, 29.75],
+                                                backgroundColor: '#A51C30'
+                                            }, {
+                                                label: 'Study Plan',
+                                                data: [0, 22.5, 19.75, 28],
+                                                backgroundColor: 'rgb(253, 126, 20)'
+                                            }, {
+                                                label: 'OpenScholar',
+                                                data: [101.25, 103.25, 333.5, 227.5],
+                                                backgroundColor: '#4e88c7'
+                                            }, {
+                                                label: 'DIB',
+                                                data: [21, 14, 9, 12],
+                                                backgroundColor: '#bb89ca'
+                                            }, {
+                                                label: 'Misc.',
+                                                data: [46.25, 13.75, 169.5, 107.75],
+                                                backgroundColor: '#00aaad'
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: false,
+                                            legend: {
+                                                position: 'bottom' // place legend on the right side of chart
+                                            },
+                                            scales: {
+                                                xAxes: [{
+                                                    stacked: true // this should be set to make the bars stacked
+                                                }],
+                                                yAxes: [{
+                                                    stacked: true // this also..
+                                                }]
+                                            }
+                                        }
+                                        });
+                                </script>
                             </div>
                         </div>
-
+                        
                         <!-- FY20 -->
                         <div role="FY20-chart" aria-label="FY20 effort distribution">
                             <h3><a href ="fy20.html" class="badge badge-primary" title="Projects completed in FY20">FY20</a></h3>
@@ -1750,38 +1490,38 @@
                         <!-- FY19 -->
                         <div role="FY20-chart" aria-label="FY19 effort distribution">
                             <h3><a href ="fy19.html" class="badge badge-primary" title="Projects completed in FY19">FY19</a></h3>
-                            <div class="card mb-4 p-2">
-                                <h6>
-                                    FY19 effort distribution
-                                </h6>
-                                <canvas id="FY19" class="chartjs mb-3"></canvas>
-                                <script>
-                                new Chart(document.getElementById("FY19"), 
-                                    { 
-                                        "type": "doughnut", 
-                                        "data": 
-                                        { "labels": 
-                                        ["Course Planner", 
-                                            "OpenScholar", 
-                                            "Accessibility",
-                                            "Misc."], 
-                                            "datasets": 
-                                                [{ "label": "FY19 effort distribution", 
-                                                    "data": [105, 56, 13, 106], 
-                                                    "backgroundColor": 
-                                                        ["rgb(165, 28, 48)", 
-                                                        "rgb(78, 136, 199)", 
-                                                        "rgb(203, 219, 42)", 
-                                                        "rgb(0, 170, 173)"] 
-                                                }] 
-                                        }
-                                    });
-                                </script>
-                                <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY19 effort distribution
+                                    </h6>
+                                    <canvas id="FY19" class="chartjs mb-3"></canvas>
+                                    <script>
+                                    new Chart(document.getElementById("FY19"), 
+                                        { 
+                                            "type": "doughnut", 
+                                            "data": 
+                                            { "labels": 
+                                            ["Course Planner", 
+                                                "OpenScholar", 
+                                                "Accessibility",
+                                                "Misc."], 
+                                                "datasets": 
+                                                    [{ "label": "FY19 effort distribution", 
+                                                        "data": [105, 56, 13, 106], 
+                                                        "backgroundColor": 
+                                                            ["rgb(165, 28, 48)", 
+                                                            "rgb(78, 136, 199)", 
+                                                            "rgb(203, 219, 42)", 
+                                                            "rgb(0, 170, 173)"] 
+                                                    }] 
+                                            }
+                                        });
+                                    </script>
+                                    <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
+                    </div> <!-- / Past fiscal years -->
+                
                 </div><!-- / row -->
             </main>
 <!-- legend -->
@@ -1804,10 +1544,6 @@
                         <li class="card-label_secondary">
                             <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
                             Professional development (self training, courses, seminars, etc.)
-                        </li>
-                        <li class="card-label_secondary">
-                            <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of interest</span></i>
-                            Community of interest
                         </li>
                         <li class="card-label_secondary">
                             <i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY20 Current fiscal year goals and priorities</span></i>
@@ -1879,16 +1615,11 @@
                             <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
                             Completed task
                         </li>
-                        <li>
-                            <i class="far fa-images fa-padding"></i><span class="sr-only">Notes and/or screencaptures</span></i>
-                            Notes and/or screencaptures, handouts
-                        </li>
                     </ul>
                 </div>
             </div><!-- / legend -->
 
         </div><!-- / container -->
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
