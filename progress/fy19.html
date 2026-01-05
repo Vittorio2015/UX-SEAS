@@ -6,1159 +6,1232 @@
         3. insert "fy-past.html" before each daily push -->
 
 <!-- command-k and command-7 to collapse all cards -->
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Font Awesome v5.6.3 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <!-- Bootstrap BEM CSS -->
-        <link rel="stylesheet" href="progress-BEM.css">
+    <!-- Font Awesome v5.6.3 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-        <!-- SEAS favicon -->
-        <link rel="shortcut icon" href="https://www.seas.harvard.edu/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- Bootstrap BEM CSS -->
+    <link rel="stylesheet" href="progress-BEM.css">
 
-        <!-- Chart.js -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- SEAS favicon -->
+    <link rel="shortcut icon" href="https://www.seas.harvard.edu/favicon.ico" type="image/vnd.microsoft.icon">
 
-        <title>FY19 / Vittorio / SEAS / Progress Report</title>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-    </head>
+    <title>FY19 / Vittorio / SEAS / Progress Report</title>
 
-    <body>
-        <div class="container">
+</head>
 
-                <a href="#main_content" class="skip-main">
-                    Skip to main content
+<body>
+    <div class="container">
+
+        <a href="#main_content" class="skip-main">
+            Skip to main content
+        </a>
+        <span class="navbar-brand" href="#">
+            <img src="https://www.seas.harvard.edu/sites/default/files/images/About%20SEAS/image_large.png" width="15"
+                height="18" alt="" class="mr-2">
+            FY19 / Vittorio / SEAS / Progress Report
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="" id="navbarText" style="float: right; padding: .5em 0;">
+            <div class="dropdown navbar-text muted mr-4">
+                <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
+                    FY History
                 </a>
-                <span class="navbar-brand" href="#">
-                    <img src="https://www.seas.harvard.edu/sites/default/files/images/About%20SEAS/image_large.png" width="15" height="18" alt="" class="mr-2">
-                    FY19 / Vittorio / SEAS / Progress Report
-                </span>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="" id="navbarText" style="float: right; padding: .5em 0;">
-                    <div class="dropdown navbar-text muted mr-4">
-                        <a class="navbar-text muted btn btn-link dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: .75rem;">
-                            FY History
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="fy26.html">FY26</a>
-                            <a class="dropdown-item" href="fy25.html">FY25</a>
-                            <a class="dropdown-item" href="fy24.html">FY24</a>
-                            <a class="dropdown-item" href="fy23.html">FY23</a>
-                            <a class="dropdown-item" href="fy22.html">FY22</a>
-                            <a class="dropdown-item" href="fy20.html">FY20</a>
-                            <a class="dropdown-item" href="fy19.html">FY19</a>
-                        </div>
-                        </div>
-                        <span class="navbar-text muted">
-                        <a href="#legend" class="mr-4">
-                            Legend
-                        </a>
-                        Updated on August 5, 2024
-                    </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="fy26.html">FY26</a>
+                    <a class="dropdown-item" href="fy25.html">FY25</a>
+                    <a class="dropdown-item" href="fy24.html">FY24</a>
+                    <a class="dropdown-item" href="fy23.html">FY23</a>
+                    <a class="dropdown-item" href="fy22.html">FY22</a>
+                    <a class="dropdown-item" href="fy20.html">FY20</a>
+                    <a class="dropdown-item" href="fy19.html">FY19</a>
                 </div>
-            </nav>
+            </div>
+            <span class="navbar-text muted">
+                <a href="#legend" class="mr-4">
+                    Legend
+                </a>
+                Updated on August 5, 2024
+            </span>
+        </div>
+        </nav>
 
-            <main>
-                <div class="row mt-5">
+        <main>
+            <div class="row mt-5">
 
-    <!-- Next fiscal years -->
-                    <div role="pending" aria-label="Pending projects" class="col-4 col-margin">
-                    
-                        <h2>
-                            <a name="main_content" id="main_content" tabindex="-1">Next fiscal years</a>
-                        </h2>
-                        
-                        <!-- FY25 -->
-                        <div role="FY25" aria-label="FY25 effort distribution">
-                            <h3><a href ="fy25.html" class="badge badge-primary" title="Projects completed in FY25">FY25</a></h3>
+                <!-- Next fiscal years -->
+                <div role="pending" aria-label="Pending projects" class="col-4 col-margin">
 
-                            <div role="FY25" aria-label="Projects completed in FY25">
-                                <div role="FY25-chart" aria-label="FY25 effort distribution">
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY25 effort distribution
-                                        </h6>
-                                        <canvas id="fy25" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy25, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY25', 'Q2 FY25', 'Q3 FY25', 'Q4 FY25'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Academic products',
-                                                        data: [63.5, 6, 27.5, 153.5],
-                                                        backgroundColor: 'rgb(165, 28, 48)'
-                                                    }, {
-                                                        label: 'Web publishing',
-                                                        data: [246, 303, 263.5, 251.5],
-                                                        backgroundColor: 'rgb(78, 136, 199)'
-                                                   }, {
-                                                        label: 'SEAS accessibility',
-                                                        data: [7.5, 5, 11, 23.5],
-                                                        backgroundColor: 'rgb(0, 170, 10)'
-                                                    }, {
-                                                        label: 'Professional growth',
-                                                        data: [58, 27, 4, 0],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'Misc.',
-                                                        data: [63.5, 0, 37.5, 8],
-                                                        backgroundColor: 'rgb(148, 148, 148)'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                        <!-- FY24 -->
-                        <div role="FY24-chart" aria-label="FY24 effort distribution">
-                            <h3><a href ="fy24.html" class="badge badge-primary" title="Projects completed in FY21">FY24</a></h3>
-                            <div class="card mb-4 p-2">
-                                <h6>
-                                    FY24 effort distribution
-                                </h6>
-                                
-                                <canvas id="fy24" style="display: block;" height="300" width="308"></canvas>
-                                <script type="text/javascript">
-                                    var chart = new Chart(fy24, {
-                                        type: 'bar',
-                                        data: {
-                                            labels: ['Q1 FY24', 'Q2 FY24', 'Q3 FY24', 'Q4 FY24'], // responsible for how many bars are gonna show on the chart
-                                            // create 12 datasets, since we have 12 items
-                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                            // put 0, if there is no data for the particular bar
-                                            datasets: [{
-                                                label: 'Academic products',
-                                                data: [68, 33.5, 25.5, 32],
-                                                backgroundColor: 'rgb(165, 28, 48)'
-                                            }, {
-                                                label: 'Web publishing',
-                                                data: [143, 162, 198, 62],
-                                                backgroundColor: 'rgb(78, 136, 199)'
-                                           }, {
-                                                label: 'SEAS accessibility',
-                                                data: [10.5, 9, 9.5, 10],
-                                                backgroundColor: 'rgb(0, 170, 10)'
-                                            }, {
-                                                label: 'Professional growth',
-                                                data: [2, 16, 62.5, 129],
-                                                backgroundColor: 'rgb(253, 126, 20)'
-                                            }, {
-                                                label: 'Misc.',
-                                                data: [77.5, 127.5, 123.5, 71.5],
-                                                backgroundColor: 'rgb(148, 148, 148)'
-                                            }]
-                                        },
-                                        options: {
-                                            responsive: false,
-                                            legend: {
-                                                position: 'bottom' // place legend on the right side of chart
-                                            },
-                                            scales: {
-                                                xAxes: [{
-                                                    stacked: true // this should be set to make the bars stacked
-                                                }],
-                                                yAxes: [{
-                                                    stacked: true // this also..
-                                                }]
-                                            }
-                                        }
-                                        });
-                                </script>
-                            </div>
-                        </div>
-                        
-                        <!-- FY23 -->
-                        <div role="FY23-chart" aria-label="FY23 effort distribution">
-                            <h3><a href ="fy23.html" class="badge badge-primary" title="Projects completed in FY23">FY23</a></h3>
-                            <div class="card mb-4 p-2">
-                                <h6>
-                                    FY23 effort distribution
-                                </h6>
-                                <canvas id="fy23" style="display: block;" height="300" width="308"></canvas>
-                                <script type="text/javascript">
-                                    var chart = new Chart(fy23, {
-                                        type: 'bar',
-                                        data: {
-                                            labels: ['Q1 FY23', 'Q2 FY23', 'Q3 FY23', 'Q4 FY23'], // responsible for how many bars are gonna show on the chart
-                                            // create 12 datasets, since we have 12 items
-                                            // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                            // put 0, if there is no data for the particular bar
-                                            datasets: [{
-                                                label: 'Course Planner',
-                                                data: [23.75, 36.5, 32, 18.5],
-                                                backgroundColor: '#A51C30'
-                                            }, {
-                                                label: 'Remote assistance',
-                                                data: [45, 5, 16, 30],
-                                                backgroundColor: '#4e88c7'
-                                           }, {
-                                                label: 'Misc.',
-                                                data: [296.75, 265, 313, 299.5],
-                                                backgroundColor: '#00aaad'
-                                            }]
-                                        },
-                                        options: {
-                                            responsive: false,
-                                            legend: {
-                                                position: 'bottom' // place legend on the right side of chart
-                                            },
-                                            scales: {
-                                                xAxes: [{
-                                                    stacked: true // this should be set to make the bars stacked
-                                                }],
-                                                yAxes: [{
-                                                    stacked: true // this also..
-                                                }]
-                                            }
-                                        }
-                                        });
-                                </script>
-                            </div>
-                        </div>
+                    <h2>
+                        <a name="main_content" id="main_content" tabindex="-1">Next fiscal years</a>
+                    </h2>
 
-                        <!-- FY22 -->
-                        <div role="FY22" aria-label="FY22 effort distribution">
+                    <!-- FY25 -->
+                    <div role="FY25" aria-label="FY25 effort distribution">
+                        <h3><a href="fy25.html" class="badge badge-primary" title="Projects completed in FY25">FY25</a>
+                        </h3>
 
-                            <div role="FY22" aria-label="Projects completed in FY22">
-                                <div role="FY22-chart" aria-label="FY22 effort distribution">
-                                    <h3><a href ="fy22.html" class="badge badge-primary" title="Projects completed in FY22">FY22</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY22 effort distribution
-                                        </h6>
-                                        <canvas id="fy22" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy22, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY22', 'Q2 FY22', 'Q3 FY22', 'Q4 FY22'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [36.75, 22, 23.25, 25.25],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'Directory Panel',
-                                                        data: [18.5, 0, 0, 0],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'OpenScholar',
-                                                        data: [365, 298.5, 200, 159.25],
-                                                        backgroundColor: '#4e88c7'
-                                                   }, {
-                                                        label: 'Misc.',
-                                                        data: [0, 62, 154.25, 125],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FY21 -->
-                        <div role="FY21" aria-label="Projects completed in FY21">
-
-                            <div role="FY21" aria-label="Projects completed in FY21">
-                                <div role="FY21-chart" aria-label="FY21 effort distribution">
-                                    <h3><a href ="fy21.html" class="badge badge-primary" title="Projects completed in FY22">FY21</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY21 effort distribution
-                                        </h6>
-                                        <canvas id="fy21" style="display: block;" height="300" width="308"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(fy21, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q1 FY21', 'Q2 FY21', 'Q3 FY21', 'Q4 FY21'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [74.5, 29.75, 43, 29.75],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'Study Plan',
-                                                        data: [0, 22.5, 19.75, 28],
-                                                        backgroundColor: 'rgb(253, 126, 20)'
-                                                    }, {
-                                                        label: 'OpenScholar',
-                                                        data: [101.25, 103.25, 333.5, 227.5],
-                                                        backgroundColor: '#4e88c7'
-                                                    }, {
-                                                        label: 'DIB',
-                                                        data: [21, 14, 9, 12],
-                                                        backgroundColor: '#bb89ca'
-                                                    }, {
-                                                        label: 'Misc.',
-                                                        data: [46.25, 13.75, 169.5, 107.75],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FY20 -->
-                        <div role="FY20" aria-label="Projects completed in FY20">
-
-                            <div role="FY20" aria-label="Projects completed in FY20">
-                                <div role="FY20-chart" aria-label="FY20 effort distribution">
-                                    <h3><a href ="fy20.html" class="badge badge-primary" title="Projects completed in FY22">FY20</a></h3>
-                                    <div class="card mb-4 p-2">
-                                        <h6>
-                                            FY20 effort distribution
-                                        </h6>
-                                        <canvas id="ctx" style="display: block;" height="300"></canvas>
-                                        <script type="text/javascript">
-                                            var chart = new Chart(ctx, {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Q4 FY20', 'Q3 FY20', 'Q2 FY20', 'Q1 FY20'], // responsible for how many bars are gonna show on the chart
-                                                    // create 12 datasets, since we have 12 items
-                                                    // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-                                                    // put 0, if there is no data for the particular bar
-                                                    datasets: [{
-                                                        label: 'Course Planner',
-                                                        data: [122.5, 40, 38, 60],
-                                                        backgroundColor: '#A51C30'
-                                                    }, {
-                                                        label: 'AWS Console',
-                                                        data: [0, 0, 0, 33],
-                                                        backgroundColor: '#ed1b34'
-                                                    }, {
-                                                        label: 'OpenScholar',
-                                                        data: [109.25, 54.5, 122, 108],
-                                                        backgroundColor: '#4e88c7'
-                                                    }, {
-                                                        label: 'AV Panel',
-                                                        data: [0, 24, 0, 0],
-                                                        backgroundColor: '#ec8f9c'
-                                                    }, {
-                                                        label: 'DIB',
-                                                        data: [4, 1, 0, 0],
-                                                        backgroundColor: '#bb89ca'
-                                                    }, {
-                                                        label: 'Accessibility',
-                                                        data: [23.5, 22, 7, 39],
-                                                        backgroundColor: '#cbdb2a'
-                                                    }, {
-                                                        label: 'Misc.',
-                                                        data: [114.75, 254.5, 309, 215],
-                                                        backgroundColor: '#00aaad'
-                                                    }]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    legend: {
-                                                        position: 'bottom' // place legend on the right side of chart
-                                                    },
-                                                    scales: {
-                                                        xAxes: [{
-                                                            stacked: true // this should be set to make the bars stacked
-                                                        }],
-                                                        yAxes: [{
-                                                            stacked: true // this also..
-                                                        }]
-                                                    }
-                                                }
-                                                });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div><!-- / Next fiscal years -->
-
-    <!-- Current fiscal year -->
-                    <div role="inProgress" aria-label="Projects in progress" class="col-4 col-margin">
-                    
-                        <h2>
-                            <a name="main_content" id="main_content" tabindex="-1">FY19</a>
-                        </h2>
-        
-                        <!-- FY19 -->
-                        <div role="FY19-chart" aria-label="FY19 effort distribution">
-                        <h3><span class="badge badge-primary">FY19</span></h3>
-                            <div class="card mb-4 p-2">
-                                <h6>
-                                    FY19 effort distribution
-                                </h6>
-                                <canvas id="FY19" class="chartjs mb-3"></canvas>
-                        <script>
-                        new Chart(document.getElementById("FY19"), 
-                            { 
-                                "type": "doughnut", 
-                                "data": 
-                                { "labels": 
-                                ["Course Planner", 
-                                    "OpenScholar", 
-                                    "Accessibility",
-                                    "Misc."], 
-                                    "datasets": 
-                                        [{ "label": "FY19 effort distribution", 
-                                            "data": [105, 56, 13, 106], 
-                                            "backgroundColor": 
-                                                ["rgb(165, 28, 48)", 
-                                                "rgb(78, 136, 199)", 
-                                                "rgb(203, 219, 42)", 
-                                                "rgb(0, 170, 173)"] 
-                                        }] 
-                                }
-                            });
-                        </script>
-                        <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June 2019.</p>
-                            </div>
-                        </div>
-    
-                        <div class="card card-label_primary">
-                            <!-- card - Course Planner -->
-        
-                                <div class="card-body card-header-margin">
-                                    <h6 class="card-title">
-                                        <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
-                                        Course Planner
-                                        <a onclick="myFunctionCoursePlannerFY19()" class="float-right" title="Project history">
-                                            <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                        </a>
+                        <div role="FY25" aria-label="Projects completed in FY25">
+                            <div role="FY25-chart" aria-label="FY25 effort distribution">
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY25 effort distribution
                                     </h6>
+                                    <canvas id="fy25" style="display: block;" height="300" width="308"></canvas>
+                                    <script type="text/javascript">
+                                        var chart = new Chart(fy25, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Q1 FY25', 'Q2 FY25', 'Q3 FY25', 'Q4 FY25'], // responsible for how many bars are gonna show on the chart
+                                                // create 12 datasets, since we have 12 items
+                                                // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                // put 0, if there is no data for the particular bar
+                                                datasets: [{
+                                                    label: 'Academic products',
+                                                    data: [63.5, 6, 27.5, 153.5],
+                                                    backgroundColor: 'rgb(165, 28, 48)'
+                                                }, {
+                                                    label: 'Web publishing',
+                                                    data: [246, 303, 263.5, 251.5],
+                                                    backgroundColor: 'rgb(78, 136, 199)'
+                                                }, {
+                                                    label: 'SEAS accessibility',
+                                                    data: [7.5, 5, 11, 23.5],
+                                                    backgroundColor: 'rgb(0, 170, 10)'
+                                                }, {
+                                                    label: 'Professional growth',
+                                                    data: [58, 27, 4, 0],
+                                                    backgroundColor: 'rgb(253, 126, 20)'
+                                                }, {
+                                                    label: 'Misc.',
+                                                    data: [63.5, 0, 37.5, 8],
+                                                    backgroundColor: 'rgb(148, 148, 148)'
+                                                }]
+                                            },
+                                            options: {
+                                                responsive: false,
+                                                legend: {
+                                                    position: 'bottom' // place legend on the right side of chart
+                                                },
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true // this should be set to make the bars stacked
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true // this also..
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
                                 </div>
-        
-                                <script>
-                                    function myFunctionCoursePlannerFY19() {
-                                        var x = document.getElementById("showCoursePlannerFY19");
-                                        if (x.style.display === "none") {
-                                            x.style.display = "block";
-                                        } else {
-                                            x.style.display = "none";
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FY24 -->
+                    <div role="FY24-chart" aria-label="FY24 effort distribution">
+                        <h3><a href="fy24.html" class="badge badge-primary" title="Projects completed in FY21">FY24</a>
+                        </h3>
+                        <div class="card mb-4 p-2">
+                            <h6>
+                                FY24 effort distribution
+                            </h6>
+
+                            <canvas id="fy24" style="display: block;" height="300" width="308"></canvas>
+                            <script type="text/javascript">
+                                var chart = new Chart(fy24, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['Q1 FY24', 'Q2 FY24', 'Q3 FY24', 'Q4 FY24'], // responsible for how many bars are gonna show on the chart
+                                        // create 12 datasets, since we have 12 items
+                                        // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                        // put 0, if there is no data for the particular bar
+                                        datasets: [{
+                                            label: 'Academic products',
+                                            data: [68, 33.5, 25.5, 32],
+                                            backgroundColor: 'rgb(165, 28, 48)'
+                                        }, {
+                                            label: 'Web publishing',
+                                            data: [143, 162, 198, 62],
+                                            backgroundColor: 'rgb(78, 136, 199)'
+                                        }, {
+                                            label: 'SEAS accessibility',
+                                            data: [10.5, 9, 9.5, 10],
+                                            backgroundColor: 'rgb(0, 170, 10)'
+                                        }, {
+                                            label: 'Professional growth',
+                                            data: [2, 16, 62.5, 129],
+                                            backgroundColor: 'rgb(253, 126, 20)'
+                                        }, {
+                                            label: 'Misc.',
+                                            data: [77.5, 127.5, 123.5, 71.5],
+                                            backgroundColor: 'rgb(148, 148, 148)'
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: false,
+                                        legend: {
+                                            position: 'bottom' // place legend on the right side of chart
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                stacked: true // this should be set to make the bars stacked
+                                            }],
+                                            yAxes: [{
+                                                stacked: true // this also..
+                                            }]
                                         }
                                     }
-                                </script>
-        
-                                <ul class="list-group list-group-flush" hidden>
-                                    <li class="list-group-item list-group-item-margin">
-                                        Redesign and implementation of current scheduling tool
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin" hidden>
-                                        <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                        Working on Kanban cards for this sprint
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin">
-                                        <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                                        Designing style of "Settings" and "Create new..." buttons
-                                    </li>
-                                </ul>
-        
-                                <ul class="list-group list-group-flush" id="showCoursePlannerFY19" style="display: none;">
-                                    <li class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                        <!-- done ruler June 32:45, May 20:45, April 27, March 8:45, February 2:30, January 3:15, December 5:45, November 6, October 4:30 -->
-                                        Total time - 105 hours
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin">
-                                        Redesign and implementation of current scheduling tool
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Revised HTML template with developer's feedback (opacity instead of hidden)
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Revised HTML template with developer's feedback (opacity instead of hidden)
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Reviewed with developers HTML template and
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            room view wireframes
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Coded in HTML and CSS
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Draft 3 MVP wireframe
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Drafted
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            wireframe of the room view interface
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Reviewed specific Trello cards for GitHub tasks
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Drafted milestones
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Reviewed Draft 2 and Draft 3 MVP wireframes
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Drafted Draft 1 of MVP wireframes
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
-                                            target="_blank">
-                                            Drafted Draft 1 of MVP wireframes
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/drawings/d/1_w--hY1CkIH-S7k_i79lObpODoppHqG0-4bJakaTIaU/edit?usp=sharing"
-                                            target="_blank">
-                                            Drafted wireframes from Trello cards with developers
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Met with users and ask about
-                                        <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing"
-                                            target="_blank">
-                                            recent inquiries
-                                        </a>- March 20
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Reviewed user stories with developers from
-                                        <a href="https://trello.com/c/wukRWwGh" target="_blank">
-                                            card - source 101
-                                        </a>
-                                        to
-                                        <a href="https://trello.com/c/OHyyPdK7" target="_blank">
-                                            card - source 210
-                                        </a>
-                                        - February 22
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        Completed User stories reviews with developers - February 26
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                        <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing"
-                                            target="_blank">
-                                            Documented inquiries for users
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted">
-                                        <a href="https://github.com/seas-computing/course-planner/projects/1" target="">
-                                            <i class="fab fa-trello fa-padding"><span class="sr-only">Trello board or card</span></i>
-                                            Course planning kanban
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item list-group-item-margin text-muted">
-                                        <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html"
-                                            target="">
-                                            <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
-                                            Gh-pages
-                                        </a>
-                                    </li>
-                                </ul>
-                        </div><!-- / card - Course Planner -->
-    
-                        <div class="card card-label_success">
-                            <!-- card - HarvardCS usability-->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="fas fa-user fa-padding"><span class="sr-only">User reviews and events</span></i>
-                                    HarvardCS usability review<a onclick="myFunctionHarvardCSusability()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionHarvardCSusability() {
-                                    var x = document.getElementById("showHarvardCSusability");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
+                                });
+                            </script>
+                        </div>
+                    </div>
+
+                    <!-- FY23 -->
+                    <div role="FY23-chart" aria-label="FY23 effort distribution">
+                        <h3><a href="fy23.html" class="badge badge-primary" title="Projects completed in FY23">FY23</a>
+                        </h3>
+                        <div class="card mb-4 p-2">
+                            <h6>
+                                FY23 effort distribution
+                            </h6>
+                            <canvas id="fy23" style="display: block;" height="300" width="308"></canvas>
+                            <script type="text/javascript">
+                                var chart = new Chart(fy23, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['Q1 FY23', 'Q2 FY23', 'Q3 FY23', 'Q4 FY23'], // responsible for how many bars are gonna show on the chart
+                                        // create 12 datasets, since we have 12 items
+                                        // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                        // put 0, if there is no data for the particular bar
+                                        datasets: [{
+                                            label: 'Course Planner',
+                                            data: [23.75, 36.5, 32, 18.5],
+                                            backgroundColor: '#A51C30'
+                                        }, {
+                                            label: 'Remote assistance',
+                                            data: [45, 5, 16, 30],
+                                            backgroundColor: '#4e88c7'
+                                        }, {
+                                            label: 'Misc.',
+                                            data: [296.75, 265, 313, 299.5],
+                                            backgroundColor: '#00aaad'
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: false,
+                                        legend: {
+                                            position: 'bottom' // place legend on the right side of chart
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                stacked: true // this should be set to make the bars stacked
+                                            }],
+                                            yAxes: [{
+                                                stacked: true // this also..
+                                            }]
+                                        }
                                     }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showHarvardCSusability" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 7 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Review and documentation
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/SEAS-HarvardCS/index.html#branding"
-                                        target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        Usability evaluation
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://harvardcs.info/index.html" target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        HarvardCS Website
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - HarvardCS usability -->
-    
-                        <div class="card card-label_success">
-                            <!-- card - HarvardCS accessibility -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and events</span></i>
-                                    HarvardCS accessibility review
-                                    <a onclick="myFunctionHarvardCS()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
+                                });
+                            </script>
+                        </div>
+                    </div>
+
+                    <!-- FY22 -->
+                    <div role="FY22" aria-label="FY22 effort distribution">
+
+                        <div role="FY22" aria-label="Projects completed in FY22">
+                            <div role="FY22-chart" aria-label="FY22 effort distribution">
+                                <h3><a href="fy22.html" class="badge badge-primary"
+                                        title="Projects completed in FY22">FY22</a></h3>
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY22 effort distribution
+                                    </h6>
+                                    <canvas id="fy22" style="display: block;" height="300" width="308"></canvas>
+                                    <script type="text/javascript">
+                                        var chart = new Chart(fy22, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Q1 FY22', 'Q2 FY22', 'Q3 FY22', 'Q4 FY22'], // responsible for how many bars are gonna show on the chart
+                                                // create 12 datasets, since we have 12 items
+                                                // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                // put 0, if there is no data for the particular bar
+                                                datasets: [{
+                                                    label: 'Course Planner',
+                                                    data: [36.75, 22, 23.25, 25.25],
+                                                    backgroundColor: '#A51C30'
+                                                }, {
+                                                    label: 'Directory Panel',
+                                                    data: [18.5, 0, 0, 0],
+                                                    backgroundColor: 'rgb(253, 126, 20)'
+                                                }, {
+                                                    label: 'OpenScholar',
+                                                    data: [365, 298.5, 200, 159.25],
+                                                    backgroundColor: '#4e88c7'
+                                                }, {
+                                                    label: 'Misc.',
+                                                    data: [0, 62, 154.25, 125],
+                                                    backgroundColor: '#00aaad'
+                                                }]
+                                            },
+                                            options: {
+                                                responsive: false,
+                                                legend: {
+                                                    position: 'bottom' // place legend on the right side of chart
+                                                },
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true // this should be set to make the bars stacked
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true // this also..
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
                             </div>
-    
-                            <script>function myFunctionHarvardCS() {
-                                    var x = document.getElementById("showHarvardCS");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showHarvardCS" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 13 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Review and documentation
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/SEAS-HarvardCS/index.html"
-                                        target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        HarvardCS website accessibility review
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://harvardcs.info/index.html" target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        HarvardCS website
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - HarvardCS accessibility -->
-    
-                        <div class="card card-label_success">
-                            <!-- card - Atmospheric Sciences website -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
+                        </div>
+                    </div>
+
+                    <!-- FY21 -->
+                    <div role="FY21" aria-label="Projects completed in FY21">
+
+                        <div role="FY21" aria-label="Projects completed in FY21">
+                            <div role="FY21-chart" aria-label="FY21 effort distribution">
+                                <h3><a href="fy21.html" class="badge badge-primary"
+                                        title="Projects completed in FY22">FY21</a></h3>
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY21 effort distribution
+                                    </h6>
+                                    <canvas id="fy21" style="display: block;" height="300" width="308"></canvas>
+                                    <script type="text/javascript">
+                                        var chart = new Chart(fy21, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Q1 FY21', 'Q2 FY21', 'Q3 FY21', 'Q4 FY21'], // responsible for how many bars are gonna show on the chart
+                                                // create 12 datasets, since we have 12 items
+                                                // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                // put 0, if there is no data for the particular bar
+                                                datasets: [{
+                                                    label: 'Course Planner',
+                                                    data: [74.5, 29.75, 43, 29.75],
+                                                    backgroundColor: '#A51C30'
+                                                }, {
+                                                    label: 'Study Plan',
+                                                    data: [0, 22.5, 19.75, 28],
+                                                    backgroundColor: 'rgb(253, 126, 20)'
+                                                }, {
+                                                    label: 'OpenScholar',
+                                                    data: [101.25, 103.25, 333.5, 227.5],
+                                                    backgroundColor: '#4e88c7'
+                                                }, {
+                                                    label: 'DIB',
+                                                    data: [21, 14, 9, 12],
+                                                    backgroundColor: '#bb89ca'
+                                                }, {
+                                                    label: 'Misc.',
+                                                    data: [46.25, 13.75, 169.5, 107.75],
+                                                    backgroundColor: '#00aaad'
+                                                }]
+                                            },
+                                            options: {
+                                                responsive: false,
+                                                legend: {
+                                                    position: 'bottom' // place legend on the right side of chart
+                                                },
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true // this should be set to make the bars stacked
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true // this also..
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FY20 -->
+                    <div role="FY20" aria-label="Projects completed in FY20">
+
+                        <div role="FY20" aria-label="Projects completed in FY20">
+                            <div role="FY20-chart" aria-label="FY20 effort distribution">
+                                <h3><a href="fy20.html" class="badge badge-primary"
+                                        title="Projects completed in FY22">FY20</a></h3>
+                                <div class="card mb-4 p-2">
+                                    <h6>
+                                        FY20 effort distribution
+                                    </h6>
+                                    <canvas id="ctx" style="display: block;" height="300"></canvas>
+                                    <script type="text/javascript">
+                                        var chart = new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Q4 FY20', 'Q3 FY20', 'Q2 FY20', 'Q1 FY20'], // responsible for how many bars are gonna show on the chart
+                                                // create 12 datasets, since we have 12 items
+                                                // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+                                                // put 0, if there is no data for the particular bar
+                                                datasets: [{
+                                                    label: 'Course Planner',
+                                                    data: [122.5, 40, 38, 60],
+                                                    backgroundColor: '#A51C30'
+                                                }, {
+                                                    label: 'AWS Console',
+                                                    data: [0, 0, 0, 33],
+                                                    backgroundColor: '#ed1b34'
+                                                }, {
+                                                    label: 'OpenScholar',
+                                                    data: [109.25, 54.5, 122, 108],
+                                                    backgroundColor: '#4e88c7'
+                                                }, {
+                                                    label: 'AV Panel',
+                                                    data: [0, 24, 0, 0],
+                                                    backgroundColor: '#ec8f9c'
+                                                }, {
+                                                    label: 'DIB',
+                                                    data: [4, 1, 0, 0],
+                                                    backgroundColor: '#bb89ca'
+                                                }, {
+                                                    label: 'Accessibility',
+                                                    data: [23.5, 22, 7, 39],
+                                                    backgroundColor: '#cbdb2a'
+                                                }, {
+                                                    label: 'Misc.',
+                                                    data: [114.75, 254.5, 309, 215],
+                                                    backgroundColor: '#00aaad'
+                                                }]
+                                            },
+                                            options: {
+                                                responsive: false,
+                                                legend: {
+                                                    position: 'bottom' // place legend on the right side of chart
+                                                },
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true // this should be set to make the bars stacked
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true // this also..
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- / Next fiscal years -->
+
+                <!-- Current fiscal year -->
+                <div role="inProgress" aria-label="Projects in progress" class="col-4 col-margin">
+
+                    <h2>
+                        <a name="main_content" id="main_content" tabindex="-1">FY19</a>
+                    </h2>
+
+                    <!-- FY19 -->
+                    <div role="FY19-chart" aria-label="FY19 effort distribution">
+                        <h3><span class="badge badge-primary">FY19</span></h3>
+                        <div class="card mb-4 p-2">
+                            <h6>
+                                FY19 effort distribution
+                            </h6>
+                            <canvas id="FY19" class="chartjs mb-3"></canvas>
+                            <script>
+                                new Chart(document.getElementById("FY19"),
+                                    {
+                                        "type": "doughnut",
+                                        "data":
+                                        {
+                                            "labels":
+                                                ["Course Planner",
+                                                    "OpenScholar",
+                                                    "Accessibility",
+                                                    "Misc."],
+                                            "datasets":
+                                                [{
+                                                    "label": "FY19 effort distribution",
+                                                    "data": [105, 56, 13, 106],
+                                                    "backgroundColor":
+                                                        ["rgb(165, 28, 48)",
+                                                            "rgb(78, 136, 199)",
+                                                            "rgb(203, 219, 42)",
+                                                            "rgb(0, 170, 173)"]
+                                                }]
+                                        }
+                                    });
+                            </script>
+                            <p class="text-muted">Misc.: Standups, 1:1, professional development, just for May and June
+                                2019.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-label_primary">
+                        <!-- card - Course Planner -->
+
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application
+                                        project</span></i>
+                                Course Planner
+                                <a onclick="myFunctionCoursePlannerFY19()" class="float-right" title="Project history">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>
+                            function myFunctionCoursePlannerFY19() {
+                                var x = document.getElementById("showCoursePlannerFY19");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <ul class="list-group list-group-flush" hidden>
+                            <li class="list-group-item list-group-item-margin">
+                                Redesign and implementation of current scheduling tool
+                            </li>
+                            <li class="list-group-item list-group-item-margin" hidden>
+                                <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
+                                Working on Kanban cards for this sprint
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
+                                Designing style of "Settings" and "Create new..." buttons
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush" id="showCoursePlannerFY19" style="display: none;">
+                            <li
+                                class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                                <!-- done ruler June 32:45, May 20:45, April 27, March 8:45, February 2:30, January 3:15, December 5:45, November 6, October 4:30 -->
+                                Total time - 105 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                Redesign and implementation of current scheduling tool
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Revised HTML template with developer's feedback (opacity instead of hidden)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Revised HTML template with developer's feedback (opacity instead of hidden)
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Reviewed with developers HTML template and
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    room view wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Coded in HTML and CSS
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Draft 3 MVP wireframe
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Drafted
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    wireframe of the room view interface
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Reviewed specific Trello cards for GitHub tasks
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Drafted milestones
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Reviewed Draft 2 and Draft 3 MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Drafted Draft 1 of MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1whMzETSD7ourF2KlkZUqY5zsWtdNq2BUnfpeZDATvtE/edit?usp=sharing"
+                                    target="_blank">
+                                    Drafted Draft 1 of MVP wireframes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/drawings/d/1_w--hY1CkIH-S7k_i79lObpODoppHqG0-4bJakaTIaU/edit?usp=sharing"
+                                    target="_blank">
+                                    Drafted wireframes from Trello cards with developers
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Met with users and ask about
+                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing"
+                                    target="_blank">
+                                    recent inquiries
+                                </a>- March 20
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Reviewed user stories with developers from
+                                <a href="https://trello.com/c/wukRWwGh" target="_blank">
+                                    card - source 101
+                                </a>
+                                to
+                                <a href="https://trello.com/c/OHyyPdK7" target="_blank">
+                                    card - source 210
+                                </a>
+                                - February 22
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Completed User stories reviews with developers - February 26
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://docs.google.com/document/d/19ejmnuZijhQit4rp5k10gDOhjFxswyW6pKWxDjUMvGQ/edit?usp=sharing"
+                                    target="_blank">
+                                    Documented inquiries for users
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://github.com/seas-computing/course-planner/projects/1" target="">
+                                    <i class="fab fa-trello fa-padding"><span class="sr-only">Trello board or
+                                            card</span></i>
+                                    Course planning kanban
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://seas-computing.github.io/course-planner_ux/index-filter_opacity.html"
+                                    target="">
+                                    <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
+                                    Gh-pages
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Course Planner -->
+
+                    <div class="card card-label_success">
+                        <!-- card - HarvardCS usability-->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-user fa-padding"><span class="sr-only">User reviews and
+                                        events</span></i>
+                                HarvardCS usability review<a onclick="myFunctionHarvardCSusability()"
+                                    class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionHarvardCSusability() {
+                                var x = document.getElementById("showHarvardCSusability");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showHarvardCSusability" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 7 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Review and documentation
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/SEAS-HarvardCS/index.html#branding"
+                                    target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    Usability evaluation
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://harvardcs.info/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    HarvardCS Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - HarvardCS usability -->
+
+                    <div class="card card-label_success">
+                        <!-- card - HarvardCS accessibility -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and
+                                        events</span></i>
+                                HarvardCS accessibility review
+                                <a onclick="myFunctionHarvardCS()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionHarvardCS() {
+                                var x = document.getElementById("showHarvardCS");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showHarvardCS" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 13 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Review and documentation
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/SEAS-HarvardCS/index.html"
+                                    target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    HarvardCS website accessibility review
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://harvardcs.info/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    HarvardCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - HarvardCS accessibility -->
+
+                    <div class="card card-label_success">
+                        <!-- card - Atmospheric Sciences website -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
+                                Atmospheric Sciences website
+
+                                <a onclick="myFunctionMartin()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionMartin() {
+                                var x = document.getElementById("showMartin");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showMartin" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 2 hours
+                            </li>
+
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Editing assistance and coaching on OpenScholar
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do%3Fsys_id=7e46bf04dbce3b407768dc95ca96198d%26sysparm_stack=incident_list.do%3Fsysparm_query=active=true"
+                                    target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    ServiceNow ticket
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://martin.seas.harvard.edu/" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
                                     Atmospheric Sciences website
-    
-                                    <a onclick="myFunctionMartin()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionMartin() {
-                                    var x = document.getElementById("showMartin");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showMartin" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 2 hours
-                                </li>
-    
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Editing assistance and coaching on OpenScholar
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://harvard.service-now.com/nav_to.do?uri=incident.do%3Fsys_id=7e46bf04dbce3b407768dc95ca96198d%26sysparm_stack=incident_list.do%3Fsysparm_query=active=true"
-                                        target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        ServiceNow ticket
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://martin.seas.harvard.edu/" target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        Atmospheric Sciences website
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - Atmospheric Sciences website -->
-    
-                        <div class="card card-label_primary">
-                            <!-- card - Employee Action Form Manager -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Atmospheric Sciences website -->
+
+                    <div class="card card-label_primary">
+                        <!-- card - Employee Action Form Manager -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application
+                                        project</span></i>
+                                Employee Action Form Manager
+                                <a onclick="myFunctionEAFM()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionEAFM() {
+                                var x = document.getElementById("showEAFM");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showEAFM" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 6 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/EAFM/index.html"
+                                    target="_blank">
+                                    Accessibility review
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://eaf-qa.seas.harvard.edu/app/dashboard/submissions" target="_blank">
+                                    <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application
+                                            project</span></i>
                                     Employee Action Form Manager
-                                    <a onclick="myFunctionEAFM()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionEAFM() {
-                                    var x = document.getElementById("showEAFM");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showEAFM" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 6 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/EAFM/index.html"
-                                        target="_blank">
-                                        Accessibility review
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://eaf-qa.seas.harvard.edu/app/dashboard/submissions" target="_blank">
-                                        <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
-                                        Employee Action Form Manager
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - Employee Action Form Manager -->
-    
-                        <div class="card card-label_success">
-                            <!-- card - CRCS MLPerf -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                                    CRCS website Vijay Reddi's MLPerf
-                                    <a onclick="myFunctionMLPerf()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionMLPerf() {
-                                    var x = document.getElementById("showMLPerf");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showMLPerf" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 34 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
-                                        Applied Vijay's feedback
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href=" https://docs.google.com/document/d/1kT7BYBNE06V5E2uindYwAJ1AI8MQ7ZCXsrJKzKblF9g/edit#heading=h.m8vym13c5oit"
-                                        target="_blank">
-                                        Met with Vijay's for final review
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href=" https://docs.google.com/document/d/1kT7BYBNE06V5E2uindYwAJ1AI8MQ7ZCXsrJKzKblF9g/edit#heading=h.m8vym13c5oit"
-                                        target="_blank">
-                                        Received Vijay's feedback
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
-                                        Drafted Vijay's feedback on OpenScholar
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i><a
-                                        href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/MLPerf/index.html"
-                                        target="_blank">
-                                        Drafted content design
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Planning meeting - April 4
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Initial meeting - April 1
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted">
-                                    <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        ML Perf (not public) content in CRCS website
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - CRCS MLPerf -->
-    
-                        <div class="card card-label_success">
-                            <!-- card - Embedded Ethics -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                                    Embedded Ethics
-                                    <a onclick="myFunctionEmbeddedEthics()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionEmbeddedEthics() {
-                                    var x = document.getElementById("showEmbeddedEthics");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-    
-                            <ul class="list-group list-group-flush" id="showEmbeddedEthics" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 13 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin">
-                                    Administrator training
-                                    <div class="progress mt-1" style="height: 1em; font-size: .75em;" hidden>
-                                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50"
-                                            aria-valuemin="0" aria-valuemax="100">
-                                            60%
-                                        </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Employee Action Form Manager -->
+
+                    <div class="card card-label_success">
+                        <!-- card - CRCS MLPerf -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
+                                CRCS website Vijay Reddi's MLPerf
+                                <a onclick="myFunctionMLPerf()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionMLPerf() {
+                                var x = document.getElementById("showMLPerf");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showMLPerf" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 34 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
+                                    Applied Vijay's feedback
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href=" https://docs.google.com/document/d/1kT7BYBNE06V5E2uindYwAJ1AI8MQ7ZCXsrJKzKblF9g/edit#heading=h.m8vym13c5oit"
+                                    target="_blank">
+                                    Met with Vijay's for final review
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href=" https://docs.google.com/document/d/1kT7BYBNE06V5E2uindYwAJ1AI8MQ7ZCXsrJKzKblF9g/edit#heading=h.m8vym13c5oit"
+                                    target="_blank">
+                                    Received Vijay's feedback
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
+                                    Drafted Vijay's feedback on OpenScholar
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i><a
+                                    href="https://raw.githack.com/Vittorio2015/UX-SEAS/master/MLPerf/index.html"
+                                    target="_blank">
+                                    Drafted content design
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Planning meeting - April 4
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Initial meeting - April 1
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted">
+                                <a href="https://crcs.seas.harvard.edu/harvard-mlperf" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    ML Perf (not public) content in CRCS website
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - CRCS MLPerf -->
+
+                    <div class="card card-label_success">
+                        <!-- card - Embedded Ethics -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
+                                Embedded Ethics
+                                <a onclick="myFunctionEmbeddedEthics()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionEmbeddedEthics() {
+                                var x = document.getElementById("showEmbeddedEthics");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+
+                        <ul class="list-group list-group-flush" id="showEmbeddedEthics" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 13 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                Administrator training
+                                <div class="progress mt-1" style="height: 1em; font-size: .75em;" hidden>
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        60%
                                     </div>
-    
-                                    <div class="progress mt-1" style="font-size: .75em;">
-                                        <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20"
-                                            aria-valuemin="0" aria-valuemax="100">HTML intro</div>
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML content</div>
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%;"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Frameworks</div>
-                                        <div class="progress-bar bg-light" role="progressbar" style="width: 22%; color: #999;"
-                                            aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">Accessibility</div>
-                                        <!-- bg-warning -->
-                                        <div class="progress-bar bg-light" role="progressbar" style="width: 18%; color: #999;"
-                                            aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">Analytics</div>
-                                        <!-- bg-danger -->
-                                    </div>
-                                </li>
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Trained the administrator of the website
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <!-- done ruler -->
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    Website design and implementation
-                                </li>
-                                <li class="list-group-item list-group-item-margin">
-                                    <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        Embedded Ethics public website
-                                    </a>
-                                </li>
-                                <li class="list-group-item list-group-item-margin">
-                                    <a href="https://embeddedethics.seas.harvard.edu/workplan-process_train.html"
-                                        target="_blank">
-                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                                        Embedded Ethics training syllabus
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - Embedded Ethics -->
-    
-                        <div class="card card-label_secondary">
-                            <!-- card - Professional Development -->
-                            <div class="card-body card-header-margin">
-                                <h6 class="card-title">
-                                    <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
-                                    FY19 Professional Development
-                                    <a onclick="myFunctionProfDevFY19()" class="float-right">
-                                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                                    </a>
-                                </h6>
-                            </div>
-    
-                            <script>function myFunctionProfDevFY19() {
-                                    var x = document.getElementById("showProfDevFY19");
-                                    if (x.style.display === "none") {
-                                        x.style.display = "block";
-                                    } else {
-                                        x.style.display = "none";
-                                    }
-                                }</script>
-                            <ul class="list-group list-group-flush" id="showProfDevFY19" style="display: none;">
-                                <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
-                                    <!-- done ruler -->
-                                    Total time - 4 hours
-                                </li>
-                                <li class="list-group-item list-group-item-margin">
-                                    <i>Courses from Harvard and other organizations</i>
-                                </li>
-                                <li class="list-group-item list-group-item-margin">
-                                    <h6>Training</h6>
-                                </li>
-                                <li class="list-group-item list-group-item-margin text-muted bg-light">
-                                    <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                                    <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446"
-                                        target="_blank">
-                                        Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations
-                                        (Harvard Digital Scholarship Support Group, October 9)
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- / card - Professional Development -->
+                                </div>
 
-                    </div><!-- / Current fiscal year -->
+                                <div class="progress mt-1" style="font-size: .75em;">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100">HTML intro</div>
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML content</div>
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%;"
+                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Frameworks</div>
+                                    <div class="progress-bar bg-light" role="progressbar"
+                                        style="width: 22%; color: #999;" aria-valuenow="22" aria-valuemin="0"
+                                        aria-valuemax="100">Accessibility</div>
+                                    <!-- bg-warning -->
+                                    <div class="progress-bar bg-light" role="progressbar"
+                                        style="width: 18%; color: #999;" aria-valuenow="18" aria-valuemin="0"
+                                        aria-valuemax="100">Analytics</div>
+                                    <!-- bg-danger -->
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Trained the administrator of the website
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <!-- done ruler -->
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                Website design and implementation
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://embeddedethics.seas.harvard.edu/index.html" target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    Embedded Ethics public website
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <a href="https://embeddedethics.seas.harvard.edu/workplan-process_train.html"
+                                    target="_blank">
+                                    <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                            website</span></i>
+                                    Embedded Ethics training syllabus
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Embedded Ethics -->
 
-    <!-- Past fiscal years -->
-                    <div role="Completed" aria-label="Completed projects" class="col-4 col-margin">
-                        <h2>
-                            &nbsp;
-                        </h2>
-                    </div> <!-- / Past fiscal years -->
-                
-                </div><!-- / row -->
-            </main>
-<!-- legend -->
-            <div role="legend" aria-label="Legend of icons" class="row">
-                
-                <div class="col-sm">
-                    <h6>
-                        <a name="legend">Legend</a>
-                    </h6>
-                    Project types
-                    <ul>
-                        <li class="card-label_primary">
-                            <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
-                            Web applications
-                        </li>
-                        <li class="card-label_success">
-                            <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
-                            Web sites
-                        </li>
-                        <li class="card-label_secondary">
-                            <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self training, courses, seminars, etc.)</span></i>
-                            Professional development (self training, courses, seminars, etc.)
-                        </li>
-                        <li class="card-label_secondary">
-                            <i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY20 Current fiscal year goals and priorities</span></i>
-                            Curent fiscal year's goals and priorities
-                        </li>
-                        <li class="card-label_warning">
-                            <i class="fas fa-chalkboard-teacher fa-padding"><span class="sr-only">Advising and training to faculty or staff</span></i>
-                            Training to faculty or staff
-                        </li>
-                        <li class="card-label_warning">
-                            <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and events</span></i>
-                            Accessibility reviews and events
-                        </li>
-                        <li class="card-label_warning">
-                            <i class="fas fa-user fa-padding"><span class="sr-only">User reviews and events</span></i>
-                            Usability reviews and events
-                        </li>
-                        <li class="card-label_warning">
-                            <i class="far fa-compass fa-padding"><span class="sr-only">Mentoring</span></i>
-                            Mentoring
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <h6>
+                    <div class="card card-label_secondary">
+                        <!-- card - Professional Development -->
+                        <div class="card-body card-header-margin">
+                            <h6 class="card-title">
+                                <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional
+                                        development (self training, courses, seminars, etc.)</span></i>
+                                FY19 Professional Development
+                                <a onclick="myFunctionProfDevFY19()" class="float-right">
+                                    <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project
+                                            history</span></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <script>function myFunctionProfDevFY19() {
+                                var x = document.getElementById("showProfDevFY19");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }</script>
+                        <ul class="list-group list-group-flush" id="showProfDevFY19" style="display: none;">
+                            <li class="list-group-item list-group-item-margin list-group-item-done text-muted bg-light">
+                                <!-- done ruler -->
+                                Total time - 4 hours
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <i>Courses from Harvard and other organizations</i>
+                            </li>
+                            <li class="list-group-item list-group-item-margin">
+                                <h6>Training</h6>
+                            </li>
+                            <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                        task</span></i>
+                                <a href="https://trainingportal.harvard.edu/Saba/Web_spf/NA1PRD0068/common/ledetail/cours000000000017446"
+                                    target="_blank">
+                                    Visual Eloquence: A Hands-On Workshop for Creating Effective Data Visualizations
+                                    (Harvard Digital Scholarship Support Group, October 9)
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- / card - Professional Development -->
+
+                </div><!-- / Current fiscal year -->
+
+                <!-- Past fiscal years -->
+                <div role="Completed" aria-label="Completed projects" class="col-4 col-margin">
+                    <h2>
                         &nbsp;
-                        <a name="legend" hidden>Legend</a>
-                    </h6>
-                    Link types
-                    <ul>
-                        <li>
-                            <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
-                            Web site - public
-                        </li>
-                        <li>
-                            <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
-                            Web site - prototype
-                        </li>
-                        <li>
-                            <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
-                            Google Drive
-                        </li>
-                        <li>
-                            <i class="fab fa-trello fa-padding"><span class="sr-only">Trello board or card</span></i>
-                            Trello board or card
-                        </li>
-                        <li>
-                            <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
-                            Project history
-                        </li>
-                        <li>
-                            <i class="fas fa-info-circle fa-padding"><span class="sr-only">Project details</span></i>
-                            Project details
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <h6>
-                        &nbsp;
-                        <a name="legend" hidden>Legend</a>
-                    </h6>
-                    Activities
-                    <ul>
-                        <li>
-                            <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
-                            Pending or ongoing task (continuous tense)
-                        </li>
-                        <li>
-                            <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
-                            Completed task
-                        </li>
-                    </ul>
-                </div>
-            </div><!-- / legend -->
+                    </h2>
+                </div> <!-- / Past fiscal years -->
 
-        </div><!-- / container -->
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-        
-        <!-- Script for info pop-over (see CRISP project) -->
-        <script>
-            $(function () {
-                $('[data-toggle="popover"]').popover()
-                })
-                $('.example-popover').popover({
-                    container: 'body'
-                })
-                $('.popover-dismiss').popover({
-                trigger: 'focus'
-                })
-        </script>
-        
-        <!-- Accessible expandable content -->
-        <script>
+            </div><!-- / row -->
+        </main>
+        <!-- legend -->
+        <div role="legend" aria-label="Legend of icons" class="row">
+
+            <div class="col-sm">
+                <h6>
+                    <a name="legend">Legend</a>
+                </h6>
+                Project types
+                <ul>
+                    <li class="card-label_primary">
+                        <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application project</span></i>
+                        Web applications
+                    </li>
+                    <li class="card-label_success">
+                        <i class="far fa-file-code fa-padding"><span class="sr-only">Web site project</span></i>
+                        Web sites
+                    </li>
+                    <li class="card-label_secondary">
+                        <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional development (self
+                                training, courses, seminars, etc.)</span></i>
+                        Professional development (self training, courses, seminars, etc.)
+                    </li>
+                    <li class="card-label_secondary">
+                        <i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY20 Current fiscal year goals
+                                and priorities</span></i>
+                        Curent fiscal year's goals and priorities
+                    </li>
+                    <li class="card-label_warning">
+                        <i class="fas fa-chalkboard-teacher fa-padding"><span class="sr-only">Advising and training to
+                                faculty or staff</span></i>
+                        Training to faculty or staff
+                    </li>
+                    <li class="card-label_warning">
+                        <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility reviews and
+                                events</span></i>
+                        Accessibility reviews and events
+                    </li>
+                    <li class="card-label_warning">
+                        <i class="fas fa-user fa-padding"><span class="sr-only">User reviews and events</span></i>
+                        Usability reviews and events
+                    </li>
+                    <li class="card-label_warning">
+                        <i class="far fa-compass fa-padding"><span class="sr-only">Mentoring</span></i>
+                        Mentoring
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h6>
+                    &nbsp;
+                    <a name="legend" hidden>Legend</a>
+                </h6>
+                Link types
+                <ul>
+                    <li>
+                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public website</span></i>
+                        Web site - public
+                    </li>
+                    <li>
+                        <i class="fab fa-github fa-padding"><span class="sr-only">Web prototype</span></i>
+                        Web site - prototype
+                    </li>
+                    <li>
+                        <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google Drive</span></i>
+                        Google Drive
+                    </li>
+                    <li>
+                        <i class="fab fa-trello fa-padding"><span class="sr-only">Trello board or card</span></i>
+                        Trello board or card
+                    </li>
+                    <li>
+                        <i class="fas fa-list-ul fa-padding"><span class="sr-only">Project history</span></i>
+                        Project history
+                    </li>
+                    <li>
+                        <i class="fas fa-info-circle fa-padding"><span class="sr-only">Project details</span></i>
+                        Project details
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h6>
+                    &nbsp;
+                    <a name="legend" hidden>Legend</a>
+                </h6>
+                Activities
+                <ul>
+                    <li>
+                        <i class="far fa-square fa-padding"><span class="sr-only">Task to complete</span></i>
+                        Pending or ongoing task (continuous tense)
+                    </li>
+                    <li>
+                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed task</span></i>
+                        Completed task
+                    </li>
+                </ul>
+            </div>
+        </div><!-- / legend -->
+
+    </div><!-- / container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script for info pop-over (see CRISP project) -->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+        $('.example-popover').popover({
+            container: 'body'
+        })
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
+
+    <!-- Accessible expandable content -->
+    <script>
             /*!
             jQuery a11yExpandable plugin
             @name jquery.a11yExpandable.js
@@ -1170,48 +1243,53 @@
             @license Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
             */
 
-            (function( $ ) {
-            $.fn.a11yExpandable = function() {
+            (function ($) {
+                $.fn.a11yExpandable = function () {
 
-            return this.each(function() {
+                    return this.each(function () {
 
-            var elem = $(this);
-            var plugin = this;
+                        var elem = $(this);
+                        var plugin = this;
 
-            // set the ARIA state and relationship attributes
-            elem.attr({
-            'aria-expanded': 'false',
-            'aria-controls': elem.attr('data-expandable') 
-            });
+                        // set the ARIA state and relationship attributes
+                        elem.attr({
+                            'aria-expanded': 'false',
+                            'aria-controls': elem.attr('data-expandable')
+                        });
 
-            // find the element to expand by id
-            var expandable = $('#'+elem.attr('data-expandable')).attr({
-            'aria-hidden': 'true',
-            'class': 'expandable'
-            });
+                        // find the element to expand by id
+                        var expandable = $('#' + elem.attr('data-expandable')).attr({
+                            'aria-hidden': 'true',
+                            'class': 'expandable'
+                        });
 
-            // click handler
-            elem.on('click', function() {
+                        // click handler
+                        elem.on('click', function () {
 
-            // Cast the expanded state as a boolean
-            var expanded = $(this).attr('aria-expanded') === 'false' ? false : true;
+                            // Cast the expanded state as a boolean
+                            var expanded = $(this).attr('aria-expanded') === 'false' ? false : true;
 
-            // Switch the states of aria-expanded and aria-hidden
-            elem.attr('aria-expanded', !expanded);
-            expandable.attr('aria-hidden', expanded);
+                            // Switch the states of aria-expanded and aria-hidden
+                            elem.attr('aria-expanded', !expanded);
+                            expandable.attr('aria-hidden', expanded);
 
-            });
+                        });
 
-            });
+                    });
 
-            };
-            }( jQuery ));
+                };
+            }(jQuery));
 
-            $('[data-expandable]').a11yExpandable();
-        </script>
+        $('[data-expandable]').a11yExpandable();
+    </script>
 
-    </body>
+</body>
+<footer>
+    <p>
+        Copyright © 2026 The President and Fellows of Harvard College | <a
+            href="http://accessibility.harvard.edu/">Accessibility</a> | <a
+            href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
+    </p>
+</footer>
 
 </html>
-
-
