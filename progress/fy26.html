@@ -68,7 +68,7 @@
                 <a href="#legend" class="mr-4">
                     Legend
                 </a>
-                Updated on December 23, 2025
+                Updated on April 1, 2026
             </span>
         </div>
         </nav>
@@ -92,7 +92,7 @@
                         <a name="main_content" id="main_content" tabindex="-1">FY26</a>
                     </h2>
 
-                    <!-- FY26 -->
+                    <!-- FY26 Chart summary -->
                     <div role="FY26-chart" aria-label="FY26 effort distribution">
                         <div class="card mb-4 p-2">
                             <h6>
@@ -109,23 +109,23 @@
                                         // put 0, if there is no data for the particular bar
                                         datasets: [{
                                             label: 'Academic products',
-                                            data: [61, 90.5, 0, 0, 0],
+                                            data: [61, 90.5, 44.5, 0],
                                             backgroundColor: 'rgb(165, 28, 48)'
                                         }, {
                                             label: 'Web publishing',
-                                            data: [286, 106.5, 0, 0, 0],
+                                            data: [286, 106.5, 57.5, 0],
                                             backgroundColor: 'rgb(78, 136, 199)'
                                         }, {
                                             label: 'SEAS accessibility',
-                                            data: [15.5, 13, 0, 0, 0],
+                                            data: [15.5, 13, 9, 0],
                                             backgroundColor: 'rgb(0, 170, 10)'
                                         }, {
                                             label: 'Professional growth',
-                                            data: [6, 2, 0, 0, 0],
+                                            data: [6, 2, 9.5, 0],
                                             backgroundColor: 'rgb(253, 126, 20)'
                                         }, {
                                             label: 'Misc.',
-                                            data: [29.5, 165, 0, 0, 0],
+                                            data: [29.5, 165, 179, 0],
                                             backgroundColor: 'rgb(148, 148, 148)'
                                         }]
                                     },
@@ -1299,7 +1299,6 @@
                     </div>
 
 
-
                     <!-- Chart Q2FY26 -->
                     <div class="card mb-4 p-2">
                         <h3>
@@ -2413,6 +2412,587 @@
                                             <!-- What did I learn that I didn't know? -->
                                             <!-- What information could inspire my engagement? -->
                                         </li>
+                                    </section>
+
+                                    <li class="list-group-item list-group-item-margin text-muted">
+                                        <a href="https://www.seas.harvard.edu/office-diversity-inclusion-and-belonging"
+                                            target="_blank">
+                                            <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                                    website</span></i>
+                                            SEAS DIB
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin text-muted">
+                                        <a href="https://dib.harvard.edu/" target="_blank">
+                                            <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                                    website</span></i>
+                                            Harvard DIB
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin text-muted">
+                                        <a href="https://carrcenter.hks.harvard.edu/" target="_blank">
+                                            <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Public
+                                                    website</span></i>
+                                            HKS Carr Center
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chart Q3FY26 -->
+                    <div class="card mb-4 p-2">
+                        <h3>
+                            Q3FY26 effort distribution
+                        </h3>
+                        <!-- This time totals include items moved to Done column -->
+                        <p class="text-muted text-center">October - December</p>
+                        <canvas id="Q3FY26" aria-label="Q3FY26 effort distribution chart" class="chartjs mb-3"></canvas>
+                        <!-- <canvas id="Q3FY26" class="chartjs mb-3" style="width: 100% !important;" aria-label="Q3FY26 effort distribution chart"></canvas> -->
+                        <script>
+                            new Chart(document.getElementById("Q3FY26"),
+                                {
+                                    "type": "doughnut",
+                                    "data":
+                                    {
+                                        "labels":
+                                            ["Academic products",
+                                                "Web publishing",
+                                                "SEAS accessibility",
+                                                "Professional growth",
+                                                "Misc."],
+                                        "datasets":
+                                            [{
+                                                "label": "Q1FY26 effort distribution",
+                                                "data": [44.5, 57.5, 9, 9.5, 179],
+                                                "backgroundColor":
+                                                    ["rgb(165, 28, 48)",
+                                                        "rgb(78, 136, 199)",
+                                                        "rgb(0, 170, 173)",
+                                                        "rgb(253, 126, 20)",
+                                                        "rgb(148, 148, 148)"]
+                                            }]
+                                    }
+                                });
+                        </script>
+                        <p class="text-muted">
+                            <strong>Academic projects</strong>: OAP Graduate Database, Mark One library of UI
+                            components, student mentoring<br />
+                            <strong>Web publishing</strong>: Web publishing assistance, onboarding<br />
+                            <strong>SEAS accessibility</strong>: Implementation plan, digital accessibility<br />
+                            <strong>Professional growth</strong>: Training and interest groups participation, user
+                            experience and accessibility skills<br />
+                            <strong>Misc.</strong>: staff standups, 1:1 catch-ups, prof. develp.
+                        </p>
+                    </div>
+
+                    <!-- Academic products Q3FY26 -->
+                    <div class="card card-label_primary">
+                        <div class="card-body card-header-margin">
+                            <div class="card-title">
+                                <!-- Title and expand/collapse button -->
+                                <button data-expandable="q3fy26-academicProducts"
+                                    title="Academic products plans and progress">
+                                    <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application
+                                            project</span></i>
+                                    <h3>Q3FY26 Academic products</h3>
+                                    <span class="sr-only">view plans and progress below</span>
+                                </button>
+                                <!-- Project description -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://github.huit.harvard.edu/pages/SEAS/studyPlan-ux/index.html"
+                                            target="_blank" title="12.5 hours">
+                                            <i class="fab fa-github fa-padding"><span
+                                                    class="sr-only">Wireframes</span></i>
+                                            Study Plan uaser testing
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://github.huit.harvard.edu/pages/SEAS/phd-database-ux/index.html"
+                                            target="_blank" title="20 hours">
+                                            <i class="fab fa-github fa-padding"><span
+                                                    class="sr-only">Wireframes</span></i>
+                                            OAP Graduate Database
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://seas-computing.github.io/mark-one/index.html#/Theme?id=globalcss"
+                                            title="0 hours" target="_blank">
+                                            <i class="fab fa-github fa-padding"><span class="sr-only">Web
+                                                    prototype</span></i>
+                                            Mark One color accessibility
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://seas-computing.github.io/course-planner_ux/guidelines/guidelines-overview.html"
+                                            title="0 hours" target="_blank">
+                                            <i class="fab fa-github fa-padding"><span class="sr-only">Web
+                                                    prototype</span></i>
+                                            Mark One library of visual components
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://seas-computing.github.io/course-planner_ux/guidelines/guidelines-overview.html"
+                                            title="1 hours" target="_blank">
+                                            <i class="far fa-compass fa-padding"><span class="sr-only">Student
+                                                    mentoring</span></i>
+                                            Student mentoring
+                                            <!-- Planning - 1 hour -->
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q3fy26-academicProducts">
+                                <h4 class="sr-only">Academic products Q4FY25 plans and progress</h4>
+
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                                        <!-- ##a Academic products Q3FY26 - Q3FY26 total time -->
+                                        Q3FY26 total time - 44.5 hours
+                                        <!-- Including standups, sprint planning, assistance, etc. -->
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin text-muted bg-light">
+                                        <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                                task</span></i>
+                                        Daily standups, sprint retro and planning
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web publishing Q3FY26 -->
+                    <div class="card card-label_success" id="web">
+                        <div class="card-body card-header-margin">
+                            <div class="card-title">
+                                <!-- Title and expand/collapse button -->
+                                <button data-expandable="q3fy26-RemoteAssistance"
+                                    title="Web publishing plans and progress">
+                                    <i class="fas fa-chalkboard-teacher fa-padding"><span class="sr-only">Advising and
+                                            training to faculty or staff</span></i>
+                                    <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal
+                                                year's goals and priorities</span></i></sup>
+                                    <h3>Q3FY26 Web publishing</h3>
+                                    <span class="sr-only">view plans and progress below</span>
+                                </button>
+
+                                <!-- Project description -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                                    </li>
+                                    <!-- ##w Web publishing Q3FY26 -->
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="far fa-square fa-padding"><span class="sr-only">Task to
+                                                complete</span></i>
+                                        <a title="31.5 hours">
+                                            OpenScholar and CampusPress web publishing support to<br>
+                                            • Anurag <!-- .25 hours --><br>
+                                            • Bertoldi <!-- 3 hours --><br>
+                                            • Gil <!-- 6.5 hours --><br>
+                                            • Hasbach <!-- seasphdonboarding HarvardSites Drupal website - .5 hours --><br>
+                                            • Jacob <!-- ACMG website, also the as.harvard.edu website removal - 2.5 hours --><br>
+                                            • Jirash <!-- How to PhD CampusPress website - 1 hour --><br>
+                                            • Juncheng <!-- systems GutHub website DNS - 1 hour --><br>
+                                            • Koumoutsakos <!-- Zoom tutorial to Lucas and Lori, website updates, demos - 9.5 hour --><br>
+                                            • Lu <!-- campusPress website - 2 hours --><br>
+                                            • Mazur <!-- qemisd website - .5 hour --><br>
+                                            • Mickens <!-- .5 hours --><br>
+                                            • Mickley <!-- .25 hours --><br>
+                                            • Parker <!-- DBG website Drupal migration - 3 hours --><br>
+                                            • Qian Zhang <!-- DNS for https://power-agent.github.io/ - .5 hours --><br>
+                                            • Richardson <!-- DNS and website introduction - 2 hours --><br>
+                                            • Smith <!-- Maurice Smith SEAS hosted websites - 1 hours --><br>
+                                            • Sorensen <!-- Science & Cooking subscribe button - .5 hour --><br>
+                                            • Srinivasan <!-- Bionic Lab CampusPress website - .5 hour --><br>
+                                            • Weitz Lab <!-- AI conversion of publications - 8 hours -->
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://docs.google.com/spreadsheets/d/1gd71CLCPGwT8yFqHELmXF92MTysngyzFdQAi3K9kGQs/edit?usp=sharing"
+                                            target="_blank" title="4.5 hours">
+                                            <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
+                                                    Drive</span></i>
+                                            Post-OpenScholar planning
+                                            <!-- HWP Working Group - meetings and follow up - 1 hours -->
+                                            <!-- HWP chatbot testing - 4 hour -->
+                                            <!-- "SEAS and HWP Check-in" meetings - .5 hours -->
+                                            <!-- Office of Communications meetings - 0 hour -->
+                                            <!-- HWP Office Hours - 0 hour -->
+                                            <!-- Migration discussions on weekly check in with Rebecca - 0 hours -->
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://docs.google.com/document/d/1UqnHKsUT7vYiS85whGXwhwRM0xoNEVXkBuGHiyXfKmk/edit?usp=sharing"
+                                            target="_blank" title="3.5 hours">
+                                            Draft of website and DNS eligibility guidelines and information for the SEAS
+                                            website</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <a href="https://docs.google.com/document/d/1eL1YHs6bFwXDQeGuNaphSEGQnP0UqdBpvGVdkLjMVhM/edit?usp=sharing"
+                                            target="_blank" title="1 hours">
+                                            SEAS adoption of DASH and ORCID
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q3fy26-RemoteAssistance">
+                                <h4 class="sr-only">Web publishing assistance Q3FY26 plans and progress</h4>
+
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
+                                        <!-- ##w Web publishing Q3FY26 - Q3FY26 total time minus projects moved to Done column -->
+                                        Q3FY26 total time - 57.5 hours <span hidden>(done: 0)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEAS Accessibility Q3FY26 -->
+                    <div class="card card-label_primary">
+                        <div class="card-body card-header-margin">
+                            <div class="card-title">
+                                <!-- Title and expand/collapse button -->
+                                <button data-expandable="q3fy26-seasAccessibility"
+                                    title="seasAccessibility plans and progress">
+                                    <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility
+                                            projects</span></i>
+                                    <h3>Q3FY26 SEAS Accessibility</h3>
+                                    <span class="sr-only">view plans and progress below</span>
+                                </button>
+
+                                <!-- Project description -->
+                                <ul class="list-group list-group-flush">
+                                    SEAS Digital Accessibility
+                                </ul>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q3fy26-seasAccessibility">
+                                <h4 class="sr-only">SEAS Accessibility Q3FY26 plans and progress</h4>
+
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                                        <!-- ##x SEAS Accessibility Q3FY26 - Q3FY26 total time -->
+                                        Q3FY26 total time - 9 hours
+                                        <!-- Including standups, sprint planning, assistance, etc. -->
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-globe-americas fa-padding"><span class="sr-only">Web
+                                                site</span></i>
+                                        <a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy"
+                                            target="_blank">
+                                            Harvard Accessibility Policy
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
+                                                Drive</span></i>
+                                        <a href="https://hu.sharepoint.com/:x:/r/sites/hrci-SchoolSecurityOfficers/Shared%20Documents/Schools%20and%20Units/SEAS/Annual%20Self-Assessment/2025/SEAS%20Annual%20Self-Assessment%20-%202025%20-%20TO%20COMPLETE.xlsx?d=w01126f3d78694ce2ace9493e0a991777&csf=1&web=1&e=iXIopT"
+                                            target="_blank">
+                                            <i>SEAS Accessibility implementation plans</i>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        <a href="https://liaisons.accessibility.huit.harvard.edu/convenings?cb=291159893"
+                                            target="_blank">
+                                            DAL quarterly meetings
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        Digital Accessibility Privacy and Security (DAPS) biweekly meetings
+                                        <!-- 20260311 - 1 hour -->
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        OBEC (Center for Academic Equity) strategic plan
+                                        <!-- 3.5 hours -->
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        Title II and Digital Accessibility: The Next Steps for Colleges and Universities
+                                        <!-- 3.5 hours -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Development Q3FY26 -->
+                    <div class="card card-label_secondary">
+                        <div class="card-body card-header-margin">
+                            <div class="card-title">
+                                <!-- Title and expand/collapse button -->
+                                <button data-expandable="q3fy26-ProfessionalDevelopment"
+                                    title="Professional Development plans and progress">
+                                    <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional
+                                            development (self training, courses, seminars, etc.)</span></i>
+                                    <sup><i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY25 goals and
+                                                priorities</span></i></sup>
+                                    <h3>Q3FY26 Professional Development</h3>
+                                    <span class="sr-only">view plans and progress below</span>
+                                </button>
+
+                                <!-- Project description -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i>Courses and webinars from Harvard and other organizations</i>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        AI community of practice
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        <a href="https://privsec.harvard.edu/" title="0 hours">
+                                            ISDP community of practice
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        <a href="https://www.huit.harvard.edu/university-wide-vulnerability-management-standards"
+                                            title="1 hour">
+                                            Vulnerability Management Community of Practice
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
+                                                interest</span></i>
+                                        IT Stakeholder Forum
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q3fy26-ProfessionalDevelopment">
+                                <h4 class="sr-only">Professional Development Q3FY26 plans and progress</h4>
+
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
+                                        <!-- ##p Professional Development Q3FY26 total time -->
+                                        Q3FY26 total time - 11.5 hours
+                                    </li>
+
+                                    <section id="Webinars">
+                                        <li class="list-group-item list-group-item-margin bg-light">
+                                            <h4>Q3FY26 Events and Webinars</h4>
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Dev Team Friday Sessions
+                                            <!-- January 9 - 1 hour -->
+                                            <!-- January 23 - 1 hour -->
+                                            <!-- February 20 - 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            FAS Gemini workshops <!-- 6.5 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Microsoft IT AI Training <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            IT Stakeholders' Forum - Winter 2026 <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Inside the Acamdemic: What Every College Professional Needs to Know About
+                                            Pig Butchering Scams with Erin West <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Adapting to AI-Powered Search: A Real-World Case Study from UF Health by
+                                            SiteImprove <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Tech Talk: Inside the AI Hype Cycle: Our Gen AI Journey <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            AI Community of Practice, with demonstrations of agentic coding, tips and tricks. <!-- 1 hour -->
+                                        </li>
+                                        <li class="list-group-item list-group-item-margin">
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Scheduled
+                                                    event</span></i>
+                                            Beyond the Google Search <!-- 1 hour -->
+                                        </li>
+                                    </section>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diversity Inclusion Belonging Q3FY26 -->
+                    <div class="card card-label_warning">
+                        <div class="card-body card-header-margin">
+                            <div class="card-title">
+                                <!-- Title and expand/collapse button -->
+                                <button data-expandable="q3fy26-DIB"
+                                    title="Diversity Inclusion Belonging plans and progress">
+                                    <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional
+                                            development (self training, courses, seminars, etc.)</span></i>
+                                    <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal
+                                                year's goals and priorities</span></i></sup>
+                                    <h3>Diversity Inclusion Belonging</h3>
+                                    <span class="sr-only">view plans and progress below</span>
+                                </button>
+
+                                <!-- Project description -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-margin">
+                                        <i>Regularly reading DIB related publications, attending training, events and
+                                            discussions.</i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q3fy26-DIB">
+                                <h4 class="sr-only">Diversity Inclusion Belonging Q3FY24 plans and progress</h4>
+
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
+                                        <!-- ##d Diversity Inclusion Belonging - 2FY26 total time -->
+                                        Q3FY26 total time - 0 hours
+                                    </li>
+
+                                    <section id="dib_Q2FY26_events_to_attend">
+                                    </section>
+
+                                    <section id="dib_Q2FY26_readAndCommented">
+
+                                        <!-- Brave Community: teaching and learning about racism in college -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.tandfonline.com/doi/full/10.1080/09518398.2021.1942302"
+                                                target="_blank">
+                                                Brave Community: teaching and learning about racism in college
+                                            </a>
+                                        </li>
+                                        <!-- BLearning Race to Unlearn Racism: The Effects of Ethnic Studies Course-Taking -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.tandfonline.com/doi/full/10.1080/00221546.2018.1545498"
+                                                target="_blank">
+                                                BLearning Race to Unlearn Racism: The Effects of Ethnic Studies
+                                                Course-Taking
+                                            </a>
+                                        </li>
+                                        <!-- International Migration of Unaccompanied Minor (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S2352464221001942"
+                                                target="_blank">
+                                                International Migration of Unaccompanied Minor (The Carr Center)
+                                            </a>
+                                        </li>
+                                        <!-- Unmasking Discrimination (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://today.law.harvard.edu/unmasking-discrimination/"
+                                                target="_blank">
+                                                Unmasking Discrimination (The Carr Center)
+                                            </a>
+                                        </li>
+
+                                        <!-- How the Government Can Support a Free Press and Cut Disinformation (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://news.harvard.edu/gazette/story/2021/08/martha-minow-looks-at-ways-government-can-stop-disinformation/"
+                                                target="_blank">
+                                                How the Government Can Support a Free Press and Cut Disinformation (The
+                                                Carr Center)
+                                            </a>
+                                        </li>
+
+                                        <!-- An Amazon Site's Black Workers Keep Finding Nooses (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.msnbc.com/opinion/amazon-site-s-black-workers-keep-finding-nooses-company-needs-n1276188"
+                                                target="_blank">
+                                                An Amazon Site's Black Workers Keep Finding Nooses (The Carr Center)
+                                            </a>
+                                        </li>
+
+                                        <!-- What's Better and What's Worse 20 Years After 9/11? (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.hks.harvard.edu/faculty-research/policy-topics/international-relations-security/20-years-after-9-11"
+                                                target="_blank">
+                                                What's Better and What's Worse 20 Years After 9/11? (The Carr Center)
+                                            </a>
+                                        </li>
+
+                                        <!-- Behind the Book: "Civil Resistance: What Everyone Needs to Know" (The Carr Center) -->
+                                        <li class="list-group-item list-group-item-margin text-muted bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Article to
+                                                    read</span></i>
+                                            <a href="https://www.hks.harvard.edu/behind-the-book/erica-chenoweth-civil-resistance"
+                                                target="_blank">
+                                                Behind the Book: "Civil Resistance: What Everyone Needs to Know" (The
+                                                Carr Center)
+                                            </a>
+                                        </li>
+
+                                        <!-- title (organization) -->
+                                        <li class="list-group-item list-group-item-margin bg-light" hidden>
+                                            <i class="far fa-square fa-padding"><span class="sr-only">Scheduled
+                                                    reading</span></i>
+                                            <a href="url" target="_blank">
+                                                title (organization)
+                                            </a>
+                                            (date #)
+                                            <!-- What did I learn that I didn't know? -->
+                                            <!-- What information could inspire my engagement? -->
+                                        </li>
+
+                                        <!-- title (organization) -->
+                                        <li class="list-group-item list-group-item-margin bg-light" hidden>
+                                            <i class="far fa-check-square fa-padding"><span class="sr-only">Completed
+                                                    reading</span></i>
+                                            <a href="url" target="_blank">
+                                                title (organization)
+                                            </a>
+                                            (date #)
+                                            <!-- What did I learn that I didn't know? -->
+                                            <!-- What information could inspire my engagement? -->
+                                        </li>
+
                                     </section>
 
                                     <li class="list-group-item list-group-item-margin text-muted">
