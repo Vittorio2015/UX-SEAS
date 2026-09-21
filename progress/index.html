@@ -431,33 +431,43 @@
                         </h3>
                         <!-- This time totals include items moved to Done column -->
                         <p class="text-muted text-center">July - September</p>
-                        <canvas id="Q1FY27" aria-label="Q1FY27 effort distribution chart" class="chartjs mb-3"></canvas>
-                        <!-- <canvas id="Q1FY27" class="chartjs mb-3" style="width: 100% !important;" aria-label="Q1FY27 effort distribution chart"></canvas> -->
+                        <canvas id="Q1FY27" aria-label="Q1FY27 effort distribution chart" class="chartjs mb-3">
+                        </canvas>
+                    
                         <script>
-                            new Chart(document.getElementById("Q1FY27"),
-                                {
-                                    "type": "doughnut",
-                                    "data":
-                                    {
-                                        "labels":
-                                            ["Academic products",
-                                                "Web publishing",
-                                                "SEAS accessibility",
-                                                "Professional growth",
-                                                "Misc."],
-                                        "datasets":
-                                            [{
-                                                "label": "Q1FY26 effort distribution",
-                                                // ##chart
-                                                "backgroundColor":
-                                                    ["rgb(13.5,101, 29, 4, 138.5)",
-                                                        "rgb(78, 136, 199)",
-                                                        "rgb(0, 170, 173)",
-                                                        "rgb(253, 126, 20)",
-                                                        "rgb(148, 148, 148)"]
-                                            }]
-                                    }
-                                });
+                            new Chart(document.getElementById("Q1FY27"), {
+                                type: "doughnut",
+
+                                data: {
+                                    labels: [
+                                        "Academic products",
+                                        "Web publishing",
+                                        "SEAS accessibility",
+                                        "Professional growth",
+                                        "Misc."
+                                    ],
+
+                                    datasets: [{
+                                        label: "Q1FY27 effort distribution",
+                                        // ##chart
+                                        data: [
+                                            13.5,   // Academic products
+                                            103,    // Web publishing
+                                            29,     // SEAS accessibility
+                                            4,      // Professional growth
+                                            144.5   // Misc.
+                                        ],
+
+                                        backgroundColor: [
+                                            "rgb(165, 28, 48)",
+                                            "rgb(78, 136, 199)",
+                                            "rgb(0, 170, 173)",
+                                            "rgb(253, 126, 20)",
+                                            "rgb(148, 148, 148)"
+                                        ]
+                                    }]
+                                }
+                            });
                         </script>
                         <p class="text-muted">
                             <strong>Academic projects</strong>: OAP Graduate Database, Study Plan, Mark One library of UI
@@ -639,7 +649,7 @@
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://docs.google.com/spreadsheets/d/1gd71CLCPGwT8yFqHELmXF92MTysngyzFdQAi3K9kGQs/edit?usp=sharing"
-                                            target="_blank" title="8 hours">
+                                            target="_blank" title="8.5 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                             Post-OpenScholar planning
@@ -649,6 +659,7 @@
                                             <!-- CampusPress TOU list from HWP - 0 hours -->
                                             <!-- Office of Communications meetings - 0 hour -->
                                             <!-- Migration discussions on weekly check in with Rebecca - 0 hours -->
+                                            <!-- WordPress migration to HarvardSites on 20260921 - .5 hour -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -673,7 +684,7 @@
                                     <li
                                         class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
                                         <!-- ##w Web publishing Q1FY27 - Q1FY27 total time minus projects moved to Done column -->
-                                        Q1FY27 total time - 101 hours <span hidden>(done: 0)</span>
+                                        Q1FY27 total time - 102 hours <span hidden>(done: 0)</span>
                                     </li>
                                 </ul>
                             </div>
