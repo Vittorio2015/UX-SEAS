@@ -51,6 +51,7 @@
                     FY History
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="fy27.html">FY27</a>
                     <a class="dropdown-item" href="fy26.html">FY26</a>
                     <a class="dropdown-item" href="fy25.html">FY25</a>
                     <a class="dropdown-item" href="fy24.html">FY24</a>
@@ -424,18 +425,18 @@
                     </div> -->
                     <!-- / Daily alert-->
 
-                    <!-- Chart Q1FY27 -->
+                    <!-- Chart Q2FY27 -->
                     <div class="card mb-4 p-2">
                         <h3>
-                            Q1FY27 effort distribution
+                            Q2FY27 effort distribution
                         </h3>
                         <!-- This time totals include items moved to Done column -->
-                        <p class="text-muted text-center">July - September</p>
-                        <canvas id="Q1FY27" aria-label="Q1FY27 effort distribution chart" class="chartjs mb-3">
+                        <p class="text-muted text-center">October - December</p>
+                        <canvas id="Q2FY27" aria-label="Q2FY27 effort distribution chart" class="chartjs mb-3">
                         </canvas>
                     
                         <script>
-                            new Chart(document.getElementById("Q1FY27"), {
+                            new Chart(document.getElementById("Q2FY27"), {
                                 type: "doughnut",
 
                                 data: {
@@ -448,14 +449,14 @@
                                     ],
 
                                     datasets: [{
-                                        label: "Q1FY27 effort distribution",
+                                        label: "Q2FY27 effort distribution",
                                         // ##chart
                                         data: [
-                                            14.5,   // Academic products
-                                            126,    // Web publishing
-                                            31.5,     // SEAS accessibility
-                                            5,      // Professional growth
-                                            161   // Misc.
+                                            0,   // Academic products
+                                            0,    // Web publishing
+                                            0,     // SEAS accessibility
+                                            0,      // Professional growth
+                                            0   // Misc.
                                         ],
 
                                         backgroundColor: [
@@ -480,18 +481,22 @@
                         </p>
                     </div>
 
-                    <!-- Academic products Q1FY27 -->
+                    <!-- Academic products Q2FY27 -->
                     <div class="card card-label_primary">
                         <div class="card-body card-header-margin">
                             <div class="card-title">
                                 <!-- Title and expand/collapse button -->
-                                <button data-expandable="q1fy27-academicProducts"
+                                <button data-expandable="q2fy27-academicProducts"
                                     title="Academic products plans and progress">
                                     <i class="fas fa-cogs fa-padding"><span class="sr-only">Web application
                                             project</span></i>
-                                    <h3>Q1FY27 Academic products</h3>
+                                    <h3>Q2FY27 Academic products</h3>
                                     <span class="sr-only">view plans and progress below</span>
                                 </button>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q2fy27-academicProducts">
+                                <h4 class="sr-only">Academic products Q2FY27 plans and progress</h4>
                                 <!-- Project description -->
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item list-group-item-margin">
@@ -512,7 +517,7 @@
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://github.huit.harvard.edu/pages/SEAS/phd-database-ux/index.html"
-                                            target="_blank" title=".5 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-github fa-padding"><span
                                                     class="sr-only">Wireframes</span></i>
                                             OAP Graduate Database
@@ -520,22 +525,18 @@
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://drive.google.com/drive/folders/1gE3l2oJqJeIBl81ulgBCUHHCxYQSQdGq?usp=drive_link"
-                                            target="_blank" title="1.5 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                             Software collaboration project
-                                            <!-- 20260723 - Dev Team presentation - 1.5 hours -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://docs.google.com/document/d/1RWmtjh32njNOXfFFkbqWJxDR19Ifj2xpAAAmiV9OBK4/edit?usp=sharing"
-                                            target="_blank" title="3 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                             FAQ Resource Finder
-                                            <!-- 20260926 - Draft for Amira - 2 hours -->
-                                            <!-- 20260927 - Amira's working concept - 1 hour -->
-                                            <!-- 2026099 - POC database prep - 1.5 hour -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -555,16 +556,12 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <!-- plans and progress -->
-                            <div id="q1fy27-academicProducts">
-                                <h4 class="sr-only">Academic products Q1FY27 plans and progress</h4>
 
                                 <ul class="list-group list-group-flush">
                                     <li
                                         class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                        <!-- ##a Academic products Q1FY27 - Q1FY27 total time -->
-                                        Q1FY27 total time - 14.5 hours
+                                        <!-- ##a Academic products Q2FY27 - Q2FY27 total time -->
+                                        Q2FY27 total time - 0 hours
                                         <!-- Including standups, sprint planning, assistance, etc. -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin text-muted bg-light">
@@ -577,65 +574,39 @@
                         </div>
                     </div>
 
-                    <!-- Web publishing Q1FY27 -->
+                    <!-- Web publishing Q2FY27 -->
                     <div class="card card-label_success" id="web">
                         <div class="card-body card-header-margin">
                             <div class="card-title">
                                 <!-- Title and expand/collapse button -->
-                                <button data-expandable="q1fy27-RemoteAssistance"
+                                <button data-expandable="q2fy27-RemoteAssistance"
                                     title="Web publishing plans and progress">
                                     <i class="fas fa-chalkboard-teacher fa-padding"><span class="sr-only">Advising and
                                             training to faculty or staff</span></i>
                                     <sup><i class="fas fa-balance-scale text-muted"><span class="sr-only">Curent fiscal
                                                 year's goals and priorities</span></i></sup>
-                                    <h3>Q1FY27 Web publishing</h3>
+                                    <h3>Q2FY27 Web publishing</h3>
                                     <span class="sr-only">view plans and progress below</span>
                                 </button>
 
                                 <!-- Project description -->
+                            <i>Assisting SEAS Community with usability and accessibility issues.</i>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q2fy27-RemoteAssistance">
+                                <h4 class="sr-only">Web publishing assistance Q4FY26 plans and progress</h4>
+
                                 <ul class="list-group list-group-flush">
+                                    <!-- ##w Web publishing Q2FY27 -->
                                     <li class="list-group-item list-group-item-margin">
-                                        <i>Assisting SEAS Community with usability and accessibility issues.</i>
-                                    </li>
-                                    <!-- ##w Web publishing Q1FY27 -->
-                                    <li class="list-group-item list-group-item-margin">
-                                        <a title="56.5 hours">
+                                        <a title="0">
                                             OpenScholar and CampusPress web publishing support to<br>
-                                            • Bertoldi <!-- CampusPress website edits - 1 hour --><br>
-                                            • Chin <!-- Robotic Cores website - 2 hour --><br>
-                                            • Chong <!-- NESD 2020 website - 1 hour --><br>
-                                            • Embedded Ethics <!-- .5 hour --><br>
-                                            • Ginzburg <!-- LInc website archival - 2.5 hour --><br>
-                                            • Khalil<br>
-                                                <!-- Khalil Lab GitHub website - 8 hour -->
-                                                <!-- 20260716 - accessibility-review-khalil-lab - 4 hours -->
-                                                <!-- 20260720 - GitHub issue #1 and project board - 1 hours -->
-                                                <!-- 20260722 - GitHub issues #2-6 - 2.5 hours -->
-                                                <!-- 20260724 - GitHub issues shared with Khalil and Brandon - .5 hours -->
-                                                <!-- 20260727 - Correspondence, next meeting setup - 1.5 hours -->
-                                                <!-- 20260728 - Meeting, GitHub.io setup - 1 hours -->
-                                                <!-- 20260820-21 - Issue #6 - 4 hours -->
-                                                <!-- 20260831 - Issue #6 - 3 hours -->
-                                                <!-- 20260902 - Issue #6 - 1 hour -->
-                                                <!-- 20260906 - Issue #6 - 1 hour -->
-                                                <!-- 20260909 - Issue #6 email to Brandon and Mo, pull request - 2 hours -->
-                                            • Liu <!-- Jia Liu Drupal website download - 1 hour --><br>
-                                            • Parkes <!-- Drupal website, publications, "WINE 13" and "Applied Cryptography and Society" to Archive-It - 16 hour --><br>
-                                            • Ruppert <!-- CampusPress request for SEAS Research Operations Toolkit website - 2.5 hour --><br>
-                                            • Salil <!-- Bio website, publications - 2 hour --><br>
-                                            • Sörensen <!-- CampusPress website, 2026 events - 2.5 hour --><br>
-                                            • St. Joy <!-- racing.seas website - .5 hour --><br>
-                                            • Tambe <!-- Teamcore website, People edits - 1.5 hour --><br>
-                                            • Walsh <!-- softroboticskit DNS - .5 hour --><br>
-                                            • Wang <!-- DNS request - 1 hour --><br>
-                                            • Wattenberg <!-- Insight website, archive - 3 hour --><br>
-                                            • Weitz <!-- ELISS website, edits and DNS request- 5.5 hour --><br>
-                                            • Wood <!-- Micro website, new platform - .5 hour -->
+                                            <!-- • Gallegos  POLS-T website, new member - .5 hour --><br>
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://docs.google.com/document/d/1POqIuw1vP8aNdlUK9jgUpgFXvqnro6LwNokzWiJ6OB4/edit?usp=sharing"
-                                            target="_blank" title="4.5 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                         </a>
@@ -643,7 +614,7 @@
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://docs.google.com/spreadsheets/d/1r6Qmm1kHzHftz5ZRlYUQMVF6Ns3wCGxtRT3uYBjlML8/edit?usp=sharing"
-                                            target="_blank" title="25.5 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                         </a>
@@ -651,30 +622,27 @@
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://drive.google.com/drive/folders/1gE3l2oJqJeIBl81ulgBCUHHCxYQSQdGq?usp=drive_link"
-                                            target="_blank" title="4 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                             Software collaboration project
-                                            <!-- ChatGPT setup - 1 hour -->
-                                            <!-- Dev Team presentation prep - 1.5 hour -->
-                                            <!-- 20260723 - Dev Team presentation - 1.5 hours -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <a href="https://docs.google.com/spreadsheets/d/1gd71CLCPGwT8yFqHELmXF92MTysngyzFdQAi3K9kGQs/edit?usp=sharing"
-                                            target="_blank" title="9.5 hours">
+                                            target="_blank" title="0 hours">
                                             <i class="fab fa-google-drive fa-padding"><span class="sr-only">Google
                                                     Drive</span></i>
                                             Post-OpenScholar planning
-                                            <!-- SEAS + HWP Quarterly Meeting - .5 hour-->
-                                            <!-- SEAS websites audit - 71 hour -->
-                                            <!-- HWP Working Group - meetings and follow up - 1 hours -->
+                                            <!-- SEAS + HWP Quarterly Meeting - 0 hour -->
+                                            <!-- SEAS websites audit - 0 hour -->
+                                            <!-- HWP Working Group - meetings and follow up - 0 hours -->
                                             <!-- "SEAS and HWP Check-in" meetings - 0 hours -->
                                             <!-- CampusPress TOU list from HWP - 0 hours -->
                                             <!-- Office of Communications meetings - 0 hour -->
                                             <!-- Migration discussions on weekly check in with Rebecca - 0 hours -->
-                                            <!-- WordPress migration to HarvardSites on 20260921 - .5 hour -->
-                                            <!-- HarvardSites Drupal Community of Practice Meeting - 1 hour -->
+                                            <!-- WordPress migration to HarvardSites on 20260921 - 0 hour -->
+                                            <!-- HarvardSites Drupal Community of Practice Meeting - 0 hour -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -689,50 +657,43 @@
                                             SEAS adoption of DASH and ORCID
                                         </a>
                                     </li>
-                                </ul>
-                            </div>
-                            <!-- plans and progress -->
-                            <div id="q1fy27-RemoteAssistance">
-                                <h4 class="sr-only">Web publishing assistance Q4FY26 plans and progress</h4>
-
-                                <ul class="list-group list-group-flush">
                                     <li
                                         class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
-                                        <!-- ##w Web publishing Q1FY27 - Q1FY27 total time minus projects moved to Done column -->
-                                        Q1FY27 total time - 126 hours <span hidden>(done: 0)</span>
+                                        <!-- ##w Web publishing Q2FY27 - Q2FY27 total time minus projects moved to Done column -->
+                                        Q2FY27 total time - 0 hours <span hidden>(done: 0)</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SEAS Accessibility Q1FY27 -->
+                    <!-- SEAS Accessibility Q2FY27 -->
                     <div class="card card-label_primary">
                         <div class="card-body card-header-margin">
                             <div class="card-title">
                                 <!-- Title and expand/collapse button -->
-                                <button data-expandable="q1fy27-seasAccessibility"
+                                <button data-expandable="q2fy27-seasAccessibility"
                                     title="seasAccessibility plans and progress">
                                     <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Accessibility
                                             projects</span></i>
-                                    <h3>Q1FY27 SEAS Accessibility</h3>
+                                    <h3>Q2FY27 SEAS Accessibility</h3>
                                     <span class="sr-only">view plans and progress below</span>
                                 </button>
 
                                 <!-- Project description -->
                                 <ul class="list-group list-group-flush">
-                                    SEAS Digital Accessibility
+                                    <i>SEAS Digital Accessibility</i>
                                 </ul>
                             </div>
                             <!-- plans and progress -->
-                            <div id="q1fy27-seasAccessibility">
-                                <h4 class="sr-only">SEAS Accessibility Q1FY27 plans and progress</h4>
+                            <div id="q2fy27-seasAccessibility">
+                                <h4 class="sr-only">SEAS Accessibility Q2FY27 plans and progress</h4>
 
                                 <ul class="list-group list-group-flush">
                                     <li
                                         class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                        <!-- ##x - SEAS Accessibility Q1FY27 - Q1FY27 total time -->
-                                        Q1FY27 total time - 31.5 hours
+                                        <!-- ##x - SEAS Accessibility Q2FY27 - Q2FY27 total time -->
+                                        Q2FY27 total time - 0 hours
                                         <!-- Including standups, sprint planning, assistance, etc. -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -741,8 +702,6 @@
                                         <a href="https://drive.google.com/drive/folders/1hMJQZL-Jwhk_-AGmFhxM122AZNAfaYkU?usp=drive_link"
                                             target="_blank">
                                             <i>GitHub accessibility guide
-                                                <!-- September 6 - WCAG 2.1 `alt` tag Terminal process and cheatsheet - 1.5 hours -->
-                                                <!-- September 30 - Collaborating on accessibility projects with Amalya - 1 hours -->
                                             </i>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -759,7 +718,6 @@
                                         <a href="https://docs.google.com/document/d/18A7hJoYBI5-Qnd_M-15TtBQdzhwU2nIKAH6kyfKKKfw/edit?usp=sharing"
                                             target="_blank">
                                             <i>Digital Accessibility Community Learning Goal
-                                                <!-- July 24 meeting with Paula's group 0 2.5 hours -->
                                             </i>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
@@ -769,7 +727,6 @@
                                             target="_blank">
                                             <i>SEAS Annual Self-Assessment
                                             </i>
-                                            <!-- August 19 - .5 hour -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
@@ -777,53 +734,34 @@
                                         <a href="https://liaisons.accessibility.huit.harvard.edu/convenings?cb=291159893"
                                             target="_blank">
                                             DAL quarterly meetings
-                                            <!-- September 9 -->
                                         </a>
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
                                                 interest</span></i>
                                         Digital Accessibility Privacy and Security (DAPS) biweekly meetings
-                                        <!-- July 14 - 1 hour -->
-                                        <!-- July 28 - 1 hour -->
-                                        <!-- August 11 - 1 hour -->
-                                        <!-- August 25 - 1 hour -->
-                                        <!-- September 8 - 1 hour -->
-                                        <!-- September 22 - 1 hour -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Project</span></i>
                                         AV GUI accessibility guidelines
-                                        <!-- July 23, correspondence with John Lee - 1 hour -->
-                                        <!-- July 24, correspondence with John Lee - 1 hour -->
-                                        <!-- July 27, reply to John Lee - 1 hour -->
-                                        <!-- July 28, reply to John Lee - 1 hour -->
-                                        <!-- August 19, reply to John Lee - .5 hour -->
-                                        <!-- August 27, start new AI project - 1 hour -->
-                                        <!-- August 28, Draft 1 guidelines document - 5.5 hours -->
-                                        <!-- September 6, Draft 1 guidelines document - 1 hours -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Project</span></i>
                                         AI Community of Practice Meeting
-                                        <!-- September 17 - 1 hour -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-wheelchair fa-padding"><span class="sr-only">Project</span></i>
-                                        Accessibility reviews<br>
-                                            • Gil <!-- REACT GitHub website, also DNS redirect - 3.5 hour -->
+                                        Accessibility reviews
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
                                                 interest</span></i>
                                         AV CoP meetings
-                                        <!-- July 23 - AV CoP Infocomm Recap - 1 hour -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
                                                 interest</span></i>
                                         Collaborating on accessibility projects with Amalya
-                                        <!-- 20260923 - Intro meeting with Jonathan and Amalya - .5 hour -->
                                     </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
@@ -865,26 +803,26 @@
                         </div>
                     </div>
 
-                    <!-- Professional Development Q1FY27 -->
+                    <!-- Professional Development Q2FY27 -->
                     <div class="card card-label_secondary">
                         <div class="card-body card-header-margin">
                             <div class="card-title">
                                 <!-- Title and expand/collapse button -->
-                                <button data-expandable="q1fy27-ProfessionalDevelopment"
+                                <button data-expandable="q2fy27-ProfessionalDevelopment"
                                     title="Professional Development plans and progress">
                                     <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional
-                                            development (self training, courses, seminars, etc.)</span></i>
-                                    <sup><i class="fas fa-balance-scale fa-padding"><span class="sr-only">FY27 goals and
-                                                priorities</span></i></sup>
-                                    <h3>Q1FY27 Professional Development</h3>
+                                            development (self training, courses, seminars, etc.)</span></i></sup>
+                                    <h3>Q2FY27 Professional Development</h3>
                                     <span class="sr-only">view plans and progress below</span>
                                 </button>
 
                                 <!-- Project description -->
+                                <i>Courses and webinars from Harvard and other organizations</i>
+                            </div>
+                            <!-- plans and progress -->
+                            <div id="q2fy27-ProfessionalDevelopment">
+                                <h4 class="sr-only">Professional Development Q2FY27 plans and progress</h4>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item list-group-item-margin">
-                                        <i>Courses and webinars from Harvard and other organizations</i>
-                                    </li>
                                     <li class="list-group-item list-group-item-margin">
                                         <i class="fas fa-users-cog fa-padding"><span class="sr-only">Community of
                                                 interest</span></i>
@@ -919,16 +857,12 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <!-- plans and progress -->
-                            <div id="q1fy27-ProfessionalDevelopment">
-                                <h4 class="sr-only">Professional Development Q1FY27 plans and progress</h4>
 
                                 <ul class="list-group list-group-flush">
                                     <li
                                         class="list-group-item list-group-item-margin list-group-item-done texthi-muted bg-light">
-                                        <!-- ##p Professional Development Q1FY27 total time -->
-                                        Q1FY27 total time - 5 hours
+                                        <!-- ##p Professional Development Q2FY27 total time -->
+                                        Q2FY27 total time - 0 hours
                                     </li>
 
                                     <section id="Webinars">
@@ -1152,12 +1086,12 @@
                         </div>
                     </div>
 
-                    <!-- Diversity Inclusion Belonging Q1FY27 -->
+                    <!-- Diversity Inclusion Belonging Q2FY27 -->
                     <div class="card card-label_warning">
                         <div class="card-body card-header-margin">
                             <div class="card-title">
                                 <!-- Title and expand/collapse button -->
-                                <button data-expandable="q1fy27-DIB"
+                                <button data-expandable="q2fy27-DIB"
                                     title="Diversity Inclusion Belonging plans and progress">
                                     <i class="fas fa-graduation-cap fa-padding"><span class="sr-only">Professional
                                             development (self training, courses, seminars, etc.)</span></i>
@@ -1176,19 +1110,19 @@
                                 </ul>
                             </div>
                             <!-- plans and progress -->
-                            <div id="q1fy27-DIB">
-                                <h4 class="sr-only">Diversity Inclusion Belonging Q1FY27 plans and progress</h4>
+                            <div id="q2fy27-DIB">
+                                <h4 class="sr-only">Diversity Inclusion Belonging Q2FY27 plans and progress</h4>
 
                                 <ul class="list-group list-group-flush">
                                     <li
                                         class="list-group-item list-group-item-margin texthi-muted list-group-item-done bg-light">
                                         <!-- ##d Diversity Inclusion Belonging - 2FY26 total time -->
-                                        Q1FY27 total time - 0 hours
+                                        Q2FY27 total time - 0 hours
                                     </li>
                                     <!-- ###### Training ##### -->
-                                    <section id="dib_Q1FY27_training" hidden>
+                                    <section id="dib_Q2FY27_training" hidden>
                                         <li class="list-group-item list-group-item-margin bg-light">
-                                            <h6>Q1FY27 Training</h6>
+                                            <h6>Q2FY27 Training</h6>
                                         </li>
 
                                         <!-- title -->
@@ -1703,6 +1637,64 @@
                     <h2 style="display: block;">
                         Done
                     </h2>
+
+                    <!-- Chart Q1FY27 -->
+                        <h3><a href="fy27.html" class="badge badge-primary" title="Projects completed in FY27">FY27</a>
+                        </h3>
+                    <div class="card mb-4 p-2">
+                        <h3>
+                            Q1FY27 effort distribution
+                        </h3>
+                        <!-- This time totals include items moved to Done column -->
+                        <p class="text-muted text-center">July - September</p>
+                        <canvas id="Q1FY27" aria-label="Q1FY27 effort distribution chart" class="chartjs mb-3">
+                        </canvas>
+                    
+                        <script>
+                            new Chart(document.getElementById("Q1FY27"), {
+                                type: "doughnut",
+
+                                data: {
+                                    labels: [
+                                        "Academic products",
+                                        "Web publishing",
+                                        "SEAS accessibility",
+                                        "Professional growth",
+                                        "Misc."
+                                    ],
+
+                                    datasets: [{
+                                        label: "Q1FY27 effort distribution",
+                                        // ##chart
+                                        data: [
+                                            14.5,   // Academic products
+                                            130,    // Web publishing
+                                            33.5,     // SEAS accessibility
+                                            5,      // Professional growth
+                                            162   // Misc.
+                                        ],
+
+                                        backgroundColor: [
+                                            "rgb(165, 28, 48)",
+                                            "rgb(78, 136, 199)",
+                                            "rgb(0, 170, 173)",
+                                            "rgb(253, 126, 20)",
+                                            "rgb(148, 148, 148)"
+                                        ]
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="text-muted">
+                            <strong>Academic projects</strong>: OAP Graduate Database, Study Plan, Mark One library of UI
+                            components<br />
+                            <strong>Web publishing</strong>: Web publishing assistance, onboarding<br />
+                            <strong>SEAS accessibility</strong>: Implementation plan, digital accessibility<br />
+                            <strong>Professional growth</strong>: Training and interest groups participation, user
+                            experience and accessibility skills<br />
+                            <strong>Misc.</strong>: staff standups, 1:1 catch-ups, prof. develp.
+                        </p>
+                    </div>
 
                     <!-- FY26 -->
 
